@@ -5,34 +5,22 @@ Ein Obsidian-Vault zur Vorbereitung auf AP1 und AP2 für Fachinformatiker:innen 
 ## Voraussetzungen
 
 - [Obsidian Desktop](https://obsidian.md/download) installieren.
-- [Git](https://git-scm.com/downloads) installieren, falls der Vault über GitHub bezogen und aktualisiert werden soll.
 - Die interaktiven Module verwenden DataviewJS. Dataview ist im Vault unter `.obsidian/plugins/dataview` enthalten und als Community-Plugin eingetragen. Beim ersten Öffnen kann Obsidian fragen, ob Community-Plugins aktiviert werden dürfen.
 
 ## Vault von GitHub klonen
 
-1. Auf GitHub die Vault-Seite öffnen und **Code → HTTPS** auswählen. Die Repository-Adresse sieht etwa so aus: `https://github.com/Woschj/Fisi_Fiae_Pruefungsvorbereitung.git`.
+1. Auf GitHub die Vault-Seite [ycsysynjv8-ux/FIAP](https://github.com/ycsysynjv8-ux/FIAP) öffnen und **Code → HTTPS** auswählen.
 2. Ein Terminal öffnen und in den Ordner wechseln, in dem der Vault gespeichert werden soll.
 3. Klonen:
 
    ```powershell
-   git clone https://github.com/Woschj/Fisi_Fiae_Pruefungsvorbereitung.git
+   git clone https://github.com/ycsysynjv8-ux/FIAP.git
    ```
 
-   Der Vault liegt im Repository [Woschj/Fisi_Fiae_Pruefungsvorbereitung](https://github.com/Woschj/Fisi_Fiae_Pruefungsvorbereitung).
 4. In Obsidian **Vault öffnen → Als Vault in einem Ordner öffnen** wählen und den eben geklonten Repository-Ordner auswählen.
 5. Falls Obsidian den eingeschränkten Modus aktiviert hat, unter **Einstellungen → Community-Plugins** den Modus deaktivieren und Dataview aktivieren. DataviewJS muss in den Dataview-Einstellungen zugelassen sein, damit die interaktiven Module und Probeprüfungen laufen.
 
 > Lernfortschritte und Prüfungsergebnisse werden lokal gespeichert und nicht mit GitHub synchronisiert.
-
-## Vault von GitHub aktualisieren
-
-Im geklonten Ordner ein Terminal öffnen und ausführen:
-
-```powershell
-git pull
-```
-
-Vorher eigene Änderungen speichern und mit `git status` prüfen, ob lokale Dateien geändert wurden.
 
 ## Aufbau und Nutzung
 
