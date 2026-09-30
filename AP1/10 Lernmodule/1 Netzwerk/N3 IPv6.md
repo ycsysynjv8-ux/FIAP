@@ -41,7 +41,7 @@ IPv4 bietet rund 4,3 Milliarden Adressen – längst zu wenig. Provider vergeben
 | **Präfix** (Netzanteil) | meist die ersten **64** | vom Provider/Admin vergeben, enthält Routing-Präfix + Subnetz-ID |
 | **Interface-ID** (Hostanteil) | die letzten **64** | identifiziert das Gerät im Subnetz |
 
-Typische Größen: Provider → Kunde **/48** (Firma) oder **/56** (Privatanschluss) · ein einzelnes LAN-Segment ist immer **/64**.
+Typische Größen: Provider → Kunde **/48** (Firma) oder **/56** (Privatanschluss) · ein übliches LAN mit SLAAC verwendet **/64**. Andere Anwendungen können andere Präfixlängen nutzen, z. B. /127 für Punkt-zu-Punkt-Verbindungen und /128 für einzelne Hostrouten.
 
 Anzahl Adressen: 2¹²⁸ ≈ 3,4 · 10³⁸. In **einem** /64-Netz sind 2⁶⁴ ≈ 1,8 · 10¹⁹ Adressen – „Adressen sparen“ ist bei IPv6 kein Thema mehr.
 

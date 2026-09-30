@@ -59,7 +59,7 @@ tags: [ap2/modul, ap2/fisi]
 | SHA-256/SHA-3 | Hash | sicher – aber **keine Verschlüsselung**, sondern Prüfsumme/Signaturbaustein |
 
 **Hashfunktion:** erzeugt aus beliebigen Daten einen **Prüfwert fester Länge**, **Einwegfunktion** (nicht umkehrbar), kleine Änderung → völlig anderer Hash, kollisionsresistent. Einsatz: Integrität, Signaturen, **Passwortspeicherung mit Salt**.
-**Digitale Signatur:** Hash der Nachricht wird mit dem **privaten Schlüssel des Absenders** verschlüsselt; der Empfänger prüft mit dessen **öffentlichem Schlüssel** → Integrität + Authentizität + Nichtabstreitbarkeit.
+**Digitale Signatur:** Der Absender signiert die Nachricht mit seinem **privaten Schlüssel**; der Empfänger prüft die Signatur mit dem zugehörigen **öffentlichen Schlüssel** → Integrität und Zuordnung zum passenden privaten Schlüssel. Die Identität erfordert eine vertrauenswürdige Schlüsselzuordnung. Nichtabstreitbarkeit hängt zusätzlich von Schlüsselkontrolle und rechtlichem Kontext ab. Signieren ist nicht allgemein das Verschlüsseln eines Hashs.
 
 ---
 
@@ -69,11 +69,11 @@ Ein **Zertifikat** (X.509) bindet einen **öffentlichen Schlüssel an eine Ident
 
 **Inhalte:** Version · **Seriennummer** · **Inhaber** (Common Name, Organisation, Subject Alternative Names) · **öffentlicher Schlüssel des Inhabers** · **Aussteller (CA)** · **Gültigkeitszeitraum** · Signaturalgorithmus · **Signatur der CA** · Verwendungszweck (Key Usage).
 
-**CA (Certificate Authority):** vertrauenswürdige Stelle, die Zertifikate **ausstellt, verwaltet und widerruft** (CRL, OCSP). Browser und Betriebssysteme vertrauen einer Liste von **Root-CAs**; darunter signieren **Intermediate-CAs** die Serverzertifikate → **Vertrauenskette**. Beim Signieren wird ein **Hash** des Zertifikats mit dem privaten Schlüssel der CA verschlüsselt.
+**CA (Certificate Authority):** vertrauenswürdige Stelle, die Zertifikate **ausstellt, verwaltet und widerruft** (CRL, OCSP). Browser und Betriebssysteme vertrauen einer Liste von **Root-CAs**; darunter signieren **Intermediate-CAs** die Serverzertifikate → **Vertrauenskette**. Die CA signiert die Zertifikatsdaten mit ihrem privaten Schlüssel; ihr öffentlicher Schlüssel ermöglicht die Signaturprüfung. Eine digitale Signatur ist nicht allgemein eine „Verschlüsselung des Hashs“ (z. B. ECDSA).
 
 | eigene (interne) CA | externe (öffentliche) CA |
 |---|---|
-| volle Kontrolle über Root-Schlüssel und Verfahren, Zertifikate sofort ausstellbar, kostenlos | Zertifikate werden von allen Browsern **automatisch akzeptiert** |
+| volle Kontrolle über Root-Schlüssel und Verfahren, Zertifikate sofort ausstellbar, kostenlos | Zertifikate werden bei vertrauenswürdiger Kette und erfolgreicher Prüfung akzeptiert |
 | Root-Zertifikat muss auf alle Clients verteilt werden (GPO/MDM) | keine eigene Infrastruktur, Erfahrung des Anbieters |
 | nur für interne Dienste, 802.1X, VPN, TLS-Inspection | kostenpflichtig (außer Let's Encrypt), weniger Kontrolle |
 
@@ -91,16 +91,16 @@ Ein **Zertifikat** (X.509) bindet einen **öffentlichen Schlüssel an eine Ident
 
 **TLS** (Transport Layer Security) sichert HTTPS, SMTPS, IMAPS, LDAPS. Ziele: **Authentifizierung des Servers**, **Vertraulichkeit**, **Integrität**.
 
-**Handshake (vereinfacht):**
-1. **Client Hello** – unterstützte TLS-Versionen und Cipher Suites, Zufallswert
-2. **Server Hello** – gewählte Version und Cipher Suite; Server sendet sein **Zertifikat** mit öffentlichem Schlüssel
-3. Client **prüft das Zertifikat** (Gültigkeit, Name/Domain, Vertrauenskette zur CA, Widerruf)
-4. **Schlüsselaustausch** (bei TLS 1.3 immer **(EC)Diffie-Hellman**) → beide berechnen denselben **Sitzungsschlüssel**
-5. Daten werden **symmetrisch** (z. B. AES-GCM) mit dem Sitzungsschlüssel verschlüsselt
+**TLS-1.3-Handshake mit Zertifikat und (EC)DHE (vereinfacht):**
+1. **Client Hello** – unterstützte Versionen und Cipher Suites, Zufallswert und öffentlicher (EC)DHE-Schlüsselanteil
+2. **Server Hello** – gewählte Parameter und eigener Schlüsselanteil; beide Seiten leiten Handshake-Schlüssel ab
+3. Der Server sendet sein **Zertifikat** und **CertificateVerify** bereits verschlüsselt. Der Client prüft Vertrauenskette, Gültigkeit, Signatur und Domain im **Subject Alternative Name (SAN)**; Widerruf wird gemäß Clientrichtlinie geprüft. Der Common Name allein genügt nicht.
+4. **Finished**-Nachrichten bestätigen den Handshake; beide Seiten leiten Schlüssel für die Anwendungsdaten ab
+5. Daten werden **symmetrisch** (z. B. AES-GCM) verschlüsselt und gegen Veränderungen geschützt
 
-Das ist **hybride Verschlüsselung**: Der aufwendige asymmetrische Teil läuft nur beim Verbindungsaufbau über die unsichere Leitung, danach das schnelle symmetrische Verfahren.
+Das verbindet asymmetrische Schlüsselvereinbarung und Authentifizierung mit symmetrischer Verschlüsselung.
 
-**TLS 1.3 gegenüber 1.2:** nur noch Schlüsselaustausch mit **Perfect Forward Secrecy** (ephemeral Diffie-Hellman – ein später gestohlener Serverschlüssel entschlüsselt keine alten Sitzungen), veraltete Algorithmen entfernt, Handshake großteils verschlüsselt und schneller (1-RTT), keine unsichere Session-Renegotiation. Asymmetrische Kryptografie dient in TLS 1.3 **nur noch zur Authentifizierung** (Signaturprüfung), nicht zur Verschlüsselung des Schlüssels.
+**TLS 1.3 gegenüber 1.2:** statischer RSA-Schlüsseltransport und veraltete Algorithmen entfernt, Handshake großteils verschlüsselt und schneller (1-RTT). **(EC)DHE** ermöglicht Forward Secrecy: Ein später gestohlener langfristiger Serverschlüssel entschlüsselt keine früheren Sitzungen. Asymmetrische Verfahren dienen sowohl der Schlüsselvereinbarung als auch der Authentifizierung. Daneben gibt es PSK-Verfahren: **PSK ohne (EC)DHE bietet keine Forward Secrecy**, auch **0-RTT-Daten** haben diese Eigenschaft nicht.
 **Diffie-Hellman:** Verfahren, mit dem zwei Parteien über einen **offenen Kanal** einen gemeinsamen geheimen Schlüssel **berechnen**, ohne ihn zu übertragen.
 
 ---
@@ -165,7 +165,7 @@ Ein **VPN** (Virtual Private Network) baut einen **verschlüsselten Tunnel** üb
 - Symmetrisch (AES) schnell, ein Schlüssel · asymmetrisch (RSA/ECC) Schlüsselpaar, langsam · hybrid (TLS) = beides.
 - DES und MD5 unsicher; AES-256 und SHA-256 gut; Hash ≠ Verschlüsselung.
 - Zertifikat: Inhaber, öffentlicher Schlüssel, Aussteller, Gültigkeit, Seriennummer, Signatur der CA. Kette Root → Intermediate → Server.
-- TLS-Handshake: Hello, Zertifikat, Prüfung, (EC)DHE, symmetrische Sitzung. TLS 1.3: nur PFS, schneller, sicherer.
+- TLS 1.3: Hello mit Schlüsselanteilen, verschlüsselte Zertifikatsprüfung, Finished, symmetrische Anwendungsdaten. Forward Secrecy bei (EC)DHE; Ausnahmen bei PSK-only und 0-RTT beachten.
 - VPN: Site-to-Site vs. Remote Access; Probleme NAT (→ NAT-T), MTU, IPv6-Breakout, CGN.
 - 2FA = zwei **verschiedene** Faktorkategorien.
 

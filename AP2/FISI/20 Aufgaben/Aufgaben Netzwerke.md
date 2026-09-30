@@ -327,7 +327,7 @@ Erklären Sie, warum TLS symmetrische und asymmetrische Verfahren kombiniert, un
 Nennen Sie fünf Prüfungen, die ein Browser bei einem Serverzertifikat durchführt.
 
 > [!success]- Lösung (je 1 P)
-> Signatur der ausstellenden CA gültig (Kette bis zu einer vertrauenswürdigen Root-CA) · Gültigkeitszeitraum · Hostname passt zu CN/SAN · nicht widerrufen (CRL/OCSP) · Verwendungszweck (Key Usage: Serverauthentifizierung) · Zwischenzertifikate vorhanden
+> Signatur der ausstellenden CA gültig (Kette bis zu einer vertrauenswürdigen Root-CA) · Gültigkeitszeitraum · Hostname passt zum Subject Alternative Name (SAN; Common Name allein genügt nicht) · nicht widerrufen (CRL/OCSP) · Verwendungszweck (Extended Key Usage: Serverauthentifizierung) · Zwischenzertifikate vorhanden
 
 ### N15.3 ★★ – VPN-Arten (5 Punkte)
 📘 **Nachlernen:** [[FISI-15 VPN, TLS und PKI#4. VPN|FISI-15 › VPN]]

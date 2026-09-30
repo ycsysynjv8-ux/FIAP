@@ -131,7 +131,7 @@ Für die Abrechnung prüft die RheinStrom Mobil GmbH, ob sie ein Standardprodukt
 >
 > **b)** Abdeckung der Anforderungen (Blockiergebühr, Abo-Tarife) · Abhängigkeit vom Anbieter (Vendor Lock-in, Preiserhöhungen) · Datenschutz und Serverstandort · Integration in vorhandene Systeme (Buchhaltung, Ladesäulen-Backend) · Zeit bis zur Einführung · vorhandenes Know-how. Erläuterung z. B.: Kann das Standardprodukt die Blockiergebühr nicht abbilden, entstehen zusätzliche Anpassungskosten oder Prozessänderungen.
 >
-> **c)** **MIT** ist eine freizügige Lizenz: Nutzung, Änderung und Einbindung in proprietäre Software erlaubt, nur Copyright- und Lizenzhinweis müssen erhalten bleiben. **GPL-3.0** ist eine **Copyleft**-Lizenz: Wird die Bibliothek in ein weitergegebenes Programm eingebunden, muss das Gesamtwerk ebenfalls unter der GPL mit Quellcode veröffentlicht werden. Folge: Die GPL-Bibliothek darf in der verteilten App nicht verwendet werden → Alternative mit freizügiger Lizenz wählen oder kommerzielle Lizenz erwerben.
+> **c)** **MIT** erlaubt die Einbindung in proprietäre Software bei Erhalt der Copyright- und Lizenzhinweise. **GPL-3.0** enthält Copyleft-Pflichten: Bilden Bibliothek und App ein gemeinsames abgeleitetes Werk und wird dieses weitergegeben, muss es GPL-konform lizenziert und den Empfängern der zugehörige Quellcode entsprechend der Lizenz zugänglich gemacht werden. Eine allgemeine Veröffentlichung im Internet ist nicht vorgeschrieben. Soll die verteilte App proprietär bleiben, ist eine kompatible Alternative oder eine vom Rechteinhaber angebotene andere Lizenz erforderlich. Rein interne Nutzung löst diese Weitergabepflichten nicht aus.
 >
 > **Bewertungshinweise:** a) je Variante Rechenweg 3 P und Ergebnis 1 P, Vergleich 2 P · b) je Kriterium 1 P, Erläuterung 4 P · c) MIT 3 P, GPL/Copyleft 3 P, Folge 2 P.
 
@@ -152,7 +152,8 @@ await dv.view("AP2/99 System/views/pruefung", { name: "FIAE Probeprüfung 3 – 
 Die Kosten eines Ladevorgangs setzen sich wie folgt zusammen:
 - Energiekosten: geladene kWh × Preis je kWh
 - Blockiergebühr: Ab der **241. Minute** Standzeit werden **0,10 € je angefangene Minute** berechnet, höchstens jedoch **12,00 €**.
-- Das Ergebnis wird auf zwei Nachkommastellen gerundet (Funktion `runden(wert, 2)` steht zur Verfügung).
+- `minuten` ist ganzzahlig; angefangene Minuten sind bereits aufgerundet. Negative Werte für kWh, Preis oder Minuten werden durch eine Fehlermeldung abgewiesen.
+- Das Ergebnis wird kaufmännisch auf zwei Nachkommastellen gerundet (Funktion `runden(wert, 2)` steht zur Verfügung).
 
 **a) (12 P)** Entwickeln Sie die Funktion `berechneKosten(kwh, preisJeKwh, minuten)` in Pseudocode.
 
@@ -177,6 +178,9 @@ ENDE WENN
 > **a)**
 > <pre>
 > FUNKTION berechneKosten(kwh, preisJeKwh, minuten): Gleitkommazahl
+>     WENN kwh < 0 ODER preisJeKwh < 0 ODER minuten < 0 DANN
+>         FEHLER "Negative Eingabewerte sind unzulässig"
+>     ENDE WENN
 >     energie ← kwh * preisJeKwh
 >     gebuehr ← 0
 >     WENN minuten > 240 DANN
@@ -194,7 +198,7 @@ ENDE WENN
 >
 > **c)** Fehler 1: Die Gebühr wird für **alle** Minuten berechnet (`minuten * 0.10`), nicht erst ab der 241. Minute → `gebuehr ← (minuten - 240) * 0.10`. Fehler 2: Der Vergleich der Obergrenze ist umgekehrt: `WENN gebuehr < 12` setzt jede Gebühr unter 12 € – auch 0 € bei kurzen Ladevorgängen – auf 12 € → `WENN gebuehr > 12 DANN gebuehr ← 12`.
 >
-> **Bewertungshinweise:** a) Energiekosten 2 P, Bedingung 241. Minute 3 P, Gebührenberechnung 3 P, Obergrenze 3 P, Rundung/Rückgabe 1 P · b) je Vorgang 2 P · c) je Fehler 2 P, Korrektur 3 P.
+> **Bewertungshinweise:** a) Eingabeprüfung 2 P, Energiekosten 2 P, Bedingung 241. Minute 2 P, Gebührenberechnung 2 P, Obergrenze 3 P, Rundung/Rückgabe 1 P · b) je Vorgang 2 P · c) je Fehler 2 P, Korrektur 3 P.
 
 ### Aufgabe 2 – Objektorientierung (25 Punkte)
 Es gibt verschiedene Tarife: den **StandardTarif** (fester Preis je kWh) und den **AboTarif** (monatliche Grundgebühr, reduzierter Preis je kWh, die ersten 20 kWh im Monat sind frei). Alle Tarife sollen über die Methode `berechnePreis(kwh: double, bereitsGeladenImMonat: double): double` angesprochen werden.

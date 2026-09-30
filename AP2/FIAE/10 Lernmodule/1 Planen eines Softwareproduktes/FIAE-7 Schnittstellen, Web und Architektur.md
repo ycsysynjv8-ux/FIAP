@@ -119,7 +119,7 @@ return response
 | Begriff | Erklärung |
 |---|---|
 | **Compiler** | übersetzt den Quellcode **einmal vollständig** vor der Ausführung (C, C++, Rust; Java/C# in Bytecode) – schnelle Ausführung, Fehler vorab |
-| **Interpreter** | übersetzt **bei jeder Ausführung** Zeile für Zeile (Python, PHP, JavaScript) – schnelles Testen, aber langsamer |
+| **Interpreter** | führt ein Programm zur Laufzeit aus; viele Implementierungen nutzen Bytecode oder JIT-Kompilierung (z. B. CPython bzw. JavaScript-Engines). „Immer zeilenweise“ und pauschale Geschwindigkeitsvergleiche sind zu ungenau |
 | **Bibliothek / Framework** | fertige, getestete Funktionen wiederverwenden – spart Zeit; Einarbeitung, Abhängigkeit, Lizenzen und Sicherheitslücken beachten |
 | **Versionsverwaltung** (Git) | Änderungen nachvollziehen, **parallel arbeiten** (Branches, Merge), Konflikte auflösen, alte Stände wiederherstellen – bei mehreren Entwicklern unverzichtbar |
 | **CI/CD** | Continuous Integration (bei jedem Commit bauen und testen) / Continuous Delivery/Deployment (automatisch ausliefern) |
@@ -144,7 +144,7 @@ return response
 **Ethernet-Frame** (Reihenfolge): **Präambel + SFD** (8 Byte) → **Ziel-MAC** (6 Byte) → **Quell-MAC** (6 Byte) → **Typ/Länge** (2 Byte, bei VLAN davor 4-Byte-Tag) → **Nutzdaten** (46–1 500 Byte) → **FCS/Prüfsumme** (4 Byte).
 **MAC-Adresse:** 6 Byte (48 Bit), hexadezimal geschrieben (`00:1A:2B:3C:4D:5E`); die ersten 3 Byte sind die **Herstellerkennung (OUI)**, die letzten 3 Byte identifizieren das Gerät.
 
-**Netzscan als Skript** (Pseudocode/PowerShell): Schleife über alle Hostadressen 1–254 eines /24, IP zusammensetzen (`"$prefix.$host"`), MAC abfragen (ARP), gefundene Paare in ein Ergebnis-Array schreiben.
+**Netzscan als Skript** (Pseudocode/PowerShell): Schleife über alle Hostadressen 1–254 eines /24, IP zusammensetzen (`"$prefix.$hostNummer"`), MAC abfragen (ARP), gefundene Paare in ein Ergebnis-Array schreiben.
 
 ---
 
@@ -177,7 +177,7 @@ Nach dem Rollout muss eine Anwendung **überwacht und betreut** werden.
 
 > [!warning] Typische Fehler in Prüfungen
 > - POST und PUT gleichsetzen – POST legt neu an (nicht idempotent), PUT ersetzt an einer bekannten URL.
-> - 401 und 403 verwechseln: 401 = **nicht authentifiziert**, 403 = **authentifiziert, aber nicht berechtigt**.
+> - 401 und 403 verwechseln: 401 = **nicht authentifiziert**, 403 = **Zugriff verweigert** (auch ohne vorherige Authentifizierung möglich).
 > - REST als „Protokoll“ bezeichnen – es ist ein **Architekturstil** auf Basis von HTTP.
 > - Header und Body vertauschen.
 > - Glauben, eine gültige XSD-Validierung garantiere richtige Beträge.

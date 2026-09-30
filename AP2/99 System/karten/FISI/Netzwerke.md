@@ -120,7 +120,7 @@ Was steht in einem X.509-Zertifikat?::Inhaber (CN/SAN), öffentlicher Schlüssel
 Was ist eine Zertifikatskette?::Serverzertifikat → Zwischenzertifikat(e) → Root-CA, der das System vertraut
 Wie wird ein Zertifikat widerrufen geprüft?::Über Sperrlisten (CRL) oder OCSP
 Wozu Diffie-Hellman in TLS?::Gemeinsamen Sitzungsschlüssel vereinbaren, ohne ihn zu übertragen – mit ephemeren Schlüsseln Forward Secrecy
-Was hat TLS 1.3 gegenüber 1.2 verbessert?::Schnellerer Handshake (1 RTT), nur noch sichere Verfahren, immer Forward Secrecy
+Was hat TLS 1.3 gegenüber 1.2 verbessert?::Schnellerer Handshake (1 RTT), Entfernung veralteter Verfahren, Forward Secrecy mit (EC)DHE; nicht bei PSK-only oder 0-RTT-Daten
 Warum ist MD5 unsicher?::Kollisionen lassen sich praktisch erzeugen – zwei Dokumente mit gleichem Hash
 Unterschied Site-to-Site und End-to-Site-VPN?::Site-to-Site verbindet Netze über Gateways · End-to-Site verbindet einzelne Clients mit dem Firmennetz
 Unterschied Full- und Split-Tunnel?::Full: gesamter Verkehr durchs VPN · Split: nur Firmenverkehr durchs VPN

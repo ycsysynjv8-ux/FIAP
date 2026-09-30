@@ -167,9 +167,9 @@ Ports 0–1023 heißen **Well-Known Ports**, 1024–49151 **Registered**, 49152�
 | 110 | POP3 | TCP | Mail abholen | ❌ |
 | 123 | NTP | UDP | Zeitsynchronisation | – |
 | 143 | IMAP | TCP | Mail abrufen/synchronisieren | ❌ |
-| 161/162 | SNMP | UDP | Überwachung / Traps | nur v3 ✅ |
+| 161/162 | SNMP | UDP | Überwachung / Traps | v3 nur mit **authPriv** ✅ |
 | 389 | LDAP | TCP | Verzeichnisdienst (z. B. Active Directory) | ❌ |
-| 443 | HTTPS | TCP | Web über TLS | ✅ |
+| 443 | HTTPS | TCP; HTTP/3: QUIC über UDP | Web über TLS | ✅ |
 | 445 | SMB | TCP | Windows-Dateifreigaben | (SMB3 ✅) |
 | 465 | SMTPS | TCP | Mailversand über TLS | ✅ |
 | 587 | Submission | TCP | Mailversand Client → Server (mit STARTTLS) | ✅ |
@@ -211,7 +211,7 @@ flowchart LR
 |---|---|
 | **ICMP** | Diagnose und Fehlermeldungen (`ping`, `tracert`) – hat **keine Ports** (Schicht 3) |
 | **NTP** | Uhrzeit synchronisieren – wichtig für Logs, Kerberos-Anmeldung, Zertifikate |
-| **SNMP** | Geräte überwachen (Auslastung, Status); v1/v2c im Klartext mit „Community“, **v3** mit Authentifizierung und Verschlüsselung |
+| **SNMP** | Geräte überwachen (Auslastung, Status); v1/v2c im Klartext mit „Community“, **v3** bietet Sicherheitsstufen: noAuthNoPriv, authNoPriv und **authPriv**; nur authPriv verschlüsselt die Nutzdaten |
 | **LDAP / Active Directory** | zentrale Benutzer- und Geräteverwaltung |
 | **Syslog** | Logmeldungen zentral sammeln |
 | **VPN** (IPsec, WireGuard, OpenVPN) | verschlüsselter Tunnel über unsichere Netze (Homeoffice, Standortkopplung) |

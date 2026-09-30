@@ -72,7 +72,7 @@ Die Maklerpost wird künftig eingescannt und revisionssicher archiviert. Täglic
 > **Bewertungshinweise:** a) Rechenweg 5 P, Umrechnung und Ergebnis 3 P · b) je RAID-Level 3 P, Begründung 2 P · c) je Anforderung 1 P (max. 4), technisches Mittel 1 P · d) Stellungnahme mit Begründung 4 P.
 
 ### Aufgabe 3 – Datenschutz, Geräte und Lizenzen (25 Punkte)
-**a) (6 P)** Die 70 Beschäftigten im Innendienst greifen jeweils mit einem Desktop-PC und einem Diensthandy auf den Server zu. 20 Aushilfen teilen sich im Schichtbetrieb 6 PCs. Berechnen Sie die Anzahl der Client-Zugriffslizenzen (CAL), wenn nur **User-CALs**, nur **Device-CALs** oder die **günstigste Kombination** gekauft wird.
+**a) (6 P)** Die 70 Beschäftigten im Innendienst greifen jeweils mit einem Desktop-PC und einem Diensthandy auf den Server zu. 20 Aushilfen teilen sich im Schichtbetrieb 6 PCs. Berechnen Sie die Anzahl der Client-Zugriffslizenzen (CAL), wenn User- und Device-CALs denselben Stückpreis haben und nur **User-CALs**, nur **Device-CALs** oder die **günstigste Kombination** gekauft wird.
 
 **b) (8 P)** Ein Mitarbeiter meldet am Dienstagmorgen, dass er am Montagabend einen **unverschlüsselten USB-Stick** mit Kundendaten (Namen, Anschriften, Vertragsnummern) in der Bahn verloren hat. Beschreiben Sie das weitere Vorgehen nach der DSGVO mit Fristen.
 
@@ -132,7 +132,7 @@ ENDE FUNKTION
 >
 > **b)** Ist `summe MOD 10 = 0`, ergäbe `10 − 0` den Wert **10** – eine Prüfziffer muss aber einstellig sein. Das zweite `MOD 10` macht daraus **0**.
 >
-> **c)** Start bei 1: Das **erste Element wird übersprungen** und die Gewichtung verschoben – falsche Prüfziffer (**Logikfehler**, semantischer Fehler). Ende bei `laenge`: Der letzte gültige Index ist `laenge − 1`; der Zugriff auf `ziffern[laenge]` liegt außerhalb des Arrays → **Laufzeitfehler** (Index außerhalb des gültigen Bereichs).
+> **c)** Start bei 1: Das **erste Element wird übersprungen** – sein Beitrag zur Summe fehlt; die Gewichtung der übrigen Elemente bleibt unverändert. Dadurch kann eine falsche Prüfziffer entstehen (**Logikfehler**, semantischer Fehler). Ende bei `laenge`: Der letzte gültige Index ist `laenge − 1`; der Zugriff auf `ziffern[laenge]` liegt außerhalb des Arrays → **Laufzeitfehler** (Index außerhalb des gültigen Bereichs).
 >
 > **d)** z. B. das Beispiel aus a) mit bekanntem Ergebnis 6 (Normalfall) · eine Zahl, deren Summe durch 10 teilbar ist, z. B. `[5, 5]` → 5 × 3 + 5 = 20 → Ergebnis **0** (Grenzfall aus b) · eine leere Liste → Ergebnis 0 bzw. Fehlerbehandlung festlegen. Begründung: Normalfall und Grenzfälle decken typische Fehler auf.
 >
@@ -237,9 +237,9 @@ Es werden folgende VLANs eingerichtet: 10 Innendienst, 20 Gäste, 30 Voice, 99 M
 > [!success]- Lösung Aufgabe 3
 > **a)** Bonn: **Site-to-Site-VPN** (z. B. IPsec zwischen den beiden Routern bzw. Firewalls). Außendienst: **End-to-Site** (Client-to-Site, Remote-Access-VPN). Full-Tunnel: gesamter Verkehr läuft über die Firmenfirewall – zentral gefiltert, aber mehr Last auf der Firmenanbindung. Split-Tunnel: nur der Verkehr ins Firmennetz läuft durch den Tunnel – entlastet die Leitung, der übrige Internetverkehr wird aber nicht von der Firmenfirewall geschützt.
 >
-> **b)** Signatur gültig und Kette bis zu einer vertrauenswürdigen Root-CA (Zwischenzertifikate vorhanden) · Gültigkeitszeitraum · Hostname passt zum Common Name bzw. Subject Alternative Name · nicht widerrufen (CRL/OCSP) · Verwendungszweck Serverauthentifizierung (Extended Key Usage) · zulässige Algorithmen und Schlüssellängen.
+> **b)** Signatur gültig und Kette bis zu einer vertrauenswürdigen Root-CA (Zwischenzertifikate vorhanden) · Gültigkeitszeitraum · Hostname passt zum Subject Alternative Name (Common Name allein genügt nicht) · nicht widerrufen (CRL/OCSP) · Verwendungszweck Serverauthentifizierung (Extended Key Usage) · zulässige Algorithmen und Schlüssellängen.
 >
-> **c)** Asymmetrische Verfahren lösen das **Schlüsselaustauschproblem** und ermöglichen die Authentifizierung über Zertifikate, sind aber langsam. Symmetrische Verfahren (z. B. AES-GCM) sind schnell und verschlüsseln die Nutzdaten. Mit **(EC)DHE** vereinbaren Client und Server einen gemeinsamen Sitzungsschlüssel, **ohne ihn zu übertragen**. Da für jede Sitzung neue, temporäre Schlüssel erzeugt werden, bleiben aufgezeichnete Sitzungen sicher, selbst wenn später der private Schlüssel des Servers bekannt wird (**Forward Secrecy**). TLS 1.3 erlaubt nur noch Verfahren mit Forward Secrecy.
+> **c)** Asymmetrische Verfahren lösen das **Schlüsselaustauschproblem** und ermöglichen die Authentifizierung über Zertifikate, sind aber langsam. Symmetrische Verfahren (z. B. AES-GCM) sind schnell und verschlüsseln die Nutzdaten. Mit **(EC)DHE** vereinbaren Client und Server einen gemeinsamen Sitzungsschlüssel, **ohne ihn zu übertragen**. Da für jede Sitzung neue, temporäre Schlüssel erzeugt werden, bleiben aufgezeichnete Sitzungen sicher, selbst wenn später der private Schlüssel des Servers bekannt wird (**Forward Secrecy**). TLS 1.3 entfernt den statischen RSA-Schlüsseltransport; PSK-only und 0-RTT-Daten bieten jedoch keine Forward Secrecy.
 >
 > **d)** **Wissen** (Passwort, PIN) · **Besitz** (Smartphone mit Authenticator-App, FIDO2-Token, Smartcard) · **Inhärenz** (Fingerabdruck, Gesichtserkennung). SMS kann durch SIM-Swapping umgeleitet oder durch Phishing-Seiten abgefangen werden; FIDO2 ist an die echte Domain gebunden und damit phishing-resistent, TOTP-Codes entstehen lokal auf dem Gerät.
 >
@@ -252,7 +252,7 @@ Die Außenstelle Bonn hat einen Anschluss mit 50 Mbit/s Download und 10 Mbit/s U
 
 **b) (6 P)** Eine nächtliche Sicherung von **40 GiB** wird über den Upload aus Bonn nach Köln übertragen. Berechnen Sie die Übertragungsdauer in Stunden, Minuten und Sekunden (ohne Overhead).
 
-**c) (6 P)** Die Verfügbarkeit der Anbindung beträgt in Köln 99,9 % und in Bonn 99,5 %. Das VPN funktioniert nur, wenn beide Anschlüsse verfügbar sind. Berechnen Sie die Gesamtverfügbarkeit in Prozent (zwei Nachkommastellen) und die zu erwartende Ausfallzeit pro Jahr in Stunden.
+**c) (6 P)** Die Verfügbarkeit der Anbindung beträgt in Köln 99,9 % und in Bonn 99,5 %. Das VPN funktioniert nur, wenn beide Anschlüsse verfügbar sind. Nehmen Sie statistisch unabhängige Ausfälle und 365 Tage pro Jahr an. Berechnen Sie die Gesamtverfügbarkeit in Prozent (zwei Nachkommastellen) und die zu erwartende Ausfallzeit pro Jahr in Stunden.
 
 **d) (6 P)** Ein Client in Bonn erreicht den Fileserver mit `ping 172.18.67.20`, aber nicht mit `ping fileserver.domblick.local`. Nennen Sie die wahrscheinliche Fehlerursache, ein Werkzeug zur Prüfung und zwei mögliche Ursachen im Detail.
 
@@ -263,7 +263,7 @@ Die Außenstelle Bonn hat einen Anschluss mit 50 Mbit/s Download und 10 Mbit/s U
 >
 > **c)** Reihenschaltung: 0,999 × 0,995 = 0,994005 → **99,40 %**. Ausfall: (1 − 0,994005) × 8.760 h = **52,52 h** pro Jahr.
 >
-> **d)** Die IP-Verbindung funktioniert, die **Namensauflösung (DNS)** nicht. Prüfung mit `nslookup fileserver.domblick.local` bzw. `Resolve-DnsName`, `ipconfig /all` (eingetragener DNS-Server). Mögliche Ursachen: Client in Bonn verwendet einen öffentlichen DNS-Server (z. B. vom Router per DHCP verteilt), der die interne Zone nicht kennt · interner DNS-Server über das VPN nicht erreichbar (Firewallregel für UDP/TCP 53 fehlt) · A-Record fehlt oder ist falsch · falsches DNS-Suffix.
+> **d)** Die IP-Verbindung funktioniert; eine Störung der **Namensauflösung (DNS)** ist wahrscheinlich. Zunächst prüfen, ob der Name tatsächlich zur erwarteten IP-Adresse aufgelöst wird. Prüfung mit `nslookup fileserver.domblick.local` bzw. `Resolve-DnsName`, `ipconfig /all` (eingetragener DNS-Server). Mögliche Ursachen: Client in Bonn verwendet einen öffentlichen DNS-Server (z. B. vom Router per DHCP verteilt), der die interne Zone nicht kennt · interner DNS-Server über das VPN nicht erreichbar (Firewallregel für UDP/TCP 53 fehlt) · A-Record fehlt oder ist falsch · falsches DNS-Suffix.
 >
 > **Bewertungshinweise:** a) Paketgröße 3 P, Bandbreite 3 P, Anteil 1 P · b) Umrechnung 3 P, Ergebnis 3 P · c) Verfügbarkeit 3 P, Ausfallzeit 3 P · d) Ursache 2 P, Werkzeug 1 P, je Detailursache 1,5 P.
 

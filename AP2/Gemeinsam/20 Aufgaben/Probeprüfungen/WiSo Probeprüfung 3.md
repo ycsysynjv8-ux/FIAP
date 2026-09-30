@@ -232,7 +232,7 @@ Ergebnis: ______ €
 > | 4 | 1, 2 | § 40 Abs. 2 BBiG: mindestens drei Mitglieder, Arbeitgeber und Arbeitnehmer in gleicher Zahl sowie mindestens eine Lehrkraft; mindestens zwei Drittel Arbeitgeber- und Arbeitnehmervertretung. |
 > | 5 | 1 | § 14 Abs. 1 JArbSchG; Ausnahmen für über 16-Jährige gibt es nur für bestimmte Branchen (z. B. Gastronomie, Schichtbetrieb bis 23 Uhr), nicht generell. |
 > | 6 | 1 | §§ 32, 33 JArbSchG. |
-> | 7 | **15.06.2026** | Für die Kündigung durch den Arbeitnehmer gilt immer die Grundfrist: 4 Wochen zum 15. oder zum Monatsende (§ 622 Abs. 1 BGB). 06.05. + 4 Wochen = 03.06. → nächster Termin 15.06.2026. |
+> | 7 | **15.06.2026** | Mangels abweichender Vereinbarung gilt hier für die Kündigung durch den Arbeitnehmer die gesetzliche Grundfrist: 4 Wochen zum 15. oder zum Monatsende (§ 622 Abs. 1 BGB). 06.05. + 4 Wochen = 03.06. → nächster Termin 15.06.2026. |
 > | 8 | 2 | § 15 KSchG; weiterer Sonderkündigungsschutz u. a. für Schwangere, Elternzeit, schwerbehinderte Menschen, JAV-Mitglieder. |
 > | 9 | 3 | § 87 Abs. 1 Nr. 2 BetrVG. |
 > | 10 | a 4 · b 2 · c 1 · d 3 | a § 87 Abs. 1 Nr. 6 · b § 102 · c § 90 · d § 99 BetrVG. |

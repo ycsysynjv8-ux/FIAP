@@ -244,6 +244,24 @@ Für die Positionsdaten wird eine NoSQL-Datenbank erwogen. Nennen Sie zwei Vorte
 > - **Vorteile:** horizontale Skalierung, hoher Schreibdurchsatz, flexibles Schema (z. B. Zeitreihen-/Dokumentdatenbank) (2 P)
 > - **Nachteile:** oft keine vollständigen ACID-Transaktionen, keine JOINs/referenzielle Integrität, eigene Abfragesprachen, weniger Know-how im Team (2 P)
 
+### P5.5 ★★ – Open Data und Datathon (8 Punkte)
+📘 **Nachlernen:** [[FIAE-5 Datenmodellierung und Normalisierung#Open Data und verknüpfte Daten|FIAE-5 › Open Data und verknüpfte Daten]]
+
+Eine Kommune veröffentlicht Messwerte zur Luftqualität als CSV, Stationsbeschreibungen als XML und Geräteinformationen als JSON. Die CSV enthält Stationsnamen als Freitext; das XML verwendet stabile Stationskennungen. Die Daten sollen unter einer offenen Lizenz veröffentlicht und miteinander verknüpft werden.
+
+**a) (3 P)** Nennen Sie drei sinnvolle Angaben, die die Nutzenden im Metadatensatz benötigen. Eine Angabe muss die rechtmäßige Weiternutzung betreffen.
+
+**b) (3 P)** Beschreiben Sie eine geeignete Verknüpfungsregel für Messwerte und Stationsbeschreibungen. Gehen Sie auf abweichende Stationsnamen ein.
+
+**c) (2 P)** Ordnen Sie diese vier Schritte den Stufen des 5-Sterne-Modells zu: strukturierte Daten, offenes Format, URIs und Verknüpfung mit weiteren Datensätzen.
+
+> [!success]- Lösung
+> **a)** zum Beispiel Lizenz und erforderliche Namensnennung · Herausgeber/Herkunft · Zeitraum/Saison und Aktualisierungsstand · Felddefinitionen/Einheiten · Format und Konvention für fehlende Werte (3 P)
+>
+> **b)** Stationsnamen zunächst über eine Mappingtabelle auf stabile Stations-IDs abbilden. Jeder Messwert verweist über diese ID auf die passende Stationsbeschreibung (n:1). Stations-ID und Messzeitpunkt können einen Messwert eindeutig identifizieren, wenn je Zeitpunkt und Station genau ein Messwert vorliegt; andernfalls zusätzlich die Messgröße oder eine Messwert-ID verwenden. Mehrdeutige und nicht zugeordnete Treffer protokollieren und prüfen. (3 P)
+>
+> **c)** strukturiert ★★ · offenes Format ★★★ · URIs ★★★★ · Verknüpfung ★★★★★ (je 0,5 P)
+
 ---
 
 ## FIAE-6 Benutzeroberflächen, Barrierefreiheit und Usability

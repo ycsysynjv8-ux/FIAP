@@ -106,12 +106,14 @@ function pruefeFeld(feld, eingabe) {
       if (!n) return { ok: false, hinweis: "Format: vier Oktette 0–255, z. B. 192.168.1.0" };
       return { ok: n === normIp(loes) };
     }
-    case "ipv6": {  // inhaltlich gleich (Kürzung egal), Präfix muss passen, falls angegeben
+    case "ipv6": {  // inhaltlich gleich; ein gefordertes Präfix ist Teil der Antwort
+      if (roh.split("/").length > 2) return { ok: false, hinweis: "Ungültige Präfixangabe." };
       const [adr, pre] = roh.split("/");
       const [ladr, lpre] = String(loes).split("/");
       const a = ipv6Voll(adr), b = ipv6Voll(ladr);
       if (!a) return { ok: false, hinweis: "Keine gültige IPv6-Adresse." };
-      if (pre !== undefined && lpre !== undefined && pre.trim() !== lpre.trim()) return { ok: false, hinweis: "Präfixlänge stimmt nicht." };
+      if (pre !== undefined && (!/^\d{1,3}$/.test(pre.trim()) || Number(pre) > 128)) return { ok: false, hinweis: "Präfixlänge muss zwischen 0 und 128 liegen." };
+      if ((pre === undefined) !== (lpre === undefined) || (lpre !== undefined && Number(pre) !== Number(lpre))) return { ok: false, hinweis: "Präfixlänge fehlt oder stimmt nicht." };
       return { ok: a === b };
     }
     case "ipv6kurz": {  // exakt die kanonische Kurzform
@@ -741,11 +743,11 @@ G["usv-akku"] = {
     const t = q * u * eta / p;
     return {
       titel: this.titel, text: `Der Akku einer USV hat **${de(q)} Ah** bei **${u} V**, Wirkungsgrad η = **${de(eta)}**. Angeschlossene Last: **${p} W**. Wie lange wird überbrückt?`,
-      felder: [z("Überbrückungszeit in Minuten", runde(t * 60, 1), { toleranz: 0.3 }), z("Akkustrom in A", runde(p / u, 2), { toleranz: 0.02 })],
+      felder: [z("Überbrückungszeit in Minuten", runde(t * 60, 1), { toleranz: 0.3 }), z("Akkustrom in A", runde(p / (u * eta), 2), { toleranz: 0.02 })],
       weg: [
         `Gespeicherte Energie: W = Q · U = ${de(q)} Ah × ${u} V = ${de(q * u)} Wh, nutzbar: × ${de(eta)} = ${de(q * u * eta)} Wh`,
         `t = (Q · U · η) / P = ${de(q * u * eta)} Wh / ${p} W = ${de(t, 3)} h = **${de(t * 60, 1)} min**`,
-        `Akkustrom: I = P / U = ${p} / ${u} = **${de(p / u, 2)} A**`,
+        `Akkustrom: I = P_Last / (U · η) = ${p} / (${u} · ${de(eta)}) = **${de(p / (u * eta), 2)} A** (konstante Akkuspannung und konstanter Wirkungsgrad angenommen)`,
       ],
     };
   },
@@ -1326,7 +1328,7 @@ G["verfuegbarkeit-kombi"] = {
       titel: this.titel,
       text: parallel
         ? `Ein Standort ist über **zwei unabhängige Internetleitungen** angebunden (Verfügbarkeit **${de(a * 100, 1)} %** und **${de(b * 100, 1)} %**). Der Standort ist nur offline, wenn **beide** gleichzeitig ausfallen. Ein Ausfall kostet **${umsatz} € Umsatz pro Stunde**.`
-        : `Ein Webshop braucht **Firewall** (Verfügbarkeit **${de(a * 100, 1)} %**) **und** **Datenbankserver** (**${de(b * 100, 1)} %**) – fällt eine Komponente aus, steht der Shop. Ein Ausfall kostet **${umsatz} € Umsatz pro Stunde**.`,
+        : `Ein Webshop braucht **Firewall** (Verfügbarkeit **${de(a * 100, 1)} %**) **und** **Datenbankserver** (**${de(b * 100, 1)} %**) – fällt eine Komponente aus, steht der Shop. Die Ausfälle beider Komponenten werden als statistisch unabhängig angenommen. Ein Ausfall kostet **${umsatz} € Umsatz pro Stunde**.`,
       felder: [z("Gesamtverfügbarkeit in %", runde(g * 100, 4), { toleranz: 0.0005 }), z("Erwartete Ausfallzeit pro Jahr in h (24/7)", runde(aus, 2), { toleranz: 0.02 }), z("Erwarteter Umsatzverlust pro Jahr in €", runde(aus * umsatz, 2), { toleranz: Math.max(umsatz * 0.02, 1) })],
       weg: [parallel ? `Parallel: 1 − (1 − ${de(a, 3)}) × (1 − ${de(b, 3)}) = 1 − ${de(1 - a, 3)} × ${de(1 - b, 3)} = **${de(g * 100, 4)} %**` : `Reihe: ${de(a, 3)} × ${de(b, 3)} = **${de(g * 100, 4)} %** (Reihe ist immer schlechter als das schwächste Glied)`,
         `Ausfall: 8.760 h × ${de(1 - g, 6)} = **${de(aus, 2)} h**`, `Umsatzverlust: ${de(aus, 2)} h × ${umsatz} € = **${euro(aus * umsatz)}**`],
@@ -1448,19 +1450,19 @@ G["sql-ergebnis"] = {
     const ort = wahl(zeilen).ort, grenze = rnd(8, 30) * 50;
     const vorlagen = [
       () => ({ sql: `SELECT COUNT(*)\nFROM Kunde\nWHERE Ort = '${ort}' AND Aktiv = 1;`, erg: zeilen.filter(r => r.ort === ort && r.aktiv).length, erkl: `Zeilen mit Ort = ${ort} **und** Aktiv = 1 zählen` }),
-      () => ({ sql: `SELECT SUM(Umsatz)\nFROM Kunde\nWHERE Umsatz > ${grenze};`, erg: zeilen.filter(r => r.umsatz > grenze).reduce((s, r) => s + r.umsatz, 0), erkl: `Nur Umsätze **größer** ${grenze} (nicht gleich) addieren` }),
-      () => ({ sql: `SELECT MAX(Umsatz)\nFROM Kunde\nWHERE Ort <> '${ort}';`, erg: Math.max(0, ...zeilen.filter(r => r.ort !== ort).map(r => r.umsatz)), erkl: `Größter Umsatz aller Kunden **außerhalb** von ${ort}` }),
+      () => { const sel = zeilen.filter(r => r.umsatz > grenze); return { sql: `SELECT SUM(Umsatz)\nFROM Kunde\nWHERE Umsatz > ${grenze};`, erg: sel.length ? sel.reduce((s, r) => s + r.umsatz, 0) : null, erkl: `Nur Umsätze **größer** ${grenze} (nicht gleich) addieren` }; },
+      () => { const sel = zeilen.filter(r => r.ort !== ort); return { sql: `SELECT MAX(Umsatz)\nFROM Kunde\nWHERE Ort <> '${ort}';`, erg: sel.length ? Math.max(...sel.map(r => r.umsatz)) : null, erkl: `Größter Umsatz aller Kunden **außerhalb** von ${ort}` }; },
       () => { const gruppen = {}; zeilen.forEach(r => { gruppen[r.ort] = (gruppen[r.ort] || 0) + 1; });
         return { sql: "SELECT Ort, COUNT(*)\nFROM Kunde\nGROUP BY Ort\nHAVING COUNT(*) >= 2;", erg: Object.values(gruppen).filter(n => n >= 2).length, erkl: `Gruppen je Ort: ${Object.entries(gruppen).map(([o, n]) => `${o} ${n}`).join(", ")} → HAVING behält nur Gruppen mit mindestens 2 Kunden. Gefragt ist die **Anzahl der Ergebniszeilen**` }; },
-      () => { const sel = zeilen.filter(r => r.aktiv); return { sql: "SELECT AVG(Umsatz)\nFROM Kunde\nWHERE Aktiv = 1;", erg: sel.length ? runde(sel.reduce((s, r) => s + r.umsatz, 0) / sel.length, 2) : 0, erkl: `Durchschnitt der ${sel.length} aktiven Kunden` }; },
+      () => { const sel = zeilen.filter(r => r.aktiv); return { sql: "SELECT AVG(Umsatz)\nFROM Kunde\nWHERE Aktiv = 1;", erg: sel.length ? runde(sel.reduce((s, r) => s + r.umsatz, 0) / sel.length, 2) : null, erkl: `Durchschnitt der ${sel.length} aktiven Kunden` }; },
     ];
-    let v; do { v = wahl(vorlagen)(); } while (!v.erg && zufall() < 0.9);
+    const v = wahl(vorlagen)();
     const frage = v.sql.split("\n")[0].includes("Ort, COUNT") ? "Wie viele Zeilen liefert die Abfrage?" : "Welchen Wert liefert die Abfrage?";
     return {
       titel: this.titel, text: `Tabelle **Kunde**. ${frage}`,
       tabelle: [["KundenID", "Ort", "Umsatz", "Aktiv"], ...zeilen.map(r => [r.id, r.ort, r.umsatz, r.aktiv])],
-      code: v.sql, felder: [z("Ergebnis", v.erg, { toleranz: 0.01 })],
-      weg: [v.erkl, `Ergebnis: **${de(v.erg, 2)}**`, "Reihenfolge der Auswertung: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY."],
+      code: v.sql, felder: [v.erg === null ? f("Ergebnis (Zahl oder NULL)", "text", "NULL") : z("Ergebnis", v.erg, { toleranz: 0.01 })],
+      weg: [v.erkl, `Ergebnis: **${v.erg === null ? "NULL" : de(v.erg, 2)}**`, "Ohne passende Zeilen liefern SUM, MAX und AVG NULL; COUNT liefert 0. Reihenfolge der Auswertung: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY."],
     };
   },
 };

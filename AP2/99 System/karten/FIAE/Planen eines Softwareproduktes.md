@@ -111,14 +111,14 @@ Welche HTTP-Methoden gehören zu CRUD?::Create – POST · Read – GET · Updat
 Unterschied PUT und PATCH?::PUT ersetzt die Ressource vollständig · PATCH ändert Teile
 Was bedeutet idempotent?::Mehrfaches Ausführen hat dieselbe Wirkung wie einmaliges (GET, PUT, DELETE – nicht POST)
 Bedeutung der Statuscode-Klassen?::1xx Info · 2xx Erfolg · 3xx Umleitung · 4xx Clientfehler · 5xx Serverfehler
-Unterschied 401 und 403?::401: nicht authentifiziert · 403: authentifiziert, aber keine Berechtigung
+Unterschied 401 und 403?::401: gültige Authentifizierung fehlt · 403: Server verweigert den Zugriff; auch ohne vorherige Authentifizierung möglich
 Aus welchen Teilen besteht ein HTTP-Request?::Request-Zeile (Methode, Pfad, Version), Header, Leerzeile, optional Body
 Unterschied wohlgeformtes und gültiges XML?::Wohlgeformt: Syntaxregeln eingehalten · gültig: entspricht zusätzlich einer XSD/DTD
 Vorteile von JSON gegenüber XML?::Kompakter, leichter lesbar, direkt in JavaScript nutzbar
 Was ist eine Microservice-Architektur?::Anwendung aus kleinen, unabhängig deploybaren Diensten mit eigenen Daten, Kommunikation über APIs
 Was ist CI/CD?::Continuous Integration (automatisch bauen/testen bei jedem Commit) und Continuous Delivery/Deployment (automatisch ausliefern)
 Wozu dient Versionsverwaltung wie Git?::Änderungen nachvollziehen, parallel arbeiten (Branches), zusammenführen, frühere Stände wiederherstellen
-Unterschied Compiler und Interpreter?::Compiler übersetzt vorab das ganze Programm in Maschinencode · Interpreter führt den Quelltext zur Laufzeit Anweisung für Anweisung aus
+Unterschied Compiler und Interpreter?::Compiler übersetzt Code in eine Zieldarstellung (z. B. Maschinen- oder Bytecode); Interpreter führt Programme aus. Bytecode und JIT können beide Ansätze verbinden.
 Was ist LPWAN?::Low Power Wide Area Network (z. B. LoRaWAN) – große Reichweite, wenig Energie, geringe Datenrate für IoT-Sensoren
 Was ist ein cyber-physisches System?::Verbund aus Sensoren, Steuerung mit eingebetteter Software und Aktoren, der vernetzt auf die physische Welt einwirkt (z. B. automatische Bewässerung)
 Unterschied Sensor und Aktor?::Sensor misst eine physikalische Größe · Aktor setzt ein Steuersignal in eine Wirkung um (Ventil, Motor)
@@ -140,4 +140,7 @@ Was bedeutet Datenminimierung?::Nur die für den Zweck nötigen personenbezogene
 Welche Anforderungen gelten für eine wirksame Einwilligung?::Freiwillig, informiert, für einen bestimmten Zweck, eindeutig (aktive Handlung), jederzeit widerrufbar
 Was ist Code-Signing?::Signieren von Software, damit Nutzer Herkunft und Unverändertheit prüfen können
 Wie funktioniert Kerberos?::Key Distribution Center stellt zeitlich begrenzte Tickets aus (Ticket Granting Ticket, Servicetickets) – Single Sign-on ohne erneute Passwortübertragung; Uhren müssen synchron sein
+Was ist Open Data?::Daten, die unter einer offenen Lizenz zur Weiterverwendung bereitgestellt werden; Lizenzbedingungen und erforderliche Namensnennung beachten
+Welche fünf Stufen umfasst das Linked-Open-Data-Sterne-Modell?::Offene Lizenz · strukturierte Daten · offenes Format · HTTP-URIs · Verknüpfungen zu anderen Datensätzen
+Warum reichen Namen als Schlüssel für ein Record Linkage oft nicht?::Schreibvarianten oder Namensgleichheit können zu falschen Zuordnungen führen; stabile IDs und dokumentierte Zuordnungsregeln nutzen
 

@@ -125,6 +125,16 @@ Lösungen: Daten **bereinigen** (manuell oder per Skript), Importprogramm mit **
 
 ## 4. NoSQL und große Datenmengen
 
+### Open Data und verknüpfte Daten
+
+**Open Data** sind Daten, die unter einer offenen Lizenz so bereitgestellt werden, dass sie weiterverwendet werden dürfen. Ein öffentlich erreichbares Portal allein macht Daten noch nicht „offen“: Lizenz, Nutzungsbedingungen und erforderliche Namensnennung müssen geprüft werden. Vor dem Zusammenführen sind außerdem Datenqualität, Erhebungszeitraum, Definitionen, Herkunft und Personenbezug zu klären.
+
+**Fünf Sterne für Linked Open Data (Berners-Lee):** ★ offene Lizenz im Web · ★★ strukturierte, maschinenlesbare Daten · ★★★ offenes Format wie CSV statt proprietärem Tabellenformat · ★★★★ stabile HTTP-URIs für Datensätze und Dinge · ★★★★★ Verknüpfungen zu anderen Datensätzen. Die Stufen bauen aufeinander auf. Bei vier und fünf Sternen kommen Identifikatoren und Verknüpfungen hinzu; die Daten müssen weiterhin offen lizenziert sein. [W3C: 5-Star Linked Data](https://www.w3.org/2011/gld/wiki/5_Star_Linked_Data)
+
+**Heterogene Daten** liegen in unterschiedlichen Formaten oder mit abweichender Struktur vor, etwa Messwerte als CSV, Stationsbeschreibungen als XML und Geräteinformationen als JSON. Gleiche Namen reichen nicht als sicherer Schlüssel. Eine Verknüpfung (Record Linkage) braucht nachvollziehbare Schlüssel oder eine dokumentierte Zuordnungsregel, zum Beispiel Stations-ID + Messzeitpunkt für einen Messwert. Stationsbeschreibungen werden über die Stations-ID angebunden; abweichende Stationsnamen müssen zunächst auf stabile IDs abgebildet werden. Doppelte, nicht zugeordnete und widersprüchliche Datensätze werden protokolliert und fachlich geprüft, statt stillschweigend verworfen.
+
+Ein **Metadatensatz** hält zum Beispiel Titel, Herausgeber, Erstellungszeitraum, Aktualisierungsdatum, Format, Lizenz, Felddefinitionen und Herkunft fest. Für wiederverwendbare Daten dokumentiert er auch Maßeinheiten, Zeitzone, fehlende Werte und stabile Kennungen.
+
 **NoSQL-Vorteile:** **flexibles Schema** (neue Felder ohne Migration), schnellere Umsetzung neuer Funktionen, gute **horizontale Skalierung**, schnelle Abfragen bei komplexen oder verschachtelten Strukturen, Datenstruktur passt zum Programm (Dokumente = Objekte). Arten: Dokument (MongoDB), Key-Value (Redis), Spalten (Cassandra), Graph (Neo4j).
 
 ### Speicherbedarf abschätzen
@@ -150,7 +160,8 @@ Bildgröße = Breite × Höhe × Farbtiefe ÷ 8 (unkomprimiert) · × Anzahl Bil
 - ER: Entität (Rechteck), Attribut (Oval, Schlüssel unterstrichen), Beziehung (Raute), Kardinalität 1:1, 1:n, n:m.
 - Tabellen: je Entität eine Tabelle; 1:n → FK auf n-Seite; n:m → Zwischentabelle (+ Beziehungsattribute).
 - Redundanz → Änderungs-, Einfüge-, Löschanomalie. 1. NF atomar, 2. NF voll abhängig, 3. NF keine transitiven Abhängigkeiten.
-- Datenqualität: Formate, Dubletten, Freitext, fehlende Werte → bereinigen, validieren, Auswahllisten.
+- Datenqualität: Formate, Dubletten, Freitext, fehlende Werte → bereinigen, validieren, Auswahllisten. Open Data braucht eine offene Lizenz und brauchbare Metadaten; heterogene Daten über stabile Schlüssel und dokumentierte Zuordnungsregeln verbinden.
+- Fünf Sterne: offene Lizenz → strukturiert → offenes Format → URIs → Verknüpfungen mit anderen Datensätzen.
 - NoSQL: flexibel, skalierbar. Speicher: Pixel × Bit ÷ 8 × Anzahl → TiB.
 
 ## Direkt üben

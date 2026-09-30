@@ -144,7 +144,7 @@ Schreibweise: `- inventarNr : String` (Sichtbarkeit Name : Typ) und `+ getAlter(
 | Begriff | Erklärung |
 |---|---|
 | **Compiler** | übersetzt den **gesamten** Quelltext **vor** der Ausführung in Maschinencode (bzw. Bytecode). Fehler werden vorher gemeldet, das Programm läuft schnell. Beispiele: C, C++, Go, Rust; Java/C# kompilieren in Bytecode für eine virtuelle Maschine |
-| **Interpreter** | führt den Quelltext **Anweisung für Anweisung** zur Laufzeit aus. Schnell ausprobiert, plattformunabhängig, aber langsamer; Fehler erst beim Erreichen der Zeile. Beispiele: Python, PHP, JavaScript, PowerShell (Skriptsprachen) |
+| **Interpreter** | führt ein Programm zur Laufzeit aus. Implementierungen können zuvor Bytecode erzeugen oder JIT-Kompilierung nutzen. Syntaxfehler können deshalb bereits vor der Ausführung erkannt werden. Beispiele: CPython und PowerShell; JavaScript-Engines kombinieren häufig Interpretation und JIT |
 | **Linker** | verbindet die kompilierten Teile (Objektdateien) und **Bibliotheken** zu einem ausführbaren Programm |
 | **IDE** | integrierte Entwicklungsumgebung: Editor mit Syntaxhervorhebung und Autovervollständigung, Compiler/Interpreter, **Debugger**, Versionsverwaltung – z. B. Visual Studio, IntelliJ, VS Code |
 | **Bibliothek** (Library) | fertiger, wiederverwendbarer Code, den man ins eigene Programm einbindet (z. B. für Datumsrechnung, PDF-Erzeugung) |
@@ -224,7 +224,7 @@ flowchart LR
 - Use Case: wer darf was – Akteure außen, Ellipsen innen, «include» immer, «extend» optional.
 - Aktivitätsdiagramm: Start ●, Ende ◉, Aktion, Raute mit [Bedingungen], Balken für Parallelität, Swimlanes für Zuständigkeiten.
 - Klassendiagramm: Name/Attribute/Methoden, + − # ~, Multiplizitäten, ◇ Aggregation, ◆ Komposition, ▷ Vererbung.
-- Compiler übersetzt vorher komplett, Interpreter zeilenweise zur Laufzeit; Linker bindet zusammen; IDE, Bibliothek, Framework, API.
+- Compiler übersetzt Code in eine andere Darstellung (z. B. Maschinen- oder Bytecode), Interpreter führt Programme aus; Mischformen und JIT sind möglich; Linker bindet zusammen; IDE, Bibliothek, Framework, API.
 - Wireframe → Mockup → Prototyp; Masken logisch, geprüft, barrierefrei.
 
 ## Selbstcheck

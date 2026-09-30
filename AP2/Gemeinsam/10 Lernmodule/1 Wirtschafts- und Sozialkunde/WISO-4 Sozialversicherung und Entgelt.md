@@ -77,7 +77,7 @@ Die Sätze werden jährlich angepasst – in der Prüfung sind sie **immer vorge
 
 **Steuerklassen:** I ledig · II alleinerziehend · III verheiratet (höheres Einkommen) · IV verheiratet (gleich verdienend) · V verheiratet (Partner in III) · VI zweites Arbeitsverhältnis.
 
-**Minijob:** Verdienst bis zur Minijob-Grenze (2026: **603 €** monatlich, gekoppelt an den Mindestlohn von 13,90 €/h) – Arbeitnehmer zahlen keine Steuern und nur ggf. Rentenversicherung (Befreiung möglich), der Arbeitgeber pauschale Abgaben.
+**Minijob:** Verdienst bis zur Minijob-Grenze (2026: **603 €** monatlich, gekoppelt an den Mindestlohn von 13,90 €/h) – Arbeitnehmer zahlen grundsätzlich einen Rentenversicherungsanteil (Befreiung möglich); der Arbeitgeber leistet pauschale Abgaben. Der Verdienst ist steuerpflichtig: häufig pauschal mit 2 %, alternativ individuell nach Lohnsteuermerkmalen. Die Pauschsteuer kann wirtschaftlich auf den Arbeitnehmer abgewälzt werden.
 
 ---
 

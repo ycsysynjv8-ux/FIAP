@@ -104,7 +104,7 @@ flowchart TB
 ## 5. Ausbildung (BBiG)
 **Duales System:** Ausbildung im **Betrieb** (Praxis, Ausbildungsrahmenplan) und in der **Berufsschule** (Theorie, Lernfelder). Zuständige Stelle für IT-Berufe: **IHK** (Eintragung des Vertrags, Prüfungen, Überwachung).
 
-**Ausbildungsvertrag** (Berufsbildungsgesetz): Inhalte werden spätestens vor Beginn schriftlich niedergelegt – u. a. Art und Ziel der Ausbildung, **Beginn und Dauer**, Ausbildungsstätte, tägliche Arbeitszeit, **Probezeit (1–4 Monate)**, **Vergütung** (mind. Mindestausbildungsvergütung), **Urlaub**, Kündigungsvoraussetzungen.
+**Ausbildungsvertrag** (Berufsbildungsgesetz): Die wesentlichen Inhalte werden unverzüglich nach Vertragsschluss, spätestens vor Beginn in **Textform** abgefasst (§ 11 BBiG; elektronisch speicher- und ausdruckbar, Empfangsnachweis erforderlich) – u. a. Art und Ziel der Ausbildung, **Beginn und Dauer**, Ausbildungsstätte, tägliche Arbeitszeit, **Probezeit (1–4 Monate)**, **Vergütung** (mind. Mindestausbildungsvergütung), **Urlaub**, Kündigungsvoraussetzungen.
 
 | Pflichten der Auszubildenden | Pflichten des Ausbildenden |
 |---|---|

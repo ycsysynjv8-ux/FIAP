@@ -120,7 +120,7 @@ Q = Akkukapazität (Ah), U = Akkuspannung (V), η = Wirkungsgrad des Wechselrich
 > [!example] Beispiel
 > Akku 9 Ah, 24 V, η = 0,85, Last 300 W:
 > t = 9 × 24 × 0,85 / 300 = 183,6 Wh / 300 W = 0,612 h = **36,7 min**
-> Akkustrom: I = P / U = 300 / 24 = **12,5 A**
+> Akkustrom: I = P_Last / (U · η) = 300 / (24 · 0,85) ≈ **14,71 A**. Dabei werden konstante Akkuspannung und konstanter Wirkungsgrad angenommen.
 > Merke: Bei doppelter Last halbiert sich die Zeit – in der Realität sogar etwas mehr, weil Akkus bei hohem Strom weniger Kapazität liefern.
 
 ### Betrieb

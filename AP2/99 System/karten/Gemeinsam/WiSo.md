@@ -30,7 +30,7 @@ Was muss der Betrieb dem Azubi kostenlos stellen?::Ausbildungsmittel (Werkzeuge,
 
 ## WISO-2 Arbeitsvertrag, Kündigung und Arbeitsschutz
 
-Was regelt das Nachweisgesetz?::Arbeitgeber muss die wesentlichen Vertragsbedingungen schriftlich aushändigen
+Was regelt das Nachweisgesetz?::Den Nachweis wesentlicher Arbeitsbedingungen; unter gesetzlichen Voraussetzungen ist elektronische Textform möglich. Beschäftigte können einen schriftlichen Nachweis verlangen; für bestimmte Branchen gelten Ausnahmen.
 Gesetzliche Grundkündigungsfrist?::4 Wochen zum 15. oder zum Ende eines Kalendermonats
 Kündigungsfrist des Arbeitgebers nach 2, 5, 8, 10 Jahren?::1, 2, 3, 4 Monate zum Monatsende (weiter: 12 J. 5, 15 J. 6, 20 J. 7 Monate)
 Welche Form muss eine Kündigung haben?::Schriftform mit eigenhändiger Unterschrift – keine E-Mail
@@ -57,8 +57,10 @@ Was bedeutet Tarifautonomie?::Tarifparteien handeln Arbeitsbedingungen ohne staa
 Wer sind die Tarifparteien?::Gewerkschaften und Arbeitgeberverbände bzw. einzelne Arbeitgeber
 Unterschied Mantel- und Entgelttarifvertrag?::Mantel: allgemeine Bedingungen, lange Laufzeit · Entgelt: Löhne/Gehälter, kurze Laufzeit
 Was ist die Friedenspflicht?::Während der Laufzeit eines Tarifvertrags keine Arbeitskämpfe über dessen Inhalte
-Was bedeutet das Günstigkeitsprinzip?::Abweichungen vom Tarifvertrag sind nur zugunsten der Beschäftigten erlaubt
-Welche Mehrheit braucht die Urabstimmung für einen Streik?::Mindestens 75 % der Gewerkschaftsmitglieder
+Was bedeutet das Günstigkeitsprinzip?::Einzelvertragliche Abweichungen vom Tarifvertrag sind zugunsten Beschäftigter zulässig; außerdem können tarifliche Öffnungsklauseln Abweichungen erlauben. Für Betriebsvereinbarungen zusätzlich die Tarifsperre beachten.
+Wie berechnet man einen Prozesskostensatz?::Prozesskosten durch die Menge des passenden Kostentreibers teilen
+Was macht einen geeigneten Kostentreiber aus?::Er bildet den Aufwand eines Prozesses möglichst gut ab, zum Beispiel Zahl der Bestellungen für die Bestellbearbeitung
+Welche Mehrheit braucht die Urabstimmung für einen Streik?::Die Gewerkschaftssatzung legt die Quote fest; im Übungsmodell werden mindestens 75 % angenommen. Keine allgemeine gesetzliche Quote.
 Was ist eine Aussperrung?::Arbeitskampfmittel der Arbeitgeber – Beschäftigte werden ohne Lohn von der Arbeit ausgeschlossen
 
 ## WISO-4 Sozialversicherung und Entgelt
@@ -81,7 +83,7 @@ Was ist der Generationenvertrag?::Die heutigen Beitragszahler finanzieren die he
 Wer ist Kaufmann nach HGB?::Wer ein Handelsgewerbe betreibt (Istkaufmann), wer sich eintragen lässt (Kannkaufmann) sowie Handelsgesellschaften (Formkaufmann)
 Was ist das Handelsregister?::Öffentliches Verzeichnis der Kaufleute beim Amtsgericht
 Mindeststammkapital der GmbH?::25 000 €
-Mindestkapital der UG (haftungsbeschränkt)?::1 € – 25 % des Jahresüberschusses als Rücklage, bis 25 000 € erreicht sind
+Mindestkapital der UG (haftungsbeschränkt)?::1 € – 25 % des um Verlustvortrag geminderten Jahresüberschusses als Rücklage; Pflicht entfällt erst bei wirksamer Stammkapitalerhöhung auf mindestens 25 000 €
 Mindestgrundkapital der AG?::50 000 €
 Wie haften OHG-Gesellschafter?::Unbeschränkt, unmittelbar (persönlich) und solidarisch (gesamtschuldnerisch)
 Wie haften Kommanditisten?::Nur bis zur Höhe ihrer Einlage

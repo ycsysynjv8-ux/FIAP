@@ -42,10 +42,10 @@ Gesetzliche Grundlage: **Betriebsverfassungsgesetz (BetrVG)**. Er vertritt die I
 | Regel | Inhalt |
 |---|---|
 | **Voraussetzung** | Betrieb mit mindestens **5 wahlberechtigten** Arbeitnehmern, davon **3 wählbar** |
-| **aktives Wahlrecht** (wählen) | alle Arbeitnehmer ab **16 Jahren** (einschließlich Azubis, Leiharbeitnehmer nach 3 Monaten Einsatz) |
+| **aktives Wahlrecht** (wählen) | alle Arbeitnehmer ab **16 Jahren** (einschließlich Azubis, Leiharbeitnehmer bei einem vorgesehenen Einsatz von länger als 3 Monaten) |
 | **passives Wahlrecht** (gewählt werden) | Wahlberechtigte ab **18 Jahren**, die **mindestens 6 Monate** dem Betrieb angehören |
 | **Amtszeit** | **4 Jahre**, regelmäßige Wahlen alle 4 Jahre im Frühjahr |
-| **Größe** | 5–20 Wahlberechtigte: 1 Mitglied · 21–50: 3 · 51–100: 5 · 101–200: 7 … |
+| **Größe** | 5–20 wahlberechtigte Arbeitnehmer: 1 Mitglied · 21–50 Wahlberechtigte: 3 · 51–100 Arbeitnehmer: 5 · 101–200 Arbeitnehmer: 7 … |
 | **Schutz** | besonderer Kündigungsschutz, Freistellung für BR-Arbeit, Kosten trägt der Arbeitgeber |
 
 **Rechte – von schwach nach stark:**
@@ -57,7 +57,7 @@ Gesetzliche Grundlage: **Betriebsverfassungsgesetz (BetrVG)**. Er vertritt die I
 | **Mitwirkung / Widerspruch** | kann Zustimmung verweigern | Einstellung, Versetzung, Eingruppierung (§ 99) |
 | **Mitbestimmung** (echt) | ohne Zustimmung keine Umsetzung; bei Streit entscheidet die **Einigungsstelle** | **soziale Angelegenheiten (§ 87):** Beginn/Ende der Arbeitszeit, Pausen, Überstunden, Urlaubsplan, **technische Einrichtungen zur Leistungs- oder Verhaltenskontrolle** (z. B. Zeiterfassung, Ticketsystem, Videoüberwachung), Entlohnungsgrundsätze, Arbeitsschutz, Betriebsordnung |
 
-Weitere Organe: **Betriebsversammlung** (vierteljährlich, Bericht des Betriebsrats), **Wirtschaftsausschuss** (ab 100 Beschäftigten), **Gesamt- und Konzernbetriebsrat**. In großen Kapitalgesellschaften gibt es außerdem die **Unternehmensmitbestimmung** im Aufsichtsrat (ab 500 bzw. 2 000 Beschäftigten).
+Weitere Organe: **Betriebsversammlung** (vierteljährlich, Bericht des Betriebsrats), **Wirtschaftsausschuss** (in Unternehmen mit in der Regel mehr als 100 ständig Beschäftigten), **Gesamt- und Konzernbetriebsrat**. In großen Kapitalgesellschaften gibt es außerdem die **Unternehmensmitbestimmung** im Aufsichtsrat (grundsätzlich bei mehr als 500 bzw. mehr als 2 000 Beschäftigten; Rechtsform und gesetzliche Ausnahmen beachten).
 
 ### Betriebsvereinbarung
 Schriftlicher Vertrag zwischen **Arbeitgeber (Geschäftsleitung) und Betriebsrat** über betriebliche Regeln (Gleitzeit, Homeoffice, IT-Nutzung, Urlaubsgrundsätze). Gilt **unmittelbar** für alle Beschäftigten des Betriebs. Darf nichts regeln, was üblicherweise im **Tarifvertrag** geregelt ist (Lohnhöhe), außer der Tarifvertrag erlaubt es.
@@ -92,11 +92,14 @@ Die JAV handelt **über den Betriebsrat** – sie kann nicht selbst mit dem Arbe
 
 **Grundsätze:**
 - **Tarifbindung:** Der Tarifvertrag gilt unmittelbar für **Gewerkschaftsmitglieder** bei **tarifgebundenen Arbeitgebern** – in der Praxis wenden Arbeitgeber ihn meist auf alle an. **Allgemeinverbindlich** erklärt gilt er für die ganze Branche.
-- **Günstigkeitsprinzip:** Abweichungen vom Tarifvertrag (im Arbeitsvertrag oder in einer Betriebsvereinbarung) sind nur **zugunsten der Arbeitnehmer** zulässig.
+- **Günstigkeitsprinzip:** Abweichende einzelvertragliche Regelungen sind zulässig, soweit sie **zugunsten der Arbeitnehmer** wirken oder der Tarifvertrag sie erlaubt (§ 4 Abs. 3 TVG). Für Betriebsvereinbarungen gilt zusätzlich die **Tarifsperre** nach § 77 Abs. 3 BetrVG; günstiger allein genügt dort nicht.
 - **Friedenspflicht:** Während der Laufzeit eines Tarifvertrags sind Streiks über dessen Inhalte verboten.
 - **Rangfolge:** Gesetz → Tarifvertrag → Betriebsvereinbarung → Arbeitsvertrag (die höhere Ebene setzt Mindeststandards).
 
 ### Ablauf einer Tarifrunde
+> [!info] Annahmen für das folgende Ablaufbeispiel
+> Schlichtung und Abstimmungsregeln hängen von Vereinbarungen und Gewerkschaftssatzung ab. Hier werden eine vereinbarte Schlichtung sowie Quoten von mindestens 75 % für den Streik und mindestens 25 % für die Ergebnisannahme angenommen. Das sind keine allgemeinen gesetzlichen Vorgaben.
+
 ```mermaid
 flowchart TD
   A["Kündigung des alten Tarifvertrags"] --> B["Tarifverhandlungen"]
@@ -120,7 +123,7 @@ flowchart TD
 > - Passives Wahlrecht Betriebsrat „ab 16“ – aktives ab 16, **passives ab 18 und 6 Monate Betrieb**.
 > - JAV ohne Betriebsrat für möglich halten.
 > - Mitbestimmung und Mitwirkung verwechseln – **echte Mitbestimmung** gibt es vor allem bei sozialen Angelegenheiten (§ 87).
-> - Urabstimmungsquoten vertauschen: **75 % für Streik**, **25 % für die Annahme** des Ergebnisses.
+> - Im dargestellten Übungsmodell die Urabstimmungsquoten vertauschen: **75 % für Streik**, **25 % für die Annahme** des Ergebnisses.
 
 ## Verwandte Themen
 - [[WISO-1 Ausbildung und Jugendarbeitsschutz]] – Rechte der Azubis
@@ -133,7 +136,7 @@ flowchart TD
 - Rechte: Information < Anhörung (Kündigung) < Beratung < Mitwirkung (Einstellung) < Mitbestimmung (§ 87, z. B. Überwachungstechnik).
 - Betriebsvereinbarung = Arbeitgeber + Betriebsrat.
 - JAV: ≥ 5 Jugendliche unter 18 oder Azubis (jedes Alters) + Betriebsrat; wählbar < 25 oder Azubi, nicht BR-Mitglied; Amtszeit 2 Jahre.
-- Tarifautonomie, Manteltarif vs. Entgelttarif, Günstigkeitsprinzip, Friedenspflicht. Tarifrunde: Kündigung → Verhandlung → Schlichtung → Urabstimmung 75 % → Streik → Verhandlung → Urabstimmung 25 % → neuer Vertrag.
+- Tarifautonomie, Manteltarif vs. Entgelttarif, Günstigkeitsprinzip, Friedenspflicht. Beispiel einer Tarifrunde mit vereinbarter Schlichtung und den hier angenommenen Quoten: Kündigung → Verhandlung → Schlichtung → Urabstimmung 75 % → Streik → Verhandlung → Urabstimmung 25 % → neuer Vertrag.
 
 ## Selbstcheck
 ```dataviewjs

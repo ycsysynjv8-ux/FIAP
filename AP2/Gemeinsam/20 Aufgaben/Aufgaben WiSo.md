@@ -142,7 +142,7 @@ a) Erklären Sie Tarifautonomie. b) Unterscheiden Sie Manteltarifvertrag und Ent
 ### W3.4 ★ – Ablauf einer Tarifrunde (4 Punkte)
 📘 **Nachlernen:** [[WISO-3 Mitbestimmung und Tarifrecht#Ablauf einer Tarifrunde|WISO-3 › Ablauf einer Tarifrunde]]
 
-Bringen Sie in die richtige Reihenfolge: Streik · Kündigung des alten Tarifvertrags · Urabstimmung (mind. 75 %) · Verhandlungen scheitern · Schlichtung · zweite Urabstimmung (mind. 25 % für Annahme) · neue Verhandlungen und Einigung.
+Für diese Aufgabe gelten eine vereinbarte Schlichtung und die nachfolgend genannten Abstimmungsquoten. Bringen Sie in die richtige Reihenfolge: Streik · Kündigung des alten Tarifvertrags · Urabstimmung (mind. 75 %) · Verhandlungen scheitern · Schlichtung · zweite Urabstimmung (mind. 25 % für Annahme) · neue Verhandlungen und Einigung.
 
 > [!success]- Lösung
 > Kündigung des alten TV → Verhandlungen scheitern → Schlichtung → Urabstimmung (≥ 75 %) → Streik → neue Verhandlungen und Einigung → zweite Urabstimmung (≥ 25 %) (4 P, je Fehler −1)
@@ -215,6 +215,24 @@ Darf a) die Prokuristin ein Grundstück verkaufen, b) die Prokuristin einen Kred
 
 > [!success]- Lösung (je 1 P)
 > a) **nein** – Grundstücke veräußern/belasten nur mit besonderer Befugnis · b) **ja** · c) **nein** – Prozessführung erfordert besondere Befugnis · d) **ja**
+
+### W5.5 ★★ – Prozesskostenrechnung (6 Punkte)
+📘 **Nachlernen:** [[WISO-5 Unternehmen, Rechtsformen und Organisation#6. Prozesskostenrechnung (Vertiefung)|WISO-5 › Prozesskostenrechnung]]
+
+Ein IT-Dienstleister ordnet dem Prozess „Bestellungen bearbeiten“ jährliche Gemeinkosten von **54 000 €** zu. Im Jahr werden **900 Bestellungen** bearbeitet. Produkt A verursacht 240, Produkt B 360 dieser Bestellungen.
+
+**a) (2 P)** Berechnen Sie den Prozesskostensatz je Bestellung.
+
+**b) (2 P)** Berechnen Sie die dem Produkt A und dem Produkt B zugerechneten Prozesskosten.
+
+**c) (2 P)** Erläutern Sie, wann die Anzahl der Bestellungen ein geeigneter Kostentreiber ist und nennen Sie eine mögliche Grenze dieses Modells.
+
+> [!success]- Lösung
+> **a)** 54 000 € ÷ 900 Bestellungen = **60 € je Bestellung**. (2 P)
+>
+> **b)** A: 240 × 60 € = **14 400 €** · B: 360 × 60 € = **21 600 €**. (je 1 P)
+>
+> **c)** Geeignet, wenn die Bearbeitungskosten im Mittel mit der Bestellzahl steigen. Unterschiedlich aufwendige Bestellungen werden im einfachen Modell gleich bewertet; bei Bedarf wären zusätzliche Prozesse oder gewichtete Treiber sachgerechter. (2 P)
 
 ### W5.4 ★★ – Organisationsformen (4 Punkte)
 📘 **Nachlernen:** [[WISO-5 Unternehmen, Rechtsformen und Organisation#4. Organisation|WISO-5 › Organisation]]

@@ -51,7 +51,7 @@ tags: [ap2/modul, ap2/wiso]
 | **OHG** | ≥ 2 Personen, Handelsgewerbe, Eintragung | alle **unbeschränkt, unmittelbar, gesamtschuldnerisch** | jeder Gesellschafter |
 | **KG** | ≥ 1 **Komplementär** + ≥ 1 **Kommanditist** | Komplementär unbeschränkt, **Kommanditist nur bis zur Einlage** | nur Komplementäre; Kommanditisten haben Kontrollrechte |
 | **GmbH** | notarieller Gesellschaftsvertrag, **25 000 €** Stammkapital (mind. 12 500 € bei Gründung eingezahlt), Eintragung ins HR | **nur das Gesellschaftsvermögen**, Gesellschafter nicht privat | **Geschäftsführer** (kann Gesellschafter oder Fremder sein); **Gesellschafterversammlung** beschließt |
-| **UG (haftungsbeschränkt)** | wie GmbH, **ab 1 €**, 25 % des Gewinns als Rücklage bis 25 000 € | Gesellschaftsvermögen | Geschäftsführer |
+| **UG (haftungsbeschränkt)** | wie GmbH, **ab 1 €**, 25 % des um Verlustvortrag geminderten Jahresüberschusses als Rücklage; Pflicht entfällt erst bei wirksamer Stammkapitalerhöhung auf mindestens 25 000 € | Gesellschaftsvermögen | Geschäftsführer |
 | **AG** | Satzung, **50 000 €** Grundkapital, Aktien | Gesellschaftsvermögen | **Vorstand** leitet, **Aufsichtsrat** kontrolliert, **Hauptversammlung** der Aktionäre |
 | GmbH & Co. KG | KG, deren Komplementär eine GmbH ist | faktisch beschränkt | Geschäftsführer der GmbH |
 
@@ -106,6 +106,17 @@ Maßgeblich ist zuerst der **Gesellschaftsvertrag**. Ohne Regelung gilt seit der
 
 **Ökonomisches Prinzip:** **Maximalprinzip** – mit gegebenen Mitteln möglichst viel erreichen; **Minimalprinzip** – ein festes Ziel mit möglichst wenig Mitteln erreichen.
 
+## 6. Prozesskostenrechnung (Vertiefung)
+
+Die **Prozesskostenrechnung** verteilt indirekte Kosten mithilfe von Aktivitäten und passenden **Kostentreibern**. Beispiel: Bei der Bearbeitung von Bestellungen kann die Anzahl der Bestellvorgänge ein Kostentreiber sein. Der Prozesskostensatz ergibt sich aus den Prozesskosten geteilt durch die Menge des Kostentreibers:
+
+```text
+Prozesskostensatz = Prozesskosten ÷ Kostentreibermenge
+zugerechnete Prozesskosten = Prozesskostensatz × Kostentreibermenge des Produkts
+```
+
+Der Kostentreiber soll den tatsächlichen Aufwand möglichst gut abbilden. Die bloße Zahl verkaufter Produkte wäre für einen Prozess mit stark unterschiedlichem Bearbeitungsaufwand ungeeignet, wenn zum Beispiel manche Aufträge viele manuelle Prüfungen erfordern. Die Zuordnung ist eine Kalkulationshilfe; das gewählte Modell und seine Annahmen müssen dokumentiert werden.
+
 ---
 
 > [!warning] Typische Fehler in Prüfungen
@@ -126,6 +137,7 @@ Maßgeblich ist zuerst der **Gesellschaftsvertrag**. Ohne Regelung gilt seit der
 - Gewinn: zuerst Vertrag, sonst Beteiligungsverhältnis (MoPeG 2024); GmbH nach Geschäftsanteilen.
 - Prokura (ppa.): fast alles, eingetragen · Handlungsvollmacht (i. V./i. A.): branchenübliche Geschäfte.
 - Einlinien-, Stablinien- (Stab berät), Mehrlinien-, Matrix-, Spartenorganisation. Ziele ökonomisch/ökologisch/sozial; komplementär, konkurrierend, indifferent.
+- Prozesskostenrechnung: Prozesskosten durch Menge des Kostentreibers teilen; Prozesskostensatz mit der tatsächlichen Treibermenge des Produkts multiplizieren.
 
 ## Direkt üben
 ```dataviewjs

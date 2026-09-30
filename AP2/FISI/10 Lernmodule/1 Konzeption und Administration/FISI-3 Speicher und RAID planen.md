@@ -88,7 +88,7 @@ Der Rechenweg ist in fast jeder Prüfung derselbe:
 | **RAID 6** | Striping + doppelte Parität | 4 | (n − 2) × C | **2** | große Platten, Archiv, NAS/SAN |
 | **RAID 10** | Spiegel, darüber Striping | 4 (gerade) | n/2 × C | **1** (mehr nur, wenn verschiedene Spiegelpaare betroffen sind) | Datenbanken: schnell beim Schreiben |
 
-**Warum RAID 6 bei großen Platten?** Der **Rebuild** einer großen Platte dauert viele Stunden, in denen die übrigen Platten stark belastet sind. Fällt dabei bei RAID 5 eine zweite Platte aus oder tritt ein Lesefehler auf, sind alle Daten verloren. RAID 6 verkraftet in dieser Phase noch einen weiteren Ausfall.
+**Warum RAID 6 bei großen Platten?** Der **Rebuild** einer großen Platte dauert viele Stunden, in denen die übrigen Platten stark belastet sind. Fällt dabei bei RAID 5 eine zweite Platte aus, ist der Verbund nicht mehr redundant und Daten können verloren gehen. Ein nicht korrigierbarer Lesefehler kann je nach Controller und Dateisystem einzelne Datenblöcke unlesbar machen oder den Rebuild beeinträchtigen; er bedeutet nicht automatisch den Verlust sämtlicher Daten. RAID 6 verkraftet während des Rebuilds noch einen weiteren Plattenausfall.
 
 **Hardware- oder Software-RAID?** Hardware-RAID-Controller (eigener Prozessor, Cache mit Batteriepufferung/BBU, Schnittstelle z. B. PCIe, Anzahl Anschlüsse, unterstützte Level als Auswahlkriterien) entlasten die CPU; Software-RAID (mdadm, Storage Spaces, ZFS) ist günstig und hardwareunabhängig.
 

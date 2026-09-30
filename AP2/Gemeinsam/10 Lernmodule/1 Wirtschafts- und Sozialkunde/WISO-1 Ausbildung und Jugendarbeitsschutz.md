@@ -44,7 +44,7 @@ Die Ausbildung findet an **zwei Lernorten** statt: im **Betrieb** (Praxis, nach 
 
 ## 2. Ausbildungsvertrag
 
-Der Vertrag wird **vor Beginn** geschlossen und der wesentliche Inhalt **schriftlich** niedergelegt (§ 11 BBiG, elektronische Form möglich); bei Minderjährigen unterschreiben die gesetzlichen Vertreter mit. Die IHK trägt ihn ins Verzeichnis ein.
+Der wesentliche Vertragsinhalt ist unverzüglich nach Vertragsschluss, spätestens vor Ausbildungsbeginn in **Textform** abzufassen (§ 11 BBiG). Bei elektronischer Übermittlung muss er speicher- und ausdruckbar sein; der Empfang ist nachzuweisen. Eine eigenhändige Unterschrift ist für die Textform nicht erforderlich. Bei Minderjährigen ist die Zustimmung der gesetzlichen Vertreter nötig. Die IHK trägt das Ausbildungsverhältnis ins Verzeichnis ein.
 
 **Pflichtinhalte (§ 11 BBiG):** Art, sachliche und zeitliche Gliederung sowie Ziel der Ausbildung · Beginn und Dauer · Ausbildungsmaßnahmen außerhalb der Ausbildungsstätte · Dauer der regelmäßigen **täglichen** Ausbildungszeit · Dauer der **Probezeit** · Zahlung und Höhe der **Vergütung** · Dauer des **Urlaubs** · Voraussetzungen der **Kündigung** · Hinweis auf Tarifverträge und Betriebsvereinbarungen · Form des **Ausbildungsnachweises** (Berichtsheft).
 **Nicht** vorgeschrieben: z. B. Gleitzeitregelungen, Überstundenregelung, Dienstwagen.

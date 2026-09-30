@@ -187,7 +187,7 @@
     erklaerung: "`1..*` = **mindestens eins**, nach oben offen." },
   { id: "S8-08", modul: "S8", typ: "mc", niveau: 2, frage: "Worin unterscheidet sich ein **Compiler** grundlegend von einem **Interpreter**?",
     optionen: ["Compiler übersetzt vorab, Interpreter zur Laufzeit", "Compiler übersetzt zur Laufzeit, Interpreter vorab", "Interpreter erzeugt eine ausführbare .exe-Datei", "Compiler eignet sich nur für Skriptsprachen"], richtig: 0, abschnitt: "Vom Quelltext zum Programm",
-    erklaerung: "Entscheidend ist der **Zeitpunkt der Übersetzung**: vorher komplett (Compiler) oder zur Laufzeit (Interpreter)." },
+    erklaerung: "Im vereinfachten Vergleich: Vorabübersetzung gegenüber Ausführung durch einen Interpreter. In der Praxis existieren Bytecode und JIT-Kompilierung; nicht jede Implementierung passt ausschließlich in eine Kategorie." },
   { id: "S8-09", modul: "S8", typ: "mc", niveau: 1, frage: "Was ist eine **API**?",
     optionen: ["ein Editor mit integriertem Debugger", "eine festgelegte Programmierschnittstelle", "ein Werkzeug zur Versionsverwaltung", "eine Abfragesprache für Datenbanken"], richtig: 1, abschnitt: "Vom Quelltext zum Programm",
     erklaerung: "API = Application Programming Interface, z. B. eine Web-API, die Daten als JSON liefert." },

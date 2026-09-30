@@ -15,7 +15,7 @@ await dv.view("AP2/99 System/views/pruefung", { name: "AP2 WiSo Probeprüfung 4"
 > Kreuzen Sie bei Auswahlaufgaben die zutreffende Antwort an. Ist nach mehreren Antworten gefragt, müssen alle richtigen angekreuzt sein. Bei Rechenaufgaben tragen Sie das Ergebnis ein. Aufgaben mit 3 Punkten werden nur bei vollständig richtiger Lösung bewertet; bei Aufgaben mit 4 Punkten gibt es für Zuordnungen je richtiger Zuordnung anteilige Punkte. Rechtsstand: 2026.
 
 > [!abstract] Ausgangssituation
-> Sie sind im dritten Ausbildungsjahr bei der **Rheinpixel IT-Services GmbH** in Köln-Ehrenfeld (Kammerbezirk IHK Köln; 65 wahlberechtigte Beschäftigte). Das Unternehmen betreut die IT von Arztpraxen und Handwerksbetrieben. Es gibt einen Betriebsrat und eine JAV; die GmbH ist Mitglied im Arbeitgeberverband und damit tarifgebunden.
+> Sie sind im dritten Ausbildungsjahr bei der **Rheinpixel IT-Services GmbH** in Köln-Ehrenfeld (Kammerbezirk IHK Köln; insgesamt 65 Beschäftigte, alle wahlberechtigt). Das Unternehmen betreut die IT von Arztpraxen und Handwerksbetrieben. Es gibt einen Betriebsrat und eine JAV; die GmbH ist tarifgebundenes Mitglied im Arbeitgeberverband (keine OT-Mitgliedschaft).
 
 **1. (3 P)** Welche Stelle überwacht die Durchführung Ihrer Berufsausbildung und führt das Verzeichnis der Ausbildungsverhältnisse?
 - [ ] 1 die Berufsschule
@@ -92,7 +92,7 @@ Ergebnis: ______
 
 Ergebnis: a __ · b __ · c __ · d __
 
-**12. (3 P)** Aus wie vielen Mitgliedern besteht der Betriebsrat der Rheinpixel IT-Services GmbH (65 wahlberechtigte Beschäftigte)?
+**12. (3 P)** Aus wie vielen Mitgliedern besteht der Betriebsrat der Rheinpixel IT-Services GmbH (insgesamt 65 Beschäftigte, alle wahlberechtigt)?
 - [ ] 1 1 Mitglied
 - [ ] 2 3 Mitglieder
 - [ ] 3 5 Mitglieder
@@ -238,7 +238,7 @@ Ergebnis: ______ %
 > | 9 | 1 | § 102 Abs. 1 BetrVG. |
 > | 10 | 2 | Rüge-, Hinweis- und Warnfunktion; meist Voraussetzung für eine verhaltensbedingte Kündigung. |
 > | 11 | a 4 · b 3 · c 2 · d 1 | ASR A1.3 / DIN EN ISO 7010. |
-> | 12 | 3 | § 9 BetrVG: 51 bis 100 wahlberechtigte Arbeitnehmer → 5 Mitglieder. |
+> | 12 | 3 | § 9 BetrVG: 51 bis 100 Arbeitnehmer → 5 Mitglieder. |
 > | 13 | 2 | § 61 Abs. 1 BetrVG; die frühere Altersgrenze von 25 Jahren für Auszubildende ist seit dem Betriebsrätemodernisierungsgesetz 2021 entfallen. |
 > | 14 | 1, 3 | Friedenspflicht und Günstigkeitsprinzip (§ 4 Abs. 3 TVG). Tarifparteien sind Gewerkschaften und Arbeitgeber(verbände). |
 > | 15 | 2 | § 5 TVG. |

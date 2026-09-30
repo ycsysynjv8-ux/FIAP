@@ -34,7 +34,7 @@ Einzelne Prüfungstermine setzen unterschiedliche Schwerpunkte. Beispiele aus Er
 | | |
 |---|---|
 | **Prüfungsbereich** | Einrichten eines IT-gestützten Arbeitsplatzes |
-| **für** | Fachinformatiker:innen (alle Fachrichtungen), IT-System-Elektroniker:innen, Kaufleute für Digitalisierungsmanagement und für IT-System-Management |
+| **für** | Fachinformatiker:innen der Fachrichtungen Anwendungsentwicklung (FIAE) und Systemintegration (FISI) |
 | **Zeitpunkt** | etwa in der Mitte der Ausbildung (vor Ende des 2. Ausbildungsjahres) |
 | **Form** | schriftlich, **90 Minuten** ([§ 9 FIAusbV](https://www.gesetze-im-internet.de/fiausbv/__9.html)) |
 | **Gewicht** | **20 %** der Gesamtnote, AP2 = 80 % – für FIAE [§ 16](https://www.gesetze-im-internet.de/fiausbv/__16.html), für FISI [§ 24 FIAusbV](https://www.gesetze-im-internet.de/fiausbv/__24.html) |

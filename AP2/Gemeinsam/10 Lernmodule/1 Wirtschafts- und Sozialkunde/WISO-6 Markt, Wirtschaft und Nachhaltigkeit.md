@@ -74,8 +74,8 @@ Reale Märkte sind **unvollkommen** – Software unterscheidet sich in Funktione
 
 Indikatoren: **Frühindikatoren** (Auftragseingänge, Geschäftsklimaindex), Präsenzindikatoren (BIP, Produktion), **Spätindikatoren** (Arbeitslosenquote, Preise).
 
-**Magisches Viereck** (Stabilitätsgesetz): **stabiles Preisniveau** · **hoher Beschäftigungsstand** · **außenwirtschaftliches Gleichgewicht** · **stetiges und angemessenes Wachstum**. „Magisch“, weil nicht alle Ziele gleichzeitig erreichbar sind. Erweiterung zum **Sechseck**: Umweltschutz und gerechte Einkommensverteilung.
-**Inflation** = anhaltender Anstieg des Preisniveaus (Kaufkraft sinkt); die **EZB** strebt mittelfristig eine Inflationsrate von **2 %** an (symmetrisches Ziel seit 2021) und steuert vor allem über den Leitzins. **BIP** = Wert aller im Inland produzierten Güter und Dienstleistungen eines Jahres.
+**Magisches Viereck** (Stabilitätsgesetz): **stabiles Preisniveau** · **hoher Beschäftigungsstand** · **außenwirtschaftliches Gleichgewicht** · **stetiges und angemessenes Wachstum**. „Magisch“, weil zwischen den gleichzeitig verfolgten Zielen Konflikte entstehen können. Erweiterung zum **Sechseck**: Umweltschutz und gerechte Einkommensverteilung.
+**Inflation** = anhaltender Anstieg des Preisniveaus (Kaufkraft sinkt); die **EZB** strebt mittelfristig eine Inflationsrate von **2 %** an (symmetrisches Ziel seit 2021) und steuert vor allem über den Leitzins. **BIP** misst die im Inland erbrachte wirtschaftliche Leistung eines Zeitraums. Entstehungsrechnung: Produktionswert minus Vorleistungen = Bruttowertschöpfung; zuzüglich Gütersteuern und abzüglich Gütersubventionen ergibt sich das BIP. Vorleistungen nicht doppelt zählen.
 
 ---
 
@@ -109,7 +109,7 @@ Indikatoren: **Frühindikatoren** (Auftragseingänge, Geschäftsklimaindex), Pr�
 ---
 
 > [!warning] Typische Fehler in Prüfungen
-> - Marktform nur nach den Nachfragern bestimmen – die Bezeichnung richtet sich in erster Linie nach der **Anbieterzahl** (viele Anbieter = Polypol).
+> - Marktform nur nach einer Marktseite bestimmen – **Anbieter- und Nachfragerzahl** gemeinsam betrachten. Ein beidseitiges Polypol hat viele Anbieter und viele Nachfrager.
 > - „Sinkendes BIP und steigende Arbeitslosigkeit“ als Stagnation deuten – das ist **Abschwung/Rezession**.
 > - Emissionen nur als Abgase verstehen – **Lärm** gehört dazu.
 > - Umweltziele mit sozialen Zielen verwechseln (fair gehandelt = sozial, Verpackungsabfall sammeln = ökologisch).
