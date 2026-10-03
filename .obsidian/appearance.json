@@ -1,8 +1,9 @@
 {
   "enabledCssSnippets": [
-    "ap1-navigation"
+    "ap1-navigation",
+    "ap1-layout"
   ],
-  "cssTheme": "Red Graphite",
+  "cssTheme": "AP1 Lernvault",
   "theme": "obsidian",
   "accentColor": "",
   "baseFontSize": 18

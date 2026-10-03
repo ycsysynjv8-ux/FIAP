@@ -7,18 +7,18 @@
   /* Eigene, feste Palette statt Theme-Variablen: Themes setzen Schrift (teils Monospace), Akzentfarbe und
      Formularfarben sehr unterschiedlich – die Widgets sollen überall gleich aussehen. Dunkel ist Standard,
      .theme-light (Obsidian-Klasse am body) schaltet auf die helle Palette. */
-  --ap1-bg: #1e1e1e;
-  --ap1-flaeche: #262626;
-  --ap1-rand: #3a3a3a;
-  --ap1-hover: #333333;
-  --ap1-knopf: #2f2f2f;
-  --ap1-code: #2a2a2a;
-  --ap1-text: #dcddde;
-  --ap1-text-leise: #999999;
-  --ap1-text-blass: #666666;
-  --ap1-akzent: #e5484d;
-  --ap1-akzent-text: #ff6b70;
-  --ap1-akzent-weich: rgba(229, 72, 77, 0.14);
+  --ap1-bg: #1b2229;
+  --ap1-flaeche: #232c35;
+  --ap1-rand: #34404b;
+  --ap1-hover: #2c3742;
+  --ap1-knopf: #2a343e;
+  --ap1-code: #202932;
+  --ap1-text: #d6dde4;
+  --ap1-text-leise: #93a1ae;
+  --ap1-text-blass: #66737f;
+  --ap1-akzent: #0b86c2;
+  --ap1-akzent-text: #5cc3f2;
+  --ap1-akzent-weich: rgba(14, 155, 216, 0.16);
   --ap1-auf-akzent: #ffffff;
   --ap1-ok: #16a34a;
   --ap1-ok-rgb: 22, 163, 74;
@@ -27,8 +27,8 @@
   --ap1-mittel: #ea580c;
   --ap1-mittel-rgb: 234, 88, 12;
   --ap1-gelb: #ca8a04;
-  --ap1-feld: #1e1e1e;
-  --ap1-spur: rgba(220, 221, 222, 0.16);
+  --ap1-feld: #1b2229;
+  --ap1-spur: rgba(214, 221, 228, 0.16);
   --ap1-schrift: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --ap1-mono: ui-monospace, "Cascadia Mono", Consolas, "Liberation Mono", monospace;
   --ap1-radius: 14px;
@@ -39,18 +39,19 @@
   color: var(--ap1-text);
 }
 .theme-light .ap1.ap1 {
-  --ap1-bg: #ffffff;
-  --ap1-flaeche: #f6f6f7;
-  --ap1-rand: #dcdcdf;
-  --ap1-hover: #ececef;
-  --ap1-knopf: #f0f0f2;
-  --ap1-code: #f3f3f4;
-  --ap1-text: #222222;
-  --ap1-text-leise: #666666;
-  --ap1-text-blass: #999999;
-  --ap1-akzent-text: #c9363b;
-  --ap1-feld: #ffffff;
-  --ap1-spur: rgba(34, 34, 34, 0.12);
+  --ap1-bg: #f7f9fb;
+  --ap1-flaeche: #eaeff4;
+  --ap1-rand: #d0d8e0;
+  --ap1-hover: #e1e8ee;
+  --ap1-knopf: #e4eaf0;
+  --ap1-code: #e8edf2;
+  --ap1-text: #26323d;
+  --ap1-text-leise: #5a6874;
+  --ap1-text-blass: #8794a0;
+  --ap1-akzent: #0a7fb8;
+  --ap1-akzent-text: #0a6f9f;
+  --ap1-feld: #fbfcfd;
+  --ap1-spur: rgba(38, 50, 61, 0.12);
 }
 
 /* ---------------------------------------------------------------- Grundelemente (gegen Theme-Vorgaben) */
@@ -185,8 +186,8 @@
 .ap1.ap1 .ap1-liste li.falsch::marker { color: var(--ap1-falsch); }
 
 /* ---------------------------------------------------------------- Tabellen */
-.ap1.ap1 .ap1-tabelle { display: block; max-width: 100%; overflow-x: auto; border-collapse: separate; border-spacing: 0; margin: 10px 0; width: fit-content; border: 1px solid var(--ap1-rand); border-radius: var(--ap1-radius-klein); }
-.ap1.ap1 .ap1-tabelle th, .ap1.ap1 .ap1-tabelle td { border-bottom: 1px solid var(--ap1-rand); padding: 6px 12px; text-align: left; }
+.ap1.ap1 .ap1-tabelle { display: table; max-width: 100%; width: 100%; table-layout: auto; border-collapse: separate; border-spacing: 0; margin: 10px 0; border: 1px solid var(--ap1-rand); border-radius: var(--ap1-radius-klein); }
+.ap1.ap1 .ap1-tabelle th, .ap1.ap1 .ap1-tabelle td { border-bottom: 1px solid var(--ap1-rand); padding: 6px 12px; text-align: left; white-space: normal; overflow-wrap: anywhere; vertical-align: top; }
 .ap1.ap1 .ap1-tabelle tr:last-child td { border-bottom: none; }
 .ap1.ap1 .ap1-tabelle th { background: var(--ap1-flaeche); font-weight: 650; font-size: 0.9em; }
 .ap1.ap1 .ap1-bereichsraster { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }

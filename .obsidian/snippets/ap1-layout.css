@@ -1,0 +1,59 @@
+/* Lernvault – Layout ohne horizontales Scrollen (AP1 und AP2).
+   Tabellen umbrechen statt abzuschneiden, Grafiken passen sich der Breite an,
+   Startseiten dürfen breiter sein. Funktioniert mit jedem Theme (CSS-Snippet). */
+
+/* ------------------------------------------------------------------ Seitenbreite */
+/* Etwas breiter als der Obsidian-Standard (700 px), bleibt aber gut lesbar. */
+body { --file-line-width: 52rem; }
+/* Startseiten und Übersichten mit mehrspaltigen Tabellen nutzen die volle Breite bis 80rem. */
+.markdown-preview-view.ap1-start,
+.markdown-source-view.ap1-start { --file-line-width: 80rem; }
+
+/* ------------------------------------------------------------------ Tabellen (Lesemodus, Live-Vorschau, Dataview) */
+.markdown-rendered table,
+.markdown-source-view.mod-cm6 .cm-table-widget table,
+.markdown-rendered table.table-view-table {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  table-layout: auto;
+}
+.markdown-rendered th, .markdown-rendered td,
+.markdown-source-view.mod-cm6 .cm-table-widget th,
+.markdown-source-view.mod-cm6 .cm-table-widget td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+  vertical-align: top;
+}
+/* Zellen mit Wiki-Links, Codeschnipseln und Fettdruck dürfen ebenfalls umbrechen. */
+.markdown-rendered td code, .markdown-rendered th code,
+.markdown-rendered td a, .markdown-rendered th a { white-space: normal; overflow-wrap: anywhere; }
+/* Sehr breite Tabellen leicht verkleinern, damit mehr Spalten Platz haben. */
+.markdown-rendered table { font-size: 0.94em; }
+
+/* ------------------------------------------------------------------ Grafiken und Diagramme */
+.markdown-rendered img,
+.markdown-rendered svg,
+.markdown-rendered .internal-embed img,
+.markdown-rendered .image-embed img,
+.markdown-rendered .mermaid svg,
+.markdown-source-view.mod-cm6 .cm-embed-block img,
+.markdown-source-view.mod-cm6 .image-embed img {
+  max-width: 100%;
+  height: auto;
+}
+/* Eingebettete Dateien sollen die Spaltenbreite nicht sprengen. */
+.markdown-rendered .internal-embed, .markdown-rendered .image-embed { max-width: 100%; }
+
+/* ------------------------------------------------------------------ Dashboard und Trainer (DataviewJS) */
+.ap1.ap1 .ap1-tabelle { display: table; width: 100%; max-width: 100%; table-layout: auto; overflow: visible; }
+.ap1.ap1 .ap1-tabelle th, .ap1.ap1 .ap1-tabelle td { white-space: normal; overflow-wrap: anywhere; vertical-align: top; }
+.ap1.ap1 img, .ap1.ap1 svg { max-width: 100%; height: auto; }
+
+/* ------------------------------------------------------------------ Schmale Fenster und Handy */
+@media (max-width: 640px) {
+  .markdown-rendered table { font-size: 0.86em; }
+  .markdown-rendered th, .markdown-rendered td { padding: 5px 8px; }
+}
