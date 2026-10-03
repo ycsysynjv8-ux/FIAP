@@ -159,6 +159,13 @@ Wichtige Begriffe: [[Fachenglisch]].
 > - Bei einem verärgerten Kunden rechtfertigen oder Schuld zuweisen.
 > - Fachbegriffe verwenden, ohne die Zielgruppe zu berücksichtigen.
 
+### Ergänzung: Corporate Identity und Netiquette
+- **Corporate Identity (CI):** einheitliche Identität eines Unternehmens in Verhalten, Kommunikation und Erscheinungsbild; das **Corporate Design** (Logo, Farben, Schrift) wird bei Präsentationen und Bildschirmmasken beachtet.
+- **Netiquette** bei dienstlichen E-Mails: aussagekräftiger Betreff, höflicher und eindeutiger Ton, „Allen antworten“ nur wenn nötig, externe Empfänger in BCC, nicht in Großbuchstaben schreiben.
+
+### Ergänzung: Marktbeobachtung
+Im Rahmen der Marktbeobachtung vergleicht man **Preise, Leistungen und Konditionen** (Liefer- und Zahlungsbedingungen) von Wettbewerbern, etwa über Webseiten, Prospekte, Angebote und Fachmedien. Das Ergebnis fließt in Beratung und Angebote ein.
+
 ## Verwandte Themen
 - [[P3 IT-Service, Support und Qualität]] – Support und Beschwerden
 - [[W4 Verträge und Kaufvertragsstörungen]] – Rechte bei Reklamationen

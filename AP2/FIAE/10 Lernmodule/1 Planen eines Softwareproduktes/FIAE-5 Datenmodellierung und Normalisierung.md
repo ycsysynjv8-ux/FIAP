@@ -150,6 +150,9 @@ Bildgröße = Breite × Höhe × Farbtiefe ÷ 8 (unkomprimiert) · × Anzahl Bil
 > - Anomalien nur definieren statt **am Beispiel der Tabelle** zu erklären.
 > - Namen als Primärschlüssel verwenden.
 
+### Ergänzung: Datentypen für Medien und Koordinaten
+**BLOB** für Binärdaten (Fotos, PDFs), **DECIMAL(9,6)** oder ein Geodatentyp für Koordinaten, **DECIMAL(10,2)** für Geldbeträge.
+
 ## Verwandte Themen
 - [[FIAE-12 SQL für Entwickler]] – das Modell mit SQL anlegen und abfragen
 - [[FIAE-4 Objektorientierter Entwurf und Entwurfsmuster]] – Klassenmodell

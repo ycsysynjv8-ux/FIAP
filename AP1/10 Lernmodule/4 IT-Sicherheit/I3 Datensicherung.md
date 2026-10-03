@@ -145,6 +145,9 @@ Was wird gesichert (Datenbanken, Fileserver, VMs, Postfächer, Konfigurationen)?
 > - RAID, Spiegelung oder Snapshots als Backup bezeichnen.
 > - Backup auf dem **gleichen** System/Standort speichern und das als ausreichend bewerten.
 
+### Ergänzung: LTFS
+**LTFS** (Linear Tape File System) macht den Inhalt eines LTO-Bandes wie ein Laufwerk mit Ordnern und Dateien nutzbar (Inhaltsverzeichnis auf dem Band). Der Zugriff bleibt **sequenziell**: Einzelne Dateien dauern wegen des Spulens länger als von der Festplatte.
+
 ## Verwandte Themen
 - [[H4 Server und Netzwerkspeicher]] – RAID ist kein Backup
 - [[I5 Bedrohungen und Schutzmaßnahmen]] – Schutz vor Ransomware

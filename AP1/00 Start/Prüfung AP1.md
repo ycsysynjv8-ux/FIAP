@@ -21,6 +21,11 @@ tags: [ap1/orga]
 | Hashverfahren, 2FA, Betriebssystem-Härtung, Domäneneinbindung | [[I4 Kryptografie\|I4]], [[I5 Bedrohungen und Schutzmaßnahmen\|I5]], [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4]] |
 | DSGVO-Betroffenenrechte, Anonymisierung/Pseudonymisierung | [[I2 Datenschutz\|I2]] |
 | Teamarbeit, Change Management, Märkte und Marketing | [[P6 Teamarbeit, Verhandlung und Veränderung\|P6]], [[W6 Markt, Marketing und Kostenrechnung\|W6]] |
+| Sortieren (Selection, Insertion), Top-down/Bottom-up, statische und dynamische UML-Sicht | [[S3 Algorithmen, Darstellung und Testen\|S3]], [[S8 UML und Softwareentwurf\|S8]] |
+| APT, Zero-Day, Schwachstellenscanner, Sandbox, Blockchain, LTFS | [[I3 Datensicherung\|I3]], [[I4 Kryptografie\|I4]], [[I5 Bedrohungen und Schutzmaßnahmen\|I5]] |
+| Industrie 4.0, Social-Media-Systeme | [[S9 KI und Unternehmenssoftware\|S9]] |
+| UWG, Konzern/Kartell/Fusion, SWOT, KPI, vermögenswirksame Leistungen | [[W4 Verträge und Kaufvertragsstörungen\|W4]], [[W5 Unternehmen und Ausbildung\|W5]], [[W6 Markt, Marketing und Kostenrechnung\|W6]] |
+| Spiralmodell, SOP, Corporate Identity, Netiquette, Schutzklassen, Brandklassen | [[P1 Projektmanagement und Vorgehensmodelle\|P1]], [[P3 IT-Service, Support und Qualität\|P3]], [[P4 Kommunikation und Kundenberatung\|P4]], [[P5 Arbeitsplatz, Ergonomie und Umwelt\|P5]] |
 
 | AP1-Priorität ab Katalog 2025                                                       | Einordnung im Vault                                                                                                                                                                                       |
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

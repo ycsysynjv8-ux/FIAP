@@ -139,6 +139,9 @@ Vorteile: sehr **geringe Kosten pro TB** und niedrige TCO, hohe Kapazität, **La
 > - RTO und RPO vertauschen: **RPO = Punkt (Datenstand), RTO = Zeit (bis es wieder läuft)**.
 > - USV-Abkürzungen verwechseln: **Online = VFI** (völlig unabhängig).
 
+### Ergänzung: Wiederherstellungskonzept
+Inhalt: **Priorität und Reihenfolge** der Systeme, Verantwortliche und Kontakte, Ziele (RTO/RPO), regelmäßige **Restore-Tests** und Dokumentation. Das Konzept muss auch bei Ausfall des Rechenzentrums offline verfügbar sein.
+
 ## Verwandte Themen
 - [[FISI-3 Speicher und RAID planen]] – RAID ist kein Backup
 - [[FISI-5 Systemhärtung, Malware und Angriffe]] – Ransomware und Offline-Backups

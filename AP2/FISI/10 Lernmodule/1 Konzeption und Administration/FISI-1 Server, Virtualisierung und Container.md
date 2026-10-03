@@ -170,6 +170,12 @@ Zwei identische Umgebungen: **eine ist live (z. B. Green)**, auf der anderen (Bl
 > - Snapshots als Backup verkaufen.
 > - Vorteile nennen, ohne sie zu **begründen** („billiger“ allein bringt nur halbe Punkte – *warum* billiger?).
 
+### Ergänzung: Kompatibilität, Testkonzept, Übergabe, Datenübernahme
+- **Kompatibilität:** Treiber, Firmware-Stand, Betriebssystem-Freigabe (Hardware-Kompatibilitätsliste), Steckplatz (PCIe), Stromversorgung.
+- **Testkonzept:** Testziele und -umfang, Testfälle mit erwartetem Ergebnis, Testumgebung und -daten, Zuständigkeiten und Zeitplan; Ergebnisse im Testprotokoll.
+- **Systemübergabe:** Abnahmeprotokoll, System- und Benutzerdokumentation, Einweisung, sichere Übergabe der Zugangsdaten.
+- **Datenübernahme:** Analyse und Zuordnung → Datensicherung → Testmigration → Migration → Validierung.
+
 ## Verwandte Themen
 - [[FISI-2 Cloud und Betriebsmodelle]] – Virtualisierung ist die Basis jeder Cloud
 - [[FISI-3 Speicher und RAID planen]] – Shared Storage für Cluster

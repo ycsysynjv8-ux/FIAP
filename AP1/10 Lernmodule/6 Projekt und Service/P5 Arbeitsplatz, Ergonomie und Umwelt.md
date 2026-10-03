@@ -110,6 +110,11 @@ Menschen mit Einschränkungen (Sehen, Hören, Motorik, Kognition) sollen IT unei
 > - Barrierefreiheit auf Rollstuhlgerechtigkeit reduzieren.
 > - Altgeräte ohne vorherige sichere Datenlöschung weitergeben.
 
+### Ergänzung: Schutzklassen, Brandklassen, Vorsorge, Aufsicht
+- **Schutzklasse I:** Gehäuse mit Schutzleiter verbunden. **Schutzklasse II:** Schutzisolierung (Symbol Doppelquadrat), kein Schutzleiter nötig. Die **Schutzart** (IP-Code) beschreibt dagegen Staub- und Wasserschutz.
+- **Brandklassen:** A feste Stoffe · B Flüssigkeiten · C Gase · D Metalle (F: Speisefette). Bei brennender Kleidung hilft die **Löschdecke**; bei elektrischen Geräten ein CO₂-Löscher; Notruf 112.
+- **Vorsorge am Bildschirm:** Der Arbeitgeber bietet eine Augenuntersuchung an. **Gewerbeaufsicht** (Arbeitsschutzbehörde) überwacht staatlich den Arbeitsschutz, die Berufsgenossenschaft die Unfallverhütung.
+
 ## Verwandte Themen
 - [[H1 PC-Komponenten und Arbeitsplatzgeräte]] – Monitorauswahl
 - [[H6 Drucker, Peripherie und Mobilgeräte]] – Drucker, Emissionen, Entsorgung

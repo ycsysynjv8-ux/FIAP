@@ -83,3 +83,21 @@ Was ist die BATNA?::die beste Alternative, falls die Verhandlung scheitert
 Welche Phasen hat das Veränderungsmodell nach Lewin?::Unfreeze (auftauen), Change (verändern), Refreeze (stabilisieren)
 Welche Ursachen haben Widerstände gegen Veränderungen?::Nicht-Wissen, Nicht-Können, Nicht-Wollen, Nicht-Dürfen
 Wann hat der Betriebsrat bei neuer Software ein Mitbestimmungsrecht?::wenn sie Verhalten oder Leistung der Mitarbeitenden überwachen kann (§ 87 BetrVG)
+Was kennzeichnet das Spiralmodell?::Mehrere Umläufe mit Zielfestlegung, Risikoanalyse, Entwicklung/Test und Planung des nächsten Umlaufs
+Was ist eine SOP?::Eine standardisierte, dokumentierte Arbeitsanweisung für wiederkehrende Abläufe
+Was ist Corporate Identity?::Die einheitliche Identität eines Unternehmens in Verhalten, Kommunikation und Erscheinungsbild (Corporate Design: Logo, Farben, Schrift)
+Welche Regeln gehören zur Netiquette bei dienstlichen Mails?::Aussagekräftiger Betreff, höflich und kurz, „Allen antworten“ nur wenn nötig, externe Empfänger in BCC
+Was bedeutet Schutzklasse II?::Schutzisolierung (Symbol Doppelquadrat), kein Schutzleiter nötig – die Schutzart (IP) beschreibt Staub- und Wasserschutz
+Welche Brandklassen gibt es und was hilft bei brennender Kleidung?::A feste Stoffe · B Flüssigkeiten · C Gase · D Metalle · Löschdecke bei brennender Kleidung, CO₂ bei elektrischen Geräten
+Wer überwacht den Arbeitsschutz staatlich und was bietet der Arbeitgeber am Bildschirm an?::Gewerbeaufsicht (Arbeitsschutzbehörde) · eine Augenuntersuchung
+Welches Werkzeug sammelt Ursachen nach Mensch, Maschine, Material, Methode, Umwelt?::Das Ishikawa-Diagramm (Fischgräten-Diagramm)
+Was besagt das Pareto-Prinzip für die Qualitätsverbesserung?::Wenige Ursachen (grob 20 %) verursachen den Großteil der Probleme (grob 80 %) – zuerst diese beseitigen
+Wie arbeitet die 5-Why-Methode?::Wiederholt „Warum?“ fragen, bis die eigentliche Ursache sichtbar wird
+Wie berechnest du die Abweichung vom Soll in Prozent?::(Ist − Soll) ÷ Soll × 100, z. B. 40 h geplant, 52 h Ist → +30 %
+Welche Dokumentation gibt es und für wen?::Benutzerdokumentation (Anleitung) für Anwender, Systemdokumentation (Konfiguration, Netzplan) für Administratoren – zielgruppengerecht und barrierefrei
+Was vergleicht man bei der Marktbeobachtung?::Preise, Leistungen und Konditionen (Liefer- und Zahlungsbedingungen) von Wettbewerbern
+Wie geht man bei der Problemlösung mit Lösungsalternativen vor?::Problem beschreiben → Alternativen entwickeln → bewerten → entscheiden → umsetzen und kontrollieren
+Wie lauten die Phasen Plan und Check im PDCA-Zyklus?::Plan: Ist-Zustand ermitteln, Ziele festlegen · Check: Soll-Ist-Vergleich der Ergebnisse
+Wie wirken Homeoffice, Cloud und KI auf IT-Einsatzfelder und Beschäftigte?::Mehr Notebooks, VPN und SaaS, laufende Kosten, neue Sicherheitsanforderungen · Routineaufgaben fallen weg, Qualifizierung wird wichtiger
+Was liefert die Nachkalkulation?::Vergleich von Soll- und Ist-Kosten (z. B. 2 400 € gegenüber 2 760 € = +360 €) als Grundlage für künftige Angebote
+Wie gibst du konstruktives Feedback?::Konkretes Verhalten beschreiben und die Wirkung als Ich-Botschaft schildern, nicht die Person bewerten

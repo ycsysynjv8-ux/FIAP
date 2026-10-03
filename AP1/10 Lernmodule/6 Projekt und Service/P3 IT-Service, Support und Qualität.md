@@ -169,6 +169,16 @@ Maximale Ausfallzeit = Betriebszeit × (1 − Verfügbarkeit)
 > - Verfügbarkeit mit falscher Bezugszeit berechnen (24/7 vs. Servicezeit).
 > - PDCA-Phasen nur aufzählen statt am Beispiel anwenden.
 
+### Ergänzung: SOP
+Eine **SOP** (Standard Operating Procedure) ist eine standardisierte, dokumentierte Arbeitsanweisung für wiederkehrende Abläufe (z. B. Neuen Mitarbeiter einrichten, Störung eskalieren). Sie sichert gleichbleibende Qualität und erleichtert die Einarbeitung.
+
+### Ergänzung: Ursachen von Qualitätsmängeln systematisch finden
+- **Ishikawa-Diagramm:** Ursachen nach Kategorien (Mensch, Maschine, Material, Methode, Umwelt) sammeln.
+- **Pareto-Prinzip:** Wenige Ursachen (grob 20 %) verursachen den Großteil der Probleme (grob 80 %) – zuerst diese beseitigen.
+- **5-Why-Methode:** Wiederholt „Warum?“ fragen, bis die eigentliche Ursache sichtbar ist.
+- **PDCA – Plan:** Ist-Zustand ermitteln, Ziele festlegen. **Check:** Soll-Ist-Vergleich, z. B. 40 h geplant, 52 h angefallen → **+30 %**.
+- **Dokumentation:** Benutzerdokumentation (Anleitung, Handbuch) für Anwender, Systemdokumentation (Konfiguration, Netzplan) für Administratoren – zielgruppengerecht, barrierefrei, aktuell.
+
 ## Verwandte Themen
 - [[I3 Datensicherung]] – Wiederherstellungszeiten
 - [[I1 Informationssicherheit und IT-Grundschutz]] – Verfügbarkeit als Schutzziel

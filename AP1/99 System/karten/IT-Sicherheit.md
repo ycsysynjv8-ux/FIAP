@@ -88,3 +88,9 @@ Was ist Cross-Site Scripting (XSS)?::eingeschleuster Skriptcode wird im Browser 
 Was ist CSRF und wie schützt man sich?::eine fremde Seite löst Aktionen im Namen eines eingeloggten Nutzers aus – Schutz: CSRF-Token, SameSite-Cookies
 Was bedeuten Security by Design und Security by Default?::Sicherheit von Anfang an einplanen · sichere Voreinstellungen bei Auslieferung
 Was unterscheidet Hot und Cold Backup?::Hot: im laufenden Betrieb · Cold: Dienst angehalten, konsistent, aber mit Ausfallzeit
+Was ermöglicht LTFS bei LTO-Bändern?::Der Bandinhalt erscheint wie ein Laufwerk mit Ordnern und Dateien – der Zugriff bleibt sequenziell
+Warum lässt sich eine Blockchain kaum unbemerkt ändern?::Jeder Block enthält den Hashwert des Vorgängers und die Kette liegt dezentral bei vielen Teilnehmern
+Was ist ein APT-Angriff?::Ein gezielter, lange andauernder und getarnter Angriff auf eine bestimmte Organisation
+Was ist eine Zero-Day-Schwachstelle?::Eine Lücke, für die es noch keinen Patch gibt – Schadensbegrenzung durch Härtung, Segmentierung und Monitoring
+Was ist der Unterschied zwischen Schwachstellenscan und Penetrationstest?::Der Scan sucht automatisiert nach bekannten Lücken, der Pentest nutzt Lücken gezielt aus
+Wozu dient eine Sandbox im E-Mail-Eingang?::Verdächtige Anhänge werden in abgeschotteter Umgebung ausgeführt und am Verhalten beurteilt, bevor die Mail zugestellt wird

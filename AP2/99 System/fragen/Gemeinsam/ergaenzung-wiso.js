@@ -1,0 +1,53 @@
+// Fragen AP2 WiSo – Ergänzungen aus dem Abgleich mit dem Prüfungskatalog (Berufsbildung, Arbeitsschutz, Betrieb, Zusammenarbeit)
+[
+  // ---------------------------------------------------------------- WISO-1 Ausbildung
+  { id: "WISO-1-21", modul: "WISO-1", typ: "mc", niveau: 1, abschnitt: "1. Duales System", frage: "Eine Auszubildende lernt, indem sie **Lernposter mit Mindmaps** erstellt und Schaubilder zeichnet. Welche Lerntechnik ist das?",
+    optionen: ["Visuelles Lernen", "Auditives Lernen", "Motorisches Lernen", "Kommunikatives Lernen"], richtig: 0,
+    erklaerung: "Auditiv: hören (Vorträge, Lerngruppen). Motorisch: Learning by Doing. Kommunikativ: Diskussion und Frage-Antwort-Spiele." },
+  { id: "WISO-1-22", modul: "WISO-1", typ: "mc", niveau: 1, abschnitt: "1. Duales System", frage: "Wofür wird der **Europass** genutzt?",
+    optionen: ["Europaweit verständliche Darstellung von Lebenslauf, Qualifikationen und Auslandsaufenthalten", "Als Fahrkarte für Auszubildende in der EU", "Als Ersatz für das Ausbildungszeugnis der IHK", "Als Nachweis der deutschen Staatsangehörigkeit"], richtig: 0,
+    erklaerung: "Der Europass unterstützt Bewerbungen und Mobilität in Europa, z. B. zur Dokumentation eines Auslandspraktikums." },
+  { id: "WISO-1-23", modul: "WISO-1", typ: "mc", niveau: 2, abschnitt: "1. Duales System", frage: "Ein Fachinformatiker möchte sich zum **Geprüften Fachwirt** weiterbilden, um einen höheren beruflichen Abschluss zu erreichen. Welche Art der Fortbildung ist das?",
+    optionen: ["Aufstiegsfortbildung", "Anpassungsfortbildung", "Erhaltungsfortbildung", "Umschulung"], richtig: 0,
+    erklaerung: "Anpassung: an neue Anforderungen (z. B. Schulung zu neuer Software). Erhaltung: vorhandenes Wissen auffrischen. Umschulung: Wechsel in einen anderen Beruf." },
+  // ---------------------------------------------------------------- WISO-2 Arbeitsschutz
+  { id: "WISO-2-23", modul: "WISO-2", typ: "mc", niveau: 2, abschnitt: "Verhalten im Brandfall", frage: "Im Serverraum brennt ein **elektrisches Gerät**. Welches Löschmittel ist am besten geeignet?",
+    optionen: ["Kohlendioxid-Löscher (CO₂)", "Wasser aus dem Eimer", "Schaumlöscher auf Wasserbasis", "Eine Löschdecke aus Wolle"], richtig: 0,
+    erklaerung: "CO₂ hinterlässt keine Rückstände und leitet keinen Strom. Brandklassen: A feste Stoffe, B Flüssigkeiten, C Gase, D Metalle. Strom möglichst vorher abschalten; Notruf 112." },
+  { id: "WISO-2-24", modul: "WISO-2", typ: "mc", niveau: 2, abschnitt: "3. Arbeitsschutz", frage: "Welche Verordnung regelt Sicherheit und Gesundheitsschutz bei der **Verwendung von Arbeitsmitteln** wie Maschinen, Anlagen oder Leitern (einschließlich Prüfungen)?",
+    optionen: ["Betriebssicherheitsverordnung (BetrSichV)", "Berufsbildungsgesetz", "Datenschutz-Grundverordnung", "Kündigungsschutzgesetz"], richtig: 0,
+    erklaerung: "Der Arbeitgeber muss Arbeitsmittel prüfen lassen und sicher bereitstellen (z. B. Prüfung ortsveränderlicher Geräte nach DGUV Vorschrift 3)." },
+  { id: "WISO-2-25", modul: "WISO-2", typ: "mc", niveau: 2, abschnitt: "3. Arbeitsschutz", frage: "Welche Stelle überwacht **staatlich** die Einhaltung der Arbeitsschutzvorschriften in den Betrieben?",
+    optionen: ["Gewerbeaufsicht (Arbeitsschutzbehörde)", "Industrie- und Handelskammer", "Betriebsrat", "Agentur für Arbeit"], richtig: 0,
+    erklaerung: "Die Berufsgenossenschaft kontrolliert und berät zusätzlich zur Unfallverhütung; der Betriebsrat achtet auf die Einhaltung im Betrieb." },
+  { id: "WISO-2-26", modul: "WISO-2", typ: "mc", niveau: 2, abschnitt: "3. Arbeitsschutz", frage: "Welche **Vorsorge** muss der Arbeitgeber Beschäftigten an **Bildschirmarbeitsplätzen** anbieten?",
+    optionen: ["Eine Untersuchung der Augen und des Sehvermögens", "Eine jährliche Lungenfunktionsprüfung", "Einen Belastungs-EKG-Test", "Eine Impfung gegen Grippe auf Kosten der Krankenkasse"], richtig: 0,
+    erklaerung: "Angebotsvorsorge nach der Verordnung zur arbeitsmedizinischen Vorsorge; auch die psychische Gefährdungsbeurteilung gehört zum Arbeitsschutz am Bildschirm." },
+  // ---------------------------------------------------------------- WISO-4 Sozialversicherung und Entgelt
+  { id: "WISO-4-21", modul: "WISO-4", typ: "mc", niveau: 1, abschnitt: "2. Beiträge berechnen", frage: "Auf der Gehaltsabrechnung steht „**VL**“. Was bedeutet das?",
+    optionen: ["Vermögenswirksame Leistungen: Geld, das der Arbeitgeber zum Sparen anlegt (z. B. Bausparvertrag)", "Verlustbeteiligung der Mitarbeitenden", "Vorauszahlung auf Lohnsteuer", "Versicherung gegen Lohnausfall"], richtig: 0,
+    erklaerung: "VL werden vom Gehalt oder zusätzlich vom Arbeitgeber in einen Sparvertrag eingezahlt; oft im Tarifvertrag geregelt." },
+  // ---------------------------------------------------------------- WISO-5 Betrieb
+  { id: "WISO-5-22", modul: "WISO-5", typ: "mc", niveau: 2, abschnitt: "4. Organisation", frage: "Welche Aussage zu Unternehmensverbindungen ist richtig?",
+    optionen: ["Ein Konzern besteht aus rechtlich selbständigen Unternehmen unter einheitlicher Leitung", "Bei einer Fusion bleiben beide Unternehmen rechtlich selbständig", "Ein Kartell ist ein Zusammenschluss, der immer von der IHK genehmigt werden muss", "Ein Konzern ist ein einzelnes Unternehmen mit mehreren Filialen"], richtig: 0,
+    erklaerung: "Fusion = Verschmelzung zu einem Unternehmen. Kartell = Absprachen selbständiger Unternehmen (grundsätzlich verboten, GWB). Konzern = einheitliche Leitung bei rechtlicher Selbständigkeit." },
+  { id: "WISO-5-23", modul: "WISO-5", typ: "mc", niveau: 2, abschnitt: "5. Unternehmensziele", frage: "Was kennzeichnet die **Soziale Marktwirtschaft**?",
+    optionen: ["Wettbewerb und Privateigentum, ergänzt durch staatlichen sozialen Ausgleich und Wettbewerbsschutz", "Der Staat plant Produktion und Preise zentral", "Es gibt keinerlei staatliche Regeln für Märkte", "Alle Unternehmen gehören den Beschäftigten"], richtig: 0,
+    erklaerung: "Beispiele: Sozialversicherung, Kündigungsschutz, Kartellamt. Grenzen: hohe Staatsausgaben, Anreize und internationale Konkurrenz." },
+  { id: "WISO-5-24", modul: "WISO-5", typ: "mc", niveau: 1, abschnitt: "5. Unternehmensziele", frage: "Was versteht man unter **Globalisierung** der Wirtschaft?",
+    optionen: ["Die zunehmende weltweite Verflechtung von Handel, Produktion, Kapital und Kommunikation", "Die Verlagerung aller Betriebe ins Inland", "Den Rückgang des internationalen Handels", "Die Abschaffung von Unternehmenssteuern"], richtig: 0,
+    erklaerung: "Chancen: neue Märkte, Arbeitsteilung. Risiken: Abhängigkeiten, Wettbewerbsdruck, Lieferkettenprobleme." },
+  // ---------------------------------------------------------------- WISO-6 Markt, Recht, Zusammenarbeit
+  { id: "WISO-6-24", modul: "WISO-6", typ: "mc", niveau: 2, abschnitt: "Ethik, Compliance und Diversität", frage: "Ein Unternehmen ruft Privatpersonen **ohne deren Einwilligung** zu Werbezwecken an. Gegen welches Gesetz kann es verstoßen?",
+    optionen: ["Gesetz gegen den unlauteren Wettbewerb (UWG)", "Gesetz gegen Wettbewerbsbeschränkungen (Kartellrecht)", "Berufsbildungsgesetz", "Betriebsverfassungsgesetz"], richtig: 0,
+    erklaerung: "Das UWG schützt vor irreführender und aggressiver Werbung („Cold Calls“). Preisabsprachen verbietet das Kartellrecht (GWB)." },
+  { id: "WISO-6-25", modul: "WISO-6", typ: "mc", niveau: 1, abschnitt: "Ethik, Compliance und Diversität", frage: "Welches Verhalten entspricht der **Netikette** bei der dienstlichen E-Mail-Kommunikation?",
+    optionen: ["Aussagekräftiger Betreff, höflicher Ton, kurze und eindeutige Nachricht", "Alles in Großbuchstaben schreiben, damit es auffällt", "Vertrauliche Daten an alle im Verteiler senden", "Auf Mails grundsätzlich nicht antworten"], richtig: 0,
+    erklaerung: "Außerdem: Verteiler sparsam nutzen, externe Empfänger in BCC, Anhänge begrenzen, Ton immer sachlich." },
+  { id: "WISO-6-26", modul: "WISO-6", typ: "mc", niveau: 2, abschnitt: "Ethik, Compliance und Diversität", frage: "Wie sollte eine **Stellenanzeige** formuliert sein, um dem Allgemeinen Gleichbehandlungsgesetz (AGG) zu genügen?",
+    optionen: ["Geschlechtsneutral, z. B. „Fachinformatiker (m/w/d)“", "Mit Altersgrenze „bis 30 Jahre“", "Nur in der männlichen Form", "Mit Wunsch nach einem bestimmten Familienstand"], richtig: 0,
+    erklaerung: "Benachteiligung wegen Geschlecht, Alter, Herkunft, Religion, Behinderung oder sexueller Identität ist unzulässig." },
+  { id: "WISO-6-27", modul: "WISO-6", typ: "mc", niveau: 2, abschnitt: "Ethik, Compliance und Diversität", frage: "Ein Auszubildender beschimpft seinen Betrieb in einem **öffentlichen Social-Media-Beitrag**. Welche Folge ist möglich?",
+    optionen: ["Abmahnung oder sogar Kündigung wegen Verletzung der Rücksichtnahmepflicht", "Keine, weil Social Media immer private Meinungsfreiheit ist", "Die IHK muss den Beitrag löschen", "Der Betrieb muss den Auszubildenden belohnen"], richtig: 0,
+    erklaerung: "Äußerungen im Netz sind öffentlich. Vermeiden: interne Informationen veröffentlichen und den Betrieb herabsetzen; klären: Social-Media-Richtlinie des Betriebs." }
+]

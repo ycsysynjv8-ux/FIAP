@@ -177,6 +177,25 @@ mittelwert ← summe / n
 > - Syntax- und Semantikfehler vertauschen: **Syntax = Schreibweise**, **Semantik = Bedeutung/Logik**.
 > - `?` und `*` verwechseln.
 
+### Ergänzung: Skripte in Bash und PowerShell lesen
+```bash
+#!/bin/bash                  # Shebang: legt den Interpreter fest
+for f in *.log; do           # Schleife über alle .log-Dateien
+    gzip "$f"                # jede Datei einzeln komprimieren
+done
+```
+```powershell
+Get-Service | Where-Object { $_.Status -eq "Stopped" }   # Pipeline: Dienste filtern
+```
+- **Exit-Code:** `0` = Erfolg, ungleich `0` = Fehler (`$?` in Bash, `$LASTEXITCODE` in PowerShell).
+- **Umleitung:** `>` überschreibt die Datei, `>>` hängt an.
+- **Cron** (Linux): `Minute Stunde Tag Monat Wochentag Befehl`, z. B. `30 2 * * 1 /usr/local/bin/backup.sh` = montags 02:30 Uhr. Unter Windows: `schtasks /create`.
+
+### Ergänzung: Variablen, Bedingungen und sicheres Automatisieren
+- Bash: `name="Server1"; echo "Host: $name"` → `Host: Server1` (kein Leerzeichen um `=`). Bedingungen: `[ -f Datei ]` (Datei existiert), `-d` (Verzeichnis), `-w` (schreibbar).
+- PowerShell: `Get-ChildItem C:\Logs -Filter *.log | Where-Object { $_.Length -gt 1MB }` → Logdateien über 1 MB.
+- **Automatisieren:** erst in der Testumgebung prüfen, Fehlerbehandlung und Logging einbauen, keine Passwörter im Klartext im Skript.
+
 ## Verwandte Themen
 - [[FISI-8 Datenbanken und Modellierung]] – SQL und UML in derselben Prüfung
 - [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN]] – Netzwerkbefehle (`ping`, `tracert`, `nslookup`)

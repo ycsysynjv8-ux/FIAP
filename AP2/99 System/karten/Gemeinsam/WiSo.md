@@ -118,3 +118,14 @@ Was bedeutet Compliance?::Einhaltung von Gesetzen, Verträgen und internen Regel
 Was regelt das Hinweisgeberschutzgesetz?::Unternehmen ab 50 Beschäftigten brauchen eine interne Meldestelle; Hinweisgebende sind vor Benachteiligung geschützt
 Welche Merkmale schützt das AGG?::Ethnische Herkunft, Geschlecht, Religion oder Weltanschauung, Behinderung, Alter, sexuelle Identität
 
+Welche Lerntechniken gibt es?::Visuell (Mindmaps), auditiv (Vorträge), motorisch (Learning by Doing), kommunikativ (Diskussion)
+Wofür dient der Europass?::Europaweit verständliche Darstellung von Lebenslauf, Qualifikationen und Auslandsaufenthalten
+Welche Arten der Fortbildung gibt es?::Anpassungs-, Erhaltungs- und Aufstiegsfortbildung (höherer Abschluss) – Umschulung wechselt den Beruf
+Welche Brandklassen gibt es und was löscht elektrische Geräte?::A feste Stoffe · B Flüssigkeiten · C Gase · D Metalle · elektrische Geräte mit CO₂, nicht mit Wasser
+Was regelt die Betriebssicherheitsverordnung?::Sichere Bereitstellung und Prüfung von Arbeitsmitteln wie Maschinen, Anlagen und Leitern
+Welche Stelle überwacht staatlich den Arbeitsschutz?::Die Gewerbeaufsicht (Arbeitsschutzbehörde); die Berufsgenossenschaft die Unfallverhütung
+Was sind vermögenswirksame Leistungen?::Geldbeträge, die langfristig für Beschäftigte angelegt werden (z. B. Bausparen), oft im Tarifvertrag geregelt
+Was unterscheidet Fusion, Konzern und Kartell?::Fusion: Verschmelzung · Konzern: einheitliche Leitung bei rechtlicher Selbständigkeit · Kartell: verbotene Absprache (GWB)
+Was kennzeichnet die Soziale Marktwirtschaft und was ist Globalisierung?::Wettbewerb plus sozialer Ausgleich · zunehmende weltweite Verflechtung von Handel, Produktion und Kommunikation
+Was schützt das UWG und was ist bei Stellenanzeigen nach AGG zu beachten?::UWG: vor irreführender und aggressiver Werbung · AGG: geschlechtsneutral formulieren (m/w/d), keine Altersgrenzen
+Welche Netikette gilt bei dienstlichen E-Mails und Social Media?::Aussagekräftiger Betreff, höflicher Ton, externe Empfänger in BCC · Beleidigungen oder Interna im Netz können zu Abmahnung oder Kündigung führen

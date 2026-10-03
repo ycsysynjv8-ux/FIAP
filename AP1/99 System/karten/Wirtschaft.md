@@ -87,3 +87,9 @@ Was prüft man bei einer Make-or-buy-Entscheidung?::quantitativ die Kosten (krit
 Wozu dient ein Leistungsverzeichnis?::Es beschreibt die geforderten Leistungen genau, damit Angebote einer Ausschreibung vergleichbar sind
 Was ist der Unterschied zwischen effektiv und effizient?::effektiv: die richtigen Dinge tun (Ziel erreicht) · effizient: die Dinge richtig tun (wenig Aufwand)
 Wie berechnest du die Eigenkapitalrentabilität?::Gewinn ÷ Eigenkapital × 100
+Was regelt das UWG?::Den Schutz vor irreführender oder aggressiver Werbung und unlauteren Handlungen (Preisabsprachen verbietet das GWB)
+Was unterscheidet Fusion, Konzern und Kartell?::Fusion: Verschmelzung · Konzern: selbständige Unternehmen unter einheitlicher Leitung · Kartell: Absprache selbständiger Unternehmen (verboten)
+Was kennzeichnet die Soziale Marktwirtschaft?::Wettbewerb und Privateigentum plus staatlicher sozialer Ausgleich und Wettbewerbsschutz
+Was sind vermögenswirksame Leistungen?::Geldbeträge, die für Beschäftigte langfristig angelegt werden (z. B. Bausparvertrag), oft tarifvertraglich geregelt
+Wofür steht SWOT?::Strengths, Weaknesses (intern) sowie Opportunities, Threats (extern)
+Was ist ein KPI?::Eine Kennzahl, die den Erfüllungsgrad eines Ziels misst, z. B. Erstlösungsquote

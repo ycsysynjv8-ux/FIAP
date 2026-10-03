@@ -182,6 +182,10 @@ Nach dem Rollout muss eine Anwendung **überwacht und betreut** werden.
 > - Header und Body vertauschen.
 > - Glauben, eine gültige XSD-Validierung garantiere richtige Beträge.
 
+### Ergänzung: SOAP und Git
+- **SOAP:** XML-Nachrichten mit festem Aufbau (Envelope, WSDL), strenger Standard. **REST:** HTTP-Methoden auf Ressourcen, meist JSON, leichtgewichtig und zustandslos.
+- **Git:** `commit` speichert lokal, `push` lädt hoch, `pull` holt Änderungen und führt sie ein, `branch` legt einen Zweig an, `merge` führt Zweige zusammen. Ändern zwei Zweige dieselbe Zeile, entsteht ein **Merge-Konflikt**, der manuell gelöst wird.
+
 ## Verwandte Themen
 - [[FIAE-8 Sicherheit in der Softwareentwicklung]] – Authentifizierung, TLS, Signaturen
 - [[FIAE-10 Objektorientierte Programmierung umsetzen]] – Methoden der API implementieren

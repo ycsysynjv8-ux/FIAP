@@ -143,6 +143,9 @@ Steht **vor den eigenen Servern** und nimmt Anfragen aus dem Internet entgegen:
 > - Datenbank oder Domain Controller in die DMZ stellen.
 > - SPI mit „prüft Inhalte“ verwechseln – das kann erst ein ALG/NGFW.
 
+### Ergänzung: Mailfilter und Sandbox
+Filterkriterien: Dateityp des Anhangs (.exe, .js), SPF-/DKIM-Ergebnis, Spam-Bewertung, bekannte Phishing-Merkmale. Verdächtige Anhänge werden in einer **Sandbox** ausgeführt. Beim Auswerten gelten Datenschutz und Fernmeldegeheimnis (Regelung zur Privatnutzung, Betriebsvereinbarung).
+
 ## Verwandte Themen
 - [[FISI-9 IPv4-Subnetting und Routing]] – private Adressen
 - [[FISI-13 DNS, DHCP und Netzdienste]] – Ports der Dienste, Split-Horizon-DNS

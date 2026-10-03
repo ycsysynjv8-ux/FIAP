@@ -145,3 +145,8 @@ Was ist ein Mirror-/SPAN-Port?::Switchport, auf den der Verkehr anderer Ports ko
 Unterschied SNMP-Polling und Trap?::Polling: Manager fragt regelmäßig ab · Trap: Gerät meldet Ereignis selbstständig
 Was bedeutet „Shared Medium“ bei GPON/Kabel?::Mehrere Kunden teilen sich die Bandbreite eines Segments – zu Stoßzeiten sinkt die Leistung
 Nennen Sie drei WAN-Anschlussarten.::DSL/VDSL, Glasfaser (FTTH/GPON), Kabel (DOCSIS), Standleitung, Mobilfunk (LTE/5G), Satellit
+Was leistet eine Bridge?::Verbindet zwei Netzsegmente auf Schicht 2 und leitet Frames anhand von MAC-Adressen weiter
+Welche Kriterien nutzt ein Mailfilter und welche Rolle hat die Sandbox?::Dateityp, SPF/DKIM, Spam-Bewertung; verdächtige Anhänge werden in einer Sandbox ausgeführt
+Warum macht Fax über VoIP Probleme?::Fax reagiert empfindlich auf Jitter und Kompression – T.38 überträgt Fax gesichert über IP
+Welches Risiko hat SNMPv1/v2c und was hilft?::Community-String im Klartext – SNMPv3, Management-VLAN, ACL und nur Lesezugriff
+Was ist Predictive Maintenance?::Aus Messwerten wird der Ausfall vorhergesagt und das Bauteil vorher getauscht

@@ -192,6 +192,9 @@ Strom über das Netzwerkkabel – für Access Points, IP-Telefone, Kameras.
 > - VLAN mit Subnetz gleichsetzen, ohne den Router für die Kommunikation zwischen VLANs zu nennen.
 > - PoE-Budget des Switches vergessen.
 
+### Ergänzung: DSL-Varianten
+**ADSL:** asymmetrisch (Download schneller als Upload). **SDSL:** symmetrisch (gleiche Raten, z. B. für Firmen mit VPN und Servern). **VDSL:** höhere Raten auf kurzen Strecken (bis zum Verteiler Glasfaser).
+
 ## Verwandte Themen
 - [[N6 WLAN]] – drahtlose Anbindung
 - [[H5 Elektrotechnik, USV und Energie]] – PoE-Budget und Stromversorgung

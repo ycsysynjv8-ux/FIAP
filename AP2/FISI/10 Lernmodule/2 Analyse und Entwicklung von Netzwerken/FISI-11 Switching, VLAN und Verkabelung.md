@@ -133,6 +133,9 @@ Prüfe **drei** Dinge: genug **Ports** (Endgeräte **plus Uplink**), **PoE-Stand
 > - STP „erhöht die Bandbreite“ – nein, das macht Link Aggregation. STP verhindert Schleifen.
 > - Beim PoE-Switch nur die Portanzahl prüfen und das **Gesamtbudget** oder den Uplink-Port vergessen.
 
+### Ergänzung: Bridge
+Eine **Bridge** verbindet zwei Netzsegmente auf Schicht 2 und leitet Frames anhand von MAC-Adressen weiter (ein Switch ist eine Bridge mit vielen Ports). Router arbeiten auf Schicht 3, Repeater auf Schicht 1.
+
 ## Verwandte Themen
 - [[FISI-9 IPv4-Subnetting und Routing]] – ein Subnetz je VLAN
 - [[FISI-13 DNS, DHCP und Netzdienste]] – DHCP und Relay

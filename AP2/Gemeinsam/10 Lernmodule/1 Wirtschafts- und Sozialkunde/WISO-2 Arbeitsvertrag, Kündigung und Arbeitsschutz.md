@@ -119,6 +119,12 @@ Fenster aufreißen fördert das Feuer; der Vorgesetzte wird informiert, ist aber
 > - Kündigung per E-Mail oder WhatsApp für wirksam halten.
 > - Rettungszeichen (grün) und Brandschutzzeichen (rot) verwechseln.
 
+### Ergänzung: Löschmittel, BetrSichV, Aufsicht, Vorsorge
+- **Brandklassen:** A feste Stoffe · B Flüssigkeiten · C Gase · D Metalle. Elektrische Geräte: **CO₂-Löscher**, kein Wasser; Löschdecke bei brennender Kleidung.
+- **Betriebssicherheitsverordnung (BetrSichV):** sichere Bereitstellung und Prüfung von Arbeitsmitteln (Maschinen, Anlagen, Leitern).
+- **Gewerbeaufsicht:** staatliche Überwachung des Arbeitsschutzes; Berufsgenossenschaft: Unfallverhütung.
+- **Vorsorge am Bildschirm:** Angebot einer Augenuntersuchung.
+
 ## Verwandte Themen
 - [[WISO-1 Ausbildung und Jugendarbeitsschutz]] – Besonderheiten der Ausbildung
 - [[WISO-3 Mitbestimmung und Tarifrecht]] – Anhörung des Betriebsrats, Tarifverträge

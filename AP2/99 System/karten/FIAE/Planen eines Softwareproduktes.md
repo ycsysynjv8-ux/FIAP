@@ -144,3 +144,9 @@ Was ist Open Data?::Daten, die unter einer offenen Lizenz zur Weiterverwendung b
 Welche fünf Stufen umfasst das Linked-Open-Data-Sterne-Modell?::Offene Lizenz · strukturierte Daten · offenes Format · HTTP-URIs · Verknüpfungen zu anderen Datensätzen
 Warum reichen Namen als Schlüssel für ein Record Linkage oft nicht?::Schreibvarianten oder Namensgleichheit können zu falschen Zuordnungen führen; stabile IDs und dokumentierte Zuordnungsregeln nutzen
 
+Was kennzeichnet das Spiralmodell?::Umläufe mit Zielen, Risikoanalyse, Entwicklung/Test und Planung – für große, riskante Projekte
+Was ist der Unterschied zwischen Top-down und Bottom-up?::Top-down: Gesamtarchitektur zuerst, dann Zerlegung · Bottom-up: Bausteine werden zum System zusammengesetzt
+Was unterscheidet SOAP von REST?::SOAP: XML-Nachrichten mit festem Aufbau (Envelope, WSDL) · REST: HTTP-Methoden auf Ressourcen, meist JSON, leichtgewichtig
+Was bedeuten pull, push und merge in Git?::pull holt Änderungen und führt sie ein, push lädt lokale Commits hoch, merge führt Zweige zusammen (Konflikt bei gleicher Zeile)
+Welchen Datentyp wählst du für Fotos und welchen für Koordinaten?::BLOB für Binärdaten, DECIMAL(9,6) oder Geodatentyp für Koordinaten
+Warum beachtet man die Corporate Identity bei Bildschirmmasken?::Einheitliche Farben, Logos und Schriften für Wiedererkennung – mit ausreichendem Kontrast für Barrierefreiheit

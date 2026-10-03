@@ -78,3 +78,9 @@ Wie fügst du eine Spalte hinzu?::ALTER TABLE tabelle ADD spalte TYP
 Was passiert bei UPDATE ohne WHERE?::Alle Zeilen der Tabelle werden geändert
 Was ist ein Trigger?::Automatisch ausgeführter Code bei INSERT, UPDATE oder DELETE auf einer Tabelle
 Was ist eine Stored Procedure?::In der Datenbank gespeicherte, aufrufbare Folge von SQL-Anweisungen
+Wie arbeitet Selection Sort?::Kleinstes Element des unsortierten Teils nach vorn tauschen, O(n²) – [5,1,4,2] → [1,5,4,2] → [1,2,4,5]
+Wie arbeitet Insertion Sort?::Jedes Element in den bereits sortierten Teil an die passende Stelle einfügen, O(n²)
+Was ist ein Interface?::Methodensignaturen, die implementierende Klassen bereitstellen müssen – eine Klasse kann mehrere implementieren
+Was ist ein statisches Testverfahren?::Prüfung ohne Ausführung, z. B. Code-Review – dynamisch: Unit-, Integrations-, Last- und End-to-End-Test
+Was unterscheidet Verifikation und Validierung?::Verifikation: Spezifikation erfüllt? · Validierung: trifft das Produkt den tatsächlichen Kundenbedarf?
+Welche Constraints gibt es in SQL?::PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK (z. B. Preis >= 0), DEFAULT

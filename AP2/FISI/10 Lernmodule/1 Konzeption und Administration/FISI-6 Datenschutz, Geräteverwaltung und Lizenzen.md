@@ -145,6 +145,12 @@ Zentraler Updateserver im eigenen Netz (z. B. WSUS, Intune, Landscape): Patches 
 > - „Formatieren“ als sicheres Löschen angeben.
 > - User- und Device-CAL an der Zahl der Geräte statt am Nutzungsmuster festmachen.
 
+### Ergänzung: Nutzungsrichtlinie, Lizenzüberwachung, Berechtigungskonzept, Update-Evaluation
+- **Nutzungsrichtlinie:** private Nutzung von E-Mail und Internet, Passwortregeln, Wechseldatenträger und private Geräte, Meldepflicht bei Vorfällen. Einführung: informieren, schulen, Kenntnisnahme bestätigen lassen, Betriebsrat beteiligen (§ 87 BetrVG).
+- **Lizenzüberwachung (SAM):** Software inventarisieren und mit dem Lizenzbestand abgleichen. 50 Installationen bei 40 Lizenzen = 10 fehlende Lizenzen (Unterlizenzierung).
+- **Berechtigungskonzept:** Rollen/Gruppen und Rechte, Verantwortliche und Genehmigungsprozess, regelmäßige Überprüfung, Least Privilege. Windows: **AGDLP** – Accounts → Global Groups → Domain Local Groups → Permissions.
+- **Updates evaluieren:** Testgruppe, Kompatibilität prüfen, Rückfallplan, gestaffelt verteilen.
+
 ## Verwandte Themen
 - [[FISI-5 Systemhärtung, Malware und Angriffe]] – technische Umsetzung
 - [[FISI-2 Cloud und Betriebsmodelle]] – Datenschutz in der Cloud, AVV

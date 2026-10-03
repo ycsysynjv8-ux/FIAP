@@ -146,3 +146,29 @@ Was ist Locking?::Sperren von Datensätzen/Tabellen bei gleichzeitigem Zugriff, 
 Nennen Sie vier Arten von NoSQL-Datenbanken.::Key-Value, dokumentenorientiert, spaltenorientiert, Graphdatenbank
 Unterschied Aggregation und Komposition in UML?::Aggregation (leere Raute): Teile existieren auch allein · Komposition (gefüllte Raute): Teile existieren nur mit dem Ganzen
 Was bedeutet Datenkapselung?::Attribute sind privat und nur über Methoden (Getter/Setter) zugänglich
+Welcher RAID-Level ist fehlertolerant und schreibt schnell?::RAID 10 – Spiegelung plus Striping ohne Paritätsberechnung
+Welcher Level bietet bei 4 Platten die größte Nettokapazität mit Redundanz?::RAID 5 (n − 1 = 3 Platten nutzbar)
+Was ist an LTFS bei LTO-Bändern wichtig?::Bandinhalt wie ein Laufwerk sichtbar, aber sequenzieller Zugriff – einzelne Dateien dauern wegen des Spulens länger
+Was unterscheidet Schwachstellenscan und Penetrationstest?::Scan: automatisiert, bekannte Lücken · Pentest: Lücken werden gezielt ausgenutzt (nur mit Auftrag)
+Was hilft bei einer Zero-Day-Lücke ohne Patch?::Netzsegmentierung, Least Privilege, Monitoring auf auffälliges Verhalten, danach zeitnah patchen
+Wofür steht die erste Zeile #!/bin/bash?::Shebang – legt den Interpreter des Skripts fest
+Was bedeutet Exit-Code 0?::Der Befehl war erfolgreich, ungleich 0 bedeutet Fehler ($? in Bash, $LASTEXITCODE in PowerShell)
+Was ist der Unterschied zwischen > und >> bei der Umleitung?::> überschreibt die Datei, >> hängt an das Ende an
+Wie liest man den Cron-Eintrag 30 2 * * 1?::Minute 30, Stunde 2, jeder Tag, jeder Monat, Wochentag 1 = Montag 02:30 Uhr
+Was ist ein Data Lake?::Zentraler Speicher für Rohdaten aus vielen Quellen und Formaten, das Schema wird erst bei der Auswertung angewendet
+Welche Kompatibilitätsfragen prüfst du bei neuer Hardware?::Treiber, Firmware, Betriebssystem-Freigabe (HCL), Steckplatz (PCIe), Stromversorgung
+Was gehört in ein Testkonzept?::Testziele und -umfang, Testfälle mit erwartetem Ergebnis, Testumgebung und -daten, Zuständigkeiten, Zeitplan
+Was gehört zur Systemübergabe?::Abnahmeprotokoll, System- und Benutzerdokumentation, Einweisung, sichere Übergabe der Zugangsdaten
+Wie läuft eine Datenübernahme (Migration) ab?::Analyse und Zuordnung → Datensicherung → Testmigration → Migration → Validierung
+Wie sicherst du eine NAS-Freigabe ab?::Rechte an Gruppen (Least Privilege), Verschlüsselung, Protokollierung, Snapshots und Backup
+Was gehört in ein Wiederherstellungskonzept?::Reihenfolge der Systeme, Verantwortliche, RTO/RPO, Restore-Tests, Dokumentation – offline verfügbar
+Was gehört in eine Nutzungsrichtlinie und wie führst du sie ein?::Private Nutzung, Passwortregeln, Wechseldatenträger, Meldepflicht · informieren, schulen, Kenntnisnahme bestätigen, Betriebsrat beteiligen
+Wie überwachst du Lizenzbestimmungen?::Software inventarisieren und mit dem Lizenzbestand abgleichen (SAM) – z. B. 50 Installationen, 40 Lizenzen = 10 fehlen
+Wofür steht AGDLP?::Accounts → Global Groups → Domain Local Groups → Permissions
+Was gehört in ein Berechtigungskonzept?::Rollen/Gruppen und Rechte, Genehmigungsprozess, regelmäßige Überprüfung, Least Privilege
+Wie evaluierst du ein Update vor dem Rollout?::Testgruppe, Kompatibilität prüfen, Rückfallplan, gestaffelt verteilen
+Was prüft [ -f Datei ] in Bash?::Ob eine reguläre Datei existiert (-d Verzeichnis, -w schreibbar)
+Was ist beim Automatisieren mit Skripten wichtig?::Erst in der Testumgebung prüfen, Fehlerbehandlung und Logging einbauen, keine Passwörter im Klartext
+Welche Messwerte zeigen die Systemauslastung?::CPU, Arbeitsspeicher und Swap, Plattenplatz und IOPS, Netzwerkdurchsatz
+Warum nutzt man zwei Schwellwerte im Monitoring?::Warnstufe zum frühen Reagieren, kritische Stufe zur Eskalation
+Was gehört zur präventiven Wartung?::Lüfter reinigen, Firmware aktualisieren, USV-Akkus testen – Störungen vermeiden, bevor sie auftreten

@@ -104,3 +104,5 @@ Welche Vor- und Nachteile hat ein CMS?::Vorteil: Inhalte ohne HTML-Kenntnisse pf
 Wann nutzt man SSH, Telnet und die serielle Konsole?::SSH: verschlüsselte Fernwartung · Telnet: unverschlüsselt, nicht mehr nutzen · Konsole: Erstkonfiguration ohne IP, Notfallzugang
 Was unterscheidet Site-to-Site- und Client-to-Site-VPN?::Site-to-Site verbindet ganze Standorte dauerhaft · Client-to-Site verbindet einzelne Geräte (Homeoffice) mit dem Firmennetz
 Wo wird CSMA/CD und wo CSMA/CA verwendet?::CSMA/CD im klassischen Ethernet mit Kollisionen (Hub) · CSMA/CA im WLAN
+Wie lautet die Reihenfolge der Netzarten nach Ausdehnung?::PAN – LAN – MAN – WAN – GAN
+Was unterscheidet ADSL von SDSL?::ADSL ist asymmetrisch (Download schneller), SDSL symmetrisch (gleiche Up- und Download-Rate)

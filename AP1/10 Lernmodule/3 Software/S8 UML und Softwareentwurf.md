@@ -215,6 +215,10 @@ flowchart LR
 > - Multiplizität an das falsche Linienende schreiben.
 > - Compiler und Interpreter nur als „schnell/langsam“ unterscheiden, ohne den Zeitpunkt der Übersetzung zu nennen.
 
+### Ergänzung: Entwurfsrichtung und UML-Sichten
+- **Top-down:** Die Gesamtaufgabe wird schrittweise in Teilaufgaben und Module zerlegt. **Bottom-up:** Aus vorhandenen Bausteinen (Bibliotheken, Klassen) entsteht das Gesamtsystem. Häufig werden beide kombiniert.
+- **Statische Sicht** (Struktur): Klassen- und Objektdiagramm. **Dynamische Sicht** (Verhalten): Aktivitäts-, Sequenz- und Zustandsdiagramm.
+
 ## Verwandte Themen
 - [[S7 Datenbanken]] – Datenmodell der Anwendung
 - [[S3 Algorithmen, Darstellung und Testen]] – Pseudocode, Schreibtischtest und Testen

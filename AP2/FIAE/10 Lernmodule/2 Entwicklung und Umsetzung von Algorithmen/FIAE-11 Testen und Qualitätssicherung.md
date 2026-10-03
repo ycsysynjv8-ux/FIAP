@@ -133,6 +133,10 @@ Ein **Unit-Test** prüft eine kleine Einheit (Methode) automatisiert: **Arrange*
 > - Regressionstest als „Test von alten Fehlern“ beschreiben – er sichert **bestehende Funktionen nach Änderungen**.
 > - In der Testtabelle das tatsächliche Ergebnis aus der Erwartung abschreiben statt den Code nachzuvollziehen.
 
+### Ergänzung: statisch/dynamisch, Verifikation/Validierung
+- **Statische Verfahren** prüfen ohne Ausführung (Code-Review). **Dynamische** führen das Programm aus (Unit-, Integrations-, Last-, End-to-End-Test).
+- **Verifikation:** Erfüllt das Produkt die Spezifikation? **Validierung:** Trifft es den tatsächlichen Bedarf des Kunden?
+
 ## Verwandte Themen
 - [[FIAE-9 Algorithmen in Pseudocode]] – Code, der getestet wird
 - [[FIAE-2 Anforderungen und Use Cases]] – Black-Box-Tests aus Anforderungen

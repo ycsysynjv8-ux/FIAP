@@ -27,6 +27,13 @@ Kurzdefinitionen der wichtigsten AP2-Begriffe mit Link ins Modul. Grundbegriffe 
 | Grenzwertanalyse | Tests an und neben Bereichsgrenzen | [[FIAE-11 Testen und Qualitätssicherung\|FIAE-11]] |
 | HAVING | Filter auf Gruppen nach GROUP BY | [[FIAE-12 SQL für Entwickler\|FIAE-12]] |
 | Idempotent | Mehrfache Ausführung wirkt wie einmalige | [[FIAE-7 Schnittstellen, Web und Architektur\|FIAE-7]] |
+| Insertion Sort | Element in den sortierten Teil einfügen, O(n²) | [[FIAE-9 Algorithmen in Pseudocode\|FIAE-9]] |
+| Merge-Konflikt | Zwei Zweige ändern dieselbe Stelle – manuell lösen | [[FIAE-7 Schnittstellen, Web und Architektur\|FIAE-7]] |
+| Selection Sort | Kleinstes Element des Rests nach vorn tauschen, O(n²) | [[FIAE-9 Algorithmen in Pseudocode\|FIAE-9]] |
+| SOAP | XML-basiertes Protokoll mit festem Nachrichtenaufbau | [[FIAE-7 Schnittstellen, Web und Architektur\|FIAE-7]] |
+| Spiralmodell | Umläufe mit Risikoanalyse in jedem Zyklus | [[FIAE-1 Projektmanagement in der Softwareentwicklung\|FIAE-1]] |
+| Top-down / Bottom-up | Entwurf vom Ganzen zum Detail / aus Bausteinen | [[FIAE-4 Objektorientierter Entwurf und Entwurfsmuster\|FIAE-4]] |
+| Verifikation / Validierung | Spezifikation erfüllt? / Kundenbedarf getroffen? | [[FIAE-11 Testen und Qualitätssicherung\|FIAE-11]] |
 | «include» / «extend» | Pflicht- / optionale Erweiterung im Use-Case-Diagramm | [[FIAE-2 Anforderungen und Use Cases\|FIAE-2]] |
 | ISO/IEC 25010 | Modell der Softwarequalitätsmerkmale | [[FIAE-2 Anforderungen und Use Cases\|FIAE-2]] |
 | Kritischer Pfad | Vorgänge ohne Puffer im Netzplan | [[FIAE-1 Projektmanagement in der Softwareentwicklung\|FIAE-1]] |

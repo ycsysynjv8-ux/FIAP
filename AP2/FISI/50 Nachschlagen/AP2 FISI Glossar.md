@@ -11,15 +11,19 @@ Kurzdefinitionen der wichtigsten AP2-Begriffe mit Link ins Modul. Grundbegriffe 
 | 802.1Q | Standard für VLAN-Tagging (4-Byte-Tag im Ethernet-Frame) | [[FISI-11 Switching, VLAN und Verkabelung\|FISI-11]] |
 | 802.1X | Portbasierte Netzzugangskontrolle mit RADIUS | [[FISI-14 WLAN und Netzzugangskontrolle\|FISI-14]] |
 | AAA | Authentication, Authorization, Accounting | [[FISI-14 WLAN und Netzzugangskontrolle\|FISI-14]] |
+| AGDLP | Berechtigungsmodell: Accounts, Global Groups, Domain Local Groups, Permissions | [[FISI-6 Datenschutz, Geräteverwaltung und Lizenzen\|FISI-6]] |
 | APIPA | Selbstvergabe aus 169.254.0.0/16 ohne DHCP-Antwort | [[FISI-9 IPv4-Subnetting und Routing\|FISI-9]] |
 | ARP-Spoofing | Gefälschte ARP-Antworten, um Verkehr umzuleiten (MitM) | [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN\|FISI-16]] |
 | AVV | Auftragsverarbeitungsvertrag nach Art. 28 DSGVO | [[FISI-2 Cloud und Betriebsmodelle\|FISI-2]] |
 | Blue-Green-Deployment | Umschalten zwischen zwei gleichen Umgebungen | [[FISI-1 Server, Virtualisierung und Container\|FISI-1]] |
+| Bridge | Verbindet Segmente auf Schicht 2 anhand von MAC-Adressen | [[FISI-11 Switching, VLAN und Verkabelung\|FISI-11]] |
 | CAL | Client Access License – Zugriffslizenz je Benutzer oder Gerät | [[FISI-6 Datenschutz, Geräteverwaltung und Lizenzen\|FISI-6]] |
 | CGN | Carrier-Grade-NAT beim Provider, keine öffentliche IPv4 | [[FISI-12 NAT, Firewall, DMZ und Proxy\|FISI-12]] |
 | Cluster | Serververbund für Hochverfügbarkeit oder Leistung | [[FISI-1 Server, Virtualisierung und Container\|FISI-1]] |
 | Container | Isolierte Anwendung, die sich den Host-Kernel teilt | [[FISI-1 Server, Virtualisierung und Container\|FISI-1]] |
+| Cron | Zeitplan unter Linux: Minute Stunde Tag Monat Wochentag | [[FISI-7 Programmierung und Skripte für Admins\|FISI-7]] |
 | D2D2T | Disk-to-Disk-to-Tape-Sicherung | [[FISI-4 Datensicherung, Archivierung und Notfallvorsorge\|FISI-4]] |
+| Data Lake | Rohdatenspeicher für viele Quellen und Formate | [[FISI-8 Datenbanken und Modellierung\|FISI-8]] |
 | Deduplizierung | Gleiche Datenblöcke nur einmal speichern | [[FISI-3 Speicher und RAID planen\|FISI-3]] |
 | DHCP-Relay | Leitet DHCP-Broadcasts in andere Netze weiter | [[FISI-11 Switching, VLAN und Verkabelung\|FISI-11]] |
 | DKIM | Signatur ausgehender Mails, Schlüssel im DNS | [[FISI-13 DNS, DHCP und Netzdienste\|FISI-13]] |
@@ -37,6 +41,7 @@ Kurzdefinitionen der wichtigsten AP2-Begriffe mit Link ins Modul. Grundbegriffe 
 | LACP | Protokoll für Link Aggregation | [[FISI-11 Switching, VLAN und Verkabelung\|FISI-11]] |
 | Least Privilege | Nur minimal nötige Rechte | [[FISI-5 Systemhärtung, Malware und Angriffe\|FISI-5]] |
 | Load Balancer | Verteilt Anfragen auf mehrere Server | [[FISI-1 Server, Virtualisierung und Container\|FISI-1]] |
+| LTFS | Dateisystem für LTO-Bänder, Zugriff weiter sequenziell | [[FISI-4 Datensicherung, Archivierung und Notfallvorsorge\|FISI-4]] |
 | LTO | Magnetbandstandard für Backup und Archiv | [[FISI-4 Datensicherung, Archivierung und Notfallvorsorge\|FISI-4]] |
 | MDM | Zentrale Verwaltung mobiler Geräte | [[FISI-6 Datenschutz, Geräteverwaltung und Lizenzen\|FISI-6]] |
 | MTBF / MTTF | Mittlere Zeit zwischen Ausfällen / bis zum Ausfall | [[FISI-3 Speicher und RAID planen\|FISI-3]] |
@@ -45,23 +50,32 @@ Kurzdefinitionen der wichtigsten AP2-Begriffe mit Link ins Modul. Grundbegriffe 
 | PAT | Port Address Translation – viele interne Adressen auf eine öffentliche | [[FISI-12 NAT, Firewall, DMZ und Proxy\|FISI-12]] |
 | PKI | Infrastruktur aus CAs, Zertifikaten und Sperrlisten | [[FISI-15 VPN, TLS und PKI\|FISI-15]] |
 | Port Security | Begrenzt erlaubte MAC-Adressen je Switchport | [[FISI-14 WLAN und Netzzugangskontrolle\|FISI-14]] |
+| Predictive Maintenance | Vorausschauende Wartung anhand von Messwerten | [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN\|FISI-16]] |
 | Reverse Proxy | Nimmt Anfragen für interne Server entgegen | [[FISI-12 NAT, Firewall, DMZ und Proxy\|FISI-12]] |
 | Router-on-a-Stick | Inter-VLAN-Routing über Subinterfaces | [[FISI-11 Switching, VLAN und Verkabelung\|FISI-11]] |
 | RPO / RTO | Tolerierter Datenverlust / tolerierte Ausfallzeit | [[FISI-4 Datensicherung, Archivierung und Notfallvorsorge\|FISI-4]] |
+| SAM | Software Asset Management: Inventarisierung und Lizenzabgleich | [[FISI-6 Datenschutz, Geräteverwaltung und Lizenzen\|FISI-6]] |
 | SAN / NAS | Blockspeicher im eigenen Netz / Dateispeicher im LAN | [[FISI-3 Speicher und RAID planen\|FISI-3]] |
+| Sandbox | Abgeschottete Umgebung zur Prüfung verdächtiger Anhänge | [[FISI-12 NAT, Firewall, DMZ und Proxy\|FISI-12]] |
+| Schwachstellenscan | Automatische Suche nach bekannten Lücken (z. B. OpenVAS) | [[FISI-5 Systemhärtung, Malware und Angriffe\|FISI-5]] |
 | Secure Boot | Startet nur signierte Bootloader | [[FISI-5 Systemhärtung, Malware und Angriffe\|FISI-5]] |
+| Shebang | #!/bin/bash – legt den Interpreter fest | [[FISI-7 Programmierung und Skripte für Admins\|FISI-7]] |
 | SLA | Vereinbarte Dienstgüte | [[FISI-2 Cloud und Betriebsmodelle\|FISI-2]] |
 | SLAAC | Automatische IPv6-Adressbildung aus dem Router Advertisement | [[FISI-10 IPv6 im Unternehmen\|FISI-10]] |
 | SNMP | Protokoll für Monitoring (Polling und Traps) | [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN\|FISI-16]] |
+| SNMPv3 | SNMP mit Authentifizierung und Verschlüsselung | [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN\|FISI-16]] |
 | SPF | DNS-Eintrag mit erlaubten Mailservern | [[FISI-13 DNS, DHCP und Netzdienste\|FISI-13]] |
 | SPI | Stateful Packet Inspection | [[FISI-12 NAT, Firewall, DMZ und Proxy\|FISI-12]] |
 | Split-Horizon-DNS | Intern und extern unterschiedliche DNS-Antworten | [[FISI-13 DNS, DHCP und Netzdienste\|FISI-13]] |
 | STP | Spanning Tree – verhindert Schleifen zwischen Switches | [[FISI-11 Switching, VLAN und Verkabelung\|FISI-11]] |
+| T.38 | Fax über IP gesichert übertragen | [[FISI-13 DNS, DHCP und Netzdienste\|FISI-13]] |
+| Testkonzept | Ziele, Testfälle, Umgebung, Zuständigkeiten und Zeitplan eines Tests | [[FISI-1 Server, Virtualisierung und Container\|FISI-1]] |
 | TOM | Technische und organisatorische Maßnahmen | [[FISI-6 Datenschutz, Geräteverwaltung und Lizenzen\|FISI-6]] |
 | USV (VFD, VI, VFI) | Unterbrechungsfreie Stromversorgung, Klassen nach Qualität | [[FISI-4 Datensicherung, Archivierung und Notfallvorsorge\|FISI-4]] |
 | VLSM | Subnetze unterschiedlicher Größe | [[FISI-9 IPv4-Subnetting und Routing\|FISI-9]] |
 | WORM | Write Once Read Many – unveränderbare Medien | [[FISI-4 Datensicherung, Archivierung und Notfallvorsorge\|FISI-4]] |
 | WPA3-Enterprise | WLAN-Anmeldung je Person über 802.1X | [[FISI-14 WLAN und Netzzugangskontrolle\|FISI-14]] |
 | Zero Trust | Kein automatisches Vertrauen, jeder Zugriff wird geprüft | [[FISI-5 Systemhärtung, Malware und Angriffe\|FISI-5]] |
+| Zero-Day | Schwachstelle ohne verfügbaren Patch | [[FISI-5 Systemhärtung, Malware und Angriffe\|FISI-5]] |
 
 WiSo-Begriffe: [[Übersicht WiSo und Projektarbeit]] · ← [[AP2 FISI Start]]

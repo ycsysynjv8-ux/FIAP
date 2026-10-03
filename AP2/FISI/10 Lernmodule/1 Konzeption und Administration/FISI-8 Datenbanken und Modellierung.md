@@ -173,6 +173,9 @@ Ausführlich: [[FIAE-4 Objektorientierter Entwurf und Entwurfsmuster]].
 > - Beim `JOIN` die Verknüpfungsbedingung (`ON …`) vergessen – das ergibt ein Kreuzprodukt.
 > - Aggregation und Komposition vertauschen: **gefüllte Raute = Komposition = existenzabhängig**.
 
+### Ergänzung: Data Lake
+Ein **Data Lake** sammelt Rohdaten aus vielen Quellen und Formaten (CSV, XML, JSON, Sensorwerte) zunächst unverändert; das Schema wird erst bei der Auswertung angewendet. Austauschformate: CSV (einfach, nicht genormt), JSON, XML (verschachtelt, mit Schema prüfbar).
+
 ## Verwandte Themen
 - [[FISI-7 Programmierung und Skripte für Admins]] – Algorithmen in derselben Prüfung
 - [[FIAE-12 SQL für Entwickler]] – SQL in voller Tiefe

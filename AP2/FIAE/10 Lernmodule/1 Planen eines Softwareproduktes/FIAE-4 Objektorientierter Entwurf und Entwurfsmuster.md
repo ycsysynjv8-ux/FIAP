@@ -174,6 +174,9 @@ Klasse DurchschnittsAnzeige implementiert Observer
 > - Observer und Factory Method in die falsche Kategorie stecken (Observer = Verhalten, Factory = Erzeugung).
 > - Polymorphie mit Überladen verwechseln – gemeint ist das **Überschreiben** mit Auswahl zur Laufzeit.
 
+### Ergänzung: Top-down und Bottom-up
+**Top-down:** Gesamtarchitektur zuerst, dann Zerlegung in Module und Klassen. **Bottom-up:** vorhandene Bausteine werden zum System zusammengesetzt. In der Praxis werden beide gemischt.
+
 ## Verwandte Themen
 - [[FIAE-10 Objektorientierte Programmierung umsetzen]] – Klassen in Code
 - [[FIAE-3 UML Aktivität, Sequenz und Zustand]] – dynamische Diagramme

@@ -149,6 +149,9 @@ Lanes bündeln sich: **x1, x4, x8, x16**. NVMe-SSDs nutzen meist **x4**, Grafikk
 > - Datenraten in Bit und Byte vermischen (5 Gbit/s ≠ 5 GB/s).
 > - Die SSD für jede Aufgabe empfehlen – für große Archive/Backups ist die HDD wirtschaftlicher.
 
+### Ergänzung: Benchmark richtig durchführen
+Zum Vergleich zweier Speicherlösungen gelten **gleiche Testbedingungen**: gleiche Testdaten und Software, keine Hintergrundlast, mehrere Messungen und Mittelwert. Sonst sind die Ergebnisse nicht vergleichbar.
+
 ## Verwandte Themen
 - [[H3 Datenmengen und Übertragung]] – Übertragungsdauer berechnen
 - [[H1 PC-Komponenten und Arbeitsplatzgeräte]] – Mainboard-Steckplätze

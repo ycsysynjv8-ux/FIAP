@@ -114,6 +114,12 @@ Indikatoren: **Frühindikatoren** (Auftragseingänge, Geschäftsklimaindex), Pr�
 > - Emissionen nur als Abgase verstehen – **Lärm** gehört dazu.
 > - Umweltziele mit sozialen Zielen verwechseln (fair gehandelt = sozial, Verpackungsabfall sammeln = ökologisch).
 
+### Ergänzung: UWG, Netikette, AGG und Social Media
+- **UWG:** schützt vor irreführender und aggressiver Werbung (z. B. Werbeanrufe ohne Einwilligung). Preisabsprachen: Kartellrecht (GWB).
+- **Netikette:** aussagekräftiger Betreff, höflicher Ton, externe Empfänger in BCC.
+- **AGG:** Stellenanzeigen geschlechtsneutral (m/w/d), keine Altersgrenzen oder Fragen nach Familienstand.
+- **Social Media:** Beleidigungen oder interne Informationen im Netz können zu Abmahnung oder Kündigung führen (Rücksichtnahmepflicht).
+
 ## Verwandte Themen
 - [[WISO-5 Unternehmen, Rechtsformen und Organisation]] – Unternehmensziele
 - [[W6 Markt, Marketing und Kostenrechnung]] – Marketing und Marktanalyse (AP1)

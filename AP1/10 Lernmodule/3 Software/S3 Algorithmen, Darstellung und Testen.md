@@ -192,6 +192,11 @@ pytest-Ergebnisse: **PASSED** (bestanden) · **FAILED** (Soll ≠ Ist) · **ERRO
 > - Testfälle nur mit „normalen“ Werten – Grenzwerte fehlen.
 > - Binäre Suche auf unsortierte Daten anwenden.
 
+### Insertion Sort und Selection Sort
+- **Selection Sort:** In jedem Durchlauf wird das **kleinste Element des unsortierten Teils** gesucht und an dessen Anfang getauscht. `[5, 1, 4, 2]` → `[1, 5, 4, 2]` → `[1, 2, 4, 5]`.
+- **Insertion Sort:** Jedes Element wird **an der passenden Stelle in den bereits sortierten Teil eingefügt** (wie Spielkarten auf der Hand). `[4, 3, 1, 2]` → `[3, 4, 1, 2]` → `[1, 3, 4, 2]` → `[1, 2, 3, 4]`.
+- Beide (wie Bubble Sort) haben zwei verschachtelte Schleifen und die Laufzeit **O(n²)**; sie sind für kleine Listen einfach und gut nachvollziehbar.
+
 ## Verwandte Themen
 - [[S2 Programmierung – Grundlagen]] – die Sprachelemente
 - [[S8 UML und Softwareentwurf]] – UML-Aktivitätsdiagramm

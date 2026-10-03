@@ -146,6 +146,9 @@ Vor der Nutzung prüft der Client per **ARP** (bzw. Gratuitous ARP), ob die Adre
 > - DNSSEC als Verschlüsselung beschreiben.
 > - DORA-Schritte in falscher Reihenfolge oder Discover als Unicast.
 
+### Ergänzung: Fax über VoIP
+Fax-Signale reagieren empfindlich auf Laufzeitschwankungen (Jitter) und Sprachkompression. Das Protokoll **T.38** überträgt Fax gesichert über IP.
+
 ## Verwandte Themen
 - [[FISI-11 Switching, VLAN und Verkabelung]] – DHCP-Relay über VLANs
 - [[FISI-12 NAT, Firewall, DMZ und Proxy]] – Ports in Firewallregeln

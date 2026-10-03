@@ -160,6 +160,15 @@ tags: [ap2/modul, ap2/fisi]
 > - Beim Hop Limit die Anzahl Router falsch zählen: Startwert − Empfangswert.
 > - Parallele Verfügbarkeit wie Reihe rechnen.
 
+### Ergänzung: SNMP absichern und vorausschauend warten
+- **SNMPv1/v2c:** Community-String im Klartext. **SNMPv3:** Authentifizierung und Verschlüsselung. Zusätzlich: Management-VLAN, ACL auf den Monitoring-Server, nur Lesezugriff.
+- **Predictive Maintenance:** Aus Messwerten (Temperatur, Vibration, S.M.A.R.T.) wird der Ausfall vorhergesagt, das Bauteil wird vorher getauscht.
+
+### Ergänzung: Systemauslastung, Schwellwerte und präventive Wartung
+- **Auslastung überwachen:** CPU, Arbeitsspeicher und Swap, Plattenplatz und IOPS, Netzwerkdurchsatz. Dauerhaft hohe CPU-Last: Ursache analysieren, Last verteilen oder Ressourcen erhöhen (scale up/out).
+- **Zwei Schwellwerte** (Warnung, kritisch) ermöglichen frühes Reagieren und Eskalation.
+- **Präventive Wartung:** Lüfter reinigen, Firmware aktualisieren, USV-Akkus testen – Störungen vermeiden, bevor sie auftreten.
+
 ## Verwandte Themen
 - [[FISI-13 DNS, DHCP und Netzdienste]] – DNS und DHCP im Mitschnitt
 - [[FISI-11 Switching, VLAN und Verkabelung]] – VLAN- und Portprobleme

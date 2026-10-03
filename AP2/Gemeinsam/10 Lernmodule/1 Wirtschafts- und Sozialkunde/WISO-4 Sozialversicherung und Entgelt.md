@@ -87,6 +87,9 @@ Die Sätze werden jährlich angepasst – in der Prüfung sind sie **immer vorge
 > - Den Kinderlosenzuschlag auch beim Arbeitgeber aufschlagen.
 > - Den Generationenvertrag als Kapitaldeckung beschreiben – er ist ein **Umlageverfahren**.
 
+### Ergänzung: Vermögenswirksame Leistungen
+**VL** sind Geldbeträge, die für Beschäftigte langfristig angelegt werden (z. B. Bausparvertrag); sie stehen auf der Gehaltsabrechnung und sind oft tarifvertraglich geregelt.
+
 ## Verwandte Themen
 - [[WISO-2 Arbeitsvertrag, Kündigung und Arbeitsschutz]] – Entgeltfortzahlung, Minijob, Arbeitsunfall
 - [[WISO-5 Unternehmen, Rechtsformen und Organisation]] – Personalkosten im Unternehmen

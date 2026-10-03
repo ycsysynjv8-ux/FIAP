@@ -116,6 +116,13 @@ Abrechnung meist **pro Nutzer und Monat** (Lizenz/Abo) oder **nutzungsabhängig*
 > - Bei der Kostenberechnung Grundgebühr oder Nutzerzahl vergessen, netto und brutto mischen.
 > - ERP und CRM verwechseln (ERP = alle Prozesse, CRM = Kundenbeziehung).
 
+### Ergänzung: Industrie 4.0 und Social Media im Betrieb
+- **Industrie 4.0:** Vernetzung von Maschinen, Sensoren und Software, sodass Produktionsdaten in Echtzeit ausgetauscht und ausgewertet werden (cyber-physische Systeme, IoT, vorausschauende Wartung).
+- **Social-Media-Systeme** dienen Marketing, Recruiting und Kundendialog. Risiken: Datenschutz, Imageschaden, Social Engineering. Äußerungen über den Arbeitgeber oder interne Informationen im Netz können arbeitsrechtliche Folgen haben (Abmahnung, Kündigung). Gegenmaßnahme: **Social-Media-Richtlinie** und Schulung.
+
+### Ergänzung: Technologietrends und ihre Auswirkungen
+Homeoffice, Cloud und KI verändern Einsatzfelder: mehr Notebooks mit VPN und SaaS, weniger lokale Server; laufende statt einmalige Kosten; neue Sicherheitsanforderungen (MFA, Geräteverwaltung). **Auswirkungen auf Beschäftigte:** Routineaufgaben fallen weg oder werden unterstützt, Qualifizierung und Beteiligung (Betriebsrat) werden wichtiger.
+
 ## Verwandte Themen
 - [[I2 Datenschutz]] – Personendaten in KI-Diensten
 - [[P6 Teamarbeit, Verhandlung und Veränderung]] – Veränderungen einführen und Widerstände abbauen

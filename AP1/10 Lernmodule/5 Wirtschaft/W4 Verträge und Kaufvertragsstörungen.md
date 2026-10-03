@@ -182,6 +182,12 @@ Der Käufer nimmt die **ordnungsgemäß angebotene** Ware nicht an – **Verschu
 > - Werk- und Dienstvertrag verwechseln (Erfolg vs. Tätigkeit).
 > - Widerrufsrecht auch für Ladenkäufe oder zwischen Unternehmen annehmen.
 
+### Ergänzung: Gesetz gegen den unlauteren Wettbewerb (UWG)
+Das **UWG** schützt vor irreführender oder aggressiver Werbung und anderen unlauteren Handlungen (z. B. Werbeanrufe ohne Einwilligung). **Preisabsprachen** zwischen Unternehmen verbietet dagegen das Kartellrecht (**GWB**).
+
+### Ergänzung: Kosten im Soll-Ist-Vergleich
+Die **Nachkalkulation** vergleicht kalkulierte Kosten (Soll) mit tatsächlichen Kosten (Ist): Soll 2 400 €, Ist 2 760 € → Abweichung **360 € (15 %)**. Sie liefert Erkenntnisse für künftige Angebote und ist Teil der Auftragsbewertung.
+
 ## Verwandte Themen
 - [[W1 Beschaffung und Kalkulation]] – Anfrage, Angebot, Bestellung
 - [[S6 Software beschaffen und lizenzieren]] – Lizenz- und Softwareverträge

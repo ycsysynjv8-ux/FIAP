@@ -142,6 +142,10 @@ Ein Dienstleister muss mit seinen **verrechenbaren (produktiven) Stunden** alle 
 > - Effektivität und Effizienz vertauschen.
 > - Marktformen nur nach Anbietern bestimmen – es kommt auf **beide Seiten** an.
 
+### Ergänzung: SWOT-Analyse und KPI
+- **SWOT:** Stärken und Schwächen (intern), Chancen und Risiken (extern) als Grundlage strategischer Entscheidungen.
+- **KPI** (Key Performance Indicator): Kennzahl, die den Erfüllungsgrad eines Ziels misst, z. B. Erstlösungsquote im Support oder Verfügbarkeit in Prozent. Ist- und Zielwert werden verglichen.
+
 ## Verwandte Themen
 - [[W1 Beschaffung und Kalkulation]] – Handelskalkulation und TCO
 - [[W2 Nutzwertanalyse und Entscheidungen]] – qualitativer Angebotsvergleich

@@ -184,6 +184,12 @@ Visualisierung des Arbeitsflusses auf einem **Board** (Spalten z. B. *To Do – 
 > - Scrum-Rollen verwechseln: Der **Product Owner** priorisiert, der **Scrum Master** ist kein Projektleiter.
 > - Agil als „ohne Planung“ darstellen.
 
+### Ergänzung: Spiralmodell
+Mehrere Umläufe mit **Zielfestlegung → Risikoanalyse → Entwicklung/Test → Planung des nächsten Umlaufs**. Besonders für große, riskante Projekte; im Gegensatz zum sequenziellen Wasserfallmodell wird das Risiko in jedem Umlauf neu bewertet.
+
+### Ergänzung: Probleme analysieren und Lösungsalternativen bewerten
+Vorgehen: **Problem beschreiben → Alternativen entwickeln → bewerten** (z. B. Nutzwertanalyse, Kosten, Termin, Risiko) **→ entscheiden → umsetzen und kontrollieren** (Soll-Ist-Vergleich). Ohne klar beschriebenes Problem sind Alternativen nicht vergleichbar.
+
 ## Verwandte Themen
 - [[P2 Netzplan und Zeitplanung]] – Zeitplanung mit Netzplan
 - [[W4 Verträge und Kaufvertragsstörungen]] – Werkvertrag und Abnahme

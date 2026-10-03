@@ -168,6 +168,9 @@ Trace-Tabelle: **Spalte je Variable**, **Zeile je Schleifendurchlauf**, Werte **
 > - Objekte mit `==` vergleichen statt über Getter bzw. `equals`/`compare`.
 > - Beim „besten Raum“ den Betrag der Differenz oder den Fall „leere Liste“ vergessen.
 
+### Ergänzung: Selection Sort und Insertion Sort
+**Selection Sort:** kleinstes Element des unsortierten Teils nach vorn tauschen (`[5, 1, 4, 2]` → `[1, 5, 4, 2]` → `[1, 2, 4, 5]`). **Insertion Sort:** jedes Element in den sortierten Teil einfügen. Beide O(n²).
+
 ## Verwandte Themen
 - [[FIAE-10 Objektorientierte Programmierung umsetzen]] – Klassen, Listen, Getter
 - [[FIAE-11 Testen und Qualitätssicherung]] – Testfälle für die Methode

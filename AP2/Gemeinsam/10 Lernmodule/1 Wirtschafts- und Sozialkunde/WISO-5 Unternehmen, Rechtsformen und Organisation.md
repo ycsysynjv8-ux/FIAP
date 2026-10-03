@@ -126,6 +126,11 @@ Der Kostentreiber soll den tatsächlichen Aufwand möglichst gut abbilden. Die b
 > - Stabsstelle als weisungsbefugt beschreiben.
 > - Prokura ohne Handelsregistereintrag für unwirksam halten – die Eintragung ist nur **deklaratorisch**, Pflicht ist sie trotzdem.
 
+### Ergänzung: Verbindungen, Wirtschaftsordnung, Globalisierung
+- **Fusion:** Verschmelzung. **Konzern:** rechtlich selbständige Unternehmen unter einheitlicher Leitung. **Kartell:** Absprache selbständiger Unternehmen, grundsätzlich verboten (GWB).
+- **Soziale Marktwirtschaft:** Wettbewerb und Privateigentum plus sozialer Ausgleich und Wettbewerbsschutz.
+- **Globalisierung:** zunehmende weltweite Verflechtung von Handel, Produktion, Kapital und Kommunikation – Chancen (Märkte) und Risiken (Abhängigkeiten, Lieferketten).
+
 ## Verwandte Themen
 - [[WISO-6 Markt, Wirtschaft und Nachhaltigkeit]] – Märkte und Nachhaltigkeitsziele
 - [[WISO-3 Mitbestimmung und Tarifrecht]] – Mitbestimmung im Aufsichtsrat

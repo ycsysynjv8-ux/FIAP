@@ -170,6 +170,14 @@ Ausfallrate
 > - RAID 10 „2 Ausfälle garantiert“ – nein, garantiert nur **einer**.
 > - Beim „Wie viele Jahre?“ aufrunden – das angebrochene Jahr passt **nicht** mehr.
 
+### Ergänzung: RAID-Level nach Anforderung wählen
+- **Fehlertolerant und schnell schreiben:** RAID 10 (Spiegelung + Striping, keine Paritätsberechnung).
+- **Größte Nettokapazität bei Redundanz:** RAID 5 (n − 1 Platten nutzbar); RAID 6 (n − 2) für zusätzliche Sicherheit bei großen Platten.
+- **Benchmark eines RAID-Controllers:** gleiche Testbedingungen (gleiche Testdaten, Software, keine Hintergrundlast, mehrere Messungen).
+
+### Ergänzung: NAS-Freigabe absichern
+Rechte an **Gruppen** nach dem Prinzip der minimalen Rechte vergeben (nicht „Jeder – Vollzugriff“), Verschlüsselung und Protokollierung aktivieren, Snapshots und Backup einplanen.
+
 ## Verwandte Themen
 - [[FISI-4 Datensicherung, Archivierung und Notfallvorsorge]] – RAID ist kein Backup, Archiv
 - [[FISI-1 Server, Virtualisierung und Container]] – Shared Storage für Cluster

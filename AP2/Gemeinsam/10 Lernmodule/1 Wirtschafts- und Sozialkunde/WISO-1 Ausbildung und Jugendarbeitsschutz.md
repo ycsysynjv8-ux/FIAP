@@ -109,6 +109,11 @@ Jugendlichen soll der Urlaub **in den Berufsschulferien** gewährt werden.
 > - Probezeit „6 Monate“ (das ist die Wartezeit im Kündigungsschutzgesetz) – Ausbildung: **1–4 Monate**.
 > - Werktage (Mo–Sa) und Arbeitstage (Mo–Fr) verwechseln.
 
+### Ergänzung: Lerntechniken, Europass, Fortbildung
+- **Lerntechniken:** visuell (Mindmaps, Schaubilder), auditiv (Vorträge, Lerngruppen), motorisch (Learning by Doing), kommunikativ (Diskussion).
+- **Europass:** europaweit verständliche Darstellung von Lebenslauf, Qualifikationen und Auslandsaufenthalten.
+- **Fortbildung:** Anpassungsfortbildung (neue Anforderungen), Erhaltungsfortbildung (Wissen auffrischen), **Aufstiegsfortbildung** (höherer Abschluss, z. B. Fachwirt); Umschulung = anderer Beruf.
+
 ## Verwandte Themen
 - [[WISO-2 Arbeitsvertrag, Kündigung und Arbeitsschutz]] – Regeln nach der Ausbildung
 - [[WISO-3 Mitbestimmung und Tarifrecht]] – JAV und Betriebsrat

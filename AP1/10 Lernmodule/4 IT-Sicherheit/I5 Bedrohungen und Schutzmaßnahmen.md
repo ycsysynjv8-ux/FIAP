@@ -165,6 +165,12 @@ Grundregel: **Default Deny** – alles verbieten, nur Benötigtes erlauben. **DM
 > - Nur technische Maßnahmen gegen Phishing nennen – **Schulung** ist die wichtigste.
 > - Firewall als Schutz vor Phishing oder Social Engineering verkaufen.
 
+### Ergänzung: APT, Schwachstellenscanner, Sandbox
+- **APT** (Advanced Persistent Threat): gezielter, langandauernder, getarnter Angriff auf eine bestimmte Organisation. Gegenmaßnahmen: Segmentierung, Least Privilege, Monitoring.
+- **Zero-Day-Schwachstelle:** Gegen Lücken ohne Patch helfen Härtung, Segmentierung und Überwachung als Schadensbegrenzung.
+- **Schwachstellenscanner** (z. B. OpenVAS) prüfen Systeme automatisiert auf bekannte Lücken (veraltete Software, offene Ports, Fehlkonfiguration). Ein **Penetrationstest** nutzt Lücken zusätzlich gezielt aus.
+- **Sandbox:** Verdächtige Anhänge werden vor der Zustellung in einer abgeschotteten Umgebung ausgeführt; so erkennt man auch unbekannte Schadsoftware am Verhalten.
+
 ## Verwandte Themen
 - [[N4 Netzwerkdienste und Protokolle]] – Ports und Dienste
 - [[I3 Datensicherung]] – Wiederherstellung nach Angriffen

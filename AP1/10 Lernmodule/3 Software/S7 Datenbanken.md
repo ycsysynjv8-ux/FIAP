@@ -146,6 +146,10 @@ In einer relationalen Datenbank liegen die Daten in **Tabellen** (Relationen): S
 > - Beziehungsattribute (Menge, Datum der Teilnahme) einer Entität zuordnen.
 > - Verben/Tätigkeiten als Entitätstyp modellieren („Bestellen“ ist eine Beziehung, kein Entitätstyp).
 
+### Ergänzung: Datentyp BLOB und Löschweitergabe
+- **BLOB** (Binary Large Object) speichert Binärdaten wie Fotos, PDFs oder Audio. Geokoordinaten legt man als Dezimalzahl (`DECIMAL`) oder in einem Geodatentyp ab.
+- **Löschweitergabe** (`ON DELETE CASCADE`): Wird der Kunde gelöscht, werden seine Aufträge automatisch mit gelöscht. **Aktualisierungsweitergabe** (`ON UPDATE CASCADE`): Ändert sich der Primärschlüssel, wird der Fremdschlüssel angepasst. Beides hält die referenzielle Integrität ein.
+
 ## Verwandte Themen
 - [[S8 UML und Softwareentwurf]] – Klassendiagramm statt ER-Modell
 - [[I5 Bedrohungen und Schutzmaßnahmen]] – SQL-Injection verhindern

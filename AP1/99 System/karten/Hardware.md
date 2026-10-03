@@ -90,3 +90,4 @@ Welche Bildformate sind verlustfrei und welche verlustbehaftet?::verlustfrei: PN
 Wozu dient eine Prüfziffer?::Sie erkennt Tipp- und Lesefehler, z. B. bei EAN, ISBN und IBAN
 Wie berechnest du die EAN-13-Prüfziffer?::Ziffern abwechselnd mit 1 und 3 gewichten, addieren, Ergänzung zur nächsten Zehnerzahl
 Was unterscheidet Barcode, QR-Code und RFID?::Barcode 1D mit Sichtkontakt · QR 2D mit mehr Daten und Fehlerkorrektur · RFID per Funk ohne Sichtkontakt
+Was ist bei einem Benchmark zum Vergleich zweier Systeme zu beachten?::Gleiche Testdaten, Software und Einstellungen, keine Hintergrundlast, mehrere Messungen

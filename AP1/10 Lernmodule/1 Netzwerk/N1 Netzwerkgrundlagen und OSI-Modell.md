@@ -214,6 +214,18 @@ MAC-Adressen sind **6 Byte (48 Bit)**, z. B. `00:1a:2b:3c:4d:5e`. Die ersten 3 B
 > - Bei Hex vergessen, dass **2 Ziffern ein Byte** sind, oder A–F falsch umrechnen (A = 10 … F = 15).
 > - Fehlersuche ohne System („erst mal neu starten“) statt Schicht für Schicht zu begründen.
 
+### Ausdehnung der Netze: PAN bis GAN
+| Netzart | Reichweite | Beispiel |
+|---|---|---|
+| **PAN** | wenige Meter, eine Person | Bluetooth-Headset, Smartphone-Hotspot |
+| **LAN** | Gebäude, Gelände | Firmennetz mit Switches und WLAN |
+| **MAN** | Stadt, Region | Glasfasernetz einer Stadtverwaltung |
+| **WAN** | Länder, Kontinente | Standortvernetzung über Provider |
+| **GAN** | weltweit | Internet, Satellitenverbindungen |
+
+> [!tip] Reihenfolge merken
+> **P**ersönlich – **L**okal – **M**etropolitan – **W**eit – **G**lobal: PAN < LAN < MAN < WAN < GAN.
+
 ## Verwandte Themen
 - [[N4 Netzwerkdienste und Protokolle]] – Protokolle und Dienste der einzelnen Schichten
 - [[I5 Bedrohungen und Schutzmaßnahmen]] – Firewalls filtern auf Schicht 3 und 4

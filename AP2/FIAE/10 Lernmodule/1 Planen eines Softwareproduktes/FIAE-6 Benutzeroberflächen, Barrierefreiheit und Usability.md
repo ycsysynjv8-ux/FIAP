@@ -106,6 +106,9 @@ Barrierefreiheit nützt allen (Sonne auf dem Display, einhändige Bedienung, äl
 > - Barrierefreiheit auf „große Schrift“ reduzieren – nenne **Anforderung und Maßnahme** konkret.
 > - Mängel nur aufzählen, ohne sie im verbesserten Entwurf zu beheben.
 
+### Ergänzung: Corporate Identity
+Farben, Logo und Schrift der **Corporate Identity** sorgen für Wiedererkennung. Sie müssen zur Barrierefreiheit passen (ausreichender Kontrast).
+
 ## Verwandte Themen
 - [[FIAE-2 Anforderungen und Use Cases]] – Benutzbarkeit als nichtfunktionale Anforderung
 - [[FIAE-7 Schnittstellen, Web und Architektur]] – Web-Anwendungen, HTTP-Fehler

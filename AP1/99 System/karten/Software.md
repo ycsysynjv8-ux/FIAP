@@ -113,3 +113,10 @@ Was bedeutet Härtung eines Betriebssystems?::Angriffsfläche verkleinern: unnö
 Welche Gateways gibt es in BPMN?::exklusiv (X): genau ein Weg · parallel (+): alle Wege · inklusiv (O): ein oder mehrere Wege
 Was unterscheidet in BPMN Sequenz- und Nachrichtenfluss?::Sequenzfluss (durchgezogen) innerhalb eines Pools · Nachrichtenfluss (gestrichelt) zwischen Pools
 Was prüft ein Lasttest?::das Verhalten unter der erwarteten Last, z. B. vielen gleichzeitigen Nutzern
+Wie arbeitet Selection Sort?::Pro Durchlauf wird das kleinste Element des unsortierten Teils nach vorn getauscht – O(n²)
+Wie arbeitet Insertion Sort?::Jedes Element wird an der passenden Stelle in den bereits sortierten Teil eingefügt – O(n²)
+Was ist der Unterschied zwischen Top-down und Bottom-up?::Top-down zerlegt die Gesamtaufgabe in Teilaufgaben, Bottom-up setzt das System aus vorhandenen Bausteinen zusammen
+Welche UML-Diagramme zeigen statische und welche dynamische Sicht?::Statisch: Klassen- und Objektdiagramm · dynamisch: Aktivitäts-, Sequenz- und Zustandsdiagramm
+Wofür nutzt man den Datentyp BLOB?::Für Binärdaten wie Fotos, PDFs oder Audio in einer Datenbank
+Was bewirkt ON DELETE CASCADE?::Beim Löschen des Datensatzes werden abhängige Datensätze (z. B. Aufträge) automatisch mit gelöscht
+Was kennzeichnet Industrie 4.0?::Vernetzung von Maschinen, Sensoren und Software mit Datenaustausch in Echtzeit (CPS, IoT, vorausschauende Wartung)

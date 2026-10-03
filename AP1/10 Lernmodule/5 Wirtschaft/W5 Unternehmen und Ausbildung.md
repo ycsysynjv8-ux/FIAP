@@ -124,6 +124,11 @@ flowchart TB
 > - HRA und HRB vertauschen.
 > - Stabsstellen Weisungsbefugnis zuschreiben.
 
+### Ergänzung: Unternehmensverbindungen, Wirtschaftsordnung, VL
+- **Fusion:** Unternehmen verschmelzen. **Konzern:** rechtlich selbständige Unternehmen unter einheitlicher Leitung. **Kartell:** Absprache selbständiger Unternehmen, grundsätzlich verboten.
+- **Soziale Marktwirtschaft:** Wettbewerb und Privateigentum, ergänzt durch sozialen Ausgleich und Wettbewerbsschutz.
+- **Vermögenswirksame Leistungen (VL):** Geldbeträge, die für den Arbeitnehmer langfristig angelegt werden (z. B. Bausparen), oft tarifvertraglich geregelt.
+
 ## Verwandte Themen
 - [[W4 Verträge und Kaufvertragsstörungen]] – Geschäftsfähigkeit und Verträge
 - [[P1 Projektmanagement und Vorgehensmodelle]] – Projektorganisation
