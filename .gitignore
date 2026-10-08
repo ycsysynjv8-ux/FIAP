@@ -15,5 +15,13 @@ AP2/99 System/daten/
 !.obsidian/plugins/dataview/
 !.obsidian/plugins/obsidian-spaced-repetition/
 
-# Lokale Begleitdaten einzelner Werkzeuge, die nicht zum Vault gehören
-.claudian/
+# Positivliste für die Vault-Wurzel: nur diese Pfade gehören ins Repo.
+# Alles andere (z. B. lokale Werkzeuge, die sich hier ablegen) bleibt
+# automatisch außen vor, ohne dass dieses Ignore-Muster es kennen muss.
+/*
+!/.gitignore
+!/.obsidian/
+!/AP1/
+!/AP2/
+!/Ausbildungspruefungen.md
+!/README.md
