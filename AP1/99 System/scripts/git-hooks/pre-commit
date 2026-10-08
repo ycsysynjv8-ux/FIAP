@@ -1,46 +1,58 @@
 #!/bin/sh
-# Hält das Claudian-Plugin dauerhaft aus dem Repository.
+# Begrenzt .obsidian auf die im README genannten Plugins, egal was lokal
+# sonst noch installiert ist. Positivliste statt Einzelfall: neue lokale
+# Werkzeuge sind automatisch draußen, ohne dass der Hook sie kennen muss.
 #
-# 1. Bricht ab, wenn Claudian-Dateien gestaged sind (z. B. nach git add -f).
-# 2. Entfernt den Plugin-Eintrag aus der gestageten community-plugins.json.
-#    Der Arbeitsbaum bleibt unberührt, Obsidian läuft lokal weiter.
+# 1. Bricht ab, wenn ein nicht erlaubter Plugin-Ordner gestaged ist
+#    (z. B. nach git add -f).
+# 2. Kürzt die gestagete community-plugins.json auf die Erlaubten.
+#    Der Arbeitsbaum bleibt unberührt, lokale Plugins laufen weiter.
 #
 # Installation nach einem frischen Klon (im Vault-Ordner):
 #   cp "AP1/99 System/scripts/git-hooks/pre-commit" .git/hooks/pre-commit
 #   chmod +x .git/hooks/pre-commit
 
+ERLAUBT="dataview obsidian-spaced-repetition"
 CPJ=".obsidian/community-plugins.json"
 
-verboten=$(git diff --cached --name-only | grep -i claudian | grep -v '^\.gitignore$' | grep -v '^AP1/99 System/scripts/git-hooks/')
-if [ -n "$verboten" ]; then
-  echo "pre-commit: Claudian gehört nicht ins Repository. Gestaged ist:" >&2
-  echo "$verboten" >&2
+fremd=$(git diff --cached --name-only \
+  | grep '^\.obsidian/plugins/' \
+  | while read -r pfad; do
+      ordner=$(echo "$pfad" | cut -d/ -f3)
+      erlaubt_treffer=0
+      for e in $ERLAUBT; do [ "$ordner" = "$e" ] && erlaubt_treffer=1; done
+      [ "$erlaubt_treffer" = 0 ] && echo "$pfad"
+    done)
+if [ -n "$fremd" ]; then
+  echo "pre-commit: nur erlaubte Plugins ($ERLAUBT) gehören ins Repository. Gestaged ist:" >&2
+  echo "$fremd" >&2
   echo "Entfernen mit: git restore --staged <Pfad>" >&2
   exit 1
 fi
 
 if git diff --cached --name-only | grep -qx "$CPJ"; then
-  python -X utf8 - "$CPJ" <<'PY'
-import json, subprocess, sys
+  ERLAUBT="$ERLAUBT" python -X utf8 - "$CPJ" <<'PY'
+import json, os, subprocess, sys
 pfad = sys.argv[1]
+erlaubt = set(os.environ["ERLAUBT"].split())
 roh = subprocess.check_output(["git", "show", ":" + pfad])
 liste = json.loads(roh)
-sauber = [p for p in liste if "claudian" not in p.lower()]
+sauber = [p for p in liste if p in erlaubt]
 if sauber != liste:
     neu = json.dumps(sauber, indent=2, ensure_ascii=False)
     h = subprocess.run(["git", "hash-object", "-w", "--stdin"],
                        input=neu.encode("utf-8"), capture_output=True, check=True).stdout.decode().strip()
     subprocess.run(["git", "update-index", "--cacheinfo",
                     "100644,%s,%s" % (h, pfad)], check=True)
-    entfernt = [p for p in liste if p not in sauber]
-    print("pre-commit: aus %s entfernt: %s" % (pfad, ", ".join(entfernt)))
+    entfernt = len(liste) - len(sauber)
+    print("pre-commit: %d nicht freigegebene Eintraege aus %s entfernt" % (entfernt, pfad))
 PY
 fi
 
-# War der Claudian-Eintrag die einzige Aenderung, bleibt nach dem Bereinigen
-# nichts uebrig. Dann abbrechen, statt einen leeren Commit zu erzeugen.
+# War das die einzige Aenderung, bleibt nach dem Kuerzen nichts uebrig.
+# Dann abbrechen, statt einen leeren Commit zu erzeugen.
 if git diff --cached --quiet HEAD 2>/dev/null; then
-  echo "pre-commit: nach dem Entfernen des Claudian-Eintrags bleibt keine Aenderung uebrig." >&2
-  echo "Commit abgebrochen. Aufraeumen mit: git restore --staged .obsidian/community-plugins.json" >&2
+  echo "pre-commit: nach dem Entfernen bleibt keine Aenderung uebrig." >&2
+  echo "Commit abgebrochen. Aufraeumen mit: git restore --staged $CPJ" >&2
   exit 1
 fi

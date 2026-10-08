@@ -8,6 +8,12 @@ AP2/99 System/daten/
 **/__pycache__/
 99 System/bilder/quelle/galerie.html
 
-# Claudian (lokales Werkzeug, nicht Teil des Lernvaults)
+# Nur die im README genannten Plugins sind Teil des Repos.
+# Alles andere unter .obsidian/plugins bleibt lokal (z. B. eigene,
+# nicht veröffentlichte Werkzeuge).
+.obsidian/plugins/*
+!.obsidian/plugins/dataview/
+!.obsidian/plugins/obsidian-spaced-repetition/
+
+# Lokale Begleitdaten einzelner Werkzeuge, die nicht zum Vault gehören
 .claudian/
-.obsidian/plugins/*claudian*/

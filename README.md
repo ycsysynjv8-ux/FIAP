@@ -23,13 +23,13 @@ Ein Obsidian-Vault zur Vorbereitung auf AP1 und AP2 für Fachinformatiker:innen 
 > Lernfortschritte und Prüfungsergebnisse werden lokal gespeichert und nicht mit GitHub synchronisiert.
 
 > [!note]
-> Wer den Vault selbst versioniert und dabei Claudian nutzt: Git klont keine Hooks mit. Einmalig nach dem Klonen im Vault-Ordner
+> Wer zusätzliche, nicht in diesem Repository enthaltene Community-Plugins lokal nutzt: Git klont keine Hooks mit. Einmalig nach dem Klonen im Vault-Ordner
 >
 > ```powershell
 > cp "AP1/99 System/scripts/git-hooks/pre-commit" .git/hooks/pre-commit
 > ```
 >
-> Der Hook hält das Plugin und seinen Eintrag in `community-plugins.json` dauerhaft aus den Commits.
+> Der Hook begrenzt zukünftige Commits auf die oben genannten Plugins, egal was sonst lokal installiert ist.
 
 ## Aufbau und Nutzung
 
