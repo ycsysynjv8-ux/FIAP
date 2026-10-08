@@ -8,20 +8,20 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | Begriff                    | Bedeutung                                                                                                  | Modul                                                |
 | -------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
 | **3-2-1-Regel**            | 3 Kopien, 2 Medientypen, 1 außer Haus                                                                      | [[I3 Datensicherung\|I3]]                            |
-| 5-Why | wiederholtes Fragen nach dem Warum bis zur Ursache | [[P3 IT-Service, Support und Qualität\|P3]] |
+| 5-Why                      | wiederholtes Fragen nach dem Warum bis zur Ursache                                                         | [[P3 IT-Service, Support und Qualität\|P3]]          |
 | **ACR**                    | Attenuation to Crosstalk Ratio = NEXT − Dämpfung                                                           | [[N5 Verkabelung und Netzwerkkomponenten\|N5]]       |
 | **AES**                    | symmetrisches Verschlüsselungsverfahren (Standard)                                                         | [[I4 Kryptografie\|I4]]                              |
 | **AfA**                    | Absetzung für Abnutzung (Abschreibung)                                                                     | [[W3 Investition und Finanzierung\|W3]]              |
 | **APIPA**                  | 169.254.x.x – selbst vergebene Adresse ohne DHCP                                                           | [[N2 IPv4 und Subnetting\|N2]]                       |
-| APT | gezielter, langandauernder, getarnter Angriff | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]] |
+| APT                        | gezielter, langandauernder, getarnter Angriff                                                              | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
 | **ARP**                    | ermittelt zur IP-Adresse die MAC-Adresse im LAN                                                            | [[N4 Netzwerkdienste und Protokolle\|N4]]            |
 | **AVV**                    | Auftragsverarbeitungsvertrag (Art. 28 DSGVO)                                                               | [[I2 Datenschutz\|I2]]                               |
-| Benchmark | Leistungsvergleich unter gleichen Testbedingungen | [[H2 Massenspeicher und Schnittstellen\|H2]] |
+| Benchmark                  | Leistungsvergleich unter gleichen Testbedingungen                                                          | [[H2 Massenspeicher und Schnittstellen\|H2]]         |
 | **Bezugspreis**            | Einkaufspreis nach Rabatt, Skonto und Bezugskosten                                                         | [[W1 Beschaffung und Kalkulation\|W1]]               |
 | **BFSG**                   | Barrierefreiheitsstärkungsgesetz, seit 28.06.2025                                                          | [[P5 Arbeitsplatz, Ergonomie und Umwelt\|P5]]        |
-| BLOB | Datentyp für Binärdaten (Foto, PDF) | [[S7 Datenbanken\|S7]] |
-| Blockchain | dezentrale Kette von Blöcken, verkettet über Hashwerte | [[I4 Kryptografie\|I4]] |
-| Brandklassen | A fest · B flüssig · C Gase · D Metalle | [[P5 Arbeitsplatz, Ergonomie und Umwelt\|P5]] |
+| BLOB                       | Datentyp für Binärdaten (Foto, PDF)                                                                        | [[S7 Datenbanken\|S7]]                               |
+| Blockchain                 | dezentrale Kette von Blöcken, verkettet über Hashwerte                                                     | [[I4 Kryptografie\|I4]]                              |
+| Brandklassen               | A fest · B flüssig · C Gase · D Metalle                                                                    | [[P5 Arbeitsplatz, Ergonomie und Umwelt\|P5]]        |
 | **Broadcast**              | Adresse aller Geräte im Netz (Hostbits alle 1)                                                             | [[N2 IPv4 und Subnetting\|N2]]                       |
 | **BSI-Grundschutz**        | Methode des BSI für angemessene Standardsicherheit                                                         | [[I1 Informationssicherheit und IT-Grundschutz\|I1]] |
 | **CA**                     | Zertifizierungsstelle, signiert Zertifikate                                                                | [[I4 Kryptografie\|I4]]                              |
@@ -31,7 +31,7 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | **Concurrent User**        | Lizenz nach gleichzeitigen Nutzern                                                                         | [[S6 Software beschaffen und lizenzieren\|S6]]       |
 | **Container**              | leichtgewichtige Virtualisierung mit gemeinsamem Kernel                                                    | [[S5 Virtualisierung und Cloud\|S5]]                 |
 | **Copyleft**               | Weitergabe von Änderungen unter gleicher Lizenz (GPL)                                                      | [[S6 Software beschaffen und lizenzieren\|S6]]       |
-| Corporate Identity | einheitliche Identität in Verhalten, Kommunikation, Erscheinungsbild | [[P4 Kommunikation und Kundenberatung\|P4]] |
+| Corporate Identity         | einheitliche Identität in Verhalten, Kommunikation, Erscheinungsbild                                       | [[P4 Kommunikation und Kundenberatung\|P4]]          |
 | **cos φ**                  | Leistungsfaktor, P = S × cos φ                                                                             | [[H5 Elektrotechnik, USV und Energie\|H5]]           |
 | **dBm**                    | Pegel bezogen auf 1 mW                                                                                     | [[N5 Verkabelung und Netzwerkkomponenten\|N5]]       |
 | **DDoS**                   | Überlastungsangriff von vielen Rechnern                                                                    | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
@@ -53,34 +53,34 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | **GPT**                    | Partitionstabelle für UEFI, > 2 TiB                                                                        | [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4]]  |
 | **GWG**                    | geringwertiges Wirtschaftsgut bis 800 € netto                                                              | [[W3 Investition und Finanzierung\|W3]]              |
 | **Hash**                   | Einweg-Prüfwert fester Länge (SHA-256)                                                                     | [[I4 Kryptografie\|I4]]                              |
-| **Hot Swap**              | Tausch von Komponenten im laufenden Betrieb                                                                    | [[H4 Server und Netzwerkspeicher\|H4]]                      |
+| **Hot Swap**               | Tausch von Komponenten im laufenden Betrieb                                                                | [[H4 Server und Netzwerkspeicher\|H4]]               |
 | **Hypervisor**             | verteilt Hardware auf VMs (Typ 1/Typ 2)                                                                    | [[S5 Virtualisierung und Cloud\|S5]]                 |
 | **Incident**               | ungeplante Störung                                                                                         | [[P3 IT-Service, Support und Qualität\|P3]]          |
-| Industrie 4.0 | vernetzte Produktion mit Echtzeitdaten (CPS, IoT) | [[S9 KI und Unternehmenssoftware\|S9]] |
+| Industrie 4.0              | vernetzte Produktion mit Echtzeitdaten (CPS, IoT)                                                          | [[S9 KI und Unternehmenssoftware\|S9]]               |
 | **Integrität**             | Daten korrekt und unverändert                                                                              | [[I1 Informationssicherheit und IT-Grundschutz\|I1]] |
 | **IPv6**                   | 128-Bit-Adressen, 8 Blöcke hex                                                                             | [[N3 IPv6\|N3]]                                      |
-| Ishikawa-Diagramm | Ursachen nach Kategorien sammeln (Fischgräten) | [[P3 IT-Service, Support und Qualität\|P3]] |
+| Ishikawa-Diagramm          | Ursachen nach Kategorien sammeln (Fischgräten)                                                             | [[P3 IT-Service, Support und Qualität\|P3]]          |
 | **ISMS**                   | Managementsystem für Informationssicherheit (ISO 27001)                                                    | [[I1 Informationssicherheit und IT-Grundschutz\|I1]] |
 | **Kapselung**              | jede OSI-Schicht setzt einen Header davor                                                                  | [[N1 Netzwerkgrundlagen und OSI-Modell\|N1]]         |
-| Konzern | selbständige Unternehmen unter einheitlicher Leitung | [[W5 Unternehmen und Ausbildung\|W5]] |
-| KPI | Kennzahl zur Messung der Zielerreichung | [[W6 Markt, Marketing und Kostenrechnung\|W6]] |
+| Konzern                    | selbständige Unternehmen unter einheitlicher Leitung                                                       | [[W5 Unternehmen und Ausbildung\|W5]]                |
+| KPI                        | Kennzahl zur Messung der Zielerreichung                                                                    | [[W6 Markt, Marketing und Kostenrechnung\|W6]]       |
 | **Kritischer Pfad**        | Vorgänge ohne Puffer                                                                                       | [[P2 Netzplan und Zeitplanung\|P2]]                  |
 | **Lastenheft**             | Anforderungen des Auftraggebers (WAS)                                                                      | [[P1 Projektmanagement und Vorgehensmodelle\|P1]]    |
 | **Leasing**                | Nutzungsüberlassung gegen Raten, Eigentum beim Leasinggeber                                                | [[W3 Investition und Finanzierung\|W3]]              |
 | **Least Privilege**        | nur minimal nötige Rechte                                                                                  | [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4]]  |
-| LTFS | Dateisystem für LTO-Bänder, Zugriff weiter sequenziell | [[I3 Datensicherung\|I3]] |
+| LTFS                       | Dateisystem für LTO-Bänder, Zugriff weiter sequenziell                                                     | [[I3 Datensicherung\|I3]]                            |
 | **M.2**                    | Formfaktor für SSDs (SATA oder NVMe)                                                                       | [[H2 Massenspeicher und Schnittstellen\|H2]]         |
 | **MAC-Adresse**            | 48-Bit-Hardwareadresse der Netzwerkkarte                                                                   | [[N1 Netzwerkgrundlagen und OSI-Modell\|N1]]         |
 | **MFA**                    | Mehr-Faktor-Authentifizierung                                                                              | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
-| Nachkalkulation | Vergleich von Soll- und Ist-Kosten eines Auftrags | [[W4 Verträge und Kaufvertragsstörungen\|W4]] |
-| **NAS / SAN**              | Netzwerkspeicher dateibasiert / Speichernetz blockbasiert                                                  | [[H4 Server und Netzwerkspeicher\|H4]]                      |
+| Nachkalkulation            | Vergleich von Soll- und Ist-Kosten eines Auftrags                                                          | [[W4 Verträge und Kaufvertragsstörungen\|W4]]        |
+| **NAS / SAN**              | Netzwerkspeicher dateibasiert / Speichernetz blockbasiert                                                  | [[H4 Server und Netzwerkspeicher\|H4]]               |
 | **NAT/PAT**                | Übersetzung privater in öffentliche Adresse (mit Ports)                                                    | [[N4 Netzwerkdienste und Protokolle\|N4]]            |
-| Netiquette | Höflichkeits- und Formregeln für E-Mails | [[P4 Kommunikation und Kundenberatung\|P4]] |
+| Netiquette                 | Höflichkeits- und Formregeln für E-Mails                                                                   | [[P4 Kommunikation und Kundenberatung\|P4]]          |
 | **Nutzwertanalyse**        | gewichteter Vergleich auch qualitativer Kriterien                                                          | [[W2 Nutzwertanalyse und Entscheidungen\|W2]]        |
 | **NVMe**                   | SSD-Protokoll über PCIe                                                                                    | [[H2 Massenspeicher und Schnittstellen\|H2]]         |
 | **OEM-Lizenz**             | an Hardware gebundene Lizenz                                                                               | [[S6 Software beschaffen und lizenzieren\|S6]]       |
 | **OSI-Modell**             | 7-Schichten-Referenzmodell                                                                                 | [[N1 Netzwerkgrundlagen und OSI-Modell\|N1]]         |
-| Pareto-Prinzip | wenige Ursachen verursachen die meisten Probleme (80/20) | [[P3 IT-Service, Support und Qualität\|P3]] |
+| Pareto-Prinzip             | wenige Ursachen verursachen die meisten Probleme (80/20)                                                   | [[P3 IT-Service, Support und Qualität\|P3]]          |
 | **PDCA**                   | Plan-Do-Check-Act (Qualitätszyklus)                                                                        | [[P3 IT-Service, Support und Qualität\|P3]]          |
 | **Pflichtenheft**          | Umsetzungskonzept des Auftragnehmers (WIE)                                                                 | [[P1 Projektmanagement und Vorgehensmodelle\|P1]]    |
 | **Phishing**               | gefälschte Nachrichten zum Datendiebstahl                                                                  | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
@@ -90,9 +90,9 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | **RADIUS**                 | Authentifizierungsserver (z. B. WPA-Enterprise)                                                            | [[N6 WLAN\|N6]]                                      |
 | **Ransomware**             | verschlüsselt Daten und erpresst Lösegeld                                                                  | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
 | **RPO / RTO**              | max. Datenverlust / max. Ausfallzeit                                                                       | [[I3 Datensicherung\|I3]]                            |
-| Sandbox | abgeschottete Umgebung zur Prüfung verdächtiger Dateien | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]] |
-| Schutzklasse | I: Schutzleiter · II: Schutzisolierung | [[P5 Arbeitsplatz, Ergonomie und Umwelt\|P5]] |
-| Schwachstellenscanner | prüft Systeme automatisiert auf bekannte Lücken | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]] |
+| Sandbox                    | abgeschottete Umgebung zur Prüfung verdächtiger Dateien                                                    | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
+| Schutzklasse               | I: Schutzleiter · II: Schutzisolierung                                                                     | [[P5 Arbeitsplatz, Ergonomie und Umwelt\|P5]]        |
+| Schwachstellenscanner      | prüft Systeme automatisiert auf bekannte Lücken                                                            | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
 | **Scrum**                  | agiles Vorgehen mit Sprints                                                                                | [[P1 Projektmanagement und Vorgehensmodelle\|P1]]    |
 | **Secure Boot**            | UEFI startet nur signierte Bootloader                                                                      | [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4]]  |
 | **Signatur (digital)**     | Signatur über den Dokument-Hash mit privatem Schlüssel; prüfbar mit dem zugehörigen öffentlichen Schlüssel | [[I4 Kryptografie\|I4]]                              |
@@ -100,20 +100,20 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | **SLA**                    | Service Level Agreement                                                                                    | [[P3 IT-Service, Support und Qualität\|P3]]          |
 | **SLAAC**                  | IPv6-Autokonfiguration über Router Advertisement                                                           | [[N3 IPv6\|N3]]                                      |
 | **SMART**                  | Zielformulierung: spezifisch, messbar, attraktiv, realistisch, terminiert                                  | [[P1 Projektmanagement und Vorgehensmodelle\|P1]]    |
-| SOP | Standard Operating Procedure – dokumentierte Arbeitsanweisung | [[P3 IT-Service, Support und Qualität\|P3]] |
-| Spiralmodell | Umläufe mit Risikoanalyse in jedem Zyklus | [[P1 Projektmanagement und Vorgehensmodelle\|P1]] |
+| SOP                        | Standard Operating Procedure – dokumentierte Arbeitsanweisung                                              | [[P3 IT-Service, Support und Qualität\|P3]]          |
+| Spiralmodell               | Umläufe mit Risikoanalyse in jedem Zyklus                                                                  | [[P1 Projektmanagement und Vorgehensmodelle\|P1]]    |
 | **Subnetting**             | Aufteilung eines Netzes in Teilnetze                                                                       | [[N2 IPv4 und Subnetting\|N2]]                       |
 | **Switch**                 | leitet Frames anhand von MAC-Adressen weiter                                                               | [[N5 Verkabelung und Netzwerkkomponenten\|N5]]       |
-| SWOT | Stärken, Schwächen, Chancen, Risiken | [[W6 Markt, Marketing und Kostenrechnung\|W6]] |
+| SWOT                       | Stärken, Schwächen, Chancen, Risiken                                                                       | [[W6 Markt, Marketing und Kostenrechnung\|W6]]       |
 | **TCP / UDP**              | verbindungsorientiert zuverlässig / verbindungslos schnell                                                 | [[N1 Netzwerkgrundlagen und OSI-Modell\|N1]]         |
 | **Thin Client**            | Endgerät ohne lokale Datenhaltung, arbeitet am Server                                                      | [[H1 PC-Komponenten und Arbeitsplatzgeräte\|H1]]     |
 | **TLS**                    | Transportverschlüsselung (hybrid), z. B. HTTPS                                                             | [[I4 Kryptografie\|I4]]                              |
 | **TOM**                    | technische und organisatorische Maßnahmen                                                                  | [[I2 Datenschutz\|I2]]                               |
-| Top-down / Bottom-up | Entwurf vom Ganzen zum Detail / aus Bausteinen | [[S8 UML und Softwareentwurf\|S8]] |
+| Top-down / Bottom-up       | Entwurf vom Ganzen zum Detail / aus Bausteinen                                                             | [[S8 UML und Softwareentwurf\|S8]]                   |
 | **TPM**                    | Sicherheitschip für Schlüssel                                                                              | [[H1 PC-Komponenten und Arbeitsplatzgeräte\|H1]]     |
 | **UEFI**                   | moderne Firmware (Nachfolger BIOS)                                                                         | [[S4 Betriebssysteme, Dateisysteme und Rechte\|S4]]  |
 | **USV**                    | unterbrechungsfreie Stromversorgung (VFD, VI, VFI)                                                         | [[H5 Elektrotechnik, USV und Energie\|H5]]           |
-| UWG | Gesetz gegen den unlauteren Wettbewerb | [[W4 Verträge und Kaufvertragsstörungen\|W4]] |
+| UWG                        | Gesetz gegen den unlauteren Wettbewerb                                                                     | [[W4 Verträge und Kaufvertragsstörungen\|W4]]        |
 | **VDI**                    | virtuelle Desktops im Rechenzentrum                                                                        | [[S5 Virtualisierung und Cloud\|S5]]                 |
 | **Verfügbarkeit**          | Systeme nutzbar, wenn benötigt                                                                             | [[I1 Informationssicherheit und IT-Grundschutz\|I1]] |
 | **Vertraulichkeit**        | nur Berechtigte haben Zugang                                                                               | [[I1 Informationssicherheit und IT-Grundschutz\|I1]] |
@@ -123,7 +123,7 @@ Kurzdefinitionen mit Link zum ausführlichen Modul. Tipp: `Strg+F` zum Suchen.
 | **WCAG**                   | Richtlinien für barrierefreie Webinhalte (POUR)                                                            | [[P5 Arbeitsplatz, Ergonomie und Umwelt\|P5]]        |
 | **Werkvertrag**            | schuldet einen Erfolg                                                                                      | [[W4 Verträge und Kaufvertragsstörungen\|W4]]        |
 | **WPA3**                   | aktueller WLAN-Sicherheitsstandard                                                                         | [[N6 WLAN\|N6]]                                      |
-| Zero-Day | Schwachstelle ohne verfügbaren Patch | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]] |
+| Zero-Day                   | Schwachstelle ohne verfügbaren Patch                                                                       | [[I5 Bedrohungen und Schutzmaßnahmen\|I5]]           |
 | **Zweierkomplement**       | Darstellung negativer Ganzzahlen                                                                           | [[S1 Zahlensysteme und Codierung\|S1]]               |
 
 ← [[Start]] · Englische Fachbegriffe: [[Fachenglisch]]
