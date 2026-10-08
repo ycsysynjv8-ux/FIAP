@@ -10,4 +10,4 @@ AP2/99 System/daten/
 
 # Claudian (lokales Werkzeug, nicht Teil des Lernvaults)
 .claudian/
-.obsidian/plugins/realclaudian/
+.obsidian/plugins/*claudian*/

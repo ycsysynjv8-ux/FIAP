@@ -1,0 +1,46 @@
+#!/bin/sh
+# Hält das Claudian-Plugin dauerhaft aus dem Repository.
+#
+# 1. Bricht ab, wenn Claudian-Dateien gestaged sind (z. B. nach git add -f).
+# 2. Entfernt den Plugin-Eintrag aus der gestageten community-plugins.json.
+#    Der Arbeitsbaum bleibt unberührt, Obsidian läuft lokal weiter.
+#
+# Installation nach einem frischen Klon (im Vault-Ordner):
+#   cp "AP1/99 System/scripts/git-hooks/pre-commit" .git/hooks/pre-commit
+#   chmod +x .git/hooks/pre-commit
+
+CPJ=".obsidian/community-plugins.json"
+
+verboten=$(git diff --cached --name-only | grep -i claudian | grep -v '^\.gitignore$' | grep -v '^AP1/99 System/scripts/git-hooks/')
+if [ -n "$verboten" ]; then
+  echo "pre-commit: Claudian gehört nicht ins Repository. Gestaged ist:" >&2
+  echo "$verboten" >&2
+  echo "Entfernen mit: git restore --staged <Pfad>" >&2
+  exit 1
+fi
+
+if git diff --cached --name-only | grep -qx "$CPJ"; then
+  python -X utf8 - "$CPJ" <<'PY'
+import json, subprocess, sys
+pfad = sys.argv[1]
+roh = subprocess.check_output(["git", "show", ":" + pfad])
+liste = json.loads(roh)
+sauber = [p for p in liste if "claudian" not in p.lower()]
+if sauber != liste:
+    neu = json.dumps(sauber, indent=2, ensure_ascii=False)
+    h = subprocess.run(["git", "hash-object", "-w", "--stdin"],
+                       input=neu.encode("utf-8"), capture_output=True, check=True).stdout.decode().strip()
+    subprocess.run(["git", "update-index", "--cacheinfo",
+                    "100644,%s,%s" % (h, pfad)], check=True)
+    entfernt = [p for p in liste if p not in sauber]
+    print("pre-commit: aus %s entfernt: %s" % (pfad, ", ".join(entfernt)))
+PY
+fi
+
+# War der Claudian-Eintrag die einzige Aenderung, bleibt nach dem Bereinigen
+# nichts uebrig. Dann abbrechen, statt einen leeren Commit zu erzeugen.
+if git diff --cached --quiet HEAD 2>/dev/null; then
+  echo "pre-commit: nach dem Entfernen des Claudian-Eintrags bleibt keine Aenderung uebrig." >&2
+  echo "Commit abgebrochen. Aufraeumen mit: git restore --staged .obsidian/community-plugins.json" >&2
+  exit 1
+fi
