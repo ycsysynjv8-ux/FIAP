@@ -2,13 +2,15 @@
 modul: FISI-2
 titel: Cloud und Betriebsmodelle
 bereich: Konzeption und Administration
-pruefungsteil: "AP2 Teil 2 – Konzeption und Administration von IT-Systemen"
+pruefungsteil: AP2 Teil 2 – Konzeption und Administration von IT-Systemen
 reihenfolge: 2
 dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-2 · Cloud und Betriebsmodelle
 
@@ -130,9 +132,9 @@ Die **Verantwortung für die Daten bleibt beim Unternehmen**, auch in SaaS. Zu k
 - [[S5 Virtualisierung und Cloud]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- IaaS = Infrastruktur mieten · PaaS = Plattform zum Entwickeln/Betreiben · SaaS = fertige Anwendung.
+- ==🟡IaaS = Infrastruktur mieten · PaaS = Plattform zum Entwickeln/Betreiben · SaaS = fertige Anwendung==.
 - Public (geteilt), Private (exklusiv), Hybrid (Mischung), Community (gleiche Anforderungen), Multi-Cloud.
-- Cloud: Opex statt Capex, Skalierung, Pay-per-Use – aber Abhängigkeit, Latenz, Datenschutz.
+- Cloud: ==🟢Opex statt Capex==, Skalierung, Pay-per-Use – aber Abhängigkeit, Latenz, Datenschutz.
 - Anbieterauswahl: Skalierbarkeit, Abrechnung, ISO 27001/C5, SLA/Support, EU-Rechenzentrum + AVV, Exit-Strategie.
 
 ## Selbstcheck

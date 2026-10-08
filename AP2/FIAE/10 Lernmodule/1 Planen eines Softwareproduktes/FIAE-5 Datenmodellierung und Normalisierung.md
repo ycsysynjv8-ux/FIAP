@@ -2,13 +2,15 @@
 modul: FIAE-5
 titel: Datenmodellierung und Normalisierung
 bereich: Planen eines Softwareproduktes
-pruefungsteil: "AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen"
+pruefungsteil: AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen
 reihenfolge: 5
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-5 · Datenmodellierung und Normalisierung
 
@@ -161,11 +163,11 @@ Bildgröße = Breite × Höhe × Farbtiefe ÷ 8 (unkomprimiert) · × Anzahl Bil
 
 ## Zusammenfassung
 - ER: Entität (Rechteck), Attribut (Oval, Schlüssel unterstrichen), Beziehung (Raute), Kardinalität 1:1, 1:n, n:m.
-- Tabellen: je Entität eine Tabelle; 1:n → FK auf n-Seite; n:m → Zwischentabelle (+ Beziehungsattribute).
-- Redundanz → Änderungs-, Einfüge-, Löschanomalie. 1. NF atomar, 2. NF voll abhängig, 3. NF keine transitiven Abhängigkeiten.
+- Tabellen: je Entität eine Tabelle; ==🟢1:n → FK auf n-Seite; n:m → Zwischentabelle== (+ Beziehungsattribute).
+- Redundanz → Änderungs-, Einfüge-, Löschanomalie. ==🟢1. NF atomar, 2. NF voll abhängig, 3. NF keine transitiven Abhängigkeiten==.
 - Datenqualität: Formate, Dubletten, Freitext, fehlende Werte → bereinigen, validieren, Auswahllisten. Open Data braucht eine offene Lizenz und brauchbare Metadaten; heterogene Daten über stabile Schlüssel und dokumentierte Zuordnungsregeln verbinden.
 - Fünf Sterne: offene Lizenz → strukturiert → offenes Format → URIs → Verknüpfungen mit anderen Datensätzen.
-- NoSQL: flexibel, skalierbar. Speicher: Pixel × Bit ÷ 8 × Anzahl → TiB.
+- NoSQL: flexibel, skalierbar. Speicher: ==🔵Pixel × Bit ÷ 8 × Anzahl → TiB==.
 
 ## Direkt üben
 ```dataviewjs

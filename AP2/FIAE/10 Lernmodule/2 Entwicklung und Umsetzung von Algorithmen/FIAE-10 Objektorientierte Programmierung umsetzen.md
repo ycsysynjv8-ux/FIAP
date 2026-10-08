@@ -2,13 +2,15 @@
 modul: FIAE-10
 titel: Objektorientierte Programmierung umsetzen
 bereich: Algorithmen
-pruefungsteil: "AP2 Teil 2 – Entwicklung und Umsetzung von Algorithmen"
+pruefungsteil: AP2 Teil 2 – Entwicklung und Umsetzung von Algorithmen
 reihenfolge: 10
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-10 · Objektorientierte Programmierung umsetzen
 
@@ -173,9 +175,9 @@ ende methode
 ## Zusammenfassung
 - Klasse → Attribute (private), Konstruktor, Getter/Setter, Methoden; Listen initialisieren.
 - Collections: Array (fest), Liste (dynamisch), Map (Schlüssel), Set (eindeutig), Queue/Stack.
-- Vererbung + abstrakte Methode + Überschreiben → Polymorphie mit dynamischer Bindung zur Laufzeit.
+- ==🟢Vererbung + abstrakte Methode + Überschreiben → Polymorphie== mit dynamischer Bindung zur Laufzeit.
 - Exceptions werfen bei ungültiger Eingabe, mit try/catch behandeln.
-- Datentypen und Wertebereiche kennen; für Geld decimal, für Kommaergebnis casten.
+- Datentypen und Wertebereiche kennen; ==🔴für Geld decimal==, für Kommaergebnis casten.
 
 ## Direkt üben
 ```dataviewjs

@@ -7,8 +7,10 @@ dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "SuD · LF5 LS5.2 (Verzweigungen, Duisbyte) · LS5.4 (Funktionen)"
-tags: [ap1/modul, ap1/software]
+berufsschule: SuD · LF5 LS5.2 (Verzweigungen, Duisbyte) · LS5.4 (Funktionen)
+tags:
+  - ap1/modul
+  - ap1/software
 ---
 # S2 · Programmierung – Grundlagen
 
@@ -248,9 +250,9 @@ Für die AP1 genügen die Begriffe:
 - [[S7 Datenbanken]] – Datentypen in Tabellen
 
 ## Zusammenfassung
-- Variablen haben einen Datentyp; PLZ/Telefon als String, Geld nicht als float.
+- Variablen haben einen Datentyp; PLZ/Telefon als String, ==🔴Geld nicht als float==.
 - `←` Zuweisung, `=` Vergleich; DIV und MOD für Ganzzahlen.
-- Verzweigung: erste zutreffende Bedingung gewinnt → Reihenfolge beachten.
+- Verzweigung: ==🟢erste zutreffende Bedingung gewinnt== → Reihenfolge beachten.
 - Schleifen: Zähl-, kopf- (0+ Durchläufe) und fußgesteuert (1+ Durchläufe).
 - Standardmuster Summe/Durchschnitt/Max/Zählen: Initialisierung, Grenzen, Aktualisierung.
 - Funktionen mit Parametern und Rückgabe, Early Return; OOP: Klasse, Objekt, Attribut, Methode.

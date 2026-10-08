@@ -2,13 +2,15 @@
 modul: WISO-1
 titel: Ausbildung und Jugendarbeitsschutz
 bereich: WiSo
-pruefungsteil: "AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)"
+pruefungsteil: AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)
 reihenfolge: 101
 dauer: 60
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/wiso]
+tags:
+  - ap2/modul
+  - ap2/wiso
 ---
 # WISO-1 · Ausbildung und Jugendarbeitsschutz
 
@@ -122,8 +124,8 @@ Jugendlichen soll der Urlaub **in den Berufsschulferien** gewährt werden.
 ## Zusammenfassung
 - Duales System: Betrieb + Berufsschule; IHK ist zuständige Stelle.
 - Vertrag: Inhalt nach § 11 BBiG, u. a. Probezeit, Vergütung, Urlaub, tägliche Ausbildungszeit. Ausbildungsmittel kostenlos.
-- Probezeit 1–4 Monate, Kündigung darin jederzeit, schriftlich, ohne Grund. Danach: Betrieb nur fristlos aus wichtigem Grund, Azubi auch mit 4 Wochen Frist bei Berufsaufgabe/-wechsel.
-- JArbSchG: 8 h/40 h, 5 Tage, Pausen 30/60 min, 12 h Ruhe. Urlaub 30/27/25 Werktage nach Alter am 1.1.; Erwachsene 24 Werktage.
+- ==🔵Probezeit 1–4 Monate==, Kündigung darin jederzeit, schriftlich, ohne Grund. Danach: Betrieb nur fristlos aus wichtigem Grund, Azubi auch mit 4 Wochen Frist bei Berufsaufgabe/-wechsel.
+- JArbSchG: ==🔵8 h/40 h, 5 Tage, Pausen 30/60 min, 12 h Ruhe==. ==🔵Urlaub 30/27/25 Werktage nach Alter am 1.1.==; Erwachsene 24 Werktage.
 
 ## Direkt üben
 ```dataviewjs

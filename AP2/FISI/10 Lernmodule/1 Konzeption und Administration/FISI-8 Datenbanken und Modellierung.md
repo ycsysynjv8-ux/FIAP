@@ -2,13 +2,15 @@
 modul: FISI-8
 titel: Datenbanken und Modellierung
 bereich: Konzeption und Administration
-pruefungsteil: "AP2 Teil 2 – Konzeption und Administration von IT-Systemen"
+pruefungsteil: AP2 Teil 2 – Konzeption und Administration von IT-Systemen
 reihenfolge: 8
 dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-8 · Datenbanken und Modellierung
 
@@ -183,10 +185,10 @@ Ein **Data Lake** sammelt Rohdaten aus vielen Quellen und Formaten (CSV, XML, JS
 
 ## Zusammenfassung
 - PK eindeutig, FK verweist auf PK, referenzielle Integrität verhindert Waisen und Anomalien.
-- CHAR für feste Länge (PLZ, IBAN), VARCHAR begrenzt, DECIMAL für Geld.
-- SQL: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY; JOIN mit ON; LIKE mit %.
+- ==🟡CHAR für feste Länge (PLZ, IBAN), VARCHAR begrenzt, DECIMAL für Geld==.
+- ==🟢SQL: FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY==; JOIN mit ON; LIKE mit %.
 - ER: 1:1, 1:n, n:m (Zwischentabelle). Index = schnell lesen, Locking = parallele Zugriffe.
-- NoSQL: Dokument, Key-Value, Spalten, Graph. UML statisch/dynamisch; Aggregation ◇ vs. Komposition ◆.
+- NoSQL: Dokument, Key-Value, Spalten, Graph. UML statisch/dynamisch; ==🔴Aggregation ◇ vs. Komposition ◆==.
 
 ## Direkt üben
 ```dataviewjs

@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "GiD · LF2 LS2.3 (Hardwarekomponenten) · LS2.1 (Raspberry-Pi-Vergleich)"
-tags: [ap1/modul, ap1/hardware]
+berufsschule: GiD · LF2 LS2.3 (Hardwarekomponenten) · LS2.1 (Raspberry-Pi-Vergleich)
+tags:
+  - ap1/modul
+  - ap1/hardware
 ---
 # H1 · PC-Komponenten und Arbeitsplatzgeräte
 
@@ -169,10 +171,10 @@ Tastatur, Maus (ergonomisch, kabellos), Headset (Videokonferenz, Großraumbüro)
 
 ## Zusammenfassung
 - CPU: Kerne für Parallelität, Takt/IPC für Einzelaufgaben, TDP für Kühlung/Strom.
-- RAM flüchtig, DDR4 ≠ DDR5, Dual Channel, ECC für Server; Richtwerte 16/32/64 GB.
+- RAM flüchtig, ==🔴DDR4 ≠ DDR5==, Dual Channel, ECC für Server; Richtwerte ==🔵16/32/64 GB==.
 - Mainboard: Sockel, Chipsatz, Slots, Formfaktor, UEFI, TPM.
 - iGPU fürs Büro, dedizierte GPU für CAD/Video/KI.
-- Monitor: Auflösung, ppi = Diagonale in Pixeln / Zoll, IPS fürs Büro, ergonomisch verstellbar.
+- Monitor: Auflösung, ==🟢ppi = Diagonale in Pixeln / Zoll==, IPS fürs Büro, ergonomisch verstellbar.
 - Geräteklasse passend zum Einsatz; Begründungen immer am Szenario.
 
 ## Direkt üben

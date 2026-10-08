@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "LF1 (Das Unternehmen und die eigene Rolle im Betrieb) · LF2 (Arbeitsplätze nach Kundenwunsch ausstatten)"
-tags: [ap1/modul, ap1/wirtschaft]
+berufsschule: LF1 (Das Unternehmen und die eigene Rolle im Betrieb) · LF2 (Arbeitsplätze nach Kundenwunsch ausstatten)
+tags:
+  - ap1/modul
+  - ap1/wirtschaft
 ---
 # W6 · Markt, Marketing und Kostenrechnung
 
@@ -155,10 +157,10 @@ Ein Dienstleister muss mit seinen **verrechenbaren (produktiven) Stunden** alle 
 - Bedürfnis → Bedarf (Kaufkraft) → Nachfrage (am Markt); Marktformen Monopol/Oligopol/Polypol nach Anbietern und Nachfragern.
 - Primärforschung (eigene Erhebung) vs. Sekundärforschung (vorhandene Daten); Zielgruppe festlegen.
 - Marketing-Mix 4 P, AIDA, Produktlebenszyklus, ABC-Analyse (sortieren, kumulieren, A/B/C).
-- DB = Preis − variable Kosten; Break-even-Menge = Fixkosten ÷ DB.
-- Stundensatz = (Personal- + Gemeinkosten) ÷ verrechenbare Stunden + Gewinnzuschlag.
+- ==🟢DB = Preis − variable Kosten; Break-even-Menge = Fixkosten ÷ DB==.
+- ==🟢Stundensatz = (Personal- + Gemeinkosten) ÷ verrechenbare Stunden + Gewinnzuschlag==.
 - Make-or-buy quantitativ (kritische Menge) und qualitativ; Ausschreibung mit Leistungsverzeichnis.
-- Kennzahlen: Produktivität, Wirtschaftlichkeit, Rentabilität, ROI; effektiv = richtige Dinge, effizient = Dinge richtig.
+- Kennzahlen: Produktivität, Wirtschaftlichkeit, Rentabilität, ROI; ==🔴effektiv = richtige Dinge, effizient = Dinge richtig==.
 
 ## Direkt üben
 ```dataviewjs

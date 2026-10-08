@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "LF5 (Software zur Verwaltung von Daten anpassen) – Grundlagen"
-tags: [ap1/modul, ap1/software]
+berufsschule: LF5 (Software zur Verwaltung von Daten anpassen) – Grundlagen
+tags:
+  - ap1/modul
+  - ap1/software
 ---
 # S7 · Datenbanken
 
@@ -159,8 +161,8 @@ In einer relationalen Datenbank liegen die Daten in **Tabellen** (Relationen): S
 ## Zusammenfassung
 - DBMS: Integrität, Mehrbenutzerbetrieb (Transaktionen, ACID), Zugriffsschutz, Sicherung, Abfragesprache.
 - ER-Modell (Chen): Rechteck = Entitätstyp, Ellipse = Attribut (Schlüssel unterstrichen), Raute = Beziehung, Kardinalität 1/n/m.
-- Kardinalität: beide Richtungen als Satz lesen.
-- 1:n → FK auf die n-Seite · n:m → Zwischentabelle mit beiden FKs (+ Beziehungsattribute).
+- ==🟢Kardinalität: beide Richtungen als Satz lesen==.
+- ==🟢1:n → FK auf die n-Seite · n:m → Zwischentabelle mit beiden FKs== (+ Beziehungsattribute).
 - Redundanz führt zu Änderungs-, Einfüge- und Löschanomalien → Normalisierung (1. bis 3. NF).
 
 ## Selbstcheck

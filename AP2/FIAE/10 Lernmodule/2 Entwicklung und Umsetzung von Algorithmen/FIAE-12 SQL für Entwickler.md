@@ -2,13 +2,15 @@
 modul: FIAE-12
 titel: SQL für Entwickler
 bereich: Algorithmen
-pruefungsteil: "AP2 Teil 2 – Entwicklung und Umsetzung von Algorithmen"
+pruefungsteil: AP2 Teil 2 – Entwicklung und Umsetzung von Algorithmen
 reihenfolge: 12
 dauer: 180
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-12 · SQL für Entwickler
 
@@ -180,8 +182,8 @@ REVOKE INSERT, UPDATE ON Shop.Bestellung FROM 'praktikant';
 - [[S7 Datenbanken]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- SELECT-Reihenfolge: FROM/JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY.
-- INNER JOIN nur Treffer, LEFT JOIN alle links (+ `IS NULL` für „ohne“). Aggregate COUNT/SUM/AVG/MIN/MAX.
+- ==🟢SELECT-Reihenfolge: FROM/JOIN → WHERE → GROUP BY → HAVING → SELECT → ORDER BY==.
+- ==🔴INNER JOIN nur Treffer, LEFT JOIN alle links== (+ `IS NULL` für „ohne“). Aggregate COUNT/SUM/AVG/MIN/MAX.
 - Unterabfrage in WHERE/FROM, UNION (ALL) untereinander, YEAR/DATEDIFF für Datumswerte.
 - INSERT, UPDATE/DELETE mit WHERE; Archivieren = INSERT…SELECT + DELETE in einer Transaktion.
 - CREATE/ALTER/DROP, Constraints; GRANT/REVOKE; ACID, View, Stored Procedure, Trigger, Index.

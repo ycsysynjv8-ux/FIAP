@@ -2,13 +2,15 @@
 modul: PA-1
 titel: Projektantrag, Durchführung und Dokumentation
 bereich: Projektarbeit
-pruefungsteil: "AP2 – Planen und Umsetzen eines Projektes (50 % der Gesamtnote)"
+pruefungsteil: AP2 – Planen und Umsetzen eines Projektes (50 % der Gesamtnote)
 reihenfolge: 201
 dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/projekt]
+tags:
+  - ap2/modul
+  - ap2/projekt
 ---
 # PA-1 · Projektantrag, Durchführung und Dokumentation
 
@@ -132,11 +134,11 @@ Die Dokumentation enthält eine **Kosten-Nutzen-Betrachtung** – geplant und am
 - [[P1 Projektmanagement und Vorgehensmodelle]] · [[P2 Netzplan und Zeitplanung]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- FISI 40 h / 15 S. Bericht / 50 S. gesamt · FIAE 80 h / 20 S. / 60 S. · Präsentation und Fachgespräch je 15 min.
-- Antrag: Ausgangssituation, Ziel, Konsequenzen, Umfeld, Phasen mit Stunden, Dokumente. Erst nach Genehmigung beginnen.
+- ==🔵FISI 40 h / 15 S. Bericht / 50 S. gesamt · FIAE 80 h / 20 S. / 60 S.== · Präsentation und Fachgespräch je 15 min.
+- Antrag: Ausgangssituation, Ziel, Konsequenzen, Umfeld, Phasen mit Stunden, Dokumente. ==🔴Erst nach Genehmigung beginnen==.
 - Durchführung mit PM-Methoden, begründeten Entscheidungen (Nutzwertanalyse), QS und Abnahme.
 - Wirtschaftlichkeit: Personal- und Sachkosten, einmalig/laufend, Nutzen, Amortisation.
-- Bericht prozessorientiert; Bewertung 17 / 68 / 15; formale Vorgaben (12 pt, 1,5 Zeilen, Ränder, Seitenlimit).
+- Bericht prozessorientiert; ==🔵Bewertung 17 / 68 / 15==; formale Vorgaben (12 pt, 1,5 Zeilen, Ränder, Seitenlimit).
 
 ## Direkt üben
 ```dataviewjs

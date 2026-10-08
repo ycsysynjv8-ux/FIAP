@@ -2,13 +2,15 @@
 modul: FISI-6
 titel: Datenschutz, Geräteverwaltung und Lizenzen
 bereich: Konzeption und Administration
-pruefungsteil: "AP2 Teil 2 – Konzeption und Administration von IT-Systemen"
+pruefungsteil: AP2 Teil 2 – Konzeption und Administration von IT-Systemen
 reihenfolge: 6
 dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-6 · Datenschutz, Geräteverwaltung und Lizenzen
 
@@ -160,9 +162,9 @@ Zentraler Updateserver im eigenen Netz (z. B. WSUS, Intune, Landscape): Patches 
 ## Zusammenfassung
 - Schutzziele: Vertraulichkeit, Integrität, Verfügbarkeit (+ Authentizität, Verbindlichkeit).
 - TOM: Zutritt (Raum) – Zugang (System) – Zugriff (Daten) – Weitergabe – Eingabe – Auftrag – Verfügbarkeit – Trennung.
-- Datenpanne: DSB, sichern, bewerten, **72 h** Behörde, bei hohem Risiko Betroffene, dokumentieren.
-- Anonym = irreversibel (keine DSGVO) · Pseudonym = reversibel (DSGVO gilt).
-- MDM: Lockdown, Wipe, Container für BYOD. User-CAL je Person, Device-CAL je Gerät. Update = gleiche Hauptversion, Upgrade = neue.
+- Datenpanne: DSB, sichern, bewerten, ==🔵72 h Behörde==, bei hohem Risiko Betroffene, dokumentieren.
+- ==🔴Anonym = irreversibel (keine DSGVO) · Pseudonym = reversibel (DSGVO gilt)==.
+- MDM: Lockdown, Wipe, Container für BYOD. User-CAL je Person, Device-CAL je Gerät. ==🟢Update = gleiche Hauptversion, Upgrade = neue==.
 
 ## Selbstcheck
 ```dataviewjs

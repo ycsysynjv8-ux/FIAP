@@ -2,13 +2,15 @@
 modul: WISO-2
 titel: Arbeitsvertrag, Kündigung und Arbeitsschutz
 bereich: WiSo
-pruefungsteil: "AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)"
+pruefungsteil: AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)
 reihenfolge: 102
 dauer: 75
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/wiso]
+tags:
+  - ap2/modul
+  - ap2/wiso
 ---
 # WISO-2 · Arbeitsvertrag, Kündigung und Arbeitsschutz
 
@@ -133,11 +135,11 @@ Fenster aufreißen fördert das Feuer; der Vorgesetzte wird informiert, ist aber
 
 ## Zusammenfassung
 - Arbeitsvertrag formfrei, Nachweis schriftlich; Befristung ohne Sachgrund max. 2 Jahre, schriftlich.
-- Kündigung schriftlich, Betriebsrat anhören. Grundfrist 4 Wochen zum 15./Monatsende, verlängert für AG bis 7 Monate.
+- Kündigung schriftlich, Betriebsrat anhören. ==🔵Grundfrist 4 Wochen zum 15./Monatsende==, verlängert für AG bis 7 Monate.
 - KSchG (> 6 Monate, > 10 AN): personen-, verhaltens- (Abmahnung), betriebsbedingt (Sozialauswahl); Klage in 3 Wochen.
-- Mindestlohn 2026 13,90 €, Entgeltfortzahlung 6 Wochen, Mutterschutz 6 + 8 Wochen, Elternzeit 3 Jahre.
+- ==🔵Mindestlohn 2026 13,90 €, Entgeltfortzahlung 6 Wochen, Mutterschutz 6 + 8 Wochen, Elternzeit 3 Jahre==.
 - Arbeitsschutz: Arbeitgeber verantwortlich; Sicherheitsbeauftragter unterstützt; BG zahlt bei Arbeits-/Wegeunfall.
-- Zeichen: Verbot rot rund, Gebot blau rund, Warnung gelb Dreieck, Rettung grün, Brandschutz rot eckig. Brand: melden, retten, löschen.
+- Zeichen: ==🟢Verbot rot rund, Gebot blau rund, Warnung gelb Dreieck, Rettung grün, Brandschutz rot eckig==. Brand: melden, retten, löschen.
 
 ## Selbstcheck
 ```dataviewjs

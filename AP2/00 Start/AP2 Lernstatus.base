@@ -1,0 +1,84 @@
+filters:
+  and:
+    - file.hasTag("ap2/modul")
+properties:
+  note.bereich:
+    displayName: Bereich
+  note.sicherheit:
+    displayName: Sicherheit
+  note.dauer:
+    displayName: Minuten
+  note.zuletzt:
+    displayName: Zuletzt
+views:
+  - type: kanban
+    name: FISI
+    filters:
+      and:
+        - file.hasTag("ap2/fisi")
+    groupBy:
+      property: status
+      direction: ASC
+    groupOrder:
+      - neu
+      - lernen
+      - wiederholen
+      - sicher
+      - 
+    order:
+      - file.name
+      - bereich
+      - sicherheit
+      - dauer
+    sort:
+      - property: bereich
+        direction: ASC
+      - property: reihenfolge
+        direction: ASC
+  - type: kanban
+    name: FIAE
+    filters:
+      and:
+        - file.hasTag("ap2/fiae")
+    groupBy:
+      property: status
+      direction: ASC
+    groupOrder:
+      - neu
+      - lernen
+      - wiederholen
+      - sicher
+      - 
+    order:
+      - file.name
+      - bereich
+      - sicherheit
+      - dauer
+    sort:
+      - property: bereich
+        direction: ASC
+      - property: reihenfolge
+        direction: ASC
+  - type: kanban
+    name: WiSo und Projektarbeit
+    filters:
+      or:
+        - file.hasTag("ap2/wiso")
+        - file.hasTag("ap2/projekt")
+    groupBy:
+      property: status
+      direction: ASC
+    groupOrder:
+      - neu
+      - lernen
+      - wiederholen
+      - sicher
+      - 
+    order:
+      - file.name
+      - bereich
+      - sicherheit
+      - dauer
+    sort:
+      - property: reihenfolge
+        direction: ASC

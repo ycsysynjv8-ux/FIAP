@@ -7,8 +7,10 @@ dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 LS3.2 (LAN-Party, IPv4-Adressierung, Adresskonflikt)"
-tags: [ap1/modul, ap1/netzwerk]
+berufsschule: Evp-CPS · LF3 LS3.2 (LAN-Party, IPv4-Adressierung, Adresskonflikt)
+tags:
+  - ap1/modul
+  - ap1/netzwerk
 ---
 # N2 · IPv4-Adressierung und Subnetting
 
@@ -242,9 +244,9 @@ Vergabe **statisch** (Server, Drucker, Router – feste, dokumentierte Adressen)
 - [[S1 Zahlensysteme und Codierung]] – Binärdarstellung der Masken
 
 ## Zusammenfassung
-- IPv4 = 32 Bit, Maske trennt Netz und Host; Netz = IP UND Maske.
-- Blockgröße = 256 − Maskenwert → Netz, nächstes Netz, Broadcast.
-- Hosts = 2^(Hostbits) − 2.
+- IPv4 = ==🔵32 Bit==, Maske trennt Netz und Host; Netz = IP UND Maske.
+- ==🟢Blockgröße = 256 − Maskenwert== → Netz, nächstes Netz, Broadcast.
+- ==🟢Hosts = 2^(Hostbits) − 2==.
 - n Subnetze: 2^s ≥ n → neues Präfix. Nach Hosts: 2^h − 2 ≥ Hosts.
 - VLSM: absteigend sortieren, lückenlos vergeben.
 - Privat: 10/8, 172.16/12, 192.168/16 · APIPA 169.254/16 · Loopback 127/8.

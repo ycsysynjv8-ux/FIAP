@@ -2,13 +2,15 @@
 modul: FISI-16
 titel: Netzwerkanalyse, Fehlersuche und WAN
 bereich: Netzwerke
-pruefungsteil: "AP2 Teil 2 – Analyse und Entwicklung von Netzwerken"
+pruefungsteil: AP2 Teil 2 – Analyse und Entwicklung von Netzwerken
 reihenfolge: 16
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-16 · Netzwerkanalyse, Fehlersuche und WAN
 
@@ -177,11 +179,11 @@ tags: [ap2/modul, ap2/fisi]
 - [[H3 Datenmengen und Übertragung]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- Fehlersuche Schicht 1 → 7, Vergleichsstation. APIPA = kein DHCP; IP ja/Name nein = DNS; Ping nein/Web ja = ICMP gesperrt.
+- ==🟢Fehlersuche Schicht 1 → 7==, Vergleichsstation. ==🔴APIPA = kein DHCP; IP ja/Name nein = DNS; Ping nein/Web ja = ICMP gesperrt==.
 - Mitschnitt: DNS-Anfrage/Antwort, Echo request/reply, Hop Limit 128 − Empfang = Router, ARP, DHCP.
 - ARP-Poisoning: eine IP mit zwei MACs → DAI, DHCP-Snooping, 802.1X, TLS. SPAN spiegelt Verkehr.
 - SNMP: Polling (verzögert) vs. Trap (sofort).
-- Zeit = Bit ÷ bit/s (binär × 8, Overhead × 1,1, Rate dezimal). VoIP 64 kbit/s je Gespräch + Overhead.
+- Zeit = Bit ÷ bit/s (binär × 8, Overhead × 1,1, Rate dezimal). ==🔵VoIP 64 kbit/s je Gespräch== + Overhead.
 - GPON und Kabel = Shared Medium, LTE = CGN, Business-Tarif = SLA + feste IP. Parallel: 1 − Π(1 − Vᵢ).
 
 ## Direkt üben

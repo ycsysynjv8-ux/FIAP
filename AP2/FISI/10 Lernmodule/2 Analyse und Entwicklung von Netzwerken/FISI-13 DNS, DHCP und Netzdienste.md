@@ -2,13 +2,15 @@
 modul: FISI-13
 titel: DNS, DHCP und Netzdienste
 bereich: Netzwerke
-pruefungsteil: "AP2 Teil 2 – Analyse und Entwicklung von Netzwerken"
+pruefungsteil: AP2 Teil 2 – Analyse und Entwicklung von Netzwerken
 reihenfolge: 13
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-13 · DNS, DHCP und Netzdienste
 
@@ -157,12 +159,12 @@ Fax-Signale reagieren empfindlich auf Laufzeitschwankungen (Jitter) und Sprachko
 - [[N4 Netzwerkdienste und Protokolle]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- DNS: Client rekursiv → Resolver iterativ (Root → TLD → Zone), Cache mit TTL, Forwarder spart Aufwand.
+- DNS: ==🟢Client rekursiv → Resolver iterativ== (Root → TLD → Zone), Cache mit TTL, Forwarder spart Aufwand.
 - A (IPv4), AAAA (IPv6), CNAME (Alias auf Namen), MX (Mailserver), TXT (SPF/DKIM/DMARC), PTR (Reverse).
 - nslookup: Server, Adresse, „nicht autorisierend“ = Cache, Name, Adressen.
-- DNSSEC = Signaturen (Authentizität, Integrität), keine Verschlüsselung. Split-Horizon: intern andere Antwort als extern.
+- ==🔴DNSSEC = Signaturen (Authentizität, Integrität), keine Verschlüsselung==. Split-Horizon: intern andere Antwort als extern.
 - DHCP: DORA, Discover per Broadcast, ARP-Prüfung, Lease, Reservierung, APIPA bei Ausfall, DHCP-Snooping gegen fremde Server.
-- Mail: SMTP 25/587/465, IMAP 143/993, POP3 110/995; STARTTLS vs. implizites TLS.
+- Mail: ==🔵SMTP 25/587/465, IMAP 143/993, POP3 110/995==; STARTTLS vs. implizites TLS.
 
 ## Direkt üben
 ```dataviewjs

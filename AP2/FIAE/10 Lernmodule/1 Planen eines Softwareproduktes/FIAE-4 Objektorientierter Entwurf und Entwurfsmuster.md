@@ -2,13 +2,15 @@
 modul: FIAE-4
 titel: Objektorientierter Entwurf und Entwurfsmuster
 bereich: Planen eines Softwareproduktes
-pruefungsteil: "AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen"
+pruefungsteil: AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen
 reihenfolge: 4
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-4 · Objektorientierter Entwurf und Entwurfsmuster
 
@@ -185,9 +187,9 @@ Klasse DurchschnittsAnzeige implementiert Observer
 
 ## Zusammenfassung
 - Klassendiagramm: Name / Attribute / Methoden, Sichtbarkeit + - # ~.
-- Aggregation ◇ (unabhängig), Komposition ◆ (existenzabhängig), Vererbung ▷ (ist ein), Realisierung gestrichelt ▷.
+- ==🔴Aggregation ◇ (unabhängig), Komposition ◆ (existenzabhängig)==, Vererbung ▷ (ist ein), Realisierung gestrichelt ▷.
 - Multiplizität: 1, 0..1, *, 1..*.
-- Kapselung, Vererbung, Polymorphie (dynamische Bindung zur Laufzeit), abstrakte Klasse vs. Interface.
+- Kapselung, Vererbung, ==🟡Polymorphie (dynamische Bindung zur Laufzeit)==, abstrakte Klasse vs. Interface.
 - Muster: Erzeugung (Singleton, Factory Method), Struktur (Facade, Adapter), Verhalten (Observer, Strategy); MVC.
 
 ## Selbstcheck

@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 (Ausblick) – Schwerpunkt meist erst im 2. Lehrjahr"
-tags: [ap1/modul, ap1/netzwerk]
+berufsschule: Evp-CPS · LF3 (Ausblick) – Schwerpunkt meist erst im 2. Lehrjahr
+tags:
+  - ap1/modul
+  - ap1/netzwerk
 ---
 # N3 · IPv6
 
@@ -32,14 +34,14 @@ IPv4 bietet rund 4,3 Milliarden Adressen – längst zu wenig. Provider vergeben
 
 ## 1. Aufbau
 
-- **128 Bit** = 8 **Blöcke** (Hextets) à 16 Bit
+- ==🔵128 Bit== = 8 **Blöcke** (Hextets) à 16 Bit
 - jeder Block: **4 Hex-Ziffern** (1 Hex-Ziffer = 4 Bit), getrennt durch `:`
 - Beispiel: `2001:0db8:0a3c:0012:0000:0000:ac10:0001`
 
 | Teil | Bits | Bedeutung |
 |---|---|---|
-| **Präfix** (Netzanteil) | meist die ersten **64** | vom Provider/Admin vergeben, enthält Routing-Präfix + Subnetz-ID |
-| **Interface-ID** (Hostanteil) | die letzten **64** | identifiziert das Gerät im Subnetz |
+| ==🟡Präfix== (Netzanteil) | meist die ersten **64** | vom Provider/Admin vergeben, enthält Routing-Präfix + Subnetz-ID |
+| ==🟡Interface-ID== (Hostanteil) | die letzten **64** | identifiziert das Gerät im Subnetz |
 
 Typische Größen: Provider → Kunde **/48** (Firma) oder **/56** (Privatanschluss) · ein übliches LAN mit SLAAC verwendet **/64**. Andere Anwendungen können andere Präfixlängen nutzen, z. B. /127 für Punkt-zu-Punkt-Verbindungen und /128 für einzelne Hostrouten.
 
@@ -53,9 +55,9 @@ Anzahl Adressen: 2¹²⁸ ≈ 3,4 · 10³⁸. In **einem** /64-Netz sind 2⁶⁴
 
 ## 2. Kürzen und Ausschreiben
 
-**Regel 1 – führende Nullen:** In jedem Block dürfen **führende** Nullen weggelassen werden. `0db8` → `db8`, `0012` → `12`, `0000` → `0`. **Nullen am Ende bleiben!** (`0a00` → `a00`, nicht `a`)
+**Regel 1 – führende Nullen:** In jedem Block dürfen **führende** Nullen weggelassen werden. `0db8` → `db8`, `0012` → `12`, `0000` → `0`. ==🔴Nullen am Ende bleiben!== (`0a00` → `a00`, nicht `a`)
 
-**Regel 2 – Doppelpunkt:** **Eine** zusammenhängende Folge von Null-Blöcken darf durch `::` ersetzt werden – **nur einmal** pro Adresse (sonst wüsste man nicht, wie viele Nullen wohin gehören).
+**Regel 2 – Doppelpunkt:** **Eine** zusammenhängende Folge von Null-Blöcken darf durch `::` ersetzt werden – ==🟢nur einmal pro Adresse== (sonst wüsste man nicht, wie viele Nullen wohin gehören).
 
 **Regel 3 – Eindeutigkeit (RFC 5952):** Gibt es mehrere Null-Folgen, wird die **längste** gekürzt, bei Gleichstand die **erste**. Ein **einzelner** Null-Block wird *nicht* mit `::` gekürzt, sondern als `0` geschrieben. Buchstaben **klein** schreiben.
 
@@ -159,8 +161,8 @@ Bei einem **/48** stehen die Bits 49–64 (= der **4. Block**) für Subnetze zur
 - [[S1 Zahlensysteme und Codierung]] – Hexadezimalsystem
 
 ## Zusammenfassung
-- 128 Bit, 8 Blöcke à 4 Hex-Ziffern; LAN-Segment = /64.
-- Kürzen: führende Nullen weg, längste Null-Folge (≥ 2) einmal durch `::`, bei Gleichstand die erste.
+- 128 Bit, 8 Blöcke à 4 Hex-Ziffern; ==🔵LAN-Segment = /64==.
+- Kürzen: führende Nullen weg, längste Null-Folge (≥ 2) einmal durch `::`, ==🟢bei Gleichstand die erste==.
 - `fe80::/10` Link-Local · `fd00::/8` ULA · `2000::/3` global · `ff00::/8` Multicast · `::1` Loopback.
 - SLAAC per Router Advertisement, DHCPv6, EUI-64 (ff:fe + 7. Bit kippen), Privacy Extensions.
 - /48 → 4. Block für Subnetze, jede Hex-Ziffer = 4 Bit.

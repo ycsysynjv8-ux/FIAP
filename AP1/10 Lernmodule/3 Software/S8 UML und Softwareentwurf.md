@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "LF5 (Software zur Verwaltung von Daten anpassen) – Grundlagen"
-tags: [ap1/modul, ap1/software]
+berufsschule: LF5 (Software zur Verwaltung von Daten anpassen) – Grundlagen
+tags:
+  - ap1/modul
+  - ap1/software
 ---
 # S8 · UML und Softwareentwurf
 
@@ -225,9 +227,9 @@ flowchart LR
 - [[P1 Projektmanagement und Vorgehensmodelle]] – Anforderungen aus dem Lastenheft
 
 ## Zusammenfassung
-- Use Case: wer darf was – Akteure außen, Ellipsen innen, «include» immer, «extend» optional.
+- Use Case: wer darf was – Akteure außen, Ellipsen innen, ==🟢«include» immer, «extend» optional==.
 - Aktivitätsdiagramm: Start ●, Ende ◉, Aktion, Raute mit [Bedingungen], Balken für Parallelität, Swimlanes für Zuständigkeiten.
-- Klassendiagramm: Name/Attribute/Methoden, + − # ~, Multiplizitäten, ◇ Aggregation, ◆ Komposition, ▷ Vererbung.
+- Klassendiagramm: Name/Attribute/Methoden, + − # ~, Multiplizitäten, ==🔴◇ Aggregation, ◆ Komposition, ▷ Vererbung==.
 - Compiler übersetzt Code in eine andere Darstellung (z. B. Maschinen- oder Bytecode), Interpreter führt Programme aus; Mischformen und JIT sind möglich; Linker bindet zusammen; IDE, Bibliothek, Framework, API.
 - Wireframe → Mockup → Prototyp; Masken logisch, geprüft, barrierefrei.
 

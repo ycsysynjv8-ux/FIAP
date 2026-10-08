@@ -7,8 +7,10 @@ dauer: 45
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 LS3.5 (Server, NAS)"
-tags: [ap1/modul, ap1/hardware]
+berufsschule: Evp-CPS · LF3 LS3.5 (Server, NAS)
+tags:
+  - ap1/modul
+  - ap1/hardware
 ---
 # H4 · Server und Netzwerkspeicher
 
@@ -81,7 +83,7 @@ Ein **NAS** ist ein kleiner Server mit eigenem Betriebssystem, mehreren Laufwerk
 ## Zusammenfassung
 - Server stellen Dienste bereit; Serverhardware: redundante Netzteile, ECC-RAM, Hot-Swap, Fernwartung (iDRAC/iLO/IPMI), Rack, USV, Servicevertrag.
 - DAS direkt am Server · NAS per LAN dateibasiert (SMB/NFS) · SAN eigenes Netz blockbasiert (iSCSI/Fibre Channel).
-- Redundanz erhöht die Verfügbarkeit, ersetzt aber keine Datensicherung.
+- Redundanz erhöht die Verfügbarkeit, ==🔴ersetzt aber keine Datensicherung==.
 
 ## Selbstcheck
 ```dataviewjs

@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 LS3.3 (strukturierte Verkabelung, CAT, LWL, Dämpfung) · LS3.2 (Switchtechnik)"
-tags: [ap1/modul, ap1/netzwerk]
+berufsschule: Evp-CPS · LF3 LS3.3 (strukturierte Verkabelung, CAT, LWL, Dämpfung) · LS3.2 (Switchtechnik)
+tags:
+  - ap1/modul
+  - ap1/netzwerk
 ---
 # N5 · Verkabelung und Netzwerkkomponenten
 
@@ -201,9 +203,9 @@ Strom über das Netzwerkkabel – für Access Points, IP-Telefone, Kameras.
 - [[N2 IPv4 und Subnetting]] – Subnetze für die VLANs planen
 
 ## Zusammenfassung
-- Strukturierte Verkabelung: Primär (Gebäude, LWL Singlemode), Sekundär (Etagen), Tertiär (Dose, Cat 6A); 90 + 10 m.
-- Kategorie/Klasse: Cat 6A = 500 MHz = 10 Gbit/s auf 100 m; schwächste Komponente zählt.
-- dB: Spannung 20·log, Leistung 10·log, dBm bezogen auf 1 mW, Ketten addieren; ACR = NEXT − a.
+- Strukturierte Verkabelung: Primär (Gebäude, LWL Singlemode), Sekundär (Etagen), Tertiär (Dose, Cat 6A); ==🔵90 + 10 m==.
+- Kategorie/Klasse: Cat 6A = 500 MHz = 10 Gbit/s auf 100 m; ==🟢schwächste Komponente zählt==.
+- dB: ==🟢Spannung 20·log, Leistung 10·log==, dBm bezogen auf 1 mW, Ketten addieren; ACR = NEXT − a.
 - LWL: Multimode kurz, Singlemode lang, störunempfindlich.
 - Switch (2, MAC), Router (3, IP, trennt Broadcast-Domänen), VLAN per 802.1Q, PoE 15,4/30/60/90 W.
 

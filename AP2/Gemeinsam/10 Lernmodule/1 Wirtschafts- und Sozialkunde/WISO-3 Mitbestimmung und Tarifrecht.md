@@ -2,13 +2,15 @@
 modul: WISO-3
 titel: Mitbestimmung und Tarifrecht
 bereich: WiSo
-pruefungsteil: "AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)"
+pruefungsteil: AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)
 reihenfolge: 103
 dauer: 75
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/wiso]
+tags:
+  - ap2/modul
+  - ap2/wiso
 ---
 # WISO-3 · Mitbestimmung und Tarifrecht
 
@@ -132,8 +134,8 @@ flowchart TD
 - [[P6 Teamarbeit, Verhandlung und Veränderung]] – Betriebsrat bei neuer Software (AP1)
 
 ## Zusammenfassung
-- Betriebsrat ab 5 Wahlberechtigten, aktiv ab 16, passiv ab 18 + 6 Monate, Amtszeit 4 Jahre.
-- Rechte: Information < Anhörung (Kündigung) < Beratung < Mitwirkung (Einstellung) < Mitbestimmung (§ 87, z. B. Überwachungstechnik).
+- ==🔵Betriebsrat ab 5 Wahlberechtigten, aktiv ab 16, passiv ab 18 + 6 Monate, Amtszeit 4 Jahre==.
+- Rechte: ==🟢Information < Anhörung (Kündigung) < Beratung < Mitwirkung (Einstellung) < Mitbestimmung== (§ 87, z. B. Überwachungstechnik).
 - Betriebsvereinbarung = Arbeitgeber + Betriebsrat.
 - JAV: ≥ 5 Jugendliche unter 18 oder Azubis (jedes Alters) + Betriebsrat; wählbar < 25 oder Azubi, nicht BR-Mitglied; Amtszeit 2 Jahre.
 - Tarifautonomie, Manteltarif vs. Entgelttarif, Günstigkeitsprinzip, Friedenspflicht. Beispiel einer Tarifrunde mit vereinbarter Schlichtung und den hier angenommenen Quoten: Kündigung → Verhandlung → Schlichtung → Urabstimmung 75 % → Streik → Verhandlung → Urabstimmung 25 % → neuer Vertrag.

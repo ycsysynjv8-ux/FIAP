@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 LS3.2 (ARP, Adresskonflikt) · LS3.4 (Fehlersuche)"
-tags: [ap1/modul, ap1/netzwerk]
+berufsschule: Evp-CPS · LF3 LS3.2 (ARP, Adresskonflikt) · LS3.4 (Fehlersuche)
+tags:
+  - ap1/modul
+  - ap1/netzwerk
 ---
 # N4 · Netzwerkdienste und Protokolle
 
@@ -57,9 +59,9 @@ sequenceDiagram
 
 ## 2. DHCP – automatische Adressvergabe
 
-Ein **DHCP-Server** vergibt aus einem **Pool (Scope)** Adressen für eine begrenzte Zeit (**Lease**). Er liefert: IP-Adresse, Subnetzmaske, Standardgateway, DNS-Server, Lease-Dauer (optional Domain, NTP-Server …).
+Ein **DHCP-Server** vergibt aus einem **Pool (Scope)** Adressen für eine begrenzte Zeit (==🟡Lease==). Er liefert: IP-Adresse, Subnetzmaske, Standardgateway, DNS-Server, Lease-Dauer (optional Domain, NTP-Server …).
 
-**Ablauf DORA** (UDP, Server Port 67, Client Port 68):
+**Ablauf DORA** (UDP, ==🔵Server Port 67, Client Port 68==):
 
 | Schritt | Nachricht | Richtung |
 |---|---|---|
@@ -202,7 +204,7 @@ flowchart LR
 | Ordner, Gelesen-Status | serverseitig | nur lokal |
 | Speicher | am Server nötig | lokal |
 
-**SMTP** ist nur fürs **Senden/Weiterleiten** zuständig. Gegen gefälschte Absender helfen **SPF**, **DKIM** und **DMARC** (DNS-TXT-Einträge).
+**SMTP** ist ==🔴nur fürs Senden/Weiterleiten== zuständig. Gegen gefälschte Absender helfen **SPF**, **DKIM** und **DMARC** (DNS-TXT-Einträge).
 
 ---
 
@@ -267,10 +269,10 @@ flowchart LR
 ## Zusammenfassung
 - ARP: IP → MAC per Broadcast-Anfrage, Antwort per Unicast, ARP-Cache.
 - DHCP: DORA, Lease, Reservierung, Relay; ohne Server → APIPA.
-- DNS: hierarchisch, Records A/AAAA/CNAME/MX/PTR/TXT, Port 53 (UDP).
+- DNS: hierarchisch, Records A/AAAA/CNAME/MX/PTR/TXT, ==🔵Port 53 (UDP)==.
 - NAT/PAT: private → öffentliche IP, Unterscheidung über Ports; Portweiterleitung für eingehende Dienste.
 - Ports auswendig; verschlüsselte Varianten kennen.
-- IMAP synchronisiert, POP3 lädt herunter, SMTP sendet.
+- ==🟢IMAP synchronisiert, POP3 lädt herunter, SMTP sendet==.
 
 ## Direkt üben
 ```dataviewjs

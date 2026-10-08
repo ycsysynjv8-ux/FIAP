@@ -6,6 +6,8 @@ cssclasses: [ap1-start]
 
 **Abschlussprüfung Teil 1 – Einrichten eines IT-gestützten Arbeitsplatzes** · [[Anleitung]] · [[Prüfung AP1]] · [[Lernplan]]
 
+**Board:** [[AP1 Lernstatus.base|Lernstatus]]
+
 > [!example] Heute
 > **[[Quiz]]** (10 min Wiederholung) · **[[Trainer]]** (Rechnen) · **[[Fehlerlog]]** · **[[Karteikarten]]** (alle Stapel)
 

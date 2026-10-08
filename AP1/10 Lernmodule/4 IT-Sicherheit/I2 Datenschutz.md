@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "ITG · LF4 LS4.3 (Datenschutz, DSGVO-Fallprüfung)"
-tags: [ap1/modul, ap1/sicherheit]
+berufsschule: ITG · LF4 LS4.3 (Datenschutz, DSGVO-Fallprüfung)
+tags:
+  - ap1/modul
+  - ap1/sicherheit
 ---
 # I2 · Datenschutz
 
@@ -144,11 +146,11 @@ In Prüfungen und in der Praxis werden TOM oft nach den **Kontrollzielen** des a
 - [[S5 Virtualisierung und Cloud]] – Cloud-Anbieter auswählen
 
 ## Zusammenfassung
-- Personenbezogen = identifizierbare natürliche Person (auch IP-Adresse); Art. 9 = besonders sensibel.
+- ==🟡Personenbezogen = identifizierbare natürliche Person (auch IP-Adresse)==; Art. 9 = besonders sensibel.
 - Grundsätze: Rechtmäßigkeit, Zweckbindung, Datenminimierung, Richtigkeit, Speicherbegrenzung, Integrität/Vertraulichkeit, Rechenschaftspflicht.
 - Rechtsgrundlagen Art. 6: Einwilligung, Vertrag, rechtliche Pflicht, berechtigtes Interesse …
 - Rechte: Auskunft, Berichtigung, Löschung, Einschränkung, Übertragbarkeit, Widerspruch.
-- Pflichten: Verzeichnis, TOM, AVV, Meldung binnen 72 h, DSB ab 20 Personen, Bußgelder bis 20 Mio. €/4 %.
+- Pflichten: Verzeichnis, TOM, AVV, ==🔵Meldung binnen 72 h, DSB ab 20 Personen, Bußgelder bis 20 Mio. €/4 %==.
 - TOM: Zutritt, Zugang, Zugriff, Weitergabe, Eingabe, Auftrag, Verfügbarkeit, Trennung.
 - Vorfall: Daten → Meldung → Prävention.
 

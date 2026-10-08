@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 LS3.2 (OSI, Kapselung) · LS3.3 (Topologien) · LS3.4 (Fehlersuche)"
-tags: [ap1/modul, ap1/netzwerk]
+berufsschule: Evp-CPS · LF3 LS3.2 (OSI, Kapselung) · LS3.3 (Topologien) · LS3.4 (Fehlersuche)
+tags:
+  - ap1/modul
+  - ap1/netzwerk
 ---
 # N1 · Netzwerkgrundlagen und OSI-Modell
 
@@ -43,7 +45,7 @@ Ein Kunde ruft an: „Das Internet geht nicht.“ Ist das Kabel locker? Hat der 
 | **WAN** (Wide Area Network) | Länder, weltweit | Internet, Standortvernetzung per VPN |
 
 ### Topologien
-Die **Topologie** beschreibt, wie Geräte physisch bzw. logisch verbunden sind.
+Die ==🟡Topologie== beschreibt, wie Geräte physisch bzw. logisch verbunden sind.
 
 | Topologie | Aufbau | Vorteile | Nachteile |
 |---|---|---|---|
@@ -60,7 +62,7 @@ Die **Topologie** beschreibt, wie Geräte physisch bzw. logisch verbunden sind.
 
 ## 2. Das OSI-Modell
 
-Das **OSI-Referenzmodell** (Open Systems Interconnection) teilt Netzwerkkommunikation in **7 Schichten**. Jede Schicht erledigt eine klar abgegrenzte Aufgabe und nutzt dafür die Dienste der Schicht darunter. Vorteil: Man kann eine Schicht austauschen (z. B. WLAN statt Kabel), ohne die anderen zu ändern.
+Das **OSI-Referenzmodell** (Open Systems Interconnection) teilt Netzwerkkommunikation in ==🔵7 Schichten==. Jede Schicht erledigt eine klar abgegrenzte Aufgabe und nutzt dafür die Dienste der Schicht darunter. Vorteil: Man kann eine Schicht austauschen (z. B. WLAN statt Kabel), ohne die anderen zu ändern.
 
 | Nr. | Schicht | Aufgabe | PDU | Protokolle / Beispiele | Geräte |
 |---|---|---|---|---|---|
@@ -155,7 +157,7 @@ sequenceDiagram
 
 In Mitschnitten (z. B. **Wireshark**) stehen Adressen und Ports als **Hex-Bytes**. Die Prüfung und die Berufsschule lassen das gern umrechnen.
 
-**Regel:** Immer **2 Hex-Ziffern = 1 Byte**. Jedes Byte einzeln umrechnen: `erste Ziffer · 16 + zweite Ziffer`.
+**Regel:** Immer ==🟢2 Hex-Ziffern = 1 Byte==. Jedes Byte einzeln umrechnen: `erste Ziffer · 16 + zweite Ziffer`.
 
 > [!example] Beispiel durchgerechnet
 > Quell-IP im IP-Header: `c0 a8 0a 2d`
@@ -170,7 +172,7 @@ In Mitschnitten (z. B. **Wireshark**) stehen Adressen und Ports als **Hex-Bytes*
 >
 > Header-Feld **IHL = 5** (IP Header Length in 32-Bit-Worten) → 5 × 32 Bit = 160 Bit = **20 Byte** IP-Header.
 
-MAC-Adressen sind **6 Byte (48 Bit)**, z. B. `00:1a:2b:3c:4d:5e`. Die ersten 3 Byte (**OUI**) kennzeichnen den Hersteller. `ff:ff:ff:ff:ff:ff` ist die **Broadcast**-MAC.
+MAC-Adressen sind ==🔵6 Byte (48 Bit)==, z. B. `00:1a:2b:3c:4d:5e`. Die ersten 3 Byte (**OUI**) kennzeichnen den Hersteller. `ff:ff:ff:ff:ff:ff` ist die **Broadcast**-MAC.
 
 ---
 
@@ -194,7 +196,7 @@ MAC-Adressen sind **6 Byte (48 Bit)**, z. B. `00:1a:2b:3c:4d:5e`. Die ersten 3 B
 
 <!-- erg:Zugriffsverfahren -->
 ## 6. Zugriffsverfahren und Netzmodelle
-- **CSMA/CD** (Carrier Sense Multiple Access / Collision Detection): klassisches Ethernet mit gemeinsamem Medium (Hub, Halbduplex) – vor dem Senden „hören“, bei einer **Kollision** abbrechen und nach zufälliger Wartezeit neu senden. Mit **Switches im Vollduplex** gibt es keine Kollisionen mehr; CSMA/CD spielt praktisch keine Rolle.
+- **CSMA/CD** (Carrier Sense Multiple Access / Collision Detection): klassisches Ethernet mit gemeinsamem Medium (Hub, Halbduplex) – vor dem Senden „hören“, bei einer **Kollision** abbrechen und nach zufälliger Wartezeit neu senden. Mit **Switches im Vollduplex** ==🔴gibt es keine Kollisionen mehr==; CSMA/CD spielt praktisch keine Rolle.
 - **CSMA/CA** (Collision Avoidance): im **WLAN**, weil Funkgeräte Kollisionen nicht zuverlässig erkennen – sie versuchen, sie zu vermeiden (Wartezeiten, ggf. RTS/CTS).
 
 | | **Client-Server** | **Peer-to-Peer (P2P)** |
@@ -233,8 +235,8 @@ MAC-Adressen sind **6 Byte (48 Bit)**, z. B. `00:1a:2b:3c:4d:5e`. Die ersten 3 B
 
 ## Zusammenfassung
 - Netze nach Ausdehnung: PAN < LAN < MAN < WAN; heute Stern-/Baumtopologie mit Switches.
-- OSI: 7 Schichten, jede mit eigener Aufgabe; Switch = 2 (MAC), Router = 3 (IP), Ports = 4.
-- Kapselung: jede Schicht setzt einen Header davor; IP bleibt Ende-zu-Ende, MAC gilt nur pro Abschnitt.
+- OSI: 7 Schichten, jede mit eigener Aufgabe; ==🟢Switch = 2 (MAC), Router = 3 (IP), Ports = 4==.
+- Kapselung: jede Schicht setzt einen Header davor; IP bleibt Ende-zu-Ende, ==🔴MAC gilt nur pro Abschnitt==.
 - TCP = zuverlässig, verbindungsorientiert · UDP = schnell, verbindungslos.
 - Hex-Header: 2 Ziffern = 1 Byte, einzeln umrechnen.
 - Fehlersuche bottom-up und dokumentieren.

@@ -2,13 +2,15 @@
 modul: PA-2
 titel: Präsentation und Fachgespräch
 bereich: Projektarbeit
-pruefungsteil: "AP2 – Planen und Umsetzen eines Projektes (50 % der Gesamtnote)"
+pruefungsteil: AP2 – Planen und Umsetzen eines Projektes (50 % der Gesamtnote)
 reihenfolge: 202
 dauer: 60
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/projekt]
+tags:
+  - ap2/modul
+  - ap2/projekt
 ---
 # PA-2 · Präsentation und Fachgespräch
 
@@ -99,10 +101,10 @@ Im Fachgespräch prüft der Ausschuss, wie gut du **dein Projekt und sein Umfeld
 - [[P4 Kommunikation und Kundenberatung]] – Gesprächsführung (AP1)
 
 ## Zusammenfassung
-- 15 min Präsentation + 15 min Fachgespräch; Köln: Projekt 50 %, Präsentation 25 %, Fachgespräch 25 %; Bereich = 50 % der Gesamtnote.
+- 15 min Präsentation + 15 min Fachgespräch; ==🔵Köln: Projekt 50 %, Präsentation 25 %, Fachgespräch 25 %==; Bereich = 50 % der Gesamtnote.
 - Präsentation für den Ausschuss ohne Vorwissen: Ausgangslage, Planung, Entscheidungen, QS, Soll-Ist, Fazit.
 - Fachgespräch: 8–12 individuelle Fragen – vor allem „Warum?“. Dokumentation kennen, Begriffe erklären können.
-- Bestehen: Gesamt ≥ 50, AP2 ≥ 50, ≥ 3 Bereiche ausreichend, keiner ungenügend. MEP 2 : 1.
+- ==🟢Bestehen: Gesamt ≥ 50, AP2 ≥ 50, ≥ 3 Bereiche ausreichend, keiner ungenügend==. ==🔵MEP 2 : 1==.
 
 ## Selbstcheck
 ```dataviewjs

@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "(Querschnitt; Cloud-Datenschutz → ITG LF4)"
-tags: [ap1/modul, ap1/software]
+berufsschule: (Querschnitt; Cloud-Datenschutz → ITG LF4)
+tags:
+  - ap1/modul
+  - ap1/software
 ---
 # S5 · Virtualisierung und Cloud
 
@@ -155,9 +157,9 @@ Zugriff per **Thin Client**, Notebook oder Browser. Vorteile: zentrale Verwaltun
 - [[W3 Investition und Finanzierung]] – Kaufen oder mieten
 
 ## Zusammenfassung
-- Hypervisor Typ 1 (bare metal, Server) vs. Typ 2 (hosted, Test).
-- Virtualisierung: Konsolidierung, Snapshots, Templates, HA/Live-Migration – aber SPOF ohne Cluster; Snapshot ≠ Backup.
-- Container teilen den Kernel, sind leicht und schnell.
+- ==🟡Hypervisor Typ 1 (bare metal, Server) vs. Typ 2 (hosted, Test)==.
+- Virtualisierung: Konsolidierung, Snapshots, Templates, HA/Live-Migration – aber SPOF ohne Cluster; ==🔴Snapshot ≠ Backup==.
+- ==🟢Container teilen den Kernel==, sind leicht und schnell.
 - Terminalserver (ein OS, viele Nutzer) vs. VDI (eigene VM je Nutzer).
 - IaaS / PaaS / SaaS; Public / Private / Hybrid / Community.
 - Cloud-Auswahl: Standort, AVV, Verschlüsselung, Zertifikate, SLA, Exit-Strategie.

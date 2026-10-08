@@ -1,0 +1,50 @@
+filters:
+  and:
+    - file.hasTag("ap1/modul")
+properties:
+  note.bereich:
+    displayName: Bereich
+  note.sicherheit:
+    displayName: Sicherheit
+  note.dauer:
+    displayName: Minuten
+  note.zuletzt:
+    displayName: Zuletzt
+views:
+  - type: kanban
+    name: Lernstatus
+    groupBy:
+      property: status
+      direction: ASC
+    groupOrder:
+      - neu
+      - lernen
+      - wiederholen
+      - sicher
+      - 
+    order:
+      - file.name
+      - bereich
+      - sicherheit
+      - dauer
+    sort:
+      - property: bereich
+        direction: ASC
+      - property: reihenfolge
+        direction: ASC
+  - type: table
+    name: Wiederholen
+    filters:
+      and:
+        - sicherheit > 0
+        - sicherheit < 4
+    order:
+      - file.name
+      - bereich
+      - sicherheit
+      - zuletzt
+    sort:
+      - property: sicherheit
+        direction: ASC
+      - property: zuletzt
+        direction: ASC

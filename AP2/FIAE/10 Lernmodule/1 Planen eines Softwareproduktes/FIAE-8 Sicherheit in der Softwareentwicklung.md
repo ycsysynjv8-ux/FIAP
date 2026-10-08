@@ -2,13 +2,15 @@
 modul: FIAE-8
 titel: Sicherheit in der Softwareentwicklung
 bereich: Planen eines Softwareproduktes
-pruefungsteil: "AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen"
+pruefungsteil: AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen
 reihenfolge: 8
 dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-8 · Sicherheit in der Softwareentwicklung
 
@@ -120,8 +122,8 @@ tags: [ap2/modul, ap2/fiae]
 ## Zusammenfassung
 - Schutzziele: Vertraulichkeit, Integrität (Hash/Signatur/HMAC), Verfügbarkeit, Authentizität.
 - Symmetrisch schnell, asymmetrisch ohne Geheimnisaustausch, hybrid (TLS) vereint beides. RSA: Faktorisierung, langsam, für Schlüssel/Signaturen.
-- Passwörter: Hash + individuelles Salt (+ Pepper) mit bcrypt/Argon2 – nie Klartext, nie MD5.
-- OWASP: SQL-Injection → Prepared Statements; XSS → Ausgaben escapen; CSRF → Token; Zugriff serverseitig prüfen.
+- Passwörter: Hash + individuelles Salt (+ Pepper) mit bcrypt/Argon2 – ==🔴nie Klartext, nie MD5==.
+- OWASP: ==🟢SQL-Injection → Prepared Statements; XSS → Ausgaben escapen; CSRF → Token==; Zugriff serverseitig prüfen.
 - Datenschutzerklärung (Transparenz), Einwilligung (Opt-in), Privacy by Design.
 
 ## Direkt üben

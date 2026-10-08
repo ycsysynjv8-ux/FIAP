@@ -2,13 +2,15 @@
 modul: FISI-11
 titel: Switching, VLAN und Verkabelung
 bereich: Netzwerke
-pruefungsteil: "AP2 Teil 2 – Analyse und Entwicklung von Netzwerken"
+pruefungsteil: AP2 Teil 2 – Analyse und Entwicklung von Netzwerken
 reihenfolge: 11
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-11 · Switching, VLAN und Verkabelung
 
@@ -143,8 +145,8 @@ Eine **Bridge** verbindet zwei Netzsegmente auf Schicht 2 und leitet Frames anha
 - [[N5 Verkabelung und Netzwerkkomponenten]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- VLAN = logisches Layer-2-Netz, eigene Broadcast-Domäne, eigenes Subnetz. Vorteile: Sicherheit, weniger Broadcast, Flexibilität, weniger Hardware, QoS.
-- 802.1Q-Tag (4 Byte, VLAN-ID 12 Bit). Endgerät untagged, Uplink tagged (Trunk). Native VLAN ≠ VLAN 1 gegen Hopping.
+- ==🟡VLAN = logisches Layer-2-Netz, eigene Broadcast-Domäne, eigenes Subnetz==. Vorteile: Sicherheit, weniger Broadcast, Flexibilität, weniger Hardware, QoS.
+- ==🔵802.1Q-Tag (4 Byte, VLAN-ID 12 Bit)==. Endgerät untagged, Uplink tagged (Trunk). ==🔴Native VLAN ≠ VLAN 1 gegen Hopping==.
 - Inter-VLAN: L3-Switch oder Router-on-a-Stick mit Subinterfaces. DHCP-Relay über VLAN-Grenzen.
 - STP blockiert redundante Wege, LACP bündelt sie. Glasfaser: Reichweite, Bandbreite, EMV, galvanische Trennung. SFP 1G, SFP+ 10G. PoE: Ports + Uplink + Budget.
 

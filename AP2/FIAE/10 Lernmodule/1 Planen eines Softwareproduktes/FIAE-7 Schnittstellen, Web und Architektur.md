@@ -2,13 +2,15 @@
 modul: FIAE-7
 titel: Schnittstellen, Web und Architektur
 bereich: Planen eines Softwareproduktes
-pruefungsteil: "AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen"
+pruefungsteil: AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen
 reihenfolge: 7
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-7 · Schnittstellen, Web und Architektur
 
@@ -195,10 +197,10 @@ Nach dem Rollout muss eine Anwendung **überwacht und betreut** werden.
 ## Zusammenfassung
 - CPS: Sensor misst → Steuerung entscheidet → Aktor wirkt; vernetzt, energiesparend, manipulationssicher.
 - Betrieb: Monitoring mit Alarmierung, Ticketsystem, Incident-Management stellt den Betrieb schnell wieder her, Problem-Management beseitigt Ursachen.
-- REST: Ressourcen per URL, HTTP-Methoden, zustandslos, JSON. CRUD = POST, GET, PUT/PATCH, DELETE.
+- REST: Ressourcen per URL, HTTP-Methoden, zustandslos, JSON. ==🟢CRUD = POST, GET, PUT/PATCH, DELETE==.
 - Request: Methode + URL (+ Query-Parameter), Header (Content-Type, Authorization), Body.
-- Status: 2xx Erfolg, 3xx Umleitung, 4xx Client (401/403/404), 5xx Server.
-- XSD prüft Struktur, nicht Logik. Architektur: Schichten, MVC, Microservices.
+- Status: ==🔵2xx Erfolg, 3xx Umleitung, 4xx Client (401/403/404), 5xx Server==.
+- ==🔴XSD prüft Struktur, nicht Logik==. Architektur: Schichten, MVC, Microservices.
 - Compiler (vorher komplett) vs. Interpreter (zur Laufzeit), Bibliotheken, Git, CI/CD, Code-Signatur.
 - LPWAN/LoRa für IoT, LAN fürs Büro, SAN fürs RZ. Frame: Präambel, Ziel-MAC, Quell-MAC, Typ, Daten, FCS. MAC = 3 Byte OUI + 3 Byte Gerät.
 

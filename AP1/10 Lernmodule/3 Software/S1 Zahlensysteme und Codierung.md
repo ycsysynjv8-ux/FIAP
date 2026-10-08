@@ -8,7 +8,9 @@ status: neu
 sicherheit: 0
 zuletzt:
 berufsschule: "SuD · LF5 LS5.1 (File Rescue: Zahlensysteme, Magic Numbers)"
-tags: [ap1/modul, ap1/software]
+tags:
+  - ap1/modul
+  - ap1/software
 ---
 # S1 · Zahlensysteme und Codierung
 
@@ -156,10 +158,10 @@ NOT kehrt um (0 → 1).
 - [[S4 Betriebssysteme, Dateisysteme und Rechte]] – Linux-Rechte oktal
 
 ## Zusammenfassung
-- Stellenwert = Ziffer × Basis^Position; beliebig → dezimal durch Aufsummieren.
+- ==🟢Stellenwert = Ziffer × Basis^Position==; beliebig → dezimal durch Aufsummieren.
 - Dezimal → andere Basis: Restwertmethode (von unten lesen) oder Stellenwerte abziehen.
 - Bin ↔ Hex in 4er-Gruppen, Bin ↔ Oktal in 3er-Gruppen; 2 Hex-Ziffern = 1 Byte.
-- Zweierkomplement: invertieren + 1; 8 Bit signed = −128 … 127.
+- Zweierkomplement: ==🟢invertieren + 1==; ==🔵8 Bit signed = −128 … 127==.
 - ASCII 7 Bit, UTF-8 variabel und ASCII-kompatibel; Magic Numbers erkennen Dateitypen.
 - AND (Netzadresse), XOR (Parität).
 

@@ -7,8 +7,10 @@ dauer: 75
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF2 (Arbeitsplätze nach Kundenwunsch ausstatten) – Peripherie"
-tags: [ap1/modul, ap1/hardware]
+berufsschule: Evp-CPS · LF2 (Arbeitsplätze nach Kundenwunsch ausstatten) – Peripherie
+tags:
+  - ap1/modul
+  - ap1/hardware
 ---
 # H6 · Drucker, Peripherie und Mobilgeräte
 
@@ -128,8 +130,8 @@ Drucker, Kopierer und Multifunktionsgeräte haben oft eine **Festplatte oder SSD
 
 ## Zusammenfassung
 - Laser: günstig pro Seite, hohes Volumen · Tinte: günstig in der Anschaffung, teure Seiten (außer Tintentank) · Thermo: Bons/Etiketten.
-- Seitenkosten = Verbrauchsmaterial ÷ Reichweite; Gesamtkosten = Anschaffung + Seiten × Seitenkosten; Break-even durch Gleichsetzen.
-- Datenblatt: ppm, dpi, FPOT, Duty Cycle vs. empfohlenes Volumen, Duplex, Reichweite nach ISO.
+- ==🟢Seitenkosten = Verbrauchsmaterial ÷ Reichweite==; Gesamtkosten = Anschaffung + Seiten × Seitenkosten; Break-even durch Gleichsetzen.
+- Datenblatt: ppm, dpi, FPOT, ==🔴Duty Cycle vs. empfohlenes Volumen==, Duplex, Reichweite nach ISO.
 - Mobilgeräte nach Einsatz wählen: Gewicht, Akku, Robustheit (IP), LTE, Docking, Service.
 - MDM: Konfiguration, Apps, Richtlinien, Verschlüsselung, Orten/Sperren/Löschen, BYOD-Container.
 

@@ -2,13 +2,15 @@
 modul: FISI-1
 titel: Server, Virtualisierung und Container
 bereich: Konzeption und Administration
-pruefungsteil: "AP2 Teil 2 – Konzeption und Administration von IT-Systemen"
+pruefungsteil: AP2 Teil 2 – Konzeption und Administration von IT-Systemen
 reihenfolge: 1
 dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-1 · Server, Virtualisierung und Container
 
@@ -184,8 +186,8 @@ Zwei identische Umgebungen: **eine ist live (z. B. Green)**, auf der anderen (Bl
 
 ## Zusammenfassung
 - Serverauswahl immer an der **Rolle** begründen (DB: RAM/NVMe, Virtualisierung: Kerne/RAM, File: Kapazität/10 GbE).
-- Netzteil: Summe × (1 + Reserve) → auf marktübliche Größe aufrunden; Netzaufnahme = Last ÷ η. Energie: kW × 8 760 h × €/kWh.
-- **Typ 1** = Bare Metal (ESXi, Hyper-V, KVM) · **Typ 2** = gehostet (VirtualBox, Workstation).
+- Netzteil: Summe × (1 + Reserve) → auf marktübliche Größe aufrunden; ==🟢Netzaufnahme = Last ÷ η==. Energie: ==🔵kW × 8 760 h × €/kWh==.
+- ==🟡Typ 1 = Bare Metal (ESXi, Hyper-V, KVM) · Typ 2 = gehostet (VirtualBox, Workstation)==.
 - Container teilen den Kernel: klein, schnell, portabel – schwächere Isolation.
 - Cluster: gleiche Hardware/Firmware, Shared Storage. Scale up vs. scale out. Load Balancing: Round Robin, Least Connections, IP-Hash. Blue-Green: umschalten ohne Ausfall.
 

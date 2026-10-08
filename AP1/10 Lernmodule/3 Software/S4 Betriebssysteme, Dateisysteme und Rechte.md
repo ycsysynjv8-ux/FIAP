@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF7 (Linux/Raspberry Pi) – Grundlagen aus der Praxis im Betrieb"
-tags: [ap1/modul, ap1/software]
+berufsschule: Evp-CPS · LF7 (Linux/Raspberry Pi) – Grundlagen aus der Praxis im Betrieb
+tags:
+  - ap1/modul
+  - ap1/software
 ---
 # S4 · Betriebssysteme, Dateisysteme und Rechte
 
@@ -209,9 +211,9 @@ Härtung = **Angriffsfläche verkleinern**:
 
 ## Zusammenfassung
 - BS-Aufgaben: Prozesse, Speicher, Dateien, Geräte, Benutzer/Rechte, Oberfläche.
-- UEFI + GPT + Secure Boot (+ TPM); MBR max. 2 TiB, 4 primäre Partitionen.
-- NTFS (Rechte, Journaling) · FAT32 max. 4 GiB pro Datei · exFAT für Wechseldatenträger · ext4 Linux.
-- Least Privilege, Gruppen statt Personen; Freigabe + NTFS → restriktiveres gilt; Verweigern schlägt Zulassen.
+- UEFI + GPT + Secure Boot (+ TPM); ==🔵MBR max. 2 TiB, 4 primäre Partitionen==.
+- NTFS (Rechte, Journaling) · ==🔴FAT32 max. 4 GiB pro Datei== · exFAT für Wechseldatenträger · ext4 Linux.
+- Least Privilege, Gruppen statt Personen; Freigabe + NTFS → ==🟢restriktiveres gilt; Verweigern schlägt Zulassen==.
 - Linux: r 4, w 2, x 1 → z. B. 750 = rwxr-x---.
 - Rollout per Image/PXE/Softwareverteilung, Checkliste, Übergabeprotokoll.
 

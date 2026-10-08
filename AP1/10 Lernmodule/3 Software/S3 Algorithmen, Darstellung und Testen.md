@@ -7,8 +7,10 @@ dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "SuD · LF5 LS5.2 (Debugging, Testfallkatalog) · LS5.3 (UML-Aktivitätsdiagramm, Wasserfall) · LS5.4 (Unit-Tests)"
-tags: [ap1/modul, ap1/software]
+berufsschule: SuD · LF5 LS5.2 (Debugging, Testfallkatalog) · LS5.3 (UML-Aktivitätsdiagramm, Wasserfall) · LS5.4 (Unit-Tests)
+tags:
+  - ap1/modul
+  - ap1/software
 ---
 # S3 · Algorithmen, Darstellung und Testen
 
@@ -205,9 +207,9 @@ pytest-Ergebnisse: **PASSED** (bestanden) · **FAILED** (Soll ≠ Ist) · **ERRO
 ## Zusammenfassung
 - UML-Aktivitätsdiagramm: Start-/Endknoten, Aktionen, Rauten mit [Bedingungen], Balken für Parallelität.
 - Schreibtischtest: Spalte je Variable, Zeile je Durchlauf.
-- Tausch mit Hilfsvariable; lineare Suche n, binäre Suche log₂ n (nur sortiert); Bubble Sort n².
+- Tausch mit Hilfsvariable; ==🔵lineare Suche n, binäre Suche log₂ n (nur sortiert); Bubble Sort n²==.
 - Syntax- / Laufzeit- / Logikfehler.
-- Testfälle mit Äquivalenzklassen und Grenzwerten; Unit → Integration → System → Abnahme; Regressionstests.
+- ==🟢Testfälle mit Äquivalenzklassen und Grenzwerten==; Unit → Integration → System → Abnahme; Regressionstests.
 
 ## Direkt üben
 ```dataviewjs

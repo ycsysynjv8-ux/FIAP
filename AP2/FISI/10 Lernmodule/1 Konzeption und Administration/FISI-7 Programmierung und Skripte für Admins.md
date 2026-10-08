@@ -2,13 +2,15 @@
 modul: FISI-7
 titel: Programmierung und Skripte für Admins
 bereich: Konzeption und Administration
-pruefungsteil: "AP2 Teil 2 – Konzeption und Administration von IT-Systemen"
+pruefungsteil: AP2 Teil 2 – Konzeption und Administration von IT-Systemen
 reihenfolge: 7
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-7 · Programmierung und Skripte für Admins
 
@@ -203,10 +205,10 @@ Get-Service | Where-Object { $_.Status -eq "Stopped" }   # Pipeline: Dienste fil
 - [[S4 Betriebssysteme, Dateisysteme und Rechte]] – Rechte und Dateisysteme
 
 ## Zusammenfassung
-- Arrays ab 0; `i < n` läuft n-mal; `<=` → Index-Fehler. Ganzzahldivision schneidet ab, `%` liefert den Rest.
+- Arrays ab 0; `i < n` läuft n-mal; `<=` → Index-Fehler. ==🔴Ganzzahldivision schneidet ab==, `%` liefert den Rest.
 - Schreibtischtest: Tabelle je Variable und Durchlauf, Werte am Ende des Durchlaufs.
 - Max/Min mit erstem Element starten, Tausch mit Hilfsvariable, Summe vor neuer Schleife zurücksetzen.
-- Syntax (Grammatik) · Semantik (falsches Ergebnis) · Laufzeit (Abbruch). White-Box = Code, Black-Box = Spezifikation.
+- Syntax (Grammatik) · Semantik (falsches Ergebnis) · Laufzeit (Abbruch). ==🟢White-Box = Code, Black-Box = Spezifikation==.
 - `copy` mit `*`/`?`, `schtasks`/`cron`, `taskkill`/`kill`, `PATH`, `chmod 664`, GRUB reparieren.
 
 ## Direkt üben

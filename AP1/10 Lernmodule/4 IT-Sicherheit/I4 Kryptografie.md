@@ -8,7 +8,9 @@ status: neu
 sicherheit: 0
 zuletzt:
 berufsschule: "ITG · LF4 (Verschlüsselung: symmetrisch, asymmetrisch, TLS) · SuD LS5.4 (Hashing)"
-tags: [ap1/modul, ap1/sicherheit]
+tags:
+  - ap1/modul
+  - ap1/sicherheit
 ---
 # I4 · Kryptografie
 
@@ -170,10 +172,10 @@ Problem: Woher weiß Bob, dass der öffentliche Schlüssel wirklich Alice gehör
 - [[N6 WLAN]] – WLAN-Verschlüsselung
 
 ## Zusammenfassung
-- Symmetrisch (AES): ein Schlüssel, schnell, Problem Schlüsselaustausch, n(n−1)/2 Schlüssel.
-- Asymmetrisch (RSA, ECC): Schlüsselpaar, langsam, 2n Schlüssel; verschlüsseln mit Public Key des Empfängers, signieren mit eigenem Private Key.
+- Symmetrisch (AES): ein Schlüssel, schnell, Problem Schlüsselaustausch, ==🔵n(n−1)/2 Schlüssel==.
+- Asymmetrisch (RSA, ECC): Schlüsselpaar, langsam, 2n Schlüssel; ==🟢verschlüsseln mit Public Key des Empfängers, signieren mit eigenem Private Key==.
 - Hybrid (TLS, VPN, S/MIME): asymmetrischer Schlüsselaustausch + symmetrische Daten.
-- Hash (SHA-256): Einweg, Integrität, Passwörter mit Salt + bcrypt/Argon2; MD5/SHA-1 unsicher.
+- Hash (SHA-256): Einweg, Integrität, Passwörter mit Salt + bcrypt/Argon2; ==🔴MD5/SHA-1 unsicher==.
 - Signatur: Signaturverfahren + Hash + privater Schlüssel; Prüfung mit öffentlichem Schlüssel → Integrität und Authentizität (keine Vertraulichkeit). Keine pauschale rechtliche Nichtabstreitbarkeit.
 - Zertifikat (X.509) bestätigt Public Key ↔ Identität, signiert von einer CA; PKI mit Sperrlisten.
 

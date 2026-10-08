@@ -2,13 +2,15 @@
 modul: FISI-14
 titel: WLAN und Netzzugangskontrolle
 bereich: Netzwerke
-pruefungsteil: "AP2 Teil 2 – Analyse und Entwicklung von Netzwerken"
+pruefungsteil: AP2 Teil 2 – Analyse und Entwicklung von Netzwerken
 reihenfolge: 14
 dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-14 · WLAN und Netzzugangskontrolle
 
@@ -115,10 +117,10 @@ Port Security verhindert fremde Geräte, aber **nicht** ARP-Spoofing eines **zug
 - [[N6 WLAN]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- Planung: Site Survey → Anzahl/Standort APs, Kanalplan (2,4 GHz: 1/6/11), PoE, VLANs.
+- Planung: Site Survey → Anzahl/Standort APs, Kanalplan (==🔵2,4 GHz: 1/6/11==), PoE, VLANs.
 - AP strahlt aus, Controller verwaltet zentral. BSSID = MAC des APs.
-- PSK = ein Schlüssel für alle · Enterprise = individuell über RADIUS/802.1X (sperrbar, VLAN, Logs). WPA3-SAE besser als WPA2-PSK.
-- AAA = Authentifizierung, Autorisierung, Accounting.
+- PSK = ein Schlüssel für alle · Enterprise = individuell über RADIUS/802.1X (sperrbar, VLAN, Logs). ==🟢WPA3-SAE besser als WPA2-PSK==.
+- ==🟡AAA = Authentifizierung, Autorisierung, Accounting==.
 - Gäste: eigene SSID + eigenes Netz + Captive Portal/Voucher + Isolation.
 - Port Security: static/sticky MAC, Maximum, Violation protect/restrict/shutdown; stärker: 802.1X.
 

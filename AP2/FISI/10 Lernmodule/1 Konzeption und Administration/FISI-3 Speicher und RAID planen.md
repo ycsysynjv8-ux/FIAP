@@ -2,13 +2,15 @@
 modul: FISI-3
 titel: Speicher und RAID planen
 bereich: Konzeption und Administration
-pruefungsteil: "AP2 Teil 2 – Konzeption und Administration von IT-Systemen"
+pruefungsteil: AP2 Teil 2 – Konzeption und Administration von IT-Systemen
 reihenfolge: 3
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-3 · Speicher und RAID planen
 
@@ -187,8 +189,8 @@ Rechte an **Gruppen** nach dem Prinzip der minimalen Rechte vergeben (nicht „J
 ## Zusammenfassung
 - Binär rechnen: × 1 024 je Stufe (10 Bit). Datenraten dezimal.
 - Bedarf = Kapazität × Füllgrad × 1 024 + Zuwachs × Jahre → ÷ 1 024, aufrunden. Jahre = Reserve ÷ Zuwachs, abrunden.
-- Platten = ⌈Bedarf ÷ C⌉ + Parität (5: +1, 6: +2) bzw. × 2 (RAID 10) + Hot Spare.
-- RAID 5: 1 Ausfall · RAID 6: 2 · RAID 10: 1 garantiert. RAID ≠ Backup.
+- ==🟢Platten = ⌈Bedarf ÷ C⌉ + Parität (5: +1, 6: +2)== bzw. × 2 (RAID 10) + Hot Spare.
+- ==🔵RAID 5: 1 Ausfall · RAID 6: 2 · RAID 10: 1 garantiert==. ==🔴RAID ≠ Backup==.
 - DAS/NAS (Datei)/SAN (Block) · JBOD ohne Redundanz · Dedup spart Kopien · Kompression verlustfrei/-behaftet · Clustergröße nach Dateigröße.
 - MTBF (reparierbar) · MTTF (Austauschteil) · Badewanne: früh – Betrieb – Verschleiß.
 

@@ -4,7 +4,7 @@ cssclasses: [ap1-start]
 ---
 # AP2 FISI – Fachinformatik Systemintegration
 
-**Abschlussprüfung Teil 2** · [[AP2 Pruefung|Prüfungsaufbau und Bestehen]] · [[AP2 FISI Lernplan|Lernplan]] · [[AP2/FISI/20 Aufgaben/Pruefungen/Uebersicht FISI AP2|Probeprüfungen]]
+**Abschlussprüfung Teil 2** · [[AP2 Pruefung|Prüfungsaufbau und Bestehen]] · [[AP2 FISI Lernplan|Lernplan]] · [[AP2 Lernstatus.base|Lernstatus-Board]] · [[AP2/FISI/20 Aufgaben/Pruefungen/Uebersicht FISI AP2|Probeprüfungen]]
 
 > [!example] Heute
 > **[[AP2 FISI Quiz|Quiz]]** (10 min Wiederholung) · **[[AP2 FISI Trainer|Trainer]]** (Rechnen) · **[[AP2 FISI Karteikarten|Karteikarten]]** · **[[AP2 FISI Fehlerlog|Fehlerlog]]** · **[[WiSo-Quiz]]**

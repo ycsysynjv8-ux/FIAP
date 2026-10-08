@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 LS3.1 (Übertragungsdauer) · LS3.5 (Speicherbedarf Video)"
-tags: [ap1/modul, ap1/hardware]
+berufsschule: Evp-CPS · LF3 LS3.1 (Übertragungsdauer) · LS3.5 (Speicherbedarf Video)
+tags:
+  - ap1/modul
+  - ap1/hardware
 ---
 # H3 · Datenmengen und Übertragung
 
@@ -182,9 +184,9 @@ Weitere Beispiele: ISBN, IBAN (Prüfsumme modulo 97), Luhn-Verfahren bei Kreditk
 - [[S1 Zahlensysteme und Codierung]] – Zweierpotenzen und Binärpräfixe
 
 ## Zusammenfassung
-- 1 B = 8 bit; Dateien in Byte, Leitungen in Bit/s (dezimal).
-- kB/MB/GB = 10³/10⁶/10⁹ · KiB/MiB/GiB = 2¹⁰/2²⁰/2³⁰; immer über Byte umrechnen.
-- t = Bit / (Bit/s); ggf. × Effizienz.
+- ==🔵1 B = 8 bit==; Dateien in Byte, Leitungen in Bit/s (dezimal).
+- kB/MB/GB = 10³/10⁶/10⁹ · KiB/MiB/GiB = 2¹⁰/2²⁰/2³⁰; ==🟢immer über Byte umrechnen==.
+- ==🟢t = Bit / (Bit/s)==; ggf. × Effizienz.
 - Bild = B × H × Farbtiefe · Audio = Rate × Bit × Kanäle × s · Video = Bild × fps × s bzw. Bitrate × s.
 - Planung: Wachstum, Reserve, Backups, Füllgrad.
 

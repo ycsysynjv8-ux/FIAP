@@ -4,7 +4,7 @@ cssclasses: [ap1-start]
 ---
 # AP2 FIAE – Fachinformatik Anwendungsentwicklung
 
-**Abschlussprüfung Teil 2** · [[AP2 Pruefung|Prüfungsaufbau und Bestehen]] · [[AP2 FIAE Lernplan|Lernplan]] · [[AP2/FIAE/20 Aufgaben/Pruefungen/Uebersicht FIAE AP2|Probeprüfungen]]
+**Abschlussprüfung Teil 2** · [[AP2 Pruefung|Prüfungsaufbau und Bestehen]] · [[AP2 FIAE Lernplan|Lernplan]] · [[AP2 Lernstatus.base|Lernstatus-Board]] · [[AP2/FIAE/20 Aufgaben/Pruefungen/Uebersicht FIAE AP2|Probeprüfungen]]
 
 > [!example] Heute
 > **[[AP2 FIAE Quiz|Quiz]]** (10 min Wiederholung) · **[[AP2 FIAE Trainer|Trainer]]** (Rechnen) · **[[AP2 FIAE Karteikarten|Karteikarten]]** · **[[AP2 FIAE Fehlerlog|Fehlerlog]]** · **[[WiSo-Quiz]]**

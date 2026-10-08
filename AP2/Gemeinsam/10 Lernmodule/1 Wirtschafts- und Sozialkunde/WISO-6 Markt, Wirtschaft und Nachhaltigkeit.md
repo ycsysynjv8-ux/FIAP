@@ -2,13 +2,15 @@
 modul: WISO-6
 titel: Markt, Wirtschaft und Nachhaltigkeit
 bereich: WiSo
-pruefungsteil: "AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)"
+pruefungsteil: AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)
 reihenfolge: 106
 dauer: 75
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/wiso]
+tags:
+  - ap2/modul
+  - ap2/wiso
 ---
 # WISO-6 · Markt, Wirtschaft und Nachhaltigkeit
 
@@ -126,12 +128,12 @@ Indikatoren: **Frühindikatoren** (Auftragseingänge, Geschäftsklimaindex), Pr�
 - [[P5 Arbeitsplatz, Ergonomie und Umwelt]] – Green IT und Entsorgung (AP1)
 
 ## Zusammenfassung
-- Compliance = Regeln einhalten (Verhaltenskodex); HinSchG: interne Meldestelle ab 50 Beschäftigten; AGG verbietet Benachteiligung.
-- Gleichgewichtspreis: Angebot = Nachfrage. Käufermarkt (Überangebot) vs. Verkäufermarkt.
+- Compliance = Regeln einhalten (Verhaltenskodex); ==🔵HinSchG: interne Meldestelle ab 50 Beschäftigten==; AGG verbietet Benachteiligung.
+- ==🟡Gleichgewichtspreis: Angebot = Nachfrage==. Käufermarkt (Überangebot) vs. Verkäufermarkt.
 - Polypol (viele–viele), Oligopol (wenige Anbieter), Monopol (ein Anbieter).
 - Vollkommener Markt: homogen, transparent, keine Präferenzen, schnelle Reaktion, Punktmarkt.
 - Konjunktur: Aufschwung, Boom, Abschwung (BIP ↓, Arbeitslosigkeit ↑), Tiefstand. Magisches Viereck.
-- Nachhaltigkeit: ökologisch, ökonomisch, sozial. Blauer Engel = umweltschonend hergestellt. Emissionen inkl. Lärm (BImSchG). Vermeiden vor Recycling.
+- Nachhaltigkeit: ökologisch, ökonomisch, sozial. Blauer Engel = umweltschonend hergestellt. Emissionen inkl. Lärm (BImSchG). ==🟢Vermeiden vor Recycling==.
 
 ## Selbstcheck
 ```dataviewjs

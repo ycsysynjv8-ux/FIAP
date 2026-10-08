@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 LS3.1 (WLAN & BYOD, Messung, Nutzerordnung)"
-tags: [ap1/modul, ap1/netzwerk]
+berufsschule: Evp-CPS · LF3 LS3.1 (WLAN & BYOD, Messung, Nutzerordnung)
+tags:
+  - ap1/modul
+  - ap1/netzwerk
 ---
 # N6 · WLAN
 
@@ -138,9 +140,9 @@ Private Geräte im Firmen-/Schulnetz sind bequem, aber riskant (unbekannter Patc
 
 ## Zusammenfassung
 - Wi-Fi 4 (n) 2,4+5 · Wi-Fi 5 (ac) 5 · Wi-Fi 6 (ax) 2,4+5 · 6E zusätzlich 6 GHz · Wi-Fi 7 (be).
-- 2,4 GHz: Reichweite, aber nur 3 freie Kanäle (1/6/11); 5/6 GHz: Tempo, weniger Reichweite.
-- dBm = 10·log(P/1 mW); EIRP = Sendeleistung + Antennengewinn − Verluste.
-- WPA3 bzw. WPA2/3-Enterprise mit 802.1X + RADIUS; WEP/WPA/WPS nicht nutzen.
+- 2,4 GHz: Reichweite, aber ==🔵nur 3 freie Kanäle (1/6/11)==; 5/6 GHz: Tempo, weniger Reichweite.
+- dBm = 10·log(P/1 mW); ==🟢EIRP = Sendeleistung + Antennengewinn − Verluste==.
+- WPA3 bzw. WPA2/3-Enterprise mit 802.1X + RADIUS; ==🔴WEP/WPA/WPS nicht nutzen==.
 - Gäste/BYOD: eigenes VLAN, Firewall, Client-Isolation, Nutzungsordnung.
 
 ## Direkt üben

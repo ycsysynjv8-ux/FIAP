@@ -2,13 +2,15 @@
 modul: FISI-4
 titel: Datensicherung, Archivierung und Notfallvorsorge
 bereich: Konzeption und Administration
-pruefungsteil: "AP2 Teil 2 – Konzeption und Administration von IT-Systemen"
+pruefungsteil: AP2 Teil 2 – Konzeption und Administration von IT-Systemen
 reihenfolge: 4
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-4 · Datensicherung, Archivierung und Notfallvorsorge
 
@@ -149,11 +151,11 @@ Inhalt: **Priorität und Reihenfolge** der Systeme, Verantwortliche und Kontakte
 - [[I3 Datensicherung]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- Voll/inkr. setzen das Archivbit zurück, differenziell nicht. Klonen verändert es nicht.
-- Restore: letzte Voll + alle Inkremente + letzte Differenzielle nach dem letzten Reset.
+- ==🔴Voll/inkr. setzen das Archivbit zurück, differenziell nicht==. Klonen verändert es nicht.
+- ==🟢Restore: letzte Voll + alle Inkremente + letzte Differenzielle== nach dem letzten Reset.
 - GVS-Prinzip, 3-2-1(-1-0), D2D2T, Snapshots, Restore-Tests. LTO: günstig, lange haltbar, offline, WORM.
 - Archiv = langfristig, revisionssicher, unveränderbar ≠ Backup.
-- RPO = max. Datenverlust (Sicherungsabstand), RTO = max. Ausfallzeit. 99,9 % ≙ 8,76 h/Jahr.
+- RPO = max. Datenverlust (Sicherungsabstand), RTO = max. Ausfallzeit. ==🔵99,9 % ≙ 8,76 h/Jahr==.
 - USV: VFD (offline), VI (line-interactive), VFI (online, keine Umschaltzeit).
 
 ## Direkt üben

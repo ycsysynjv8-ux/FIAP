@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 LS3.5 (Backupstrategien)"
-tags: [ap1/modul, ap1/sicherheit]
+berufsschule: Evp-CPS · LF3 LS3.5 (Backupstrategien)
+tags:
+  - ap1/modul
+  - ap1/sicherheit
 ---
 # I3 · Datensicherung
 
@@ -154,12 +156,12 @@ Was wird gesichert (Datenbanken, Fileserver, VMs, Postfächer, Konfigurationen)?
 - [[P3 IT-Service, Support und Qualität]] – RTO und RPO im Service
 
 ## Zusammenfassung
-- Voll: alles · Differenziell: seit letzter Voll (Restore: Voll + letzte Diff) · Inkrementell: seit letzter Sicherung (Restore: Voll + alle Inkremente).
+- Voll: alles · Differenziell: seit letzter Voll (==🟢Restore: Voll + letzte Diff==) · Inkrementell: seit letzter Sicherung (Restore: Voll + alle Inkremente).
 - Speicher: inkrementell = Voll + n × Δ; differenziell = Voll + Δ + 2Δ + … + nΔ.
 - 3-2-1(-1-0), Generationenprinzip Großvater–Vater–Sohn.
-- RPO = max. Datenverlust (Häufigkeit), RTO = max. Ausfallzeit (Verfahren).
+- ==🟡RPO = max. Datenverlust (Häufigkeit), RTO = max. Ausfallzeit (Verfahren)==.
 - Medien: HDD/NAS/Band/Cloud; Offline/Immutable gegen Ransomware; Restore testen.
-- RAID, Spiegelung, Snapshot ≠ Backup; Archivierung ≠ Backup.
+- RAID, Spiegelung, ==🔴Snapshot ≠ Backup; Archivierung ≠ Backup==.
 
 ## Direkt üben
 ```dataviewjs

@@ -2,13 +2,15 @@
 modul: FISI-10
 titel: IPv6 im Unternehmen
 bereich: Netzwerke
-pruefungsteil: "AP2 Teil 2 – Analyse und Entwicklung von Netzwerken"
+pruefungsteil: AP2 Teil 2 – Analyse und Entwicklung von Netzwerken
 reihenfolge: 10
 dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-10 · IPv6 im Unternehmen
 
@@ -121,8 +123,8 @@ Provider vergeben meist ein **/48** (65 536 × /64) oder **/56** (256 × /64). I
 
 ## Zusammenfassung
 - 128 Bit, 8 Blöcke, `::` nur einmal. /64 = Netz + 64-Bit-IID.
-- Global Unicast 2000::/3 · Link-Local fe80::/10 · ULA fd00::/8 · kein Broadcast, NDP statt ARP.
-- Anzahl /64 = 2^(64 − Präfix); /56 → 256 Netze, letztes `…:ff::/64`. /64 ≈ 1,84 × 10^19 Adressen.
+- Global Unicast 2000::/3 · Link-Local fe80::/10 · ULA fd00::/8 · ==🔴kein Broadcast, NDP statt ARP==.
+- ==🔵Anzahl /64 = 2^(64 − Präfix)==; /56 → 256 Netze, letztes `…:ff::/64`. /64 ≈ 1,84 × 10^19 Adressen.
 - SLAAC (RA: Präfix + Gateway) vs. DHCPv6 (Kontrolle, Protokoll, Optionen). Dual Stack = v4 + v6 parallel.
 
 ## Direkt üben

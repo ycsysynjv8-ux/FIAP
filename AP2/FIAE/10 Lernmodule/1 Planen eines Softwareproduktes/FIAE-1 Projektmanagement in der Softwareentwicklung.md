@@ -2,13 +2,15 @@
 modul: FIAE-1
 titel: Projektmanagement in der Softwareentwicklung
 bereich: Planen eines Softwareproduktes
-pruefungsteil: "AP2 Teil 2 – Planen eines Softwareproduktes"
+pruefungsteil: AP2 Teil 2 – Planen eines Softwareproduktes
 reihenfolge: 1
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-1 · Projektmanagement in der Softwareentwicklung
 
@@ -141,8 +143,8 @@ Risiko = **Eintrittswahrscheinlichkeit × Schadensausmaß**. Für jedes Risiko: 
 - Klassisch (Wasserfall, V-Modell): Anforderungen fest, Änderungen teuer · agil (Scrum, Kanban): iterativ, Änderungen willkommen.
 - Scrum: PO, SM, Developers · Sprint, Planning, Daily, Review, Retro · Product/Sprint Backlog, Inkrement.
 - Stakeholder: Erwartung – Befürchtung – Maßnahme. Umfeld technisch/rechtlich, Machbarkeit Markt/Technik/Organisation/Recht/Wirtschaft.
-- Meilenstein ohne Dauer, Change Request geregelt, Lessons Learned am Ende. Risiko = Wahrscheinlichkeit × Schaden + Gegenmaßnahme.
-- Netzplan: GP = SAZ − FAZ, FP = min FAZ Nachfolger − FEZ, kritischer Pfad GP = 0.
+- ==🔴Meilenstein ohne Dauer==, Change Request geregelt, Lessons Learned am Ende. Risiko = Wahrscheinlichkeit × Schaden + Gegenmaßnahme.
+- Netzplan: ==🟢GP = SAZ − FAZ, FP = min FAZ Nachfolger − FEZ, kritischer Pfad GP = 0==.
 
 ## Direkt üben
 ```dataviewjs

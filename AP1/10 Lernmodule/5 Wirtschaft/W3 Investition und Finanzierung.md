@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "GiD · LF2 LS2.2 (Server kaufen oder leasen, Darlehensarten)"
-tags: [ap1/modul, ap1/wirtschaft]
+berufsschule: GiD · LF2 LS2.2 (Server kaufen oder leasen, Darlehensarten)
+tags:
+  - ap1/modul
+  - ap1/wirtschaft
 ---
 # W3 · Investition und Finanzierung
 
@@ -131,8 +133,8 @@ Weitere Kennzahlen (Überblick): **Kostenvergleichsrechnung** (welche Alternativ
 - Kauf günstig auf Dauer, aber Kapitalbindung · Leasing schont Liquidität, planbar, Austausch · Miete flexibel, kurzfristig.
 - Break-even: Kostenfunktionen gleichsetzen.
 - Fälligkeit: Tilgung am Ende · Abzahlung: konstante Tilgung, sinkende Rate · Annuität: konstante Rate.
-- Lineare AfA = AK / ND; GWG bis 800 € sofort; Hardware/Software 1 Jahr möglich.
-- Amortisationszeit = Investition / jährliche Einsparung.
+- ==🟢Lineare AfA = AK / ND==; ==🔵GWG bis 800 €== sofort; Hardware/Software 1 Jahr möglich.
+- ==🟢Amortisationszeit = Investition / jährliche Einsparung==.
 
 ## Direkt üben
 ```dataviewjs

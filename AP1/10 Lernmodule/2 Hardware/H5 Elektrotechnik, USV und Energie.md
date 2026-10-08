@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Evp-CPS · LF3 (USV & Stromversorgung) · GiD · LF2 LS2.3 (Energie, Netzteiloptimierung)"
-tags: [ap1/modul, ap1/hardware]
+berufsschule: Evp-CPS · LF3 (USV & Stromversorgung) · GiD · LF2 LS2.3 (Energie, Netzteiloptimierung)
+tags:
+  - ap1/modul
+  - ap1/hardware
 ---
 # H5 · Elektrotechnik, USV und Energie
 
@@ -168,9 +170,9 @@ Vorgehen: Betriebsstunden pro Jahr bestimmen → pro Betriebszustand (Betrieb, L
 - [[W3 Investition und Finanzierung]] – Amortisation sparsamer Geräte
 
 ## Zusammenfassung
-- U = R·I · P = U·I · W = P·t · Akku W = Q·U.
+- ==🟢U = R·I · P = U·I · W = P·t== · Akku W = Q·U.
 - η = P_ab / P_zu; Verlust = P_zu − P_ab.
-- P = S · cos φ; USV muss VA **und** W erfüllen.
+- ==🟢P = S · cos φ==; ==🔴USV muss VA und W erfüllen==.
 - USV-Klassen: VFD (offline) < VI (line-interactive) < VFI (online, 0 ms).
 - Dimensionierung: Summe W + Reserve → / cos φ → Modell; t = Q·U·η / P.
 - Energiekosten = W × h / 1000 × €/kWh; Green IT: Effizienz, Konsolidierung, Abschalten.

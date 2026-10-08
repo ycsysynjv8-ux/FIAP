@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "GiD · LF6 LS6.1 (Ticketsystem, Support-Level, SLA, Eisenhower) – 2. Lehrjahr"
-tags: [ap1/modul, ap1/projekt]
+berufsschule: GiD · LF6 LS6.1 (Ticketsystem, Support-Level, SLA, Eisenhower) – 2. Lehrjahr
+tags:
+  - ap1/modul
+  - ap1/projekt
 ---
 # P3 · IT-Service, Support und Qualität
 
@@ -185,12 +187,12 @@ Eine **SOP** (Standard Operating Procedure) ist eine standardisierte, dokumentie
 - [[P4 Kommunikation und Kundenberatung]] – Gespräch mit dem Kunden
 
 ## Zusammenfassung
-- Incident (Störung, schnell beheben), Problem (Ursache), Service Request (Standard), Change (geplante Änderung).
+- ==🔴Incident (Störung, schnell beheben), Problem (Ursache)==, Service Request (Standard), Change (geplante Änderung).
 - Ticketsystem: Nummer, Kategorie, Priorität, Status, Historie, KPIs, Wissensdatenbank.
 - 1st/2nd/3rd Level; funktionale vs. hierarchische Eskalation.
-- Priorität = Auswirkung × Dringlichkeit; Eisenhower: sofort, terminieren, delegieren, weglassen.
+- ==🟢Priorität = Auswirkung × Dringlichkeit==; Eisenhower: sofort, terminieren, delegieren, weglassen.
 - SLA: Servicezeit, Reaktions- und Wiederherstellungszeit, Verfügbarkeit; Dienstvertrag; OLA/UC.
-- Verfügbarkeit = (Soll − Ausfall) / Soll; 99,9 % ≈ 8,76 h/Jahr.
+- Verfügbarkeit = (Soll − Ausfall) / Soll; ==🔵99,9 % ≈ 8,76 h/Jahr==.
 - QM: ISO 9001, KVP, PDCA (Plan, Do, Check, Act).
 
 ## Direkt üben

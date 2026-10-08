@@ -7,8 +7,10 @@ dauer: 60
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "GiD · LF2 LS2.1 (qualitativer Vergleich, NWA der Raspberry-Pi-Modelle)"
-tags: [ap1/modul, ap1/wirtschaft]
+berufsschule: GiD · LF2 LS2.1 (qualitativer Vergleich, NWA der Raspberry-Pi-Modelle)
+tags:
+  - ap1/modul
+  - ap1/wirtschaft
 ---
 # W2 · Nutzwertanalyse und Entscheidungen
 
@@ -111,8 +113,8 @@ Gute Prüfungsantworten verbinden **quantitativen Vergleich** (Bezugspreis, lauf
 
 ## Zusammenfassung
 - Quantitativ = messbar in Zahlen/€, qualitativ = Service, Qualität, Bedienbarkeit …
-- Ablauf: K.-o.-Kriterien → Kriterien → Gewichtung (Σ 100 %) → Punkte → Teilnutzen → Summe → Interpretation.
-- Stärke: macht Qualitatives vergleichbar, transparent · Schwäche: subjektiv, Scheingenauigkeit.
+- Ablauf: K.-o.-Kriterien → Kriterien → ==🟢Gewichtung (Σ 100 %)== → Punkte → Teilnutzen → Summe → Interpretation.
+- Stärke: macht Qualitatives vergleichbar, transparent · Schwäche: ==🔴subjektiv, Scheingenauigkeit==.
 - Sensitivitätsanalyse prüft die Robustheit; Empfehlung immer am Szenario begründen.
 
 ## Direkt üben

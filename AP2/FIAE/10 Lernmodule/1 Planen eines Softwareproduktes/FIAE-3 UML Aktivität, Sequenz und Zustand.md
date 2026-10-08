@@ -2,13 +2,15 @@
 modul: FIAE-3
 titel: UML Aktivität, Sequenz und Zustand
 bereich: Planen eines Softwareproduktes
-pruefungsteil: "AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen"
+pruefungsteil: AP2 Teil 2 – Planen eines Softwareproduktes / Entwicklung und Umsetzung von Algorithmen
 reihenfolge: 3
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-3 · UML Aktivität, Sequenz und Zustand
 
@@ -151,9 +153,9 @@ Ein Zustand wird nur über eine **Transition** verlassen; zu jedem Zustand gehö
 
 ## Zusammenfassung
 - Aktivität: Start ●, Aktionen, Raute mit `[Bedingungen]`, Fork/Join-Balken für Parallelität und Synchronisation, Ende ◉.
-- Sequenz: Lebenslinien, synchron (gefüllte Spitze), asynchron (offen), Antwort gestrichelt; Fragmente alt, opt, loop.
+- Sequenz: Lebenslinien, ==🟡synchron (gefüllte Spitze), asynchron (offen), Antwort gestrichelt==; Fragmente alt, opt, loop.
 - Zustand: Zustände, Transitionen `Ereignis [Bedingung] / Aktion`, Start und Ende.
-- Ist-Prozess: Medienbrüche und manuelle Übertragungen sind Digitalisierungspotenzial.
+- Ist-Prozess: ==🟢Medienbrüche und manuelle Übertragungen sind Digitalisierungspotenzial==.
 
 ## Selbstcheck
 ```dataviewjs

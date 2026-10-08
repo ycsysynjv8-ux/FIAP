@@ -64,6 +64,23 @@ Jedes Modul nennt im Feld **berufsschule** die passende Lernsituation (z. B. „
 - **Bereichsübersichten** (🗺️ in jedem Modulordner) zeigen den Lernpfad als anklickbares Diagramm und bündeln Module, Aufgaben und Karten.
 - **Graph** (`Strg+G`): Farben nach Bereich, Probeprüfungen gelb. Start, Anleitung, Glossar und Technik sind ausgefiltert, damit die fachlichen Verbindungen sichtbar werden. Jedes Modul verweist unter **Verwandte Themen** auf passende Module anderer Bereiche – im Graph die Brücken zwischen den Farbinseln. Tipp: die **lokale Graphansicht** eines Moduls (Befehl „Lokalen Graph öffnen“) zeigt dessen direktes Umfeld.
 
+## 10. Farbmarkierungen im Text
+Einzelne Textstellen in den Modulen sind farbig hervorgehoben. Die Farben sind **keine Verzierung**, sondern eine feste Kennzeichnung – sie sagen dir, *welche Art* von Wichtigkeit eine Stelle hat:
+
+| Farbe | Bedeutung | Beim Lernen heißt das |
+|---|---|---|
+| 🟡 gelb | **Definition** | muss wörtlich sitzen – typische „Erklären Sie …“-Frage |
+| 🔴 rot | **Prüfungsfalle** | hier wird regelmäßig falsch geantwortet – gehört ins [[Fehlerlog]] |
+| 🟢 grün | **Merksatz oder Regel** | auswendig können, gilt immer |
+| 🔵 blau | **harte Zahl oder Wert** | Zahlenwert, Präfix, Port – wird abgefragt |
+
+Orange und Violett kommen bewusst nicht vor: Mehr als vier Bedeutungen kann man beim Lesen nicht mehr unterscheiden. Beispiel mit allen vier Farben: [[N3 IPv6]].
+
+Nicht verwechseln mit den **Bereichsfarben** aus Abschnitt 9 (Seitenleiste und Graph: Netzwerk blau, IT-Sicherheit rot …). Die kennzeichnen ganze Dateien, die Textfarben nur Stellen innerhalb eines Moduls.
+
+> [!info] Für eigene Ergänzungen
+> Schreibst du selbst etwas in ein Modul, halte dich an dieselben vier Bedeutungen – oder lass die Farbe weg. Im Markdown steht sie als `==🟡Definition==`. Sie ist über die Volltextsuche findbar, aber **nicht per Dataview abfragbar**; für auswertbare Sammlungen weiterhin Tags oder Callouts nutzen.
+
 ## Fehlerbehebung
 | Problem | Lösung |
 |---|---|

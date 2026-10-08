@@ -7,3 +7,7 @@ AP2/99 System/daten/
 .trash/
 **/__pycache__/
 99 System/bilder/quelle/galerie.html
+
+# Claudian (lokales Werkzeug, nicht Teil des Lernvaults)
+.claudian/
+.obsidian/plugins/realclaudian/

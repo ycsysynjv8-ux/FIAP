@@ -2,13 +2,15 @@
 modul: FISI-12
 titel: NAT, Firewall, DMZ und Proxy
 bereich: Netzwerke
-pruefungsteil: "AP2 Teil 2 – Analyse und Entwicklung von Netzwerken"
+pruefungsteil: AP2 Teil 2 – Analyse und Entwicklung von Netzwerken
 reihenfolge: 12
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-12 · NAT, Firewall, DMZ und Proxy
 
@@ -153,10 +155,10 @@ Filterkriterien: Dateityp des Anhangs (.exe, .js), SPF-/DKIM-Ergebnis, Spam-Bewe
 - [[FISI-5 Systemhärtung, Malware und Angriffe]] – Schutzschichten
 
 ## Zusammenfassung
-- NAT ersetzt die IP, PAT zusätzlich den Port → viele Geräte, eine öffentliche IP; NAT-Tabelle ordnet Antworten zu.
+- ==🟡NAT ersetzt die IP, PAT zusätzlich den Port== → viele Geräte, eine öffentliche IP; NAT-Tabelle ordnet Antworten zu.
 - Portforwarding = Destination NAT nach innen. CGN = private IP beim Kunden, von außen nicht erreichbar.
 - Paketfilter (L3/4) · SPI (+Zustand, Antworten automatisch) · ALG/Proxy (L7) · NGFW/UTM (IDS/IPS, Malware, TLS-Inspection).
-- Regeln von oben nach unten, erste passende gilt, Default-Deny am Ende; Quellport meist any.
+- ==🟢Regeln von oben nach unten, erste passende gilt, Default-Deny am Ende==; Quellport meist any.
 - DMZ: Web, Mail, Reverse Proxy; LAN: DB, AD, Fileserver. Reverse Proxy: Schutz, TLS, Load Balancing, Caching.
 
 ## Direkt üben

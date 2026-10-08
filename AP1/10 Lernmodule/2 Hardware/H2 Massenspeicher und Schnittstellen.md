@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "GiD · LF2 LS2.1 (Schnittstellen im Modellvergleich) · LS2.3 (Festplatte)"
-tags: [ap1/modul, ap1/hardware]
+berufsschule: GiD · LF2 LS2.1 (Schnittstellen im Modellvergleich) · LS2.3 (Festplatte)
+tags:
+  - ap1/modul
+  - ap1/hardware
 ---
 # H2 · Massenspeicher und Schnittstellen
 
@@ -159,10 +161,10 @@ Zum Vergleich zweier Speicherlösungen gelten **gleiche Testbedingungen**: gleic
 
 ## Zusammenfassung
 - HDD günstig und groß, aber langsam und stoßempfindlich; SSD schnell und robust; NVMe über PCIe am schnellsten.
-- M.2 = Formfaktor, NVMe = Protokoll, SATA-SSD ≈ 550 MB/s.
+- ==🔴M.2 = Formfaktor, NVMe = Protokoll==, ==🔵SATA-SSD ≈ 550 MB/s==.
 - USB 2.0 480 Mbit/s · 5 · 10 · 20 · USB4 40/80 Gbit/s; USB-C nur Stecker; TB 40/80 Gbit/s.
 - HDMI 2.0 18, HDMI 2.1 48, DP 1.4 32,4 Gbit/s; DP kann Daisy Chain.
-- Die langsamste Stelle der Kette bestimmt das Tempo.
+- ==🟢Die langsamste Stelle der Kette bestimmt das Tempo==.
 
 ## Direkt üben
 ```dataviewjs

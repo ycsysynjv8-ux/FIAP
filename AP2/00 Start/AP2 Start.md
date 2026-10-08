@@ -6,6 +6,8 @@ cssclasses: [ap1-start]
 
 **Abschlussprüfung Teil 2** – nach Fachrichtung aufgeteilt, mit gemeinsamen Modulen für Wirtschafts- und Sozialkunde und die Projektarbeit. Aufgebaut wie der AP1-Bereich: Lernmodule mit Selbstcheck, Rechentrainer, Quiz, Karteikarten, Aufgaben im IHK-Stil – und interaktive **Probeprüfungen** mit Timer und Punkteerfassung.
 
+**Boards:** [[AP2 Lernstatus.base|Lernstatus]] – je eine Ansicht für FISI, FIAE sowie WiSo und Projektarbeit.
+
 > [!example] FISI · Systemintegration
 > [[AP2 FISI Start|Dashboard und Module]] · [[Übersicht FISI Konzeption und Administration|Konzeption und Administration]] · [[Übersicht FISI Netzwerke|Netzwerke]] · [[AP2/FISI/20 Aufgaben/Pruefungen/Uebersicht FISI AP2|Probeprüfungen]]
 

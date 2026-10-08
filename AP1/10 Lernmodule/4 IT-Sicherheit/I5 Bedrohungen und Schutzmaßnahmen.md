@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "ITG · LF4 · Evp-CPS LF3 LS3.1 (Nutzerordnung/BYOD) · SuD LS5.4 (Passwort-Validator)"
-tags: [ap1/modul, ap1/sicherheit]
+berufsschule: ITG · LF4 · Evp-CPS LF3 LS3.1 (Nutzerordnung/BYOD) · SuD LS5.4 (Passwort-Validator)
+tags:
+  - ap1/modul
+  - ap1/sicherheit
 ---
 # I5 · Bedrohungen und Schutzmaßnahmen
 
@@ -177,11 +179,11 @@ Grundregel: **Default Deny** – alles verbieten, nur Benötigtes erlauben. **DM
 - [[S4 Betriebssysteme, Dateisysteme und Rechte]] – Rechte und Patchmanagement
 
 ## Zusammenfassung
-- Virus (Wirt), Wurm (selbstständig), Trojaner (Tarnung), Ransomware (Verschlüsselung + Erpressung), Spyware, Rootkit, Botnetz.
+- ==🟡Virus (Wirt), Wurm (selbstständig), Trojaner (Tarnung)==, Ransomware (Verschlüsselung + Erpressung), Spyware, Rootkit, Botnetz.
 - Phishing/Social Engineering/CEO-Fraud: Schulung, MFA, Vier-Augen-Prinzip, Rückruf.
 - Brute Force/Credential Stuffing: lange, einzigartige Passwörter, Passwortmanager, MFA, Sperren.
-- MFA = Faktoren aus verschiedenen Kategorien (Wissen, Besitz, Sein).
-- Firewall-Arten, Default Deny, Patchmanagement, EDR, Segmentierung, Backup.
+- ==🟡MFA = Faktoren aus verschiedenen Kategorien (Wissen, Besitz, Sein)==.
+- Firewall-Arten, ==🟢Default Deny==, Patchmanagement, EDR, Segmentierung, Backup.
 - Vorfall: trennen, melden, dokumentieren, eindämmen, Datenschutz prüfen, aus Backup wiederherstellen.
 
 ## Direkt üben

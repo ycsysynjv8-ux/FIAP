@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "SuD · LF5 LS5.3 (Wasserfall, Scrum, Lastenheft) · Evp-CPS LF7 (Handlungszyklus)"
-tags: [ap1/modul, ap1/projekt]
+berufsschule: SuD · LF5 LS5.3 (Wasserfall, Scrum, Lastenheft) · Evp-CPS LF7 (Handlungszyklus)
+tags:
+  - ap1/modul
+  - ap1/projekt
 ---
 # P1 · Projektmanagement und Vorgehensmodelle
 
@@ -196,8 +198,8 @@ Vorgehen: **Problem beschreiben → Alternativen entwickeln → bewerten** (z. B
 - [[S8 UML und Softwareentwurf]] – Anforderungen modellieren
 
 ## Zusammenfassung
-- Projekt: einmalig, befristet, Ziel, begrenzte Ressourcen; magisches Dreieck Leistung–Zeit–Kosten.
-- SMART-Ziele; Lastenheft (WAS, Auftraggeber) vs. Pflichtenheft (WIE, Auftragnehmer).
+- Projekt: einmalig, befristet, Ziel, begrenzte Ressourcen; ==🟡magisches Dreieck Leistung–Zeit–Kosten==.
+- SMART-Ziele; ==🔴Lastenheft (WAS, Auftraggeber) vs. Pflichtenheft (WIE, Auftragnehmer)==.
 - Phasen: Initialisierung, Definition, Planung, Durchführung, Abschluss (Abnahmeprotokoll, Lessons Learned).
 - Werkzeuge: PSP (Arbeitspakete), Gantt, Netzplan, Meilensteine, Stakeholder- und Risikoanalyse.
 - Wasserfall/V-Modell: stabil, planbar · Scrum: iterativ, flexibel (PO, SM, Developers; Sprint, Daily, Review, Retro) · Kanban: Board, WIP-Limits.

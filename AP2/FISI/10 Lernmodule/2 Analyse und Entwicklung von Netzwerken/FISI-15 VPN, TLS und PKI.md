@@ -2,13 +2,15 @@
 modul: FISI-15
 titel: VPN, TLS und PKI
 bereich: Netzwerke
-pruefungsteil: "AP2 Teil 2 – Analyse und Entwicklung von Netzwerken"
+pruefungsteil: AP2 Teil 2 – Analyse und Entwicklung von Netzwerken
 reihenfolge: 15
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-15 · VPN, TLS und PKI
 
@@ -163,11 +165,11 @@ Ein **VPN** (Virtual Private Network) baut einen **verschlüsselten Tunnel** üb
 
 ## Zusammenfassung
 - Symmetrisch (AES) schnell, ein Schlüssel · asymmetrisch (RSA/ECC) Schlüsselpaar, langsam · hybrid (TLS) = beides.
-- DES und MD5 unsicher; AES-256 und SHA-256 gut; Hash ≠ Verschlüsselung.
-- Zertifikat: Inhaber, öffentlicher Schlüssel, Aussteller, Gültigkeit, Seriennummer, Signatur der CA. Kette Root → Intermediate → Server.
+- DES und MD5 unsicher; AES-256 und SHA-256 gut; ==🔴Hash ≠ Verschlüsselung==.
+- Zertifikat: Inhaber, öffentlicher Schlüssel, Aussteller, Gültigkeit, Seriennummer, Signatur der CA. ==🟢Kette Root → Intermediate → Server==.
 - TLS 1.3: Hello mit Schlüsselanteilen, verschlüsselte Zertifikatsprüfung, Finished, symmetrische Anwendungsdaten. Forward Secrecy bei (EC)DHE; Ausnahmen bei PSK-only und 0-RTT beachten.
 - VPN: Site-to-Site vs. Remote Access; Probleme NAT (→ NAT-T), MTU, IPv6-Breakout, CGN.
-- 2FA = zwei **verschiedene** Faktorkategorien.
+- ==🟡2FA = zwei verschiedene Faktorkategorien==.
 
 ## Direkt üben
 ```dataviewjs

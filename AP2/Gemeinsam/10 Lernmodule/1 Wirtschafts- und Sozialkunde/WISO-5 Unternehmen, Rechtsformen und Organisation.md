@@ -2,13 +2,15 @@
 modul: WISO-5
 titel: Unternehmen, Rechtsformen und Organisation
 bereich: WiSo
-pruefungsteil: "AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)"
+pruefungsteil: AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)
 reihenfolge: 105
 dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/wiso]
+tags:
+  - ap2/modul
+  - ap2/wiso
 ---
 # WISO-5 · Unternehmen, Rechtsformen und Organisation
 
@@ -137,10 +139,10 @@ Der Kostentreiber soll den tatsächlichen Aufwand möglichst gut abbilden. Die b
 - [[W5 Unternehmen und Ausbildung]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- Personengesellschaften (GbR, OHG, KG) haften unbeschränkt (Kommanditist nur bis Einlage); Kapitalgesellschaften (GmbH 25 000 €, UG ab 1 €, AG 50 000 €) mit dem Gesellschaftsvermögen.
+- Personengesellschaften (GbR, OHG, KG) haften unbeschränkt (Kommanditist nur bis Einlage); Kapitalgesellschaften (==🔵GmbH 25 000 €, UG ab 1 €, AG 50 000 €==) mit dem Gesellschaftsvermögen.
 - Handelsregister: Abt. A/B beim Amtsgericht; bei GmbH/AG konstitutiv.
 - Gewinn: zuerst Vertrag, sonst Beteiligungsverhältnis (MoPeG 2024); GmbH nach Geschäftsanteilen.
-- Prokura (ppa.): fast alles, eingetragen · Handlungsvollmacht (i. V./i. A.): branchenübliche Geschäfte.
+- ==🟡Prokura (ppa.): fast alles, eingetragen · Handlungsvollmacht (i. V./i. A.): branchenübliche Geschäfte==.
 - Einlinien-, Stablinien- (Stab berät), Mehrlinien-, Matrix-, Spartenorganisation. Ziele ökonomisch/ökologisch/sozial; komplementär, konkurrierend, indifferent.
 - Prozesskostenrechnung: Prozesskosten durch Menge des Kostentreibers teilen; Prozesskostensatz mit der tatsächlichen Treibermenge des Produkts multiplizieren.
 

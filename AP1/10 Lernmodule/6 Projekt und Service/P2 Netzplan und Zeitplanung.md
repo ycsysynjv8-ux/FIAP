@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "(Projektplanung – wird in der AP1 regelmäßig gerechnet)"
-tags: [ap1/modul, ap1/projekt]
+berufsschule: (Projektplanung – wird in der AP1 regelmäßig gerechnet)
+tags:
+  - ap1/modul
+  - ap1/projekt
 ---
 # P2 · Netzplan und Zeitplanung
 
@@ -154,10 +156,10 @@ In der Praxis rechnen Projektmanagement-Tools (z. B. MS Project, OpenProject) be
 - [[W3 Investition und Finanzierung]] – Break-even als zweite Zeitrechnung
 
 ## Zusammenfassung
-- FEZ = FAZ + D; FAZ = max FEZ der Vorgänger; Projektdauer = max FEZ.
-- SAZ = SEZ − D; SEZ = min SAZ der Nachfolger; letzter SEZ = Projektdauer.
+- ==🟢FEZ = FAZ + D; FAZ = max FEZ der Vorgänger==; Projektdauer = max FEZ.
+- ==🟢SAZ = SEZ − D; SEZ = min SAZ der Nachfolger==; letzter SEZ = Projektdauer.
 - GP = SAZ − FAZ (Projektende), FP = min FAZ Nachfolger − FEZ (Nachfolger).
-- Kritischer Pfad = Vorgänge mit GP = 0; Verzögerung dort verschiebt das Projektende.
+- ==🟢Kritischer Pfad = Vorgänge mit GP = 0==; Verzögerung dort verschiebt das Projektende.
 
 ## Direkt üben
 Rechne mindestens **fünf** Netzpläne fehlerfrei.

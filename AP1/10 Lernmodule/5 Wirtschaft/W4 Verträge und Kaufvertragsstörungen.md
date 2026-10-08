@@ -7,8 +7,10 @@ dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "GiD · LF2 LS2.1 (Rechtsgeschäfte, Kaufvertrag) · LS2.4 (Kaufvertragsstörungen) · LF6 (Dienstvertrag/SLA)"
-tags: [ap1/modul, ap1/wirtschaft]
+berufsschule: GiD · LF2 LS2.1 (Rechtsgeschäfte, Kaufvertrag) · LS2.4 (Kaufvertragsstörungen) · LF6 (Dienstvertrag/SLA)
+tags:
+  - ap1/modul
+  - ap1/wirtschaft
 ---
 # W4 · Verträge und Kaufvertragsstörungen
 
@@ -198,9 +200,9 @@ Die **Nachkalkulation** vergleicht kalkulierte Kosten (Soll) mit tatsächlichen 
 - Kaufvertrag = Antrag + Annahme; Verkäufer: mangelfrei übergeben + Eigentum verschaffen; Käufer: zahlen + annehmen.
 - Werkvertrag = Erfolg, Dienstvertrag = Tätigkeit (SLA), Kaufvertrag = Übereignung.
 - Vier Störungen: Schlechtleistung, Lieferungsverzug, Zahlungsverzug, Annahmeverzug.
-- Mängelrechte: erst Nacherfüllung (Käufer wählt), dann Rücktritt/Minderung, Schadensersatz nur bei Verschulden.
-- 2 Jahre Gewährleistung, 12 Monate Beweislastumkehr (B2C), § 377 HGB Rügepflicht (B2B).
-- Garantie freiwillig, Kulanz ohne Anspruch, Widerruf 14 Tage nur Fernabsatz/B2C.
+- Mängelrechte: ==🟢erst Nacherfüllung (Käufer wählt), dann Rücktritt/Minderung==, Schadensersatz nur bei Verschulden.
+- ==🔵2 Jahre Gewährleistung, 12 Monate Beweislastumkehr (B2C)==, § 377 HGB Rügepflicht (B2B).
+- Garantie freiwillig, Kulanz ohne Anspruch, ==🔴Widerruf 14 Tage nur Fernabsatz/B2C==.
 
 ## Selbstcheck
 ```dataviewjs

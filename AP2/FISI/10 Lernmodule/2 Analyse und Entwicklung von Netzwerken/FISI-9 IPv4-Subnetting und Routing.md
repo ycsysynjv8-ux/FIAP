@@ -2,13 +2,15 @@
 modul: FISI-9
 titel: IPv4-Subnetting und Routing
 bereich: Netzwerke
-pruefungsteil: "AP2 Teil 2 – Analyse und Entwicklung von Netzwerken"
+pruefungsteil: AP2 Teil 2 – Analyse und Entwicklung von Netzwerken
 reihenfolge: 9
 dauer: 180
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fisi]
+tags:
+  - ap2/modul
+  - ap2/fisi
 ---
 # FISI-9 · IPv4-Subnetting und Routing
 
@@ -159,10 +161,10 @@ Ein **First Hop Redundancy Protocol** (VRRP, HSRP, CARP) lässt zwei Router eine
 - [[N2 IPv4 und Subnetting]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- Blockgröße = 256 − Maskenwert, Hosts = 2^h − 2, Broadcast = eine Adresse vor dem nächsten Netz.
-- VLSM: absteigend sortieren, kleinstes passendes Präfix, lückenlos. Transfernetz /30 oder /31 (RFC 3021).
+- ==🟢Blockgröße = 256 − Maskenwert, Hosts = 2^h − 2==, Broadcast = eine Adresse vor dem nächsten Netz.
+- VLSM: absteigend sortieren, kleinstes passendes Präfix, lückenlos. ==🔵Transfernetz /30 oder /31 (RFC 3021)==.
 - Privat: 10/8, 172.16/12, 192.168/16 · APIPA 169.254/16 · Multicast 224–239.
-- Routingtabelle: Ziel, Maske, Interface (direkt) oder Next Hop (entfernt), Default 0.0.0.0/0; längster Präfix gewinnt.
+- Routingtabelle: Ziel, Maske, Interface (direkt) oder Next Hop (entfernt), Default 0.0.0.0/0; ==🟢längster Präfix gewinnt==.
 - Statisch vs. dynamisch; RIP (Distanzvektor, Hops) vs. OSPF (Link-State, Topologie). FHRP: virtuelle Gateway-IP.
 
 ## Direkt üben

@@ -7,8 +7,10 @@ dauer: 60
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "LF1 (eigene Rolle im Betrieb) · Deutsch/Kommunikation"
-tags: [ap1/modul, ap1/projekt]
+berufsschule: LF1 (eigene Rolle im Betrieb) · Deutsch/Kommunikation
+tags:
+  - ap1/modul
+  - ap1/projekt
 ---
 # P6 · Teamarbeit, Verhandlung und Veränderung
 
@@ -110,10 +112,10 @@ Ausführlichere Modelle gliedern den Prozess in **sieben Phasen** der Reaktion v
 - [[S9 KI und Unternehmenssoftware]] – Einführung neuer Systeme im Betrieb
 
 ## Zusammenfassung
-- Tuckman: Forming → Storming → Norming → Performing (→ Adjourning); Konflikte sind normal.
+- ==🟢Tuckman: Forming → Storming → Norming → Performing== (→ Adjourning); Konflikte sind normal.
 - Kick-off: Ziele, Umfang, Rollen, Zeitplan, Kommunikation, Risiken – mit Protokoll.
-- Harvard-Konzept: Mensch/Problem trennen, Interessen statt Positionen, Optionen, objektive Kriterien → Win-win; BATNA = beste Alternative ohne Einigung.
-- Lewin: Unfreeze → Change → Refreeze; Leistungstal bei Veränderungen einplanen.
+- Harvard-Konzept: Mensch/Problem trennen, Interessen statt Positionen, Optionen, objektive Kriterien → Win-win; ==🟡BATNA = beste Alternative ohne Einigung==.
+- ==🟢Lewin: Unfreeze → Change → Refreeze==; Leistungstal bei Veränderungen einplanen.
 - Widerstände: Nicht-Wissen, -Können, -Wollen, -Dürfen → passende Maßnahme; Promotoren als Multiplikatoren, Betriebsrat einbinden.
 
 ## Selbstcheck

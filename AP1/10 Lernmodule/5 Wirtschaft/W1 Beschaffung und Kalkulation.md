@@ -7,8 +7,10 @@ dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "GiD · LF2 LS2.1 (Anfrage, Angebot, Angebotsvergleich, Rechnung, Warenannahme) · LS2.4 (Verkaufspreiskalkulation)"
-tags: [ap1/modul, ap1/wirtschaft]
+berufsschule: GiD · LF2 LS2.1 (Anfrage, Angebot, Angebotsvergleich, Rechnung, Warenannahme) · LS2.4 (Verkaufspreiskalkulation)
+tags:
+  - ap1/modul
+  - ap1/wirtschaft
 ---
 # W1 · Beschaffung und Kalkulation
 
@@ -178,9 +180,9 @@ Für Montage, Installation oder Support: **Stundenverrechnungssatz** = (Lohnkost
 
 ## Zusammenfassung
 - Beschaffung: Bedarf → Anfrage → Angebote vergleichen → Bestellung → Wareneingang → Rechnung.
-- Anfrage und Anpreisung unverbindlich, Angebot an bestimmte Person verbindlich (außer Freizeichnung).
-- LEP − Rabatt = ZEP − Skonto = BEP + Bezugskosten = Bezugspreis.
-- USt 19 %: netto × 1,19, brutto ÷ 1,19.
+- ==🔴Anfrage und Anpreisung unverbindlich, Angebot an bestimmte Person verbindlich== (außer Freizeichnung).
+- ==🟢LEP − Rabatt = ZEP − Skonto = BEP + Bezugskosten = Bezugspreis==.
+- ==🔵USt 19 %: netto × 1,19, brutto ÷ 1,19==.
 - Vorwärts: Bezugspreis + HKZ = Selbstkosten + Gewinn = BVP + Skonto (i. H.) = ZVP + Rabatt (i. H.) = LVP netto + USt.
 - Rückwärts: vom Marktpreis zur Preisobergrenze im Einkauf.
 

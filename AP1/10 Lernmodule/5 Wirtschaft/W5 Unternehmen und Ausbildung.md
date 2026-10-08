@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "GiD · LF1 LS1.1 (Ausbildungsvertrag) · LS1.2 (Leitbild, Rechtsformen, Handelsregister) · LS1.3 (Leitungssysteme)"
-tags: [ap1/modul, ap1/wirtschaft]
+berufsschule: GiD · LF1 LS1.1 (Ausbildungsvertrag) · LS1.2 (Leitbild, Rechtsformen, Handelsregister) · LS1.3 (Leitungssysteme)
+tags:
+  - ap1/modul
+  - ap1/wirtschaft
 ---
 # W5 · Unternehmen und Ausbildung
 
@@ -135,12 +137,12 @@ flowchart TB
 - [[P5 Arbeitsplatz, Ergonomie und Umwelt]] – Arbeitsschutz im Betrieb
 
 ## Zusammenfassung
-- Unternehmen (rechtlich selbstständig) – Betrieb (Standort) – Firma (Name).
+- ==🟡Unternehmen (rechtlich selbstständig) – Betrieb (Standort) – Firma (Name)==.
 - Ziele ökonomisch/ökologisch/sozial; Zielharmonie und -konflikt; Leitbild.
-- Einzelunternehmen/OHG unbeschränkte Haftung · KG: Komplementär voll, Kommanditist Einlage · GmbH 25 000 € · AG 50 000 €.
+- Einzelunternehmen/OHG unbeschränkte Haftung · KG: Komplementär voll, Kommanditist Einlage · ==🔵GmbH 25 000 € · AG 50 000 €==.
 - HRA Personen, HRB Kapitalgesellschaften; Istkaufmann deklaratorisch.
 - Einlinien (klar, langsam), Mehrlinien (Spezialisten, Konflikte), Stablinien (Beratung), Matrix (zwei Dimensionen), Sparten.
-- BBiG: Probezeit 1–4 Monate, Lernpflicht/Ausbildungspflicht, Kündigung nach Probezeit nur aus wichtigem Grund bzw. Azubi mit 4 Wochen.
+- BBiG: ==🔵Probezeit 1–4 Monate==, Lernpflicht/Ausbildungspflicht, Kündigung nach Probezeit nur aus wichtigem Grund bzw. Azubi mit 4 Wochen.
 
 ## Selbstcheck
 ```dataviewjs

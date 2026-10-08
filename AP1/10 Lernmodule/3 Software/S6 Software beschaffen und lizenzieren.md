@@ -7,8 +7,10 @@ dauer: 75
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "SuD · LF5 LS5.3 (Standard- vs. Individualsoftware) · GiD · LF2 (Beschaffung)"
-tags: [ap1/modul, ap1/software]
+berufsschule: SuD · LF5 LS5.3 (Standard- vs. Individualsoftware) · GiD · LF2 (Beschaffung)
+tags:
+  - ap1/modul
+  - ap1/software
 ---
 # S6 · Software beschaffen und lizenzieren
 
@@ -116,9 +118,9 @@ Man kauft nicht die Software, sondern ein **Nutzungsrecht**. Die Bedingungen ste
 
 ## Zusammenfassung
 - Standardsoftware: sofort, günstig, erprobt · Individualsoftware: passgenau, teuer, Werkvertrag.
-- Lizenz = Nutzungsrecht (EULA); OEM gerätegebunden, Volumenlizenz für Firmen, Abo mit laufender Gebühr.
+- ==🟡Lizenz = Nutzungsrecht (EULA)==; OEM gerätegebunden, Volumenlizenz für Firmen, Abo mit laufender Gebühr.
 - Named User (Person), Device (Gerät), Concurrent (gleichzeitig), CAL (Serverzugriff), Core (Serverkerne).
-- Freeware oft nur privat; GPL = Copyleft; MIT/Apache = permissiv.
+- ==🔴Freeware oft nur privat==; ==🟢GPL = Copyleft; MIT/Apache = permissiv==.
 - SAM verhindert Unter- und Überlizenzierung.
 
 ## Selbstcheck

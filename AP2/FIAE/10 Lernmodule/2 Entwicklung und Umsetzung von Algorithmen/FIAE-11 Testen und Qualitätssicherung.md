@@ -2,13 +2,15 @@
 modul: FIAE-11
 titel: Testen und Qualitätssicherung
 bereich: Algorithmen
-pruefungsteil: "AP2 Teil 2 – Entwicklung und Umsetzung von Algorithmen"
+pruefungsteil: AP2 Teil 2 – Entwicklung und Umsetzung von Algorithmen
 reihenfolge: 11
 dauer: 150
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-11 · Testen und Qualitätssicherung
 
@@ -144,10 +146,10 @@ Ein **Unit-Test** prüft eine kleine Einheit (Methode) automatisiert: **Arrange*
 
 ## Zusammenfassung
 - Stufen: Unit → Integration → System → Abnahme. Regressionstest nach jeder Änderung.
-- White-Box (Code, Überdeckung) vs. Black-Box (Spezifikation, Äquivalenzklassen, Grenzwerte).
-- C0 Anweisung ⊂ C1 Zweig ⊂ C2 Pfad; Pfadüberdeckung bei Schleifen unrealistisch.
+- ==🟡White-Box (Code, Überdeckung) vs. Black-Box (Spezifikation, Äquivalenzklassen, Grenzwerte)==.
+- ==🟢C0 Anweisung ⊂ C1 Zweig ⊂ C2 Pfad==; Pfadüberdeckung bei Schleifen unrealistisch.
 - Testfälle: gültig/ungültig, Grenzen, leer/null, ein Element, nur negativ, Leerzeichen.
-- Unit-Test: Arrange – Act – Assert; F.I.R.S.T.; TDD Red–Green–Refactor.
+- Unit-Test: ==🟢Arrange – Act – Assert==; F.I.R.S.T.; TDD Red–Green–Refactor.
 
 ## Selbstcheck
 ```dataviewjs

@@ -7,8 +7,10 @@ dauer: 75
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "LF3/LF5 – Web-Grundlagen (im 1. Lehrjahr meist nur angerissen)"
-tags: [ap1/modul, ap1/netzwerk]
+berufsschule: LF3/LF5 – Web-Grundlagen (im 1. Lehrjahr meist nur angerissen)
+tags:
+  - ap1/modul
+  - ap1/netzwerk
 ---
 # N7 · Internet und Webanwendungen
 
@@ -152,8 +154,8 @@ Das `alt`-Attribut beschreibt das Bild für Screenreader (Barrierefreiheit), die
 - [[S7 Datenbanken]] – die Datenbank hinter der dynamischen Seite
 
 ## Zusammenfassung
-- URL = Schema · Host · (Port) · Pfad · Query-String · Fragment; der Host wird per DNS aufgelöst.
-- Aufruf: DNS → TCP/TLS → HTTP-Anfrage → Antwort (Statuscode) → weitere Ressourcen; HTTP ist zustandslos (Cookies).
+- ==🟡URL = Schema · Host · (Port) · Pfad · Query-String · Fragment==; der Host wird per DNS aufgelöst.
+- Aufruf: DNS → TCP/TLS → HTTP-Anfrage → Antwort (Statuscode) → weitere Ressourcen; ==🔴HTTP ist zustandslos== (Cookies).
 - Statisch: fertige Dateien, schnell und sicher · dynamisch: serverseitig aus Datenbank erzeugt, aktuell und interaktiv.
 - HTML = Struktur, CSS = Gestaltung, JavaScript = Verhalten im Browser, PHP/Python/Java/C# = serverseitig.
 - Firmenwebsite: responsive, barrierefrei, Impressum, Datenschutzerklärung, Cookie-Einwilligung, HTTPS, Updates; CMS für Pflege ohne Programmierung.

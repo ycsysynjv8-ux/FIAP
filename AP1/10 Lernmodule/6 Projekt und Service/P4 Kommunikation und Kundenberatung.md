@@ -7,8 +7,10 @@ dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "Deutsch · LS2.1 (Kundengespräch, Fragetechniken, E-Mail-Etikette) · Kundentypen"
-tags: [ap1/modul, ap1/projekt]
+berufsschule: Deutsch · LS2.1 (Kundengespräch, Fragetechniken, E-Mail-Etikette) · Kundentypen
+tags:
+  - ap1/modul
+  - ap1/projekt
 ---
 # P4 · Kommunikation und Kundenberatung
 
@@ -172,9 +174,9 @@ Im Rahmen der Marktbeobachtung vergleicht man **Preise, Leistungen und Kondition
 - [[W1 Beschaffung und Kalkulation]] – Angebote erläutern
 
 ## Zusammenfassung
-- Vier Seiten: Sachinhalt, Selbstoffenbarung, Beziehung, Appell – Missverständnisse durch unterschiedliche „Ohren“.
+- ==🟡Vier Seiten: Sachinhalt, Selbstoffenbarung, Beziehung, Appell== – Missverständnisse durch unterschiedliche „Ohren“.
 - Gesprächsphasen: Kontakt, Bedarfsermittlung, Angebot, Einwände, Abschluss; Nutzen statt Merkmale.
-- Fragetrichter: offen → geschlossen; Kontrollfragen; Suggestivfragen vermeiden.
+- ==🟢Fragetrichter: offen → geschlossen==; Kontrollfragen; Suggestivfragen vermeiden.
 - Aktives Zuhören, Ich-Botschaften, Beschwerden: zuhören, Verständnis, klären, lösen, nachfassen.
 - Kundentypen erkennen; E-Mail-Etikette (Betreff, Ton, CC/BCC, Signatur); passendes Medium wählen.
 

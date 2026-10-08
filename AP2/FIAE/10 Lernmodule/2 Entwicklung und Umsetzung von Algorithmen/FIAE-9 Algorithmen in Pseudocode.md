@@ -2,13 +2,15 @@
 modul: FIAE-9
 titel: Algorithmen in Pseudocode
 bereich: Algorithmen
-pruefungsteil: "AP2 Teil 2 – Entwicklung und Umsetzung von Algorithmen"
+pruefungsteil: AP2 Teil 2 – Entwicklung und Umsetzung von Algorithmen
 reihenfolge: 9
 dauer: 180
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-9 · Algorithmen in Pseudocode
 
@@ -179,8 +181,8 @@ Trace-Tabelle: **Spalte je Variable**, **Zeile je Schleifendurchlauf**, Werte **
 
 ## Zusammenfassung
 - Signatur übernehmen, Variablen vor der Schleife initialisieren, Getter nutzen, Rückgabe nicht vergessen.
-- Muster: zählen, summieren/Durchschnitt (anzahl > 0, keine Ganzzahldivision), Max/Min mit Index, filtern in neue Liste, Zählarray `[nr − 1]++`, Vergleich mit Vorgänger ab i = 1, verschachtelte Suche mit Flag.
-- Bubblesort O(n²), binäre Suche O(log n) nur sortiert, Rekursion braucht Abbruch.
+- Muster: zählen, summieren/Durchschnitt (anzahl > 0, ==🔴keine Ganzzahldivision==), Max/Min mit Index, filtern in neue Liste, Zählarray `[nr − 1]++`, Vergleich mit Vorgänger ab i = 1, verschachtelte Suche mit Flag.
+- ==🔵Bubblesort O(n²), binäre Suche O(log n) nur sortiert==, Rekursion braucht Abbruch.
 - Schreibtischtest mit Trace-Tabelle; `/` und `%` sicher beherrschen.
 
 ## Direkt üben

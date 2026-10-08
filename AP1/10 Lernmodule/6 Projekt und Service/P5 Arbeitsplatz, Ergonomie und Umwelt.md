@@ -7,8 +7,10 @@ dauer: 75
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "GiD · LF2 LS2.3 (Ergonomie, „Arbeitsplatz der Zukunft“)"
-tags: [ap1/modul, ap1/projekt]
+berufsschule: GiD · LF2 LS2.3 (Ergonomie, „Arbeitsplatz der Zukunft“)
+tags:
+  - ap1/modul
+  - ap1/projekt
 ---
 # P5 · Arbeitsplatz, Ergonomie und Umwelt
 
@@ -122,11 +124,11 @@ Menschen mit Einschränkungen (Sehen, Hören, Motorik, Kognition) sollen IT unei
 
 ## Zusammenfassung
 - Grundlage: ArbSchG, ArbStättV Anhang 6, Gefährdungsbeurteilung, Pausen/Tätigkeitswechsel.
-- Monitor: Oberkante auf Augenhöhe, 50–80 cm, seitlich zum Fenster, entspiegelt; ≥ 500 Lux; verstellbarer Stuhl/Tisch; separate Tastatur.
+- Monitor: Oberkante auf Augenhöhe, ==🔵50–80 cm==, seitlich zum Fenster, entspiegelt; ==🔵≥ 500 Lux==; verstellbarer Stuhl/Tisch; separate Tastatur.
 - Software-Ergonomie ISO 9241-110 (2020): aufgabenangemessen, selbstbeschreibend, erwartungskonform, erlernbar, steuerbar, robust gegen Benutzungsfehler, benutzerbindend.
 - Barrierefreiheit: WCAG (POUR), BFSG seit 28.06.2025, BITV 2.0, Hilfsmittel.
 - Arbeitssicherheit: DGUV V3, Netzstecker ziehen, ESD.
-- Green IT über den Lebenszyklus; ElektroG/WEEE; Datenträger vorher sicher löschen (DIN 66399).
+- Green IT über den Lebenszyklus; ElektroG/WEEE; ==🔴Datenträger vorher sicher löschen (DIN 66399)==.
 
 ## Selbstcheck
 ```dataviewjs

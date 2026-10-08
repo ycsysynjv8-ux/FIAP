@@ -7,8 +7,10 @@ dauer: 75
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "neu im Prüfungskatalog 2025 – im Unterricht oft noch nicht behandelt"
-tags: [ap1/modul, ap1/software]
+berufsschule: neu im Prüfungskatalog 2025 – im Unterricht oft noch nicht behandelt
+tags:
+  - ap1/modul
+  - ap1/software
 ---
 # S9 · KI und Unternehmenssoftware
 
@@ -129,12 +131,12 @@ Homeoffice, Cloud und KI verändern Einsatzfelder: mehr Notebooks mit VPN und Sa
 - [[S6 Software beschaffen und lizenzieren]] – Lizenz- und Abomodelle
 
 ## Zusammenfassung
-- KI → maschinelles Lernen → Deep Learning; generative KI/LLM erzeugt Inhalte, kann halluzinieren, Bias möglich.
+- KI → maschinelles Lernen → Deep Learning; generative KI/LLM erzeugt Inhalte, ==🔴kann halluzinieren, Bias möglich==.
 - Einsatz: Kundenservice, Dokumente, Wissenssuche, Support, Sicherheit, Entwicklung, Prognosen – immer mit Szenariobezug.
 - Chatbot: 24/7, Entlastung, skalierbar ↔ Fehlauskünfte, unpersönlich, Datenschutz, Übergabe an Menschen.
 - Rahmen: DSGVO (EU-Anbieter, AVV, keine Trainingsnutzung), Berufsgeheimnis, menschliche Kontrolle, Urheberrecht, EU AI Act (Transparenz, Hochrisiko, KI-Kompetenz).
 - Mitarbeitende: informieren, beteiligen (Betriebsrat), schulen, KI-Richtlinie.
-- ERP (alle Prozesse, eine Datenbank) · CRM (Kunden) · SCM (Lieferkette) · DMS (Dokumente) · CMS (Web).
+- ==🟡ERP (alle Prozesse, eine Datenbank) · CRM (Kunden) · SCM (Lieferkette) · DMS (Dokumente) · CMS (Web)==.
 
 ## Selbstcheck
 ```dataviewjs

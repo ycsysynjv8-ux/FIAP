@@ -2,13 +2,15 @@
 modul: WISO-4
 titel: Sozialversicherung und Entgelt
 bereich: WiSo
-pruefungsteil: "AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)"
+pruefungsteil: AP2 – Wirtschafts- und Sozialkunde (60 min, 30 Aufgaben)
 reihenfolge: 104
 dauer: 60
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/wiso]
+tags:
+  - ap2/modul
+  - ap2/wiso
 ---
 # WISO-4 · Sozialversicherung und Entgelt
 
@@ -97,9 +99,9 @@ Die Sätze werden jährlich angepasst – in der Prüfung sind sie **immer vorge
 
 ## Zusammenfassung
 - KV, PV, RV, AV, UV – Träger: Krankenkassen, Pflegekassen, DRV, Bundesagentur für Arbeit, Berufsgenossenschaften.
-- Hälftig finanziert; UV nur AG; PV-Kinderlosenzuschlag nur AN.
+- Hälftig finanziert; ==🔴UV nur AG; PV-Kinderlosenzuschlag nur AN==.
 - Solidaritätsprinzip, Umlageverfahren (Generationenvertrag), Beitragsbemessungsgrenze.
-- Netto = Brutto − Lohnsteuer − Soli − Kirchensteuer − AN-Anteil SV.
+- ==🟢Netto = Brutto − Lohnsteuer − Soli − Kirchensteuer − AN-Anteil SV==.
 
 ## Direkt üben
 ```dataviewjs

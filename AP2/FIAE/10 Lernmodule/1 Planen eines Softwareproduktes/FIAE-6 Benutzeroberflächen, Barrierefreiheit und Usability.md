@@ -2,13 +2,15 @@
 modul: FIAE-6
 titel: Benutzeroberflächen, Barrierefreiheit und Usability
 bereich: Planen eines Softwareproduktes
-pruefungsteil: "AP2 Teil 2 – Planen eines Softwareproduktes"
+pruefungsteil: AP2 Teil 2 – Planen eines Softwareproduktes
 reihenfolge: 6
 dauer: 90
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-6 · Benutzeroberflächen, Barrierefreiheit und Usability
 
@@ -116,11 +118,11 @@ Farben, Logo und Schrift der **Corporate Identity** sorgen für Wiedererkennung.
 - [[P5 Arbeitsplatz, Ergonomie und Umwelt]] – Software-Ergonomie (AP1)
 
 ## Zusammenfassung
-- Wireframe (Struktur) → Mockup (Aussehen) → Prototyp (Interaktion); Mockups bringen frühes Feedback.
+- ==🟡Wireframe (Struktur) → Mockup (Aussehen) → Prototyp (Interaktion)==; Mockups bringen frühes Feedback.
 - Steuerelemente passend: Dropdown für feste Werte, Checkbox für ja/nein, Speichern/Abbrechen, Validierung.
 - ISO 9241-110: aufgabenangemessen, selbstbeschreibend, erwartungskonform, erlernbar, steuerbar, fehlerrobust, benutzerbindend.
 - Usability-Tests: Befragung, Beobachtung, lautes Denken, Eye-Tracking, A/B-Test, Logs.
-- Barrierefreiheit: WCAG (wahrnehmbar, bedienbar, verständlich, robust), BFSG seit 28.06.2025; Alt-Texte, Kontrast, Tastatur, Untertitel, einfache Sprache.
+- Barrierefreiheit: WCAG (wahrnehmbar, bedienbar, verständlich, robust), ==🔵BFSG seit 28.06.2025==; Alt-Texte, Kontrast, Tastatur, Untertitel, einfache Sprache.
 
 ## Selbstcheck
 ```dataviewjs

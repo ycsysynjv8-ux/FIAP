@@ -7,8 +7,10 @@ dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-berufsschule: "ITG · LF4 (IT-Grundschutz nach BSI, Schutzziele)"
-tags: [ap1/modul, ap1/sicherheit]
+berufsschule: ITG · LF4 (IT-Grundschutz nach BSI, Schutzziele)
+tags:
+  - ap1/modul
+  - ap1/sicherheit
 ---
 # I1 · Informationssicherheit und IT-Grundschutz
 
@@ -151,10 +153,10 @@ Das **Bundesamt für Sicherheit in der Informationstechnik (BSI)** bietet mit de
 - [[P3 IT-Service, Support und Qualität]] – Verfügbarkeit im SLA
 
 ## Zusammenfassung
-- Vertraulichkeit (nur Berechtigte), Integrität (unverändert), Verfügbarkeit (nutzbar) + Authentizität, Verbindlichkeit.
-- Risiko = Wahrscheinlichkeit × Schaden; vermeiden, vermindern, übertragen, akzeptieren.
+- ==🟡Vertraulichkeit (nur Berechtigte), Integrität (unverändert), Verfügbarkeit (nutzbar)== + Authentizität, Verbindlichkeit.
+- ==🟢Risiko = Wahrscheinlichkeit × Schaden==; vermeiden, vermindern, übertragen, akzeptieren.
 - Schutzbedarf normal/hoch/sehr hoch; Maximumprinzip, Kumulation, Verteilung.
-- IT-Grundschutz: BSI-Standards 200-1 bis 200-4, Kompendium mit Bausteinen, Basis-/Standard-/erhöhte Anforderungen, MUSS/SOLLTE, Soll-Ist-Vergleich.
+- IT-Grundschutz: ==🔵BSI-Standards 200-1 bis 200-4==, Kompendium mit Bausteinen, Basis-/Standard-/erhöhte Anforderungen, MUSS/SOLLTE, Soll-Ist-Vergleich.
 - Maßnahmen technisch, organisatorisch, personell, infrastrukturell; ISMS nach ISO 27001.
 
 ## Selbstcheck

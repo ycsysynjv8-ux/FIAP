@@ -2,13 +2,15 @@
 modul: FIAE-2
 titel: Anforderungen und Use Cases
 bereich: Planen eines Softwareproduktes
-pruefungsteil: "AP2 Teil 2 – Planen eines Softwareproduktes"
+pruefungsteil: AP2 Teil 2 – Planen eines Softwareproduktes
 reihenfolge: 2
 dauer: 120
 status: neu
 sicherheit: 0
 zuletzt:
-tags: [ap2/modul, ap2/fiae]
+tags:
+  - ap2/modul
+  - ap2/fiae
 ---
 # FIAE-2 · Anforderungen und Use Cases
 
@@ -137,10 +139,10 @@ Anforderungen an eine Software: Formate erzeugen und validieren (XSD-Schema, Sch
 - [[S8 UML und Softwareentwurf]] – Grundlagen aus AP1
 
 ## Zusammenfassung
-- Lastenheft (Auftraggeber: was/wofür) vs. Pflichtenheft (Auftragnehmer: wie/womit).
-- Funktional = was, nichtfunktional = wie gut (messbar!).
+- ==🔴Lastenheft (Auftraggeber: was/wofür) vs. Pflichtenheft (Auftragnehmer: wie/womit)==.
+- ==🟡Funktional = was, nichtfunktional = wie gut (messbar!)==.
 - ISO 25010: funktionale Eignung, Effizienz, Kompatibilität, Benutzbarkeit, Zuverlässigkeit, Sicherheit, Wartbarkeit, Übertragbarkeit.
-- Use Case: Systemgrenze, Akteure außen, Fälle innen; include = immer (Basis → inkludiert), extend = optional (Erweiterung → Basis), Generalisierung mit Dreieck.
+- Use Case: Systemgrenze, Akteure außen, Fälle innen; ==🟢include = immer (Basis → inkludiert), extend = optional (Erweiterung → Basis)==, Generalisierung mit Dreieck.
 - User Story: Als … möchte ich … damit … + Akzeptanzkriterien.
 
 ## Selbstcheck
