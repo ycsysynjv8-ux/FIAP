@@ -80,7 +80,11 @@ Bezeichnung **XX/YTP**: vor dem Schrägstrich die Gesamtschirmung, danach die Pa
 Geschirmte Kabel lohnen sich in Umgebungen mit starken Störfeldern (Maschinen, parallel verlaufende Stromleitungen). Der Schirm muss dann korrekt geerdet sein.
 
 ### Belegung
-Zwei Normen: **T568A** und **T568B** (Adernfarben an den Pins). **Patchkabel**: beide Enden gleich (1:1). **Crossover**: ein Ende A, ein Ende B – heute kaum noch nötig, weil moderne Ports per **Auto-MDI-X** selbst erkennen, welche Adern senden und welche empfangen.
+Zwei Normen nach TIA/EIA-568: **T568A** und **T568B** (unterscheiden sich durch den Tausch des grünen und orangen Adernpaars auf den Pins 1/2 und 3/6; Blau auf 4/5 und Braun auf 7/8 bleiben gleich):
+- **T568B:** Pin 1 **Weiß-Orange**, 2 **Orange**, 3 **Weiß-Grün**, 4 **Blau**, 5 **Weiß-Blau**, 6 **Grün**, 7 **Weiß-Braun**, 8 **Braun**
+- **T568A:** Pin 1 **Weiß-Grün**, 2 **Grün**, 3 **Weiß-Orange**, 4 **Blau**, 5 **Weiß-Blau**, 6 **Orange**, 7 **Weiß-Braun**, 8 **Braun**
+
+**Patchkabel (1:1):** beide Enden nach derselben Norm (A–A oder B–B). **Crossover:** ein Ende A, ein Ende B – heute kaum noch nötig, weil moderne Ports per **Auto-MDI-X** selbst erkennen, welche Adern senden und welche empfangen.
 
 ---
 

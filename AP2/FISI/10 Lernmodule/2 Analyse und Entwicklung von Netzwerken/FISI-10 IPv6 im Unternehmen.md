@@ -98,7 +98,7 @@ Provider vergeben meist ein **/48** (65 536 × /64) oder **/56** (256 × /64). I
 - **Adressraum:** 128 statt 32 Bit – IPv4-Adressen sind erschöpft.
 - **Kein NAT nötig** → echte Ende-zu-Ende-Verbindungen (Sicherheit dann über Firewall, nicht über NAT).
 - **Autokonfiguration** (SLAAC), einfachere Verwaltung.
-- **Vereinfachter Header** mit fester Länge → effizientere Verarbeitung; keine Fragmentierung durch Router (Path MTU Discovery).
+- **Vereinfachter Header mit fester Länge (40 Byte statt variabel 20–60 Byte bei IPv4):** Nur 8 Felder (Version, Traffic Class, Flow Label, Payload Length, **Next Header** statt *Protocol*, **Hop Limit** statt *TTL*, Quell- und Zieladresse à 128 Bit) → schnellere Verarbeitung im Router; **keine Header-Checksumme** (Prüfung erfolgt auf Schicht 2 und 4) und **keine Fragmentierung durch Router** unterwegs (nur durch den Sender per Path MTU Discovery). Details: [[AP2 FISI Ergänzungen#7. Frame- und Header-Aufbau (Ethernet, 802.1Q, IPv4/IPv6)]].
 - **IPsec** ist fester Bestandteil der Spezifikation; Flow Label für QoS.
 - Multicast statt Broadcast.
 

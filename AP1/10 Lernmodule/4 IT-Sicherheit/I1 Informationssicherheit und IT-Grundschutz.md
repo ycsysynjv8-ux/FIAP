@@ -99,7 +99,7 @@ Für jedes Zielobjekt (Geschäftsprozess, Anwendung, IT-System, Raum, Netzverbin
 Das **Bundesamt für Sicherheit in der Informationstechnik (BSI)** bietet mit dem **IT-Grundschutz** eine Methode, um mit **Standardmaßnahmen** ein angemessenes Sicherheitsniveau zu erreichen – ohne für jedes System eine aufwendige Einzelrisikoanalyse.
 
 **Bestandteile:**
-- **BSI-Standards:** 200-1 (Managementsysteme für Informationssicherheit, **ISMS**), 200-2 (IT-Grundschutz-Methodik), 200-3 (Risikoanalyse), 200-4 (Business Continuity Management)
+- **BSI-Standards:** 200-1 (Managementsysteme für Informationssicherheit, **ISMS**), 200-2 (IT-Grundschutz-Methodik), 200-3 (Risikoanalyse), 200-4 (Business Continuity Management, **BCM** – Notfall- und Kontinuitätsmanagement)
 - **IT-Grundschutz-Kompendium:** Sammlung von **Bausteinen** (z. B. ISMS, Organisation, Personal, Betrieb, Detektion, Anwendungen, IT-Systeme, Industrielle IT, Netze, Infrastruktur), z. B. „SYS.2.1 Allgemeiner Client“, „INF.2 Rechenzentrum“, „NET.2.1 WLAN-Betrieb“
 
 **Aufbau eines Bausteins:** Beschreibung (Einleitung, Zielsetzung, Abgrenzung) → **Gefährdungslage** → **Anforderungen** → weiterführende Informationen

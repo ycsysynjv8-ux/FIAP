@@ -150,3 +150,7 @@ Welche Kriterien nutzt ein Mailfilter und welche Rolle hat die Sandbox?::Dateity
 Warum macht Fax über VoIP Probleme?::Fax reagiert empfindlich auf Jitter und Kompression – T.38 überträgt Fax gesichert über IP
 Welches Risiko hat SNMPv1/v2c und was hilft?::Community-String im Klartext – SNMPv3, Management-VLAN, ACL und nur Lesezugriff
 Was ist Predictive Maintenance?::Aus Messwerten wird der Ausfall vorhergesagt und das Bauteil vorher getauscht
+Welche Kupferkabel-Kategorie braucht man für 10 Gbit/s über volle 100 m (90 m Permanent Link + 2 × 5 m Patchkabel)?::Mindestens Cat 6A (500 MHz); Cat 6 reicht bei 10GBASE-T nur bis ca. 55 m
+Wie ist das 802.1Q-VLAN-Tag im Ethernet-II-Frame aufgebaut?::4 Byte zwischen Quell-MAC und EtherType (TPID 0x8100 + TCI mit 3 Bit PCP, 1 Bit DEI, 12 Bit VLAN-ID für 1–4094); maximale Framegröße steigt auf 1 522 Byte
+Was unterscheidet den IPv6-Header vom IPv4-Header?::Feste Länge von 40 Byte (statt 20–60 Byte), 8 Felder (Next Header, Hop Limit), keine Header-Checksumme, keine Paketfragmentierung durch Router unterwegs
+Wie funktioniert SD-WAN (Software-Defined WAN)?::Zentraler Controller bündelt mehrere Leitungen (MPLS, Glasfaser, LTE/5G) über IPsec-Tunnel und lenkt Verkehr anwendungsbezogen nach Leitungsqualität (Application-Aware Routing)

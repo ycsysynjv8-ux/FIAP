@@ -50,7 +50,7 @@ Ein Kunde kauft eine teure NVMe-SSD und steckt sie in ein billiges USB-Gehäuse 
 - **TRIM**: Betriebssystem meldet gelöschte Blöcke, damit die SSD schnell bleibt
 - Flash-Zelltypen: SLC > MLC > TLC > QLC (mehr Bits pro Zelle = günstiger, aber weniger haltbar und langsamer beim Dauerschreiben)
 
-**Kenngröße bei HDDs:** Drehzahl (5 400 / 7 200 rpm), **MTBF** (mittlere Betriebsdauer zwischen Ausfällen), Cache. Für NAS-Dauerbetrieb **NAS-Platten** mit höherer Belastbarkeit wählen.
+**Kenngröße bei HDDs:** Drehzahl (5 400 / 7 200 **rpm** = *Revolutions per Minute*, **Umdrehungen pro Minute** der Magnetscheiben – höhere Drehzahl verkürzt die Latenzzeit bis zum gesuchten Sektor), **MTBF** (mittlere Betriebsdauer zwischen Ausfällen), Cache. Für NAS-Dauerbetrieb **NAS-Platten** mit höherer Belastbarkeit wählen.
 
 > [!info] M.2 ≠ NVMe
 > **M.2** ist nur der **Formfaktor** (Steckkarte, z. B. 22 × 80 mm = „2280“). Es gibt M.2-SSDs mit **SATA**-Protokoll *und* mit **NVMe** über PCIe. Vor dem Kauf prüfen, was der M.2-Slot des Mainboards unterstützt (Handbuch; Kerben M/B-Key).

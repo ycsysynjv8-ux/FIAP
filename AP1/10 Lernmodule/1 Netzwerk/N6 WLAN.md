@@ -119,7 +119,7 @@ Private Geräte im Firmen-/Schulnetz sind bequem, aber riskant (unbekannter Patc
 
 | Symptom | mögliche Ursache | Maßnahme |
 |---|---|---|
-| schwaches Signal | Entfernung, Wände (Beton, Metall, Glas mit Beschichtung), falsche Antennenausrichtung | AP versetzen/mittiger, zusätzlichen AP, Antennen ausrichten |
+| schwaches Signal | Entfernung, stark dämpfende Hindernisse (**Stahlbetonwand**, Metall, metallbedampftes Wärmeschutzglas, Wasserleitungen/Fußbodenheizung), falsche Antennenausrichtung | AP versetzen/mittiger, zusätzlichen AP, Antennen ausrichten |
 | gutes Signal, aber langsam | Kanalüberlappung mit Nachbar-WLANs, zu viele Clients, alte Clients bremsen | Kanal wechseln, 5-/6-GHz-Band, Band Steering, weitere APs |
 | Abbrüche | Störquellen (Mikrowelle, Bluetooth, Funkkameras), Roaming-Probleme | Band/Kanal wechseln, Controller-Einstellungen |
 | Verbindung, aber keine IP | DHCP-Pool im VLAN leer, falsches VLAN am AP-Trunk | DHCP-Scope, Switch-Konfiguration prüfen |

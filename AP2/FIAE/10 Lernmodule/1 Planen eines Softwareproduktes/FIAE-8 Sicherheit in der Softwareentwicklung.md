@@ -93,7 +93,8 @@ tags:
 | unsichere Abhängigkeiten | bekannte Lücken in Bibliotheken | Updates, Dependency-Scanner |
 | Fehlkonfiguration / sensible Daten | Debugmeldungen, Standardpasswörter, Klartext | Härtung, Verschlüsselung, keine Secrets im Code |
 
-**Weitere Grundsätze:** Eingaben **nie vertrauen** (serverseitig validieren), **Least Privilege**, sichere Standardeinstellungen, Fehler ohne interne Details anzeigen, Sitzungen begrenzen (Timeout bei Inaktivität), sichere Übertragung (TLS), **Code-Reviews und Security-Tests**, Programme **signieren**.
+**Weitere Grundsätze:** Eingaben **nie vertrauen** (serverseitig validieren), **Least Privilege**, sichere Standardeinstellungen, Fehler ohne interne Details anzeigen, Sitzungen begrenzen (Timeout bei Inaktivität), sichere Übertragung (TLS), **Code-Reviews und Security-Tests**.
+- **Code-Signing (Signieren von Programmdateien und Updates):** Der Hersteller signiert ausführbare Dateien, Installer oder Pakete digital mit seinem **privaten Schlüssel** (Zertifikat einer vertrauenswürdigen CA). Betriebssystem und Endnutzer prüfen mit dem öffentlichen Schlüssel die **Authentizität (Herkunft vom echten Hersteller)** und **Integrität (Unverändertheit seit der Signatur)**; ohne gültige Signatur warnt das Betriebssystem vor einem „unbekannten Herausgeber“.
 **Dateien aus externen Quellen** (Word-Dokumente mit Makros) sind ein Einfallstor – Inhalte lieber direkt in der Web-Plattform anzeigen.
 
 ---
@@ -112,6 +113,13 @@ tags:
 > - Salt als Geheimnis beschreiben – das Salt ist **nicht geheim**, es liegt neben dem Hash.
 > - Integrität mit Vertraulichkeit verwechseln: Verschlüsselung allein bemerkt keine Manipulation.
 > - SQL-Injection nur mit „Eingaben prüfen“ beantworten – die sichere Lösung sind **Prepared Statements**.
+
+### Ergänzung: Künstliche Intelligenz (Machine Learning, Metriken und EU AI Act)
+- **Lernverfahren:** **Überwachtes Lernen (*Supervised Learning*)** mit gelabelten Trainingsdaten (Klassifikation, Regression), **unüberwachtes Lernen (*Unsupervised Learning*)** ohne Labels (Clustering, Anomalieerkennung), **bestärkendes Lernen (*Reinforcement Learning*)** über Belohnung/Strafe.
+- **Trainings-, Validierungs- und Testdaten:** Testdaten dürfen **nie** im Training vorkommen, sonst misst man bloßes Auswendiglernen (**Overfitting**) statt echter Verallgemeinerungsfähigkeit. Ein **Bias** (systematische Verzerrung) entsteht durch einseitige, nicht repräsentative Trainingsdaten.
+- **Qualitätsmetriken bei Klassifikation:** **Accuracy (Genauigkeit)** = Anteil aller korrekten Vorhersagen (bei seltenen Fehlern allein irreführend!); **Recall (Trefferquote)** = wie viele der tatsächlich positiven Fälle (z. B. echte Defekte) wurden erkannt ($\frac{\text{TP}}{\text{TP} + \text{FN}}$); **Precision (Präzision)** = wie viele der gemeldeten Alarme waren tatsächlich positiv ($\frac{\text{TP}}{\text{TP} + \text{FP}}$).
+- **Halluzinationen und RAG:** Sprachmodelle (LLMs) berechnen wahrscheinliche Wortfolgen und können erfundenen Fakten (**Halluzinationen**) erzeugen; **RAG (Retrieval-Augmented Generation)** bindet geprüfte Unternehmensdokumente als Wissensbasis ein.
+- **EU AI Act (KI-Verordnung):** Risikobasierte Einstufung in **unannehmbares Risiko** (verboten, z. B. Social Scoring), **hohes Risiko** (strenge Pflichten zu Datenqualität, Dokumentation, menschlicher Aufsicht, z. B. Bewerberauswahl, Kreditwürdigkeit, kritische Infrastruktur), **begrenztes Risiko** (Transparenz-/Kennzeichnungspflicht, z. B. Chatbots, Deepfakes) und **minimales Risiko** (z. B. Spamfilter). Ausführlich in [[AP2 FIAE Querschnittsthemen#4. Künstliche Intelligenz]].
 
 ## Verwandte Themen
 - [[FIAE-7 Schnittstellen, Web und Architektur]] – Authentifizierung an APIs, Code-Signatur

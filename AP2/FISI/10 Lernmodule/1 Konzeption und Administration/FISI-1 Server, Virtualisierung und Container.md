@@ -177,6 +177,7 @@ Zwei identische Umgebungen: **eine ist live (z. B. Green)**, auf der anderen (Bl
 - **Testkonzept:** Testziele und -umfang, Testfälle mit erwartetem Ergebnis, Testumgebung und -daten, Zuständigkeiten und Zeitplan; Ergebnisse im Testprotokoll.
 - **Systemübergabe:** Abnahmeprotokoll, System- und Benutzerdokumentation, Einweisung, sichere Übergabe der Zugangsdaten.
 - **Datenübernahme:** Analyse und Zuordnung → Datensicherung → Testmigration → Migration → Validierung.
+- **Infrastructure as Code (IaC) und Konfigurationsmanagement:** Server, Container und Netze werden über versionierbare Textdateien statt manuell eingerichtet. **Ansible** arbeitet **agentenlos** (über SSH/WinRM mit YAML-Playbooks), **Puppet** nutzt Agenten auf den Zielsystemen, **Terraform** stellt deklarativ Infrastruktur (VMs, Cloud-Ressourcen, Netze) bereit. Zentrales Prinzip ist **Idempotenz**: Mehrfaches Ausführen eines Playbooks/Skripts erzeugt immer denselben Soll-Zustand, ohne bereits korrekte Einstellungen nochmals zu verändern. Details: [[AP2 FISI Ergänzungen#2. Infrastructure as Code und Konfigurationsmanagement]].
 
 ## Verwandte Themen
 - [[FISI-2 Cloud und Betriebsmodelle]] – Virtualisierung ist die Basis jeder Cloud

@@ -102,7 +102,10 @@ return response
 | **CSV** | Tabellen als Text, Trennzeichen – einfach, aber nicht genormt |
 | YAML | lesbar, Konfigurationen |
 
-**Schemavalidierung (XSD)** prüft nur die **Struktur**: richtige Elemente, Reihenfolge, Datentypen, Pflichtfelder. **Logische Fehler** (Netto-Summe aus Bruttowerten gebildet) findet sie nicht – dafür braucht es **Unit-Tests** und fachliche Prüfregeln.
+**XML: wohlgeformt vs. gültig (valide):**
+- **Wohlgeformt (*well-formed*):** Das XML-Dokument hält die allgemeinen **XML-Syntaxregeln** ein (genau ein Wurzelelement, alle Start-Tags werden korrekt geschlossen, Elemente sind sauber verschachtelt, Attributwerte stehen in Anführungszeichen).
+- **Gültig / valide (*valid*):** Das Dokument ist wohlgeformt **und** entspricht zusätzlich einem zugeordneten **Schema (XSD)** oder einer **DTD** (erlaubte Elementnamen, Reihenfolge, Pflichtfelder/Kardinalitäten, Datentypen).
+- **Grenze der Schemavalidierung (XSD):** Sie prüft nur die **Struktur** und Datentypen. **Logische/fachliche Fehler** (z. B. Netto-Summe aus Bruttowerten gebildet) findet sie nicht – dafür braucht es **Unit-Tests** und fachliche Prüfregeln.
 
 ---
 
@@ -173,7 +176,7 @@ Nach dem Rollout muss eine Anwendung **überwacht und betreut** werden.
 - **Ticketsystem:** Jede Störung und jede Anfrage wird als **Ticket** erfasst – mit Priorität, Zuständigkeit, Status und Verlauf. Vorteile: nichts geht verloren, Bearbeitungszeiten sind messbar, Wissen wird dokumentiert.
 - **Incident-Management** (nach ITIL): Ziel ist, den **Normalbetrieb so schnell wie möglich wiederherzustellen** – erfassen → klassifizieren und priorisieren (Auswirkung × Dringlichkeit) → erste Lösung/Workaround → eskalieren (1st → 2nd → 3rd Level) → lösen → dokumentieren und schließen.
 - **Problem-Management:** sucht die **Ursache** wiederkehrender Incidents und beseitigt sie dauerhaft.
-- **SLA:** vereinbarte Reaktions- und Lösungszeiten je Priorität.
+- **SLA und Eskalation:** Vereinbarte Reaktions- und Lösungszeiten je **Priorität** ($\text{Priorität} = \text{Auswirkung (Impact)} \times \text{Dringlichkeit (Urgency)}$). **Funktionale (horizontale) Eskalation** übergibt ein Ticket an die nächste Fachstufe (1st → 2nd → 3rd Level), **hierarchische (vertikale) Eskalation** schaltet Vorgesetzte/Management ein, wenn SLA-Fristen zu reißen drohen. Details: [[AP2 FIAE Querschnittsthemen#3. Ticketsystem und IT-Service]].
 
 ---
 

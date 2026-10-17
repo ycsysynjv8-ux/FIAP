@@ -118,7 +118,7 @@ mittelwert ← summe / n
 | Typ | Größe | Wertebereich | Einsatz |
 |---|---|---|---|
 | `bool` | 1 Bit (meist 1 Byte) | true/false | Link up, Toner leer |
-| `byte` | 8 Bit | 0 bis 255 (C#) | Prozentwerte 0–100 – keine negativen Werte möglich |
+| `byte` / `sbyte` | 8 Bit | 0 bis 255 (vorzeichenlos, z. B. C# `byte`) bzw. −128 bis 127 (vorzeichenbehaftet, z. B. Java `byte` / C# `sbyte`) | Prozentwerte 0–100, kleine Ganzzahlen |
 | `short` | 16 Bit | −32 768 bis 32 767 | |
 | `int` | 32 Bit | −2 147 483 648 bis 2 147 483 647 | Zähler, IDs, Drehzahl |
 | `long` | 64 Bit | ca. ±9,2 × 10¹⁸ | Byte-Zähler, Zeitstempel |

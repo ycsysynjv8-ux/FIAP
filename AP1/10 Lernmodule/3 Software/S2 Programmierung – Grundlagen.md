@@ -233,6 +233,8 @@ Für die AP1 genügen die Begriffe:
 - **Attribut** = Eigenschaft · **Methode** = Funktion einer Klasse
 - **Kapselung** (Attribute privat, Zugriff über Methoden)
 - Darstellung im **UML-Klassendiagramm** (Name, Attribute, Methoden; `+` public, `−` private)
+- **Prozedurale vs. objektorientierte Programmierung:** In der **prozeduralen Programmierung** sind Daten und Funktionen getrennt (Funktionen erhalten Daten als Parameter); in der **OOP** sind Daten (Attribute) und Funktionen (Methoden) gemeinsam in Objekten gekapselt.
+- **Ausnahmebehandlung (`Exception`, `try / catch` bzw. `try / except`):** Eine **Exception (Ausnahme)** ist ein unerwartetes Fehlerereignis zur **Laufzeit** (z. B. Division durch 0, Datei nicht gefunden, ungültige Eingabe, Array-Index außerhalb des gültigen Bereichs). Mit `try / catch` wird der Laufzeitfehler kontrolliert abgefangen und behandelt, ohne dass das Programm abstürzt.
 
 ---
 

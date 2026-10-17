@@ -378,6 +378,19 @@ Erklären Sie „Privacy by Design“ und „Privacy by Default“ mit je einem 
 > - **Privacy by Design:** Datenschutz schon in der Architektur berücksichtigen – z. B. Positionsdaten nur während der Ausleihe erheben und nach Abrechnung pseudonymisieren/löschen. (2 P)
 > - **Privacy by Default:** datenschutzfreundliche Voreinstellungen – z. B. Standortfreigabe für Werbung oder Statistik ist standardmäßig **aus** und muss aktiv eingeschaltet werden. (2 P)
 
+### P8.5 ★★ – Künstliche Intelligenz: Metriken, Testdaten und EU AI Act (6 Punkte)
+📘 **Nachlernen:** [[FIAE-8 Sicherheit in der Softwareentwicklung#Ergänzung: Künstliche Intelligenz (Machine Learning, Metriken und EU AI Act)|FIAE-8 › Künstliche Intelligenz]] · [[AP2 FIAE Querschnittsthemen#4. Künstliche Intelligenz|Querschnittsthemen › KI]]
+
+Ein KI-Modell soll anhand von Sensordaten defekte Fahrradschlösser erkennen. Bei einem Test mit 500 Schlössern (davon 25 tatsächlich defekt) meldet das Modell 20 echte Defekte korrekt, übersieht 5 Defekte und meldet 5 intakte Schlösser fälschlich als defekt.
+a) Berechnen Sie **Recall (Trefferquote)** und **Precision (Präzision)** für die Klasse „defekt“. (2 P)
+b) Begründen Sie, warum die Testdaten nicht schon beim Training des Modells verwendet werden dürfen. (2 P)
+c) Ordnen Sie einen KI-gestützten Chatbot im Kundenservice nach dem **EU AI Act** in die passende Risikostufe ein und nennen Sie die daraus folgende Pflicht. (2 P)
+
+> [!success]- Lösung
+> a) **Recall** = 20 ÷ 25 = **80 %** (Anteil erkannter Defekte an allen echten Defekten, 1 P) · **Precision** = 20 ÷ (20 + 5) = **80 %** (Anteil echter Defekte an allen gemeldeten Alarmen, 1 P)
+> b) Sonst misst man nur das Auswendiglernen (**Overfitting**) statt zu prüfen, wie gut das Modell auf unbekannten Daten im echten Betrieb verallgemeinert. (2 P)
+> c) **Begrenztes Risiko** → **Transparenzpflicht** (Nutzer müssen klar erkennen, dass sie mit einer KI interagieren). (2 P)
+
 ---
 ← [[AP2 FIAE Start]] · [[Übersicht FIAE Planen eines Softwareproduktes]]
 

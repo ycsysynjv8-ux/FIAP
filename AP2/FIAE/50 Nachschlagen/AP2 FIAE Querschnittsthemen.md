@@ -106,7 +106,7 @@ Merkfrage bei jedem Bezug: *Soll er beim Kopieren mitwandern?* Nein → `$` davo
 - `WAHR` (oder weggelassen): ungefähr suchen in **aufsteigend sortierter** erster Spalte, liefert die Zeile mit dem größten Wert ≤ Suchkriterium. Richtig für Staffeln (Versandkosten, Rabatt).
 - **Falle:** Wer das vierte Argument vergisst, bekommt bei unsortierten Schlüsseln keinen Fehler, sondern einen **falschen Wert**.
 
-**WOCHENTAG:** Typ 1 (Excel-Standard): Sonntag = 1. Typ 2: Montag = 1 … Sonntag = 7, in Deutschland am praktischsten (`WOCHENTAG(A2;2)<=5` = Montag bis Freitag). Der Belegsatz kann abweichen (in S23 galt standardmäßig 1 = Montag) – **Typ immer ausdrücklich angeben**.
+**WOCHENTAG:** Typ 1 (Excel-Standard): Sonntag = 1. Typ 2: Montag = 1 … Sonntag = 7, in Deutschland am praktischsten (`WOCHENTAG(A2;2)<=5` = Montag bis Freitag). Der Belegsatz kann abweichen (je nach Vorgabe gilt teils standardmäßig 1 = Montag) – **Typ immer ausdrücklich angeben**.
 
 **Fehlerwerte:** `#NV` nicht gefunden · `#WERT!` falscher Datentyp · `#DIV/0!` · `#BEZUG!` Bezug gelöscht · `#NAME?` Funktionsname falsch.
 
@@ -193,9 +193,10 @@ Begründe immer mit **beiden** Größen: Wer/was ist betroffen (Impact)? Wie sch
 
 **Daten aufteilen:** z. B. 70 % Training, 15 % Validierung, 15 % Test. **Testdaten dürfen im Training nicht vorkommen**, sonst misst man nur Auswendiglernen (**Overfitting**). Die Daten müssen den späteren Einsatz abbilden (Kameras, Licht, Jahreszeiten, Varianten).
 
-**Ergebnis bewerten (Beispiel 1000 Flaschen, 50 defekt; 40 erkannt, 10 übersehen, 19 Fehlalarme, 931 richtig OK):**
-- Genauigkeit = (40 + 931) ÷ 1000 = **97,1 %**
-- Trefferquote (Recall) = 40 ÷ 50 = **80 %**
+**Ergebnis bewerten (Beispiel 1 000 Flaschen, 50 defekt; 40 erkannt, 10 übersehen, 19 Fehlalarme, 931 richtig OK):**
+- Genauigkeit (Accuracy) = (40 + 931) ÷ 1 000 = **97,1 %** (Anteil korrekter Vorhersagen insgesamt)
+- Trefferquote (Recall) = 40 ÷ 50 = **80 %** (Anteil erkannter Defekte an allen tatsächlich defekten Flaschen)
+- Präzision (Precision) = 40 ÷ (40 + 19) ≈ **67,8 %** (Anteil echter Defekte an allen gemeldeten Alarmen)
 - Falle: Ein Modell, das immer „in Ordnung“ meldet, hätte 95 % Genauigkeit und fände keinen einzigen Defekt. Bei seltenen, wichtigen Fällen zählt, wie viele übersehen werden.
 
 **Bias** (systematische Verzerrung) entsteht meist durch die Daten: nicht repräsentativ, unausgewogene Klassen, historische Vorurteile, uneinheitliche Labels, veraltete Daten (Data Drift). Gegenmaßnahmen: vielfältige Daten, klare Label-Richtlinien, Ergebnisse je Gruppe prüfen, im Betrieb überwachen und nachtrainieren.
@@ -205,7 +206,7 @@ Begründe immer mit **beiden** Größen: Wer/was ist betroffen (Impact)? Wie sch
 
 **Datenschutz:** Enthalten Trainings-/Eingabedaten Personenbezug, gilt die DSGVO (Zweckbindung, Datenminimierung, Löschpflichten). Maßnahmen: anonymisieren/pseudonymisieren, Auftragsverarbeitungsvertrag, keine Kundendaten in öffentliche KI-Chats. Kamera-/KI-Auswertungen eignen sich zur Leistungskontrolle → **Mitbestimmungsrecht des Betriebsrats** (§ 87 Abs. 1 Nr. 6 BetrVG).
 
-**EU AI Act** (Verordnung (EU) 2024/1689, gilt als Verordnung direkt in allen Mitgliedstaaten). Risikobasiert, Pflichten gestaffelt in Kraft; genaue Fristen vor der Prüfung nachsehen, im Zweifel zählt das Prinzip:
+**EU AI Act** (Verordnung (EU) 2024/1689, gilt als Verordnung direkt in allen Mitgliedstaaten). Risikobasiert, Pflichten gestaffelt in Kraft (Verbote und KI-Kompetenz seit Feb. 2025, Allzweck-KI/GPAI seit Aug. 2025, allgemeine Geltung inkl. Hochrisiko-KI nach Anhang III und Transparenzpflichten ab Aug. 2026):
 
 | Stufe | Beispiele | Folge |
 |---|---|---|

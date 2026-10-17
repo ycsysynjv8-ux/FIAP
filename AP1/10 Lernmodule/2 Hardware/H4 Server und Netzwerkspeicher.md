@@ -50,7 +50,7 @@ Ein **Server** stellt Dienste für viele Clients bereit, ein **Client** nutzt si
 | **hohe Verfügbarkeit** (24/7) | redundante **Netzteile** (Hot-Plug), redundante Laufwerke, **ECC-RAM**, redundante Lüfter, zwei Netzwerkanschlüsse |
 | **Wartbarkeit** | **Hot-Swap**-Laufwerke, Fernwartung per **iDRAC/iLO/IPMI** (auch bei ausgeschaltetem System), Diagnose-LEDs |
 | **Leistung** | mehrere CPUs/viele Kerne, viel RAM, schnelle SSDs |
-| **Bauform** | **19"-Rack** (Höheneinheiten HE/U), Tower, Blade |
+| **Bauform** | **19"-Rack** (**19 Zoll** Standardbreite, Höhe in **Höheneinheiten HE/U**: 1 HE = 1,75 Zoll = 44,45 mm, typischer Serverschrank 42 oder 47 HE), **Tower** (Standgehäuse), **Blade-Server** (viele schmale Servereinschübe in einem gemeinsamen Chassis, das Stromversorgung, Kühlung und Netzwerk bündelt) |
 | **Umgebung** | klimatisierter Serverraum, **USV**, Zutrittsschutz, Brandschutz |
 | **Service** | Garantie mit **Vor-Ort-Service** und Reaktionszeit (z. B. Next Business Day) |
 

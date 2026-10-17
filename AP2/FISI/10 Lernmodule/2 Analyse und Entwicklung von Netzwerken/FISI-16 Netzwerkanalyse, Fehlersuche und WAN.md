@@ -170,6 +170,8 @@ tags:
 - **Auslastung überwachen:** CPU, Arbeitsspeicher und Swap, Plattenplatz und IOPS, Netzwerkdurchsatz. Dauerhaft hohe CPU-Last: Ursache analysieren, Last verteilen oder Ressourcen erhöhen (scale up/out).
 - **Zwei Schwellwerte** (Warnung, kritisch) ermöglichen frühes Reagieren und Eskalation.
 - **Präventive Wartung:** Lüfter reinigen, Firmware aktualisieren, USV-Akkus testen – Störungen vermeiden, bevor sie auftreten.
+- **Monitoring-Werkzeuge:** Typische Systeme sind **Zabbix**, **Nagios/Icinga**, **PRTG** sowie **Prometheus + Grafana**; wichtig sind Abhängigkeitsregeln (fällt ein Switch aus, nicht für jeden dahinterliegenden Server Einzelalarme senden).
+- **SD-WAN (Software-Defined WAN):** Bündelt mehrere Standortverbindungen (MPLS, Glasfaser, DSL, LTE/5G) über verschlüsselte IPsec-Tunnel und steuert die Wegewahl **zentral per Software-Controller** und **anwendungsbezogen** (Application-Aware Routing, z. B. VoIP/ERP über die Leitung mit geringster Latenz/Jitter, sonstiger Webverkehr direkt ins Internet). Details: [[AP2 FISI Ergänzungen#5. SD-WAN]].
 
 ## Verwandte Themen
 - [[FISI-13 DNS, DHCP und Netzdienste]] – DNS und DHCP im Mitschnitt

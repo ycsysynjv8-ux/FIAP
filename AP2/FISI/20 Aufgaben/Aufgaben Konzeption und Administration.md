@@ -386,6 +386,17 @@ Wählen Sie je einen passenden SQL-Datentyp: a) Seriennummer „SN-2024-00815“
 > [!success]- Lösung (je 1 P)
 > a) `VARCHAR(20)` · b) `DECIMAL(10,2)` (kein FLOAT – Rundungsfehler bei Geld) · c) `DATE` · d) `CHAR(5)` bzw. VARCHAR – Text, weil führende Nullen (z. B. 01067) erhalten bleiben müssen
 
+### K8.4 ★★ – Ereignisgesteuerte Prozesskette (EPK) und Infrastructure as Code (6 Punkte)
+📘 **Nachlernen:** [[FISI-8 Datenbanken und Modellierung#Ergänzung: Ereignisgesteuerte Prozesskette (EPK)|FISI-8 › EPK]] · [[FISI-1 Server, Virtualisierung und Container#Ergänzung: Kompatibilität, Testkonzept, Übergabe, Datenübernahme|FISI-1 › Infrastructure as Code]]
+
+a) In einer **EPK** für den Störungsprozess folgt direkt auf das Ereignis „Störungsmeldung eingegangen“ ein `XOR`-Konnektor, der in die beiden Ereignisse „Kritische Störung“ und „Standardanfrage“ verzweigt. Begründen Sie, welche zwei Grundregeln der EPK hier verletzt sind, und korrigieren Sie den Ausschnitt. (4 P)
+b) Erklären Sie, was die Eigenschaft **Idempotenz** beim Ausrollen von Serverkonfigurationen mit **Ansible** bedeutet. (2 P)
+
+> [!success]- Lösung
+> a) **Regelverstöße:** 1. Ein **Ereignis** ist ein passiver Zustand und kann **keine Entscheidung** treffen – daher darf nach einem Ereignis **kein `XOR`- oder `OR`-Split** stehen. 2. Auf ein Ereignis muss immer eine **Funktion** folgen (strenger Wechsel Ereignis ↔ Funktion). (2 P)
+> **Korrektur:** Ereignis „Störungsmeldung eingegangen“ → **Funktion „Störung klassifizieren / prüfen“** → `XOR`-Split → Ereignisse „Kritische Störung erkannt“ bzw. „Standardanfrage erkannt“. (2 P)
+> b) **Idempotenz:** Ein Playbook kann beliebig oft ausgeführt werden und führt immer zum selben definierten Soll-Zustand; Einstellungen, die bereits korrekt sind, werden nicht noch einmal verändert oder doppelt angelegt. (2 P)
+
 ---
 ← [[AP2 FISI Start]] · [[Übersicht FISI Konzeption und Administration]]
 

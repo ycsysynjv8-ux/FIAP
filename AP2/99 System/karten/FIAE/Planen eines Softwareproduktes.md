@@ -150,3 +150,10 @@ Was unterscheidet SOAP von REST?::SOAP: XML-Nachrichten mit festem Aufbau (Envel
 Was bedeuten pull, push und merge in Git?::pull holt Änderungen und führt sie ein, push lädt lokale Commits hoch, merge führt Zweige zusammen (Konflikt bei gleicher Zeile)
 Welchen Datentyp wählst du für Fotos und welchen für Koordinaten?::BLOB für Binärdaten, DECIMAL(9,6) oder Geodatentyp für Koordinaten
 Warum beachtet man die Corporate Identity bei Bildschirmmasken?::Einheitliche Farben, Logos und Schriften für Wiedererkennung – mit ausreichendem Kontrast für Barrierefreiheit
+Wie berechnet man den PUE-Wert (Green IT)?::PUE = Gesamtenergiebedarf des Rechenzentrums ÷ Energiebedarf der IT-Geräte (Idealwert nahe 1,0)
+Was bewirken `$`-Zeichen und `FALSCH` in `=SVERWEIS(A2; $D$2:$F$50; 3; FALSCH)`?::`$D$2:$F$50` fixiert die Matrix als absoluten Bezug beim Kopieren; `FALSCH` (0) erzwingt die exakte Suche
+Unterschied funktionale und hierarchische Eskalation im Ticketsystem?::Funktional: Übergabe an höhere Fachstufe (2nd/3rd Level) · Hierarchisch: Einschalten von Vorgesetzten/Management (z. B. bei drohendem SLA-Verstoß)
+Was unterscheidet wohlgeformtes (well-formed) und gültiges (valid) XML?::Wohlgeformt: allgemeine XML-Syntaxregeln eingehalten · Gültig: entspricht zusätzlich einem Schema (XSD/DTD)
+Warum müssen Trainings- und Testdaten beim Machine Learning getrennt sein?::Damit geprüft wird, ob das Modell auf unbekannten Daten verallgemeinert, statt nur auswendig zu lernen (Overfitting)
+Was messen Recall (Trefferquote) und Precision (Präzision) bei einer KI-Klassifikation?::Recall = erkannte Positive ÷ alle tatsächlich Positiven · Precision = echte Positive ÷ alle als positiv Gemeldeten
+Welche vier Risikostufen unterscheidet der EU AI Act?::Unannehmbar (verboten, z. B. Social Scoring), hoch (strenge Auflagen, z. B. Bewerberauswahl), begrenzt (Transparenzpflicht, z. B. Chatbot), minimal (Spamfilter)

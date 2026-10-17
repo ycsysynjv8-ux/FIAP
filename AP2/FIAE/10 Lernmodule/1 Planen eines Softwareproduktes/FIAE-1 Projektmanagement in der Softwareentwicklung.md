@@ -134,6 +134,12 @@ Risiko = **Eintrittswahrscheinlichkeit × Schadensausmaß**. Für jedes Risiko: 
 > - Freien und Gesamtpuffer vertauschen.
 > - Risiken ohne konkrete Gegenmaßnahme.
 
+### Ergänzung: Green IT und Nachhaltigkeit (PUE)
+- **Green IT:** Umwelt- und ressourcenschonende Gestaltung der IT über den gesamten Lebenszyklus (**Green in IT**: z. B. Serverkonsolidierung durch Virtualisierung, Kalt-/Warmgang-Einhausung, freie Kühlung, energieeffiziente Hardware und Algorithmen) sowie Einsatz von IT zur Einsparung in anderen Bereichen (**Green by IT**: z. B. Routenoptimierung, Homeoffice, papierlose Prozesse).
+- **PUE (Power Usage Effectiveness):** Kennzahl für die Energieeffizienz eines Rechenzentrums:
+  $$\text{PUE} = \frac{\text{Gesamtenergiebedarf des Rechenzentrums}}{\text{Energiebedarf der IT-Geräte}}$$
+  Ein idealer Wert liegt nahe **1,0** (z. B. 72 kW Gesamtenergie ÷ 40 kW IT-Last = **PUE 1,8**, d. h. 0,8 kWh Zusatzaufwand für Kühlung/USV je 1 kWh IT-Strom). Ausführlich in [[AP2 FIAE Querschnittsthemen#5. Green IT]].
+
 ## Verwandte Themen
 - [[FIAE-2 Anforderungen und Use Cases]] – Lasten- und Pflichtenheft
 - [[PA-1 Projektantrag, Durchführung und Dokumentation]] – eigenes Abschlussprojekt

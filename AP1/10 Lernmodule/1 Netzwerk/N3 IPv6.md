@@ -89,7 +89,7 @@ Anzahl Adressen: 2¹²⁸ ≈ 3,4 · 10³⁸. In **einem** /64-Netz sind 2⁶⁴
 | `ff00::/8` | **Multicast** | 224.x.x.x | `ff02::1` = alle Knoten im Link, `ff02::2` = alle Router |
 | `2001:db8::/32` | Dokumentation | – | nur für Beispiele/Bücher |
 
-**Wichtig:** IPv6 kennt **keinen Broadcast** – Aufgaben, die früher Broadcast brauchten (z. B. ARP), laufen über **Multicast** (Neighbor Discovery ersetzt ARP).
+**Wichtig:** IPv6 kennt **keinen Broadcast** – Aufgaben, die früher Broadcast brauchten (z. B. ARP), laufen über **Multicast**: Das **NDP (Neighbor Discovery Protocol)** auf Basis von **ICMPv6** (Neighbor Solicitation / Neighbor Advertisement) ersetzt ARP.
 
 Ein Gerät hat bei IPv6 **mehrere Adressen gleichzeitig**: mindestens eine Link-Local, dazu meist eine oder mehrere globale (und ggf. ULA, temporäre Privacy-Adressen).
 
@@ -99,9 +99,9 @@ Ein Gerät hat bei IPv6 **mehrere Adressen gleichzeitig**: mindestens eine Link-
 
 | Verfahren | Wie? | Merkmal |
 |---|---|---|
-| **SLAAC** (Stateless Address Autoconfiguration) | Router schickt per **Router Advertisement (RA)** das Präfix, der Host bildet die Interface-ID selbst | kein Server nötig |
+| **SLAAC** (Stateless Address Autoconfiguration) | Router schickt per **Router Advertisement (RA)** das Präfix, der Host bildet die Interface-ID selbst (optional DNS direkt im RA per **RDNSS**, Recursive DNS Server) | kein DHCP-Server nötig |
 | **DHCPv6 stateful** | Server vergibt Adressen und merkt sich die Zuordnung | zentrale Kontrolle wie bei IPv4 |
-| **DHCPv6 stateless** | Adresse per SLAAC, weitere Infos (DNS-Server) per DHCPv6 | Kombination |
+| **DHCPv6 stateless** | Adresse per SLAAC, weitere Infos (z. B. DNS-Server, falls nicht per **RDNSS** im RA enthalten) per DHCPv6 | Kombination |
 | **statisch** | manuell | Server, Router |
 
 ### EUI-64 – Interface-ID aus der MAC-Adresse
@@ -110,7 +110,7 @@ Ein Gerät hat bei IPv6 **mehrere Adressen gleichzeitig**: mindestens eine Link-
 3. Das **7. Bit** des ersten Bytes (U/L-Bit) **invertieren**: `00` = `0000 0000` → `0000 0010` = `02`
 4. Ergebnis: **`021a:2bff:fe3c:4d5e`**
 
-**Datenschutz-Problem:** Mit EUI-64 steckt die MAC in jeder Adresse → das Gerät ist über Netze hinweg wiedererkennbar. Lösung: **Privacy Extensions** (zufällige, regelmäßig wechselnde Interface-IDs), bei Windows und Smartphones Standard.
+**Datenschutz-Problem:** Mit EUI-64 steckt die MAC-Adresse fest in jeder Adresse → das Gerät ist über verschiedene Netze hinweg wiedererkennbar (**Tracking** des Nutzers möglich). Lösung: **Privacy Extensions** (erzeugen zufällige, regelmäßig wechselnde temporäre Interface-IDs gegen Tracking), bei Windows und Smartphones Standard.
 
 ---
 

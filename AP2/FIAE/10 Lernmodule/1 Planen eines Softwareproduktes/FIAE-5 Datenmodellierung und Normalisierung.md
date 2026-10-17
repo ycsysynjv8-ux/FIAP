@@ -155,6 +155,11 @@ Bildgröße = Breite × Höhe × Farbtiefe ÷ 8 (unkomprimiert) · × Anzahl Bil
 ### Ergänzung: Datentypen für Medien und Koordinaten
 **BLOB** für Binärdaten (Fotos, PDFs), **DECIMAL(9,6)** oder ein Geodatentyp für Koordinaten, **DECIMAL(10,2)** für Geldbeträge.
 
+### Ergänzung: Tabellenkalkulation in Prüfungsaufgaben
+- **Zellbezüge beim Kopieren:** `B2` relativ (wandert beim Kopieren mit), `$B$2` **absolut** (bleibt fest, z. B. für Steuersatz oder Nachschlagematrix), `$B2` / `B$2` gemischt (nur Spalte bzw. nur Zeile mit `$` fixiert).
+- **Wichtige Formeln:** `=SUMME(B2:B20)`, `=MITTELWERT(B2:B20)`, `=ZÄHLENWENN(B2:B40;"Jugend")`, `=SUMMEWENN(A2:A40;"Ost";C2:C40)`, verschachteltes `=WENN(B2>=92;1;WENN(B2>=81;2;...))`.
+- **Nachschlagen mit `SVERWEIS` (`VLOOKUP`):** `=SVERWEIS(Suchkriterium; $A$2:$C$10; Spaltenindex; FALSCH)` – der 4. Parameter **`FALSCH` (`0`)** erzwingt eine **exakte Übereinstimmung** (wichtig bei Artikelnummern/IDs, sonst liefert `WAHR` bei unsortierten Daten falsche Näherungswerte!). Ausführlich in [[AP2 FIAE Querschnittsthemen#2. Tabellenkalkulation]].
+
 ## Verwandte Themen
 - [[FIAE-12 SQL für Entwickler]] – das Modell mit SQL anlegen und abfragen
 - [[FIAE-4 Objektorientierter Entwurf und Entwurfsmuster]] – Klassenmodell

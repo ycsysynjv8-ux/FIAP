@@ -132,6 +132,12 @@ Anforderungen an eine Software: Formate erzeugen und validieren (XSD-Schema, Sch
 > - Nichtfunktionale Anforderungen ohne Messgröße („schnell“) formulieren.
 > - Lastenheft und Pflichtenheft vertauschen.
 
+### Ergänzung: Englische Fachtexte in der AP2 auswerten
+In fast jeder AP2-Prüfung ist eine Teilaufgabe an einen **englischen Fachtext** (z. B. Spezifikation, RFC-Auszug, Architekturdokumentation) gekoppelt:
+- **Aufgabe zuerst lesen** (Operator *nennen / beschreiben / erläutern / begründen* und geforderte Anzahl beachten), dann **auf Deutsch antworten** – bloßes Wort-für-Wort-Übersetzen reicht bei *erläutern* nicht, gefragt ist **Aussage + Begründung aus dem Text**.
+- **Signalwörter für Bedingungen und Einschränkungen beachten:** `provided that` / `as long as` (vorausgesetzt, dass), `unless` (es sei denn), `whereas` / `in contrast to` (im Gegensatz zu), `at least` (mindestens), `at most` (höchstens).
+- **Falsche Freunde:** *eventually* = schließlich (nicht eventuell), *actual* = tatsächlich (nicht aktuell), *sensitive data* = vertrauliche Daten. Ausführliche Vokabelliste: [[AP2 FIAE Querschnittsthemen#1. Englischer Fachtext]].
+
 ## Verwandte Themen
 - [[FIAE-1 Projektmanagement in der Softwareentwicklung]] – Projektrahmen
 - [[FIAE-3 UML Aktivität, Sequenz und Zustand]] – Verhalten modellieren

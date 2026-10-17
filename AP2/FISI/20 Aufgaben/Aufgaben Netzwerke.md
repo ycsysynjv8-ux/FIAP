@@ -399,6 +399,18 @@ Im Mitschnitt melden zwei verschiedene MAC-Adressen per ARP-Reply „192.168.10.
 > - **ARP-Spoofing/Poisoning** – der Angreifer gibt sich als Gateway aus, um den Verkehr über sich zu leiten (**Man-in-the-Middle**, Mitlesen/Manipulieren). (2 P)
 > - Schutz: **Dynamic ARP Inspection** mit DHCP-Snooping, Port Security, 802.1X, statische ARP-Einträge für kritische Systeme. (2 P)
 
+### N16.6 ★★ – Ethernet-Frame (802.1Q), IPv6-Header und SD-WAN (6 Punkte)
+📘 **Nachlernen:** [[FISI-11 Switching, VLAN und Verkabelung#Ergänzung: Kupferkabel-Kategorien und Ethernet-II-Frame (802.1Q)|FISI-11 › Ethernet-II-Frame (802.1Q)]] · [[FISI-10 IPv6 im Unternehmen#4. Vorteile von IPv6|FISI-10 › IPv6-Header]] · [[FISI-16 Netzwerkanalyse, Fehlersuche und WAN#Ergänzung: Systemauslastung, Schwellwerte und präventive Wartung|FISI-16 › SD-WAN]]
+
+a) Zwischen welchen Feldern eines Ethernet-II-Frames wird das **802.1Q-VLAN-Tag** eingefügt, wie groß ist es in Byte, und wie viele nutzbare VLAN-IDs ermöglicht das 12-Bit-VID-Feld? (2 P)
+b) Nennen Sie zwei Unterschiede des **IPv6-Headers** gegenüber dem IPv4-Header, die das Weiterleiten an Routern beschleunigen. (2 P)
+c) Erläutern Sie, wie **SD-WAN** zwei Standortleitungen (z. B. Glasfaser und LTE/5G) effizienter nutzt als ein reines Aktiv/Passiv-Failover. (2 P)
+
+> [!success]- Lösung
+> a) Eingefügt zwischen **Quell-MAC** und **EtherType**; Größe: **4 Byte** (maximale Framegröße steigt von 1 518 auf 1 522 Byte); 12 Bit = 4 096 Werte (0–4095), davon **4 094 nutzbare VLAN-IDs (1–4094)**, da 0 und 4095 reserviert sind. (2 P)
+> b) **Feste Länge von 40 Byte** (statt variabel 20–60 Byte), **keine Header-Checksumme** (muss nicht an jedem Hop neu berechnet werden) und **keine Paketfragmentierung durch Router** unterwegs. (2 P)
+> c) Ein zentraler Controller überwacht Latenz, Jitter und Paketverlust beider Leitungen und steuert den Verkehr **anwendungsbezogen (Application-Aware Routing)** über verschlüsselte IPsec-Tunnel: Echtzeit-/ERP-Verkehr nutzt die beste Leitung, während unkritischer Datenverkehr gleichzeitig die zweite Leitung nutzen oder lokal ins Internet ausgeleitet werden kann. (2 P)
+
 ---
 ← [[AP2 FISI Start]] · [[Übersicht FISI Netzwerke]]
 

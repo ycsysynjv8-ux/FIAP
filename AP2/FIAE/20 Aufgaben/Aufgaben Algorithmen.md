@@ -108,6 +108,36 @@ Eine Ausleihe dauert 437 Minuten. Berechnen Sie mit `div` und `mod` Stunden und 
 > - 437 div 60 = **7** Stunden, 437 mod 60 = **17** Minuten (2 P)
 > - Blöcke: 437 div 30 = 14, 437 mod 30 = 17 ≠ 0 → **15** angefangene Blöcke (2 P)
 
+### A9.6 ★★★ – Gruppenwechsel (Group Break) (8 Punkte)
+📘 **Nachlernen:** [[FIAE-9 Algorithmen in Pseudocode#2. Standardmuster|FIAE-9 › Standardmuster: Gruppenwechsel]]
+
+Die Liste `ausleihen : List<Ausleihe>` ist bereits aufsteigend nach `kundenId` sortiert. Schreiben Sie die Prozedur `druckeMinutenJeKunde(ausleihen : List<Ausleihe>)`, die für jeden Kunden seine `kundenId` und die Zwischensumme seiner gesamten Ausleihminuten über `ausgabe(kundenId, summeKunde)` sowie am Ende die Gesamtsumme aller Minuten über `ausgabe("Gesamt", gesamtSumme)` ausgibt.
+
+> [!success]- Lösung
+> ```
+> prozedur druckeMinutenJeKunde(ausleihen : List<Ausleihe>)
+>     wenn ausleihen.size() == 0 dann
+>         rückgabe
+>     ende wenn
+>     aktKunde : Integer = ausleihen.get(0).getKundenId()
+>     summeKunde : Integer = 0
+>     gesamtSumme : Integer = 0
+>     für i = 0 bis ausleihen.size() − 1
+>         a = ausleihen.get(i)
+>         wenn a.getKundenId() != aktKunde dann          // Gruppenwechsel!
+>             ausgabe(aktKunde, summeKunde)
+>             aktKunde = a.getKundenId()
+>             summeKunde = 0
+>         ende wenn
+>         summeKunde = summeKunde + a.getMinuten()
+>         gesamtSumme = gesamtSumme + a.getMinuten()
+>     ende für
+>     ausgabe(aktKunde, summeKunde)                      // letzte Gruppe ausgeben!
+>     ausgabe("Gesamt", gesamtSumme)
+> ende prozedur
+> ```
+> Bewertung: Leere Liste / Initialisierung mit erstem Gruppenschlüssel 2 P · Schleife und Prüfung auf Schlüsselwechsel (`!= aktKunde`) 2 P · Ausgabe der alten Gruppe und Zurücksetzen von `aktKunde` / `summeKunde = 0` 2 P · Aufaddieren in `summeKunde` und `gesamtSumme` 1 P · **Ausgabe der letzten Gruppe nach der Schleife** + Gesamtsumme 1 P
+
 ---
 
 ## FIAE-10 Objektorientierte Programmierung umsetzen

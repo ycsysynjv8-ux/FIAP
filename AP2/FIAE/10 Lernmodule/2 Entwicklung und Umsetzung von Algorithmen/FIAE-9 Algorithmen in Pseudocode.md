@@ -73,6 +73,27 @@ ende methode
 | **Verschachtelte Suche** | äußere Schleife über Kandidaten, innere prüft Konflikte (Flag `frei = true`, bei Treffer `false`, Schleife mit `und frei` vorzeitig beenden) |
 | **Bestes Element** | wie Maximum, aber mit selbst definierter Güte (kleinste Differenz zur gewünschten Größe) |
 | **Begrenzte Ergebnismenge** | Schleifenbedingung `i < n und zaehler < max` |
+| **Gruppenwechsel** | Liste ist nach Gruppenmerkmal (z. B. Abteilung, Kunde, Monat) sortiert: innere Schleife läuft, solange das Gruppenmerkmal gleich bleibt, gibt Zwischensumme aus und addiert zur Gesamtsumme |
+
+> [!example] Gruppenwechsel (Zwischen- und Gesamtsumme)
+> ```
+> // Aufträge sind nach kundenNr sortiert; je Kunde Zwischensumme und am Ende Gesamtsumme ausgeben
+> methode druckeUmsatzliste(auftraege : Auftrag[])
+>     gesamtsumme : Decimal = 0.0
+>     i : Integer = 0
+>     solange i < auftraege.length
+>         aktKunde = auftraege[i].getKundenNr()
+>         gruppensumme : Decimal = 0.0
+>         solange i < auftraege.length und auftraege[i].getKundenNr() == aktKunde
+>             gruppensumme = gruppensumme + auftraege[i].getBetrag()
+>             i = i + 1
+>         ende solange
+>         ausgabe("Kunde " + aktKunde + ": " + gruppensumme)
+>         gesamtsumme = gesamtsumme + gruppensumme
+>     ende solange
+>     ausgabe("Gesamt: " + gesamtsumme)
+> ende methode
+> ```
 
 > [!example] Häufigkeit je Kategorie
 > ```

@@ -172,3 +172,6 @@ Was ist beim Automatisieren mit Skripten wichtig?::Erst in der Testumgebung prü
 Welche Messwerte zeigen die Systemauslastung?::CPU, Arbeitsspeicher und Swap, Plattenplatz und IOPS, Netzwerkdurchsatz
 Warum nutzt man zwei Schwellwerte im Monitoring?::Warnstufe zum frühen Reagieren, kritische Stufe zur Eskalation
 Was gehört zur präventiven Wartung?::Lüfter reinigen, Firmware aktualisieren, USV-Akkus testen – Störungen vermeiden, bevor sie auftreten
+Was bedeutet Idempotenz bei Ansible (Infrastructure as Code)?::Mehrfaches Ausführen eines Playbooks führt immer zum selben Soll-Zustand, ohne bereits korrekte Einstellungen nochmals zu ändern (Ansible arbeitet zudem agentenlos über SSH/WinRM)
+Welchen Zweck hat ein Honeypot und wie muss er eingebunden sein?::Isoliertes, überwachtes Lockvogel-System zur Früherkennung und Analyse von Angriffen; strikt vom Produktivnetz trennen (DMZ/VLAN)
+Welche Grundregeln gelten in einer Ereignisgesteuerten Prozesskette (EPK)?::Strenger Wechsel von Ereignis (passiver Zustand, Sechseck) und Funktion (aktive Tätigkeit, abgerundetes Rechteck); nach einem Ereignis darf kein XOR-/OR-Split folgen!

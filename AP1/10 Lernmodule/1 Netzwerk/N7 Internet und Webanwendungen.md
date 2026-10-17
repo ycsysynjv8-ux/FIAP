@@ -37,14 +37,14 @@ Eine **URL** (Uniform Resource Locator) gibt an, **wo** eine Ressource liegt und
 
 `https://www.kanzlei-beispiel.de:443/termine/buchen.php?anwalt=3#formular`
 
-| Teil | Beispiel | Bedeutung |
-|---|---|---|
-| **Schema/Protokoll** | `https` | wie abgerufen wird (HTTP über TLS) |
-| **Host** (Subdomain + Domain + TLD) | `www` · `kanzlei-beispiel` · `de` | welcher Server – wird per **DNS** aufgelöst |
-| **Port** | `:443` | meist weggelassen (Standard: 80 für HTTP, 443 für HTTPS) |
-| **Pfad** | `/termine/buchen.php` | Ressource auf dem Server |
-| **Query-String** | `?anwalt=3` | Parameter für dynamische Seiten (Name=Wert, mehrere mit `&`) |
-| **Fragment** | `#formular` | Sprungmarke innerhalb der Seite – wird nicht an den Server geschickt |
+| Teil                                | Beispiel                          | Bedeutung                                                            |
+| ----------------------------------- | --------------------------------- | -------------------------------------------------------------------- |
+| **Schema/Protokoll**                | `https`                           | wie abgerufen wird (HTTP über TLS)                                   |
+| **Host** (Subdomain + Domain + TLD) | `www` · `kanzlei-beispiel` · `de` | welcher Server – wird per **DNS** aufgelöst                          |
+| **Port**                            | `:443`                            | meist weggelassen (Standard: 80 für HTTP, 443 für HTTPS)             |
+| **Pfad**                            | `/termine/buchen.php`             | Ressource auf dem Server                                             |
+| **Query-String**                    | `?anwalt=3`                       | Parameter für dynamische Seiten (Name=Wert, mehrere mit `&`)         |
+| **Fragment**                        | `#formular`                       | Sprungmarke innerhalb der Seite – wird nicht an den Server geschickt |
 
 **URI** ist der Oberbegriff für Bezeichner von Ressourcen; eine URL ist eine URI mit Ortsangabe. (Eine **URN** benennt eine Ressource dauerhaft ohne Ort, z. B. `urn:isbn:…`.)
 

@@ -51,7 +51,7 @@ tags:
 |---|---|
 | freier Text (Name) | Textfeld mit Beschriftung |
 | eine Auswahl aus vielen festen Werten (Krankenkasse, Land) | **Dropdown/Auswahlliste** |
-| eine aus wenigen Optionen | Optionsfelder (Radio Buttons) |
+| **genau eine** Option aus wenigen sich gegenseitig ausschließenden Alternativen (2–5 Optionen, z. B. Zahlungsart) | **Radiobuttons / Optionsfelder** (alle Optionen sofort sichtbar) |
 | ja/nein, mehrere unabhängige Optionen | Kontrollkästchen (Checkbox) |
 | Datum | Datumsauswahl (Kalender) |
 | Zahl in einem Bereich | Zahlenfeld, Schieberegler |
@@ -77,7 +77,7 @@ tags:
 
 ### Usability testen
 - **Nutzerbefragung** (Fragebogen, Interview, Benutzertagebuch)
-- **Beobachtung** von Testpersonen, **lautes Denken**, Aufzeichnung von Klickpfaden, **Eye-Tracking**
+- **Beobachtung** echter Testpersonen beim Lösen typischer Aufgaben, insbesondere **Thinking Aloud (Lautes Denken)**: Die Testperson spricht während der Bedienung laut aus, was sie gerade denkt, sucht oder erwartet – so werden Missverständnisse in der Benutzerführung direkt sichtbar. Ergänzend: Aufzeichnung von Klickpfaden, **Eye-Tracking** (Blickverlaufsmessung)
 - **A/B-Tests**, Auswertung von **Logdaten** (Web-Analytics)
 - Expertenmethoden: heuristische Evaluation, Cognitive Walkthrough; Personas, Card Sorting für die Struktur
 

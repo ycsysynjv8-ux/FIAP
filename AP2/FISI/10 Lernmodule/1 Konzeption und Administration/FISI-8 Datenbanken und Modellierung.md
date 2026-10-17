@@ -178,6 +178,11 @@ Ausführlich: [[FIAE-4 Objektorientierter Entwurf und Entwurfsmuster]].
 ### Ergänzung: Data Lake
 Ein **Data Lake** sammelt Rohdaten aus vielen Quellen und Formaten (CSV, XML, JSON, Sensorwerte) zunächst unverändert; das Schema wird erst bei der Auswertung angewendet. Austauschformate: CSV (einfach, nicht genormt), JSON, XML (verschachtelt, mit Schema prüfbar).
 
+### Ergänzung: Ereignisgesteuerte Prozesskette (EPK)
+Neben UML-Aktivitätsdiagrammen wird für Geschäftsprozesse häufig die **EPK** genutzt:
+- **Ereignis** (Sechseck, **passiver Zustand**, z. B. „Störungsmeldung eingegangen“) und **Funktion** (abgerundetes Rechteck, **aktive Tätigkeit/Entscheidung**, z. B. „Störung prüfen“) wechseln sich streng ab (**alternierende Folge**; Start und Ende sind immer Ereignisse).
+- **Konnektoren:** $\wedge$ (`AND`), $\vee$ (`OR`), `XOR`. **Wichtige Prüfungsregel:** Da ein Ereignis ein passiver Zustand ist, trifft es **keine Entscheidung** – auf ein Ereignis darf **kein `XOR`- oder `OR`-Split** folgen (Entscheidungsverzweigungen stehen immer nach einer **Funktion**). Details: [[AP2 FISI Ergänzungen#8. Ereignisgesteuerte Prozesskette (EPK)]].
+
 ## Verwandte Themen
 - [[FISI-7 Programmierung und Skripte für Admins]] – Algorithmen in derselben Prüfung
 - [[FIAE-12 SQL für Entwickler]] – SQL in voller Tiefe

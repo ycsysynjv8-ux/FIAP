@@ -84,3 +84,4 @@ Was ist ein Interface?::Methodensignaturen, die implementierende Klassen bereits
 Was ist ein statisches Testverfahren?::Prüfung ohne Ausführung, z. B. Code-Review – dynamisch: Unit-, Integrations-, Last- und End-to-End-Test
 Was unterscheidet Verifikation und Validierung?::Verifikation: Spezifikation erfüllt? · Validierung: trifft das Produkt den tatsächlichen Kundenbedarf?
 Welche Constraints gibt es in SQL?::PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK (z. B. Preis >= 0), DEFAULT
+Worauf musst du beim Gruppenwechsel (Group Break) in Pseudocode achten?::Eingabe muss nach dem Gruppierungsmerkmal sortiert sein; bei Schlüsselwechsel Zwischensumme ausgeben und zurücksetzen; nach der Schleife letzte Gruppe noch ausgeben!

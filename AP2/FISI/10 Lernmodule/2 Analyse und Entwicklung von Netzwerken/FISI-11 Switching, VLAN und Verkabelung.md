@@ -138,6 +138,10 @@ Prüfe **drei** Dinge: genug **Ports** (Endgeräte **plus Uplink**), **PoE-Stand
 ### Ergänzung: Bridge
 Eine **Bridge** verbindet zwei Netzsegmente auf Schicht 2 und leitet Frames anhand von MAC-Adressen weiter (ein Switch ist eine Bridge mit vielen Ports). Router arbeiten auf Schicht 3, Repeater auf Schicht 1.
 
+### Ergänzung: Kupferkabel-Kategorien und Ethernet-II-Frame (802.1Q)
+- **Kupferkabel-Kategorien (Twisted Pair, max. 100 m = 90 m Permanent Link + 2 × 5 m Patchkabel):** **Cat 5e** (100 MHz, 1 Gbit/s), **Cat 6** (250 MHz, 10 Gbit/s bis ca. 55 m), **Cat 6A** (500 MHz, **10 Gbit/s über volle 100 m**), **Cat 7** (600 MHz, 10 Gbit/s, durchgehend S/FTP), **Cat 8** (2 000 MHz, 25/40 Gbit/s bis ca. 30 m im Rechenzentrum).
+- **Ethernet-II-Frame mit 802.1Q-Tag:** Präambel + SFD (7 + 1 Byte) → **Ziel-MAC** (6 Byte) → **Quell-MAC** (6 Byte) → optional **802.1Q-VLAN-Tag (4 Byte**: TPID `0x8100` + TCI mit 3 Bit PCP/QoS, 1 Bit DEI und **12 Bit VLAN-ID** für 1–4094 nutzbare VLANs) → **EtherType** (2 Byte, z. B. `0x0800` IPv4, `0x86DD` IPv6) → **Payload** (46–1 500 Byte) → **FCS/CRC** (4 Byte). Maximale Framegröße steigt mit VLAN-Tag von 1 518 auf **1 522 Byte**. Details: [[AP2 FISI Ergänzungen#7. Frame- und Header-Aufbau (Ethernet, 802.1Q, IPv4/IPv6)]].
+
 ## Verwandte Themen
 - [[FISI-9 IPv4-Subnetting und Routing]] – ein Subnetz je VLAN
 - [[FISI-13 DNS, DHCP und Netzdienste]] – DHCP und Relay
