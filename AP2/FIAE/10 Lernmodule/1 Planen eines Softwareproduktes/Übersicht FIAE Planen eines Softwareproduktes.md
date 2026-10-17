@@ -47,6 +47,7 @@ flowchart LR
 - **Aufgaben im IHK-Stil:** [[Aufgaben Planen eines Softwareproduktes]]
 - **Karteikarten:** [[Karten Planen eines Softwareproduktes]]
 - **Rechentrainer und Quiz:** [[AP2 FIAE Trainer]] · [[AP2 FIAE Quiz]]
+- **Querschnittsthemen (Englischer Fachtext, Tabellenkalkulation, Ticketsystem, KI, Green IT):** [[AP2 FIAE Querschnittsthemen]]
 - **Probeprüfungen mit Timer:** [[AP2/FIAE/20 Aufgaben/Pruefungen/Uebersicht FIAE AP2|FIAE-Probeprüfungen]]
 
 ← [[AP2 FIAE Start]] · Weiter: [[Übersicht FIAE Algorithmen]] →

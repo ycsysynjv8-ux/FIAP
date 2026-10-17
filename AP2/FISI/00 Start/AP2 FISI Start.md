@@ -33,7 +33,7 @@ await dv.view("AP2/99 System/views/dashboard")
 | [[Aufgaben Konzeption und Administration]] | [[AP2/FISI/20 Aufgaben/Pruefungen/Uebersicht FISI AP2\|Probeprüfungen FISI]] | [[Karten Konzeption und Administration]] | [[AP2 FISI Formelsammlung]] |
 | [[Aufgaben Netzwerke]] | [[WiSo-Quiz\|WiSo-Simulation]] | [[Karten Netzwerke]] | [[AP2 FISI Glossar]] |
 | [[Aufgaben WiSo]] | | [[Karten WiSo]] | [[AP2 Pruefung]] |
-| [[Aufgaben Projektarbeit]] | | [[Karten Projektarbeit]] | |
+| [[Aufgaben Projektarbeit]] | | [[Karten Projektarbeit]] | [[AP2 FISI Ergänzungen]] |
 
 ## Module als Tabelle
 ```dataview

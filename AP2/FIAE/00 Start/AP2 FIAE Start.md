@@ -33,7 +33,7 @@ await dv.view("AP2/99 System/views/dashboard")
 | [[Aufgaben Planen eines Softwareproduktes]] | [[AP2/FIAE/20 Aufgaben/Pruefungen/Uebersicht FIAE AP2\|Probeprüfungen FIAE]] | [[Karten Planen eines Softwareproduktes]] | [[AP2 FIAE Formelsammlung]] |
 | [[Aufgaben Algorithmen]] | [[WiSo-Quiz\|WiSo-Simulation]] | [[Karten Algorithmen]] | [[AP2 FIAE Glossar]] |
 | [[Aufgaben WiSo]] | | [[Karten WiSo]] | [[AP2 Pruefung]] |
-| [[Aufgaben Projektarbeit]] | | [[Karten Projektarbeit]] | |
+| [[Aufgaben Projektarbeit]] | | [[Karten Projektarbeit]] | [[AP2 FIAE Querschnittsthemen]] |
 
 ## Module als Tabelle
 ```dataview
